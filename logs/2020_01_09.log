@@ -1,0 +1,17 @@
+[2020-01-09 17:15:32,122 - Log.py - 36] - INFO:请求方法：POST
+请求地址：https://j1.sccpcloud.com/api-gateway/authentication/signIn
+请求参数：{'clientId': 'client', 'password': 'Mima123!', 'redirectUrl': 'string', 'route': 'string', 'username': 'MLB2-TEST01'}
+请求头部：{'Content-Type': 'application/json'}
+上传文件名称：None
+[2020-01-09 17:15:32,401 - Log.py - 36] - INFO:响应结果：
+{
+    "data":{
+        "redirectUrl":"string",
+        "route":"string",
+        "verificationCode":"ace3391d-4428-47ed-ad42-6e4d85193b90"
+    },
+    "errorCode":null,
+    "errorData":null,
+    "message":null,
+    "success":true
+}
