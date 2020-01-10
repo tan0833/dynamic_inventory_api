@@ -1,47 +1,13 @@
 import re,json,jsonpath
-from util.operate_excel import Operate_excel
 from config.get_conf import Conf
 from runMain.run_main import RunMain
 from util.operate_global import GlobalDict
 
 class ReplaceOperte:
 
-    def __init__(self,file_name,sheet_name):
-        self.conf = Conf()
-        self.excel = Operate_excel(file_name,sheet_name)
-        self.run = RunMain()
+    def __init__(self):
+
         self.global_dict = GlobalDict()
-
-    def excel_dict(self):
-        '''
-        将excel英文标题作为键，每行内容作为值写入字典中，方便后续操作调用
-        :return: 以列表形式返回
-        '''
-        title = []
-        row_count = self.excel.get_rows()
-        for i in range(1,row_count):
-            key = self.excel.get_row_values(0)
-            value = self.excel.get_row_values(i)
-            th_dict = dict(zip(key,value))
-            title.append(th_dict)
-        return title
-
-    def test_excel_params(self):
-        '''
-        用于测试的函数，方便获取excel的内容
-        :return:
-        '''
-        li = self.excel_dict()[0]
-        method = li['method']
-        URL = self.conf.get_value('request_url','url')
-        path = li['path']
-        url = URL+path
-        header = eval(li['header'])
-        params = eval(li['params'])
-        global_dict = eval(li['global'])
-        # expect = eval(li['expect'])
-        result = self.run.run_main(method,url,data=params,header=header)
-        return global_dict,result
 
     def replace_global_value(self,global_dict,result):
         '''
@@ -71,12 +37,21 @@ class ReplaceOperte:
             return params
 
 
+
+
 if __name__ == '__main__':
-    r = ReplaceOperte(Conf().get_file_path('data','测试接口.xlsx'),0)
-    a,b = r.test_excel_params()
+    from util.operate_excel import Operate_excel
+    rp = ReplaceOperte()
+    r = Operate_excel(Conf().get_file_path('data','测试接口.xlsx'),0)
+    a = r.excel_dict()
 
-    r.replace_global_value(a,b)
+    for i in a:
+        method = i['method']
+        path =  i['path']
+        header = i['header']
+        params = i['parmms']
+        global_d = i['global']
 
-    c = r.excel_dict()[1]['params']
-    d = r.replace_excel(c)
-    print(d)
+
+
+

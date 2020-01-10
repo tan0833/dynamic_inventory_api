@@ -34,6 +34,20 @@ class Operate_excel:
         '''关闭Excel'''
         self.excel.close()
 
+    def excel_dict(self):
+        '''
+        将excel英文标题作为键，每行内容作为值写入字典中，方便后续操作调用
+        :return: 以列表形式返回
+        '''
+        title = []
+        row_count = self.get_rows()
+        for i in range(1,row_count):
+            key = self.get_row_values(0)
+            value = self.get_row_values(i)
+            th_dict = dict(zip(key,value))
+            title.append(th_dict)
+        return title
+
 
 if __name__ == '__main__':
     o = Operate_excel('D:\\文档\\运输可视化相关文档\\自动化\\克隆\\dynamic_inventory\\data\\动态库存接口测试用例.xlsx','登录')
