@@ -1,5 +1,6 @@
 import requests,traceback,json
 from config.Log import Log
+import sys
 
 class RunMain:
 
@@ -15,7 +16,7 @@ class RunMain:
         :param file:需上传文件
         :return:响应结果信息
         '''
-        self.log.info(u'请求方法：%s\n请求地址：%s\n请求参数：%s\n请求头部：%s\n上传文件名称：%s'%(method,url,data,header,file))
+        self.log.info(u'\n请求方法：%s\n请求地址：%s\n请求参数：%s\n请求头部：%s\n上传文件名称：%s'%(method,url,data,header,file))
         if method.upper() == 'GET':
             try:
                 response =requests.request(method=method,url=url,params=data,headers = header).text
@@ -33,7 +34,7 @@ class RunMain:
             response_result = json.dumps(r, sort_keys=True, indent=4, separators=(',', ':'),
                                          ensure_ascii=False)
             self.log.info('响应结果：\n%s'%response_result)
-            return response_result
+            return r
         else:
             self.log.info('响应结果：\n%s' % response)
             return response
