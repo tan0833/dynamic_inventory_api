@@ -7,10 +7,10 @@ import traceback
 
 class GlobalDict:
 
-    __global_dict = {}
 
-    def __init__(self):
+    def __init__(self,dict):
         self.log = Log()
+        self.__global_dict = dict
 
     def set_dict(self,key,value):
         self.__global_dict[key] = value
@@ -26,8 +26,8 @@ class GlobalDict:
             raise e
 
 if __name__ == '__main__':
-
-    a = GlobalDict()
+    d = {}
+    a = GlobalDict(d)
     a.set_dict('c','12')
     b = a.get_dict('c')
     print(b)

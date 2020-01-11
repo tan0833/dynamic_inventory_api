@@ -1,0 +1,2197 @@
+[2020-01-11 15:31:32,275 - Log.py - 36] - INFO:
+请求方法：POST
+请求地址：https://j1.sccpcloud.com/api-gateway/authentication/signIn
+请求参数：{
+  "clientId": "client",
+  "password": "MLB2test!",
+  "redirectUrl": "string",
+  "route": "string",
+  "username": "MLB2-SIT"
+}
+请求头部：{"Content-Type":"application/json"}
+上传文件名称：None
+[2020-01-11 15:31:32,297 - Log.py - 42] - ERROR:请求接口错误：
+Traceback (most recent call last):
+  File "D:\文档\运输可视化相关文档\自动化\克隆\dynamic_inventory_api\runMain\run_main.py", line 28, in run_main
+    response = requests.request(method=method.upper(),url=url,data=json.dumps(data),headers = header).text
+  File "D:\Rj\Python3.7\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Rj\Python3.7\lib\site-packages\requests\sessions.py", line 519, in request
+    prep = self.prepare_request(req)
+  File "D:\Rj\Python3.7\lib\site-packages\requests\sessions.py", line 462, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "D:\Rj\Python3.7\lib\site-packages\requests\models.py", line 314, in prepare
+    self.prepare_headers(headers)
+  File "D:\Rj\Python3.7\lib\site-packages\requests\models.py", line 446, in prepare_headers
+    for header in headers.items():
+AttributeError: 'str' object has no attribute 'items'
+
+[2020-01-11 15:33:46,250 - Log.py - 36] - INFO:
+请求方法：POST
+请求地址：https://j1.sccpcloud.com/api-gateway/authentication/signIn
+请求参数：{
+  "clientId": "client",
+  "password": "Mima123!",
+  "redirectUrl": "string",
+  "route": "string",
+  "username": "MLB2-TEST01"
+}
+请求头部：{"Content-Type":"application/json"}
+上传文件名称：None
+[2020-01-11 15:33:46,268 - Log.py - 42] - ERROR:请求接口错误：
+Traceback (most recent call last):
+  File "D:\文档\运输可视化相关文档\自动化\克隆\dynamic_inventory_api\runMain\run_main.py", line 28, in run_main
+    response = requests.request(method=method.upper(),url=url,data=json.dumps(data),headers = header).text
+  File "D:\Rj\Python3.7\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Rj\Python3.7\lib\site-packages\requests\sessions.py", line 519, in request
+    prep = self.prepare_request(req)
+  File "D:\Rj\Python3.7\lib\site-packages\requests\sessions.py", line 462, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "D:\Rj\Python3.7\lib\site-packages\requests\models.py", line 314, in prepare
+    self.prepare_headers(headers)
+  File "D:\Rj\Python3.7\lib\site-packages\requests\models.py", line 446, in prepare_headers
+    for header in headers.items():
+AttributeError: 'str' object has no attribute 'items'
+
+[2020-01-11 15:34:14,635 - Log.py - 36] - INFO:
+请求方法：POST
+请求地址：https://j1.sccpcloud.com/api-gateway/authentication/signIn
+请求参数：{
+  "clientId": "client",
+  "password": "Mima123!",
+  "redirectUrl": "string",
+  "route": "string",
+  "username": "MLB2-TEST01"
+}
+请求头部：{"Content-Type":"application/json"}
+上传文件名称：None
+[2020-01-11 15:34:14,653 - Log.py - 42] - ERROR:请求接口错误：
+Traceback (most recent call last):
+  File "D:\文档\运输可视化相关文档\自动化\克隆\dynamic_inventory_api\runMain\run_main.py", line 28, in run_main
+    response = requests.request(method=method.upper(),url=url,data=data,headers = header).text
+  File "D:\Rj\Python3.7\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Rj\Python3.7\lib\site-packages\requests\sessions.py", line 519, in request
+    prep = self.prepare_request(req)
+  File "D:\Rj\Python3.7\lib\site-packages\requests\sessions.py", line 462, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "D:\Rj\Python3.7\lib\site-packages\requests\models.py", line 314, in prepare
+    self.prepare_headers(headers)
+  File "D:\Rj\Python3.7\lib\site-packages\requests\models.py", line 446, in prepare_headers
+    for header in headers.items():
+AttributeError: 'str' object has no attribute 'items'
+
+[2020-01-11 15:37:18,548 - Log.py - 36] - INFO:
+请求方法：POST
+请求地址：https://j1.sccpcloud.com/api-gateway/authentication/signIn
+请求参数：{'clientId': 'client', 'password': 'Mima123!', 'redirectUrl': 'string', 'route': 'string', 'username': 'MLB2-TEST01'}
+请求头部：{'Content-Type': 'application/json'}
+上传文件名称：None
+[2020-01-11 15:37:18,872 - Log.py - 36] - INFO:响应结果：
+{
+    "data":{
+        "redirectUrl":"string",
+        "route":"string",
+        "verificationCode":"587b683b-b096-42fa-a978-e22a43f6d808"
+    },
+    "errorCode":null,
+    "errorData":null,
+    "message":null,
+    "success":true
+}
+[2020-01-11 15:37:18,882 - Log.py - 36] - INFO:
+请求方法：GET
+请求地址：https://j1.sccpcloud.com/api-gateway/authentication/getToken/587b683b-b096-42fa-a978-e22a43f6d808
+请求参数：{'clientId': 'client', 'password': 'Mima123!', 'redirectUrl': 'string', 'route': 'string', 'username': 'MLB2-TEST03'}
+请求头部：{'Content-Type': 'application/json'}
+上传文件名称：None
+[2020-01-11 15:37:19,057 - Log.py - 36] - INFO:响应结果：
+{
+    "data":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb3VudHJ5X2NvZGUiOiJDTiIsImxvY2FsZV9jb2RlIjoiZW5fVVMiLCJ1c2VyX25hbWUiOiJNTEIyLVRFU1QwMSIsInNjb3BlIjpbImZvbyIsInJlYWQiLCJ3cml0ZSJdLCJhcHBsaWNhdGlvbl9jb2RlIjoiSURFQVMiLCJleHAiOjE1Nzg3NjQyMzgsInVzZXJhY2NvdW50X2lkIjoiVVNSXzEwNjQ1IiwianRpIjoiNWJhZmRkOGEtZjJhNi00NGY5LTk0NTItZDdlZmEyNjg3M2M5IiwiZ3JhbnRfYXBwbGljYXRpb25fY29kZXMiOlsiUFJPQ1VSRU1FTlQiLCJUUkFOU1BPUlRBVElPTiIsIkNQX1RFTkFOVCJdLCJjbGllbnRfaWQiOiJjbGllbnQiLCJ0ZW5hbnRfY29kZSI6IklEUEJHLU1MQiJ9.URcwRnLfcYqyCKi7HzKSch6VFrXQKsjEq7IesqJglXamZLfFFGqrek4WjshE-ifwrTQT1kRUMFJDHMO1tSyhVqRMvsH-rbekivnz3IaZGQYbEh_okP6zzAP5hOke5gxYDbSi-cJNCOkMu0VnrrTMvvsNO1KBnlF7VFEb7ygfA-wyIr6gtnjCxcr4E9Uzi3w8zswZr8lAiyvOyxw1Q99otsgO9iwReneL1th16-PTGbkjbjRP5K7byTehUfZ7qBjEAMtlERVNzbGOmBxvxFfQrU5XVPnwnPCpn24BxzoUas1yeLPkjX5nWfeCt2T8cCh27os18Oal9Sun7bOCCG-Z4Q",
+    "errorCode":null,
+    "errorData":null,
+    "message":null,
+    "success":true
+}
+[2020-01-11 15:52:15,875 - Log.py - 36] - INFO:
+请求方法：POST
+请求地址：https://j1.sccpcloud.com/api-gateway/dynamic-inventory-service/authentication/signIn
+请求参数：{'clientId': 'client', 'password': 'Mima123!', 'redirectUrl': 'string', 'route': 'string', 'username': 'MLB2-TEST01'}
+请求头部：{'Content-Type': 'application/json'}
+上传文件名称：None
+[2020-01-11 15:52:16,098 - Log.py - 36] - INFO:响应结果：
+{
+    "errorCode":"TokenIsNull",
+    "message":"Token是空的!",
+    "success":false
+}
+[2020-01-11 15:52:16,109 - Log.py - 42] - ERROR:输入的[verificationCode]键不存在
+
+[2020-01-11 15:52:51,745 - Log.py - 36] - INFO:
+请求方法：POST
+请求地址：https://j1.sccpcloud.com/api-gateway/authentication/signIn
+请求参数：{'clientId': 'client', 'password': 'Mima123!', 'redirectUrl': 'string', 'route': 'string', 'username': 'MLB2-TEST01'}
+请求头部：{'Content-Type': 'application/json'}
+上传文件名称：None
+[2020-01-11 15:52:51,978 - Log.py - 36] - INFO:响应结果：
+{
+    "data":{
+        "redirectUrl":"string",
+        "route":"string",
+        "verificationCode":"1138fd59-ae10-463d-8965-cf28121c2f24"
+    },
+    "errorCode":null,
+    "errorData":null,
+    "message":null,
+    "success":true
+}
+[2020-01-11 15:52:51,984 - Log.py - 42] - ERROR:输入的[verificationCode]键不存在
+
+[2020-01-11 15:54:39,026 - Log.py - 36] - INFO:
+请求方法：POST
+请求地址：https://j1.sccpcloud.com/api-gateway/authentication/signIn
+请求参数：{'clientId': 'client', 'password': 'Mima123!', 'redirectUrl': 'string', 'route': 'string', 'username': 'MLB2-TEST01'}
+请求头部：{'Content-Type': 'application/json'}
+上传文件名称：None
+[2020-01-11 15:54:39,316 - Log.py - 36] - INFO:响应结果：
+{
+    "data":{
+        "redirectUrl":"string",
+        "route":"string",
+        "verificationCode":"bc0d586c-bc51-4e17-9586-c1d42a93455c"
+    },
+    "errorCode":null,
+    "errorData":null,
+    "message":null,
+    "success":true
+}
+[2020-01-11 15:54:39,330 - Log.py - 42] - ERROR:输入的[verificationCode]键不存在
+
+[2020-01-11 15:54:46,626 - Log.py - 36] - INFO:
+请求方法：POST
+请求地址：https://j1.sccpcloud.com/api-gateway/authentication/signIn
+请求参数：{'clientId': 'client', 'password': 'Mima123!', 'redirectUrl': 'string', 'route': 'string', 'username': 'MLB2-TEST01'}
+请求头部：{'Content-Type': 'application/json'}
+上传文件名称：None
+[2020-01-11 15:54:46,906 - Log.py - 36] - INFO:响应结果：
+{
+    "data":{
+        "redirectUrl":"string",
+        "route":"string",
+        "verificationCode":"de5b0abf-28f8-41da-9e70-d24c0ce39fcf"
+    },
+    "errorCode":null,
+    "errorData":null,
+    "message":null,
+    "success":true
+}
+[2020-01-11 15:54:46,921 - Log.py - 36] - INFO:
+请求方法：GET
+请求地址：https://j1.sccpcloud.com/api-gateway/authentication/getToken/de5b0abf-28f8-41da-9e70-d24c0ce39fcf
+请求参数：{'clientId': 'client', 'password': 'Mima123!', 'redirectUrl': 'string', 'route': 'string', 'username': 'MLB2-TEST03'}
+请求头部：{'Content-Type': 'application/json'}
+上传文件名称：None
+[2020-01-11 15:54:47,135 - Log.py - 36] - INFO:响应结果：
+{
+    "data":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb3VudHJ5X2NvZGUiOiJDTiIsImxvY2FsZV9jb2RlIjoiZW5fVVMiLCJ1c2VyX25hbWUiOiJNTEIyLVRFU1QwMSIsInNjb3BlIjpbImZvbyIsInJlYWQiLCJ3cml0ZSJdLCJhcHBsaWNhdGlvbl9jb2RlIjoiSURFQVMiLCJleHAiOjE1Nzg3NjUyODYsInVzZXJhY2NvdW50X2lkIjoiVVNSXzEwNjQ1IiwianRpIjoiM2JhOWE5MWYtMWJiYy00ZGYwLWJjZmMtZTk2MjBiNTI1MDAyIiwiZ3JhbnRfYXBwbGljYXRpb25fY29kZXMiOlsiUFJPQ1VSRU1FTlQiLCJUUkFOU1BPUlRBVElPTiIsIkNQX1RFTkFOVCJdLCJjbGllbnRfaWQiOiJjbGllbnQiLCJ0ZW5hbnRfY29kZSI6IklEUEJHLU1MQiJ9.cCFzhrw5EQpGRmVWE4dynMF_PaMgr95tjO5OBnKXcRr6Wzw-lNawPmBlyDodrroWPyhZjaaklshilvmvnPb47a_xOGsBEUP7UhdqLxwku1bAaF0p5OLAYOmDOMVyC5ssydRKPeeNni9SRZOeFutofQZZkd8jOSYJ27fMk7RaSscqh2rd2HAiPhwIGyVzu1rXlrodFPVKQoBWXdoadMJdPMh_0GtZJr8_jzguxKQohH2yfVeaBQKWJY9ic0AiRkxIgVOV4mrle_MhNgfJoTZMwUo--gmv5lDoLqAUVkpvkVhtVkoR9UHckZi5MOVp8m2qXmLvxBCtk6Swxm6oAedNlg",
+    "errorCode":null,
+    "errorData":null,
+    "message":null,
+    "success":true
+}
+[2020-01-11 15:57:27,074 - Log.py - 36] - INFO:
+请求方法：POST
+请求地址：https://j1.sccpcloud.com/api-gateway/authentication/signIn
+请求参数：{'clientId': 'client', 'password': 'Mima123!', 'redirectUrl': 'string', 'route': 'string', 'username': 'MLB2-TEST01'}
+请求头部：{'Content-Type': 'application/json'}
+上传文件名称：None
+[2020-01-11 15:57:27,371 - Log.py - 36] - INFO:响应结果：
+{
+    "data":{
+        "redirectUrl":"string",
+        "route":"string",
+        "verificationCode":"183355b5-39a1-4df3-8e9f-e4cac65c48ef"
+    },
+    "errorCode":null,
+    "errorData":null,
+    "message":null,
+    "success":true
+}
+[2020-01-11 15:59:44,837 - Log.py - 36] - INFO:
+请求方法：POST
+请求地址：https://j1.sccpcloud.com/api-gateway/authentication/signIn
+请求参数：{'clientId': 'client', 'password': 'Mima123!', 'redirectUrl': 'string', 'route': 'string', 'username': 'MLB2-TEST01'}
+请求头部：{'Content-Type': 'application/json'}
+上传文件名称：None
+[2020-01-11 15:59:45,079 - Log.py - 36] - INFO:响应结果：
+{
+    "data":{
+        "redirectUrl":"string",
+        "route":"string",
+        "verificationCode":"ff5a41cd-8c90-4875-ba28-e2a63a7e9e6a"
+    },
+    "errorCode":null,
+    "errorData":null,
+    "message":null,
+    "success":true
+}
+[2020-01-11 15:59:45,091 - Log.py - 42] - ERROR:输入的[verificationCode]键不存在
+
+[2020-01-11 16:01:18,872 - Log.py - 36] - INFO:
+请求方法：POST
+请求地址：https://j1.sccpcloud.com/api-gateway/authentication/signIn
+请求参数：{'clientId': 'client', 'password': 'Mima123!', 'redirectUrl': 'string', 'route': 'string', 'username': 'MLB2-TEST01'}
+请求头部：{'Content-Type': 'application/json'}
+上传文件名称：None
+[2020-01-11 16:01:19,134 - Log.py - 36] - INFO:响应结果：
+{
+    "data":{
+        "redirectUrl":"string",
+        "route":"string",
+        "verificationCode":"606daff4-2872-4b0e-85d4-78e2f0b187a5"
+    },
+    "errorCode":null,
+    "errorData":null,
+    "message":null,
+    "success":true
+}
+[2020-01-11 16:01:19,149 - Log.py - 42] - ERROR:输入的[verificationCode]键不存在
+
+[2020-01-11 16:04:55,788 - Log.py - 36] - INFO:
+请求方法：POST
+请求地址：https://j1.sccpcloud.com/api-gateway/authentication/signIn
+请求参数：{'clientId': 'client', 'password': 'Mima123!', 'redirectUrl': 'string', 'route': 'string', 'username': 'MLB2-TEST01'}
+请求头部：{'Content-Type': 'application/json'}
+上传文件名称：None
+[2020-01-11 16:04:56,070 - Log.py - 36] - INFO:响应结果：
+{
+    "data":{
+        "redirectUrl":"string",
+        "route":"string",
+        "verificationCode":"de348da9-ddc6-4b64-b079-809d54a3377f"
+    },
+    "errorCode":null,
+    "errorData":null,
+    "message":null,
+    "success":true
+}
+[2020-01-11 16:04:56,086 - Log.py - 42] - ERROR:输入的[verificationCode]键不存在
+
+[2020-01-11 16:04:56,097 - Log.py - 36] - INFO:
+请求方法：GET
+请求地址：https://j1.sccpcloud.com/api-gateway/authentication/getToken/
+请求参数：{'clientId': 'client', 'password': 'Mima123!', 'redirectUrl': 'string', 'route': 'string', 'username': 'MLB2-TEST03'}
+请求头部：{'Content-Type': 'application/json'}
+上传文件名称：None
+[2020-01-11 16:04:56,399 - Log.py - 36] - INFO:响应结果：
+{
+    "error":"Not Found",
+    "message":"No message available",
+    "path":"/authentication/getToken/",
+    "status":404,
+    "timestamp":"2020-01-11T08:04:56.432+0000"
+}
+[2020-01-11 16:05:19,171 - Log.py - 36] - INFO:
+请求方法：POST
+请求地址：https://j1.sccpcloud.com/api-gateway/authentication/signIn
+请求参数：{'clientId': 'client', 'password': 'Mima123!', 'redirectUrl': 'string', 'route': 'string', 'username': 'MLB2-TEST01'}
+请求头部：{'Content-Type': 'application/json'}
+上传文件名称：None
+[2020-01-11 16:05:19,429 - Log.py - 36] - INFO:响应结果：
+{
+    "data":{
+        "redirectUrl":"string",
+        "route":"string",
+        "verificationCode":"1950f995-e9d5-4c4c-8c99-788b49cbfd77"
+    },
+    "errorCode":null,
+    "errorData":null,
+    "message":null,
+    "success":true
+}
+[2020-01-11 16:05:19,443 - Log.py - 36] - INFO:
+请求方法：GET
+请求地址：https://j1.sccpcloud.com/api-gateway/authentication/getToken/1950f995-e9d5-4c4c-8c99-788b49cbfd77
+请求参数：{'clientId': 'client', 'password': 'Mima123!', 'redirectUrl': 'string', 'route': 'string', 'username': 'MLB2-TEST03'}
+请求头部：{'Content-Type': 'application/json'}
+上传文件名称：None
+[2020-01-11 16:05:19,623 - Log.py - 36] - INFO:响应结果：
+{
+    "data":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb3VudHJ5X2NvZGUiOiJDTiIsImxvY2FsZV9jb2RlIjoiZW5fVVMiLCJ1c2VyX25hbWUiOiJNTEIyLVRFU1QwMSIsInNjb3BlIjpbImZvbyIsInJlYWQiLCJ3cml0ZSJdLCJhcHBsaWNhdGlvbl9jb2RlIjoiSURFQVMiLCJleHAiOjE1Nzg3NjU5MTksInVzZXJhY2NvdW50X2lkIjoiVVNSXzEwNjQ1IiwianRpIjoiNGRkYzE2ZjMtM2NmZC00NWY5LWI3ZTItZjI2MGZiOGU3MjkzIiwiZ3JhbnRfYXBwbGljYXRpb25fY29kZXMiOlsiUFJPQ1VSRU1FTlQiLCJUUkFOU1BPUlRBVElPTiIsIkNQX1RFTkFOVCJdLCJjbGllbnRfaWQiOiJjbGllbnQiLCJ0ZW5hbnRfY29kZSI6IklEUEJHLU1MQiJ9.RKNwbAbEwbACOfcAPHGMYoCrTtguwFVvDrWgKhGJ1f-Id4hmN4Pn68WOxvykrXEjbZQMc9U0dRtN5t7km9b8OYbG71nBLyuLwOQYp8bzwfjyKbd_TYEnqbke7C9-cAuJiYVvS4jf8MYpc3qSswo-VEpX3pLXMtLLSjiz3TSavKJFRrlLaZUGD9hLI-5AtM6HgSW-ib_M2YyegxDO0eNWGsOCUdEc8PIii2pV4_5Ovg0X1f7HZ0qg9bha0B8JqLBQKs7KTEB7SIGPAI16LkJcey5PBpZO0Oer3S2J8RQnAV3dqgP2YsCrhgmx0c1bxD70KekTzOcVDJBzFt9w1eIlGw",
+    "errorCode":null,
+    "errorData":null,
+    "message":null,
+    "success":true
+}
+[2020-01-11 16:07:07,258 - Log.py - 36] - INFO:
+请求方法：POST
+请求地址：https://j1.sccpcloud.com/api-gateway/authentication/signIn
+请求参数：{'clientId': 'client', 'password': 'Mima123!', 'redirectUrl': 'string', 'route': 'string', 'username': 'MLB2-TEST01'}
+请求头部：{'Content-Type': 'application/json'}
+上传文件名称：None
+[2020-01-11 16:07:07,503 - Log.py - 36] - INFO:响应结果：
+{
+    "data":{
+        "redirectUrl":"string",
+        "route":"string",
+        "verificationCode":"931bcf6c-1315-47bb-a53e-e1025185f44e"
+    },
+    "errorCode":null,
+    "errorData":null,
+    "message":null,
+    "success":true
+}
+[2020-01-11 16:07:07,517 - Log.py - 42] - ERROR:输入的[verificationCode]键不存在
+
+[2020-01-11 16:07:07,526 - Log.py - 36] - INFO:
+请求方法：GET
+请求地址：https://j1.sccpcloud.com/api-gateway/authentication/getToken/
+请求参数：{'clientId': 'client', 'password': 'Mima123!', 'redirectUrl': 'string', 'route': 'string', 'username': 'MLB2-TEST03'}
+请求头部：{'Content-Type': 'application/json'}
+上传文件名称：None
+[2020-01-11 16:07:07,810 - Log.py - 36] - INFO:响应结果：
+{
+    "error":"Not Found",
+    "message":"No message available",
+    "path":"/authentication/getToken/",
+    "status":404,
+    "timestamp":"2020-01-11T08:07:07.837+0000"
+}
+[2020-01-11 16:08:02,279 - Log.py - 36] - INFO:
+请求方法：POST
+请求地址：https://j1.sccpcloud.com/api-gateway/authentication/signIn
+请求参数：{'clientId': 'client', 'password': 'Mima123!', 'redirectUrl': 'string', 'route': 'string', 'username': 'MLB2-TEST01'}
+请求头部：{'Content-Type': 'application/json'}
+上传文件名称：None
+[2020-01-11 16:08:02,555 - Log.py - 36] - INFO:响应结果：
+{
+    "data":{
+        "redirectUrl":"string",
+        "route":"string",
+        "verificationCode":"ecf75e23-976f-47d5-ab3f-25b5952eb3f4"
+    },
+    "errorCode":null,
+    "errorData":null,
+    "message":null,
+    "success":true
+}
+[2020-01-11 16:08:02,567 - Log.py - 36] - INFO:
+请求方法：GET
+请求地址：https://j1.sccpcloud.com/api-gateway/authentication/getToken/ecf75e23-976f-47d5-ab3f-25b5952eb3f4
+请求参数：{'clientId': 'client', 'password': 'Mima123!', 'redirectUrl': 'string', 'route': 'string', 'username': 'MLB2-TEST03'}
+请求头部：{'Content-Type': 'application/json'}
+上传文件名称：None
+[2020-01-11 16:08:02,804 - Log.py - 36] - INFO:响应结果：
+{
+    "data":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb3VudHJ5X2NvZGUiOiJDTiIsImxvY2FsZV9jb2RlIjoiZW5fVVMiLCJ1c2VyX25hbWUiOiJNTEIyLVRFU1QwMSIsInNjb3BlIjpbImZvbyIsInJlYWQiLCJ3cml0ZSJdLCJhcHBsaWNhdGlvbl9jb2RlIjoiSURFQVMiLCJleHAiOjE1Nzg3NjYwODIsInVzZXJhY2NvdW50X2lkIjoiVVNSXzEwNjQ1IiwianRpIjoiNDE5N2FiZjktMWRhZS00ZjI4LTgzODUtMTNhYjAyZDhmOTdlIiwiZ3JhbnRfYXBwbGljYXRpb25fY29kZXMiOlsiUFJPQ1VSRU1FTlQiLCJUUkFOU1BPUlRBVElPTiIsIkNQX1RFTkFOVCJdLCJjbGllbnRfaWQiOiJjbGllbnQiLCJ0ZW5hbnRfY29kZSI6IklEUEJHLU1MQiJ9.jPLcIZv4eE7tDGEThlslOUzYSLfadsW63x8HDEMG-RA9yIJACjnW6j-YD-5p1Al5sfvzWs7hZqshyi57UJio0zAGC9CN374eMGwyRGokVuoVXliBKr_8tZ7M5aoVF2Zf7t6N7VUB1ITmA6AVdGRJ1IXtnsDZIwi_XB4A_5DRKEipF5dyp3tDyS6ktjODUAqdEUVgDc2msVf7kjZWsn5OfT4HymztBTWkSI8zTAHTjeg9WyDI_eU-WQ2AXvxaauN3k6gjhQJ49zD5-wjJgMNrNGwWSikgAQOIA_aE6XJRQ0OVxQpSHRbKsubdIoxXzgxHliy2_ncEEyxp8B_61iHzjA",
+    "errorCode":null,
+    "errorData":null,
+    "message":null,
+    "success":true
+}
+[2020-01-11 16:08:18,310 - Log.py - 36] - INFO:
+请求方法：POST
+请求地址：https://j1.sccpcloud.com/api-gateway/authentication/signIn
+请求参数：{'clientId': 'client', 'password': 'Mima123!', 'redirectUrl': 'string', 'route': 'string', 'username': 'MLB2-TEST01'}
+请求头部：{'Content-Type': 'application/json'}
+上传文件名称：None
+[2020-01-11 16:08:18,581 - Log.py - 36] - INFO:响应结果：
+{
+    "data":{
+        "redirectUrl":"string",
+        "route":"string",
+        "verificationCode":"08f795a0-8f4f-4509-a1d5-10bb65d823c4"
+    },
+    "errorCode":null,
+    "errorData":null,
+    "message":null,
+    "success":true
+}
+[2020-01-11 16:08:18,596 - Log.py - 36] - INFO:
+请求方法：GET
+请求地址：https://j1.sccpcloud.com/api-gateway/authentication/getToken/08f795a0-8f4f-4509-a1d5-10bb65d823c4
+请求参数：{'clientId': 'client', 'password': 'Mima123!', 'redirectUrl': 'string', 'route': 'string', 'username': 'MLB2-TEST03'}
+请求头部：{'Content-Type': 'application/json'}
+上传文件名称：None
+[2020-01-11 16:08:18,822 - Log.py - 36] - INFO:响应结果：
+{
+    "data":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb3VudHJ5X2NvZGUiOiJDTiIsImxvY2FsZV9jb2RlIjoiZW5fVVMiLCJ1c2VyX25hbWUiOiJNTEIyLVRFU1QwMSIsInNjb3BlIjpbImZvbyIsInJlYWQiLCJ3cml0ZSJdLCJhcHBsaWNhdGlvbl9jb2RlIjoiSURFQVMiLCJleHAiOjE1Nzg3NjYwOTgsInVzZXJhY2NvdW50X2lkIjoiVVNSXzEwNjQ1IiwianRpIjoiZjIxOGQxZjQtNTk0MC00ODRiLTkwY2QtNjc5YTRlM2VlNzBmIiwiZ3JhbnRfYXBwbGljYXRpb25fY29kZXMiOlsiUFJPQ1VSRU1FTlQiLCJUUkFOU1BPUlRBVElPTiIsIkNQX1RFTkFOVCJdLCJjbGllbnRfaWQiOiJjbGllbnQiLCJ0ZW5hbnRfY29kZSI6IklEUEJHLU1MQiJ9.gn15EX8jr5oTXQrPrY1XPXPkJAa8-4hVMiep_FUn1FKil8D0a5RehOqj8q4nArMjt5ijADqA7PhQXhysikM7a_aNl3o3UAYb5lQDR0Dne8cTxHM4uyKuk2Dr5tlfMNwKzbvzZvk2yw-Ruuego-AOzNTQ4iF11sfNafc_FPbuCeYPW0ArVZ630SSXAcC93NIHVoq4EHCCGTN_p-jwlj2WUlV-PxBADsgPp4cxCA_vJKAqcdhybjWw_5zEWJSUECQk6_o3XZsIK6-OzIlD64aoYx6aCx58dtiFxUkvQ3sdnvE4kF-JKjw0rnpKu4Ja23cvqrUDh00kbonuc58w8wuxRg",
+    "errorCode":null,
+    "errorData":null,
+    "message":null,
+    "success":true
+}
+[2020-01-11 16:15:31,205 - Log.py - 36] - INFO:
+请求方法：POST
+请求地址：https://j1.sccpcloud.com/api-gateway/authentication/signIn
+请求参数：{'clientId': 'client', 'password': 'Mima123!', 'redirectUrl': 'string', 'route': 'string', 'username': 'MLB2-TEST01'}
+请求头部：{'Content-Type': 'application/json'}
+上传文件名称：None
+[2020-01-11 16:15:31,458 - Log.py - 36] - INFO:响应结果：
+{
+    "data":null,
+    "errorCode":"UNKNOWN",
+    "errorData":null,
+    "message":"JSON parse error: Cannot construct instance of `com.jusdascm.apigateway.interfaces.api.rest.dto.input.UserSignInDTO` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('{'clientId': 'client', 'password': 'Mima123!', 'redirectUrl': 'string', 'route': 'string', 'username': 'MLB2-TEST01'}'); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.jusdascm.apigateway.interfaces.api.rest.dto.input.UserSignInDTO` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('{'clientId': 'client', 'password': 'Mima123!', 'redirectUrl': 'string', 'route': 'string', 'username': 'MLB2-TEST01'}')\n at [Source: (PushbackInputStream); line: 1, column: 1]",
+    "success":false
+}
+[2020-01-11 16:47:24,823 - Log.py - 36] - INFO:
+请求方法：POST
+请求地址：https://j1.sccpcloud.com/api-gateway/authentication/signIn
+请求参数：{'clientId': 'client', 'password': 'Mima123!', 'redirectUrl': 'string', 'route': 'string', 'username': 'MLB2-TEST01'}
+请求头部：{'Content-Type': 'application/json'}
+上传文件名称：None
+[2020-01-11 16:47:25,119 - Log.py - 36] - INFO:响应结果：
+{
+    "data":{
+        "redirectUrl":"string",
+        "route":"string",
+        "verificationCode":"9dbd5e82-b5da-4e20-b615-f3fd1ea09e11"
+    },
+    "errorCode":null,
+    "errorData":null,
+    "message":null,
+    "success":true
+}
+[2020-01-11 16:47:25,135 - Log.py - 36] - INFO:
+请求方法：GET
+请求地址：https://j1.sccpcloud.com/api-gateway/authentication/getToken/9dbd5e82-b5da-4e20-b615-f3fd1ea09e11
+请求参数：{'clientId': 'client', 'password': 'Mima123!', 'redirectUrl': 'string', 'route': 'string', 'username': 'MLB2-TEST03'}
+请求头部：{'Content-Type': 'application/json'}
+上传文件名称：None
+[2020-01-11 16:47:25,333 - Log.py - 36] - INFO:响应结果：
+{
+    "data":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb3VudHJ5X2NvZGUiOiJDTiIsImxvY2FsZV9jb2RlIjoiZW5fVVMiLCJ1c2VyX25hbWUiOiJNTEIyLVRFU1QwMSIsInNjb3BlIjpbImZvbyIsInJlYWQiLCJ3cml0ZSJdLCJhcHBsaWNhdGlvbl9jb2RlIjoiSURFQVMiLCJleHAiOjE1Nzg3Njg0NDUsInVzZXJhY2NvdW50X2lkIjoiVVNSXzEwNjQ1IiwianRpIjoiOWI2ZmUyNDgtMzQ0MC00YzIyLWE4OTMtZGFlODlkNGU3ZTVkIiwiZ3JhbnRfYXBwbGljYXRpb25fY29kZXMiOlsiUFJPQ1VSRU1FTlQiLCJUUkFOU1BPUlRBVElPTiIsIkNQX1RFTkFOVCJdLCJjbGllbnRfaWQiOiJjbGllbnQiLCJ0ZW5hbnRfY29kZSI6IklEUEJHLU1MQiJ9.OvEMQEVQu4TP9TKUzcXv7JzmKUQFUYg4TcZ_ivRTV0no0Ts2Thcnn846ohRATggG_iEmTk3z-sbOHSSeeOowf-afr7E4wlHWqE9r8_X4tp2CazyiMP2LLKZ04tYW8p1ORiMAvLcx1WiU2NjrJQCmoQU3FDFHFGnpBiF0i7eoOgJWI4y7cbXV0ioR3E6LRgMNHn0ToBWcjIhT7RdIlSflnb0_iF7cqSBoF893zmMbboGiFD5VR8qKmJ1rWgoJ10s1lHn-f3Z49pviRRz6ILvZ6UJKxjCCJVjld002zT2ICp4a1yhNGUg2dJinOJ_Q-REGHe4RPOf68rlrvvy-XQ7p8w",
+    "errorCode":null,
+    "errorData":null,
+    "message":null,
+    "success":true
+}
+[2020-01-11 16:50:59,876 - Log.py - 36] - INFO:
+请求方法：POST
+请求地址：https://j1.sccpcloud.com/api-gateway/authentication/signIn
+请求参数：{'clientId': 'client', 'password': 'Mima123!', 'redirectUrl': 'string', 'route': 'string', 'username': 'MLB2-TEST01'}
+请求头部：{'Content-Type': 'application/json'}
+上传文件名称：None
+[2020-01-11 16:51:00,149 - Log.py - 36] - INFO:响应结果：
+{
+    "data":{
+        "redirectUrl":"string",
+        "route":"string",
+        "verificationCode":"8ece3ee9-3d21-4f0a-a6f6-a58b524986a8"
+    },
+    "errorCode":null,
+    "errorData":null,
+    "message":null,
+    "success":true
+}
+[2020-01-11 16:51:00,162 - Log.py - 36] - INFO:
+请求方法：GET
+请求地址：https://j1.sccpcloud.com/api-gateway/authentication/getToken/8ece3ee9-3d21-4f0a-a6f6-a58b524986a8
+请求参数：{'clientId': 'client', 'password': 'Mima123!', 'redirectUrl': 'string', 'route': 'string', 'username': 'MLB2-TEST03'}
+请求头部：{'Content-Type': 'application/json'}
+上传文件名称：None
+[2020-01-11 16:51:00,336 - Log.py - 36] - INFO:响应结果：
+{
+    "data":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb3VudHJ5X2NvZGUiOiJDTiIsImxvY2FsZV9jb2RlIjoiZW5fVVMiLCJ1c2VyX25hbWUiOiJNTEIyLVRFU1QwMSIsInNjb3BlIjpbImZvbyIsInJlYWQiLCJ3cml0ZSJdLCJhcHBsaWNhdGlvbl9jb2RlIjoiSURFQVMiLCJleHAiOjE1Nzg3Njg2NjAsInVzZXJhY2NvdW50X2lkIjoiVVNSXzEwNjQ1IiwianRpIjoiYzBiNmU4MWQtODFjMy00ZWE3LWI4MTAtOTNjZTY2YTVjMDljIiwiZ3JhbnRfYXBwbGljYXRpb25fY29kZXMiOlsiUFJPQ1VSRU1FTlQiLCJUUkFOU1BPUlRBVElPTiIsIkNQX1RFTkFOVCJdLCJjbGllbnRfaWQiOiJjbGllbnQiLCJ0ZW5hbnRfY29kZSI6IklEUEJHLU1MQiJ9.L0MjYMkAq01T0X6BY62VoD2-TLwUsi4a9iRtCe982DLqFx_1xtoLfJHWHJeGcUfY5ggAVNMe3gnABCdJOMis3gxMPouHr0OmKtkMdhDSH8qwKx3tTRKC2iQJT7_ewL-iu-0txEbZ2CgWRnCnJntaJC5z1nx3kkdVSyAQQ7WDX1qt7XmUmh2DH5H-qwMHnyjneIlaXEunILdQ6lEJ0-QSqbIqU1p6QSmxLmIyreHS1_nbomB1JtitqBATxT6WtvcJ5h0HVOpnJlTSslAdHqzJnQsezhKv77VYL2JKISAfyqzuUQzCejBFZO8DsyL5VpWMjIgon-kbGuPpSVud4-vFvw",
+    "errorCode":null,
+    "errorData":null,
+    "message":null,
+    "success":true
+}
+[2020-01-11 17:19:20,100 - Log.py - 36] - INFO:
+请求方法：POST
+请求地址：https://j1.sccpcloud.com/api-gateway/authentication/signIn
+请求参数：{'clientId': 'client', 'password': 'Mima123!', 'redirectUrl': 'string', 'route': 'string', 'username': 'MLB2-TEST01'}
+请求头部：{'Content-Type': 'application/json'}
+上传文件名称：None
+[2020-01-11 17:19:20,381 - Log.py - 36] - INFO:响应结果：
+{
+    "data":{
+        "redirectUrl":"string",
+        "route":"string",
+        "verificationCode":"a88aa19e-f3cd-4e4a-bb05-426e1f31919c"
+    },
+    "errorCode":null,
+    "errorData":null,
+    "message":null,
+    "success":true
+}
+[2020-01-11 17:19:20,392 - Log.py - 36] - INFO:
+请求方法：GET
+请求地址：https://j1.sccpcloud.com/api-gateway/authentication/getToken/a88aa19e-f3cd-4e4a-bb05-426e1f31919c
+请求参数：{'clientId': 'client', 'password': 'Mima123!', 'redirectUrl': 'string', 'route': 'string', 'username': 'MLB2-TEST03'}
+请求头部：{'Content-Type': 'application/json'}
+上传文件名称：None
+[2020-01-11 17:19:20,565 - Log.py - 36] - INFO:响应结果：
+{
+    "data":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb3VudHJ5X2NvZGUiOiJDTiIsImxvY2FsZV9jb2RlIjoiZW5fVVMiLCJ1c2VyX25hbWUiOiJNTEIyLVRFU1QwMSIsInNjb3BlIjpbImZvbyIsInJlYWQiLCJ3cml0ZSJdLCJhcHBsaWNhdGlvbl9jb2RlIjoiSURFQVMiLCJleHAiOjE1Nzg3NzAzNjAsInVzZXJhY2NvdW50X2lkIjoiVVNSXzEwNjQ1IiwianRpIjoiM2QzMjdkYTgtNTdiMy00ZTI0LTkwNDEtYTk2MWE0NTY1YTMyIiwiZ3JhbnRfYXBwbGljYXRpb25fY29kZXMiOlsiUFJPQ1VSRU1FTlQiLCJUUkFOU1BPUlRBVElPTiIsIkNQX1RFTkFOVCJdLCJjbGllbnRfaWQiOiJjbGllbnQiLCJ0ZW5hbnRfY29kZSI6IklEUEJHLU1MQiJ9.Ri90TiEVLuzuCXi4O1uUwB0ynIUAB0GKXor7oIvQxJIbuMqwLZPLlvGfGvbtRwGBKAdC8APnrDvxZxD4BmCt0lmcGXUadc94tYbs73EPJ75IIzYP_wHzhE6DJW2qpIIbcRGAj_nhkZp4tWnnDRTrUTX1NyK6YM_LPyFHjrkkV2hcta67t0VjuIeJolYLkh8boqVQVQl6Syg29CGdZQkXbdwA1Qa00kDqzw1MAvGtoeKXOgjh8ZwwpCFQ9zJpHKFKak2vAaDcAO_2Ilp-eqeXyskQLe3clXLzSutopBGMbeFotjha8HU9kYftNlZ2iwDLmbKl-dFVeyfUI5Z5xRnfCA",
+    "errorCode":null,
+    "errorData":null,
+    "message":null,
+    "success":true
+}
+[2020-01-11 17:19:20,571 - Log.py - 36] - INFO:
+请求方法：POST
+请求地址：https://j1.sccpcloud.com/api-gateway/dynamic-inventory-service/inventory/paging-search-inventories
+请求参数：{'advancedQueryCriteria': {}, 'pagingCondition': {'pageIndex': 1, 'pageSize': 10}, 'sortCondition': {'ascending': True, 'propertyName': 'mgtMode'}}
+请求头部：{'Content-Type': 'application/json', 'Authorization': 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb3VudHJ5X2NvZGUiOiJDTiIsImxvY2FsZV9jb2RlIjoiZW5fVVMiLCJ1c2VyX25hbWUiOiJNTEIyLVRFU1QwMSIsInNjb3BlIjpbImZvbyIsInJlYWQiLCJ3cml0ZSJdLCJhcHBsaWNhdGlvbl9jb2RlIjoiSURFQVMiLCJleHAiOjE1Nzg3NzAzNjAsInVzZXJhY2NvdW50X2lkIjoiVVNSXzEwNjQ1IiwianRpIjoiM2QzMjdkYTgtNTdiMy00ZTI0LTkwNDEtYTk2MWE0NTY1YTMyIiwiZ3JhbnRfYXBwbGljYXRpb25fY29kZXMiOlsiUFJPQ1VSRU1FTlQiLCJUUkFOU1BPUlRBVElPTiIsIkNQX1RFTkFOVCJdLCJjbGllbnRfaWQiOiJjbGllbnQiLCJ0ZW5hbnRfY29kZSI6IklEUEJHLU1MQiJ9.Ri90TiEVLuzuCXi4O1uUwB0ynIUAB0GKXor7oIvQxJIbuMqwLZPLlvGfGvbtRwGBKAdC8APnrDvxZxD4BmCt0lmcGXUadc94tYbs73EPJ75IIzYP_wHzhE6DJW2qpIIbcRGAj_nhkZp4tWnnDRTrUTX1NyK6YM_LPyFHjrkkV2hcta67t0VjuIeJolYLkh8boqVQVQl6Syg29CGdZQkXbdwA1Qa00kDqzw1MAvGtoeKXOgjh8ZwwpCFQ9zJpHKFKak2vAaDcAO_2Ilp-eqeXyskQLe3clXLzSutopBGMbeFotjha8HU9kYftNlZ2iwDLmbKl-dFVeyfUI5Z5xRnfCA', 'clientId': 'client'}
+上传文件名称：None
+[2020-01-11 17:19:23,896 - Log.py - 36] - INFO:响应结果：
+{
+    "data":{
+        "pagingSearchData":{
+            "paging":{
+                "pageIndex":"1",
+                "pageNumber":"202",
+                "pageSize":"10",
+                "totalRecordNumber":"2015"
+            },
+            "results":[
+                {
+                    "id":"afb3c7c8eff199ae02d0857fdb206a8e",
+                    "inventorySituations":[
+                        {
+                            "availableStock":"50000",
+                            "availableStockUnit":"PCS",
+                            "emergency":"WARNING",
+                            "estimateStocksLevels":null,
+                            "inStock":"50000",
+                            "inStockUnit":"PCS",
+                            "inboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "inboundQuantities":null,
+                            "outboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "outboundQuantities":null,
+                            "plannedIn":"0",
+                            "plannedOut":"0",
+                            "warehouseCode":"E2",
+                            "warehouseName":"E2"
+                        },
+                        {
+                            "availableStock":"40000",
+                            "availableStockUnit":"PCS",
+                            "emergency":"WARNING",
+                            "estimateStocksLevels":[
+                                {
+                                    "dynamicStock":"0",
+                                    "estimateDate":"1578672000000",
+                                    "safeLowerLimit":"80000",
+                                    "safeUpperLimit":"350000",
+                                    "stockStatus":"NORMAL"
+                                }
+                            ],
+                            "inStock":"40000",
+                            "inStockUnit":"PCS",
+                            "inboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "inboundQuantities":null,
+                            "outboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "outboundQuantities":null,
+                            "plannedIn":"0",
+                            "plannedOut":"0",
+                            "warehouseCode":"Y1",
+                            "warehouseName":"Y1"
+                        },
+                        {
+                            "availableStock":"920000",
+                            "availableStockUnit":"PCS",
+                            "emergency":"WARNING",
+                            "estimateStocksLevels":[
+                                {
+                                    "dynamicStock":"0",
+                                    "estimateDate":"1578672000000",
+                                    "safeLowerLimit":"80000",
+                                    "safeUpperLimit":"350000",
+                                    "stockStatus":"NORMAL"
+                                }
+                            ],
+                            "inStock":"920000",
+                            "inStockUnit":"PCS",
+                            "inboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "inboundQuantities":null,
+                            "outboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "outboundQuantities":null,
+                            "plannedIn":"0",
+                            "plannedOut":"0",
+                            "warehouseCode":"F3",
+                            "warehouseName":"F3"
+                        },
+                        {
+                            "availableStock":"450000",
+                            "availableStockUnit":"PCS",
+                            "emergency":"SAFE",
+                            "estimateStocksLevels":[
+                                {
+                                    "dynamicStock":"0",
+                                    "estimateDate":"1578672000000",
+                                    "safeLowerLimit":"80000",
+                                    "safeUpperLimit":"350000",
+                                    "stockStatus":"NORMAL"
+                                }
+                            ],
+                            "inStock":"450000",
+                            "inStockUnit":"PCS",
+                            "inboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "inboundQuantities":null,
+                            "outboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "outboundQuantities":null,
+                            "plannedIn":"0",
+                            "plannedOut":"0",
+                            "warehouseCode":"F3",
+                            "warehouseName":"F3"
+                        },
+                        {
+                            "availableStock":"400000",
+                            "availableStockUnit":"PCS",
+                            "emergency":"SAFE",
+                            "estimateStocksLevels":[
+                                {
+                                    "dynamicStock":"0",
+                                    "estimateDate":"1578672000000",
+                                    "safeLowerLimit":"80000",
+                                    "safeUpperLimit":"350000",
+                                    "stockStatus":"NORMAL"
+                                }
+                            ],
+                            "inStock":"400000",
+                            "inStockUnit":"PCS",
+                            "inboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "inboundQuantities":null,
+                            "outboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "outboundQuantities":null,
+                            "plannedIn":"0",
+                            "plannedOut":"0",
+                            "warehouseCode":"Y1",
+                            "warehouseName":"Y1"
+                        }
+                    ],
+                    "mgtMode":"VMI",
+                    "partNo":"117S0002",
+                    "totalInStock":"1860000",
+                    "totalInStockUnit":"PCS",
+                    "totalInTransit":"0",
+                    "uom":"PCS"
+                },
+                {
+                    "id":"1cb662ba39da4977e7f74c09af9da4e1",
+                    "inventorySituations":[
+                        {
+                            "availableStock":"100000",
+                            "availableStockUnit":"PCS",
+                            "emergency":"WARNING",
+                            "estimateStocksLevels":[
+                                {
+                                    "dynamicStock":"0",
+                                    "estimateDate":"1578672000000",
+                                    "safeLowerLimit":"1013280",
+                                    "safeUpperLimit":"1666040",
+                                    "stockStatus":"NORMAL"
+                                }
+                            ],
+                            "inStock":"100000",
+                            "inStockUnit":"PCS",
+                            "inboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "inboundQuantities":null,
+                            "outboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "outboundQuantities":null,
+                            "plannedIn":"0",
+                            "plannedOut":"0",
+                            "warehouseCode":"E2",
+                            "warehouseName":"E2"
+                        },
+                        {
+                            "availableStock":"2320000",
+                            "availableStockUnit":"PCS",
+                            "emergency":"WARNING",
+                            "estimateStocksLevels":[
+                                {
+                                    "dynamicStock":"0",
+                                    "estimateDate":"1578672000000",
+                                    "safeLowerLimit":"1013280",
+                                    "safeUpperLimit":"1666040",
+                                    "stockStatus":"NORMAL"
+                                }
+                            ],
+                            "inStock":"2320000",
+                            "inStockUnit":"PCS",
+                            "inboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "inboundQuantities":null,
+                            "outboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "outboundQuantities":null,
+                            "plannedIn":"0",
+                            "plannedOut":"0",
+                            "warehouseCode":"E2",
+                            "warehouseName":"E2"
+                        },
+                        {
+                            "availableStock":"13560000",
+                            "availableStockUnit":"PCS",
+                            "emergency":"WARNING",
+                            "estimateStocksLevels":null,
+                            "inStock":"13560000",
+                            "inStockUnit":"PCS",
+                            "inboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "inboundQuantities":[
+                                {
+                                    "dateTime":"1577808000000",
+                                    "quantity":"146200"
+                                },
+                                {
+                                    "dateTime":"1577894400000",
+                                    "quantity":"185200"
+                                },
+                                {
+                                    "dateTime":"1577980800000",
+                                    "quantity":"918000"
+                                }
+                            ],
+                            "outboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"2800"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "outboundQuantities":[
+                                {
+                                    "dateTime":"1578672000000",
+                                    "quantity":"2800"
+                                }
+                            ],
+                            "plannedIn":"0",
+                            "plannedOut":"0",
+                            "warehouseCode":"Y1",
+                            "warehouseName":"Y1"
+                        },
+                        {
+                            "availableStock":"1580000",
+                            "availableStockUnit":"PCS",
+                            "emergency":"SAFE",
+                            "estimateStocksLevels":[
+                                {
+                                    "dynamicStock":"0",
+                                    "estimateDate":"1578672000000",
+                                    "safeLowerLimit":"1013280",
+                                    "safeUpperLimit":"1666040",
+                                    "stockStatus":"NORMAL"
+                                }
+                            ],
+                            "inStock":"1580000",
+                            "inStockUnit":"PCS",
+                            "inboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "inboundQuantities":null,
+                            "outboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "outboundQuantities":null,
+                            "plannedIn":"0",
+                            "plannedOut":"0",
+                            "warehouseCode":"E2",
+                            "warehouseName":"E2"
+                        }
+                    ],
+                    "mgtMode":"VMI",
+                    "partNo":"107S0257",
+                    "totalInStock":"17560000",
+                    "totalInStockUnit":"PCS",
+                    "totalInTransit":"0",
+                    "uom":"PCS"
+                },
+                {
+                    "id":"41a0af6734f00e5a67fbbaf5fc1be03f",
+                    "inventorySituations":[
+                        {
+                            "availableStock":"40000",
+                            "availableStockUnit":"PCS",
+                            "emergency":"WARNING",
+                            "estimateStocksLevels":null,
+                            "inStock":"40000",
+                            "inStockUnit":"PCS",
+                            "inboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "inboundQuantities":null,
+                            "outboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "outboundQuantities":null,
+                            "plannedIn":"0",
+                            "plannedOut":"0",
+                            "warehouseCode":"Y1",
+                            "warehouseName":"Y1"
+                        },
+                        {
+                            "availableStock":"20980000",
+                            "availableStockUnit":"PCS",
+                            "emergency":"WARNING",
+                            "estimateStocksLevels":null,
+                            "inStock":"20980000",
+                            "inStockUnit":"PCS",
+                            "inboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "inboundQuantities":null,
+                            "outboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "outboundQuantities":null,
+                            "plannedIn":"0",
+                            "plannedOut":"0",
+                            "warehouseCode":"F3",
+                            "warehouseName":"F3"
+                        },
+                        {
+                            "availableStock":"20560000",
+                            "availableStockUnit":"PCS",
+                            "emergency":"WARNING",
+                            "estimateStocksLevels":null,
+                            "inStock":"20560000",
+                            "inStockUnit":"PCS",
+                            "inboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "inboundQuantities":null,
+                            "outboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "outboundQuantities":null,
+                            "plannedIn":"0",
+                            "plannedOut":"0",
+                            "warehouseCode":"Y1",
+                            "warehouseName":"Y1"
+                        }
+                    ],
+                    "mgtMode":"VMI",
+                    "partNo":"131S0307",
+                    "totalInStock":"41580000",
+                    "totalInStockUnit":"PCS",
+                    "totalInTransit":"0",
+                    "uom":"PCS"
+                },
+                {
+                    "id":"e5e16fb7abb2b34a1da7c080dc4840bd",
+                    "inventorySituations":[
+                        {
+                            "availableStock":"4000",
+                            "availableStockUnit":"PCS",
+                            "emergency":"WARNING",
+                            "estimateStocksLevels":null,
+                            "inStock":"4000",
+                            "inStockUnit":"PCS",
+                            "inboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "inboundQuantities":null,
+                            "outboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "outboundQuantities":null,
+                            "plannedIn":"0",
+                            "plannedOut":"0",
+                            "warehouseCode":"Y1",
+                            "warehouseName":"Y1"
+                        }
+                    ],
+                    "mgtMode":"VMI",
+                    "partNo":"138S0696",
+                    "totalInStock":"4000",
+                    "totalInStockUnit":"PCS",
+                    "totalInTransit":"0",
+                    "uom":"PCS"
+                },
+                {
+                    "id":"99dbd37ca990ec1ccb0361654725c6dd",
+                    "inventorySituations":[
+                        {
+                            "availableStock":"100000",
+                            "availableStockUnit":"PCS",
+                            "emergency":"SAFE",
+                            "estimateStocksLevels":[
+                                {
+                                    "dynamicStock":"0",
+                                    "estimateDate":"1578672000000",
+                                    "safeLowerLimit":null,
+                                    "safeUpperLimit":null,
+                                    "stockStatus":"NORMAL"
+                                }
+                            ],
+                            "inStock":"100000",
+                            "inStockUnit":"PCS",
+                            "inboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "inboundQuantities":null,
+                            "outboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "outboundQuantities":null,
+                            "plannedIn":"0",
+                            "plannedOut":"0",
+                            "warehouseCode":"E2",
+                            "warehouseName":"E2"
+                        },
+                        {
+                            "availableStock":"1600000",
+                            "availableStockUnit":"PCS",
+                            "emergency":"SAFE",
+                            "estimateStocksLevels":[
+                                {
+                                    "dynamicStock":"0",
+                                    "estimateDate":"1578672000000",
+                                    "safeLowerLimit":null,
+                                    "safeUpperLimit":null,
+                                    "stockStatus":"NORMAL"
+                                }
+                            ],
+                            "inStock":"1600000",
+                            "inStockUnit":"PCS",
+                            "inboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "inboundQuantities":null,
+                            "outboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "outboundQuantities":null,
+                            "plannedIn":"0",
+                            "plannedOut":"0",
+                            "warehouseCode":"F3",
+                            "warehouseName":"F3"
+                        },
+                        {
+                            "availableStock":"200000",
+                            "availableStockUnit":"PCS",
+                            "emergency":"SAFE",
+                            "estimateStocksLevels":[
+                                {
+                                    "dynamicStock":"0",
+                                    "estimateDate":"1578672000000",
+                                    "safeLowerLimit":null,
+                                    "safeUpperLimit":null,
+                                    "stockStatus":"NORMAL"
+                                }
+                            ],
+                            "inStock":"200000",
+                            "inStockUnit":"PCS",
+                            "inboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "inboundQuantities":null,
+                            "outboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"800"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "outboundQuantities":[
+                                {
+                                    "dateTime":"1578672000000",
+                                    "quantity":"800"
+                                }
+                            ],
+                            "plannedIn":"0",
+                            "plannedOut":"0",
+                            "warehouseCode":"Y1",
+                            "warehouseName":"Y1"
+                        }
+                    ],
+                    "mgtMode":"VMI",
+                    "partNo":"103S00116",
+                    "totalInStock":"1900000",
+                    "totalInStockUnit":"PCS",
+                    "totalInTransit":"0",
+                    "uom":"PCS"
+                },
+                {
+                    "id":"b5b498025f162768b7b2d0fca59fa164",
+                    "inventorySituations":[
+                        {
+                            "availableStock":"3980000",
+                            "availableStockUnit":"PCS",
+                            "emergency":"SAFE",
+                            "estimateStocksLevels":[
+                                {
+                                    "dynamicStock":"0",
+                                    "estimateDate":"1578672000000",
+                                    "safeLowerLimit":null,
+                                    "safeUpperLimit":null,
+                                    "stockStatus":"NORMAL"
+                                }
+                            ],
+                            "inStock":"3980000",
+                            "inStockUnit":"PCS",
+                            "inboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "inboundQuantities":null,
+                            "outboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "outboundQuantities":null,
+                            "plannedIn":"0",
+                            "plannedOut":"0",
+                            "warehouseCode":"F3",
+                            "warehouseName":"F3"
+                        },
+                        {
+                            "availableStock":"0",
+                            "availableStockUnit":"PCS",
+                            "emergency":"SAFE",
+                            "estimateStocksLevels":[
+                                {
+                                    "dynamicStock":"0",
+                                    "estimateDate":"1578672000000",
+                                    "safeLowerLimit":null,
+                                    "safeUpperLimit":null,
+                                    "stockStatus":"NORMAL"
+                                }
+                            ],
+                            "inStock":"220000",
+                            "inStockUnit":"PCS",
+                            "inboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "inboundQuantities":null,
+                            "outboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "outboundQuantities":null,
+                            "plannedIn":"0",
+                            "plannedOut":"0",
+                            "warehouseCode":"Y1",
+                            "warehouseName":"Y1"
+                        }
+                    ],
+                    "mgtMode":"VMI",
+                    "partNo":"103S00197",
+                    "totalInStock":"4200000",
+                    "totalInStockUnit":"PCS",
+                    "totalInTransit":"0",
+                    "uom":"PCS"
+                },
+                {
+                    "id":"2020e8807d7a43ddc2d9b100249a625e",
+                    "inventorySituations":[
+                        {
+                            "availableStock":"720000",
+                            "availableStockUnit":"PCS",
+                            "emergency":"SAFE",
+                            "estimateStocksLevels":[
+                                {
+                                    "dynamicStock":"0",
+                                    "estimateDate":"1578672000000",
+                                    "safeLowerLimit":null,
+                                    "safeUpperLimit":null,
+                                    "stockStatus":"NORMAL"
+                                }
+                            ],
+                            "inStock":"720000",
+                            "inStockUnit":"PCS",
+                            "inboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "inboundQuantities":null,
+                            "outboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "outboundQuantities":null,
+                            "plannedIn":"0",
+                            "plannedOut":"0",
+                            "warehouseCode":"F3",
+                            "warehouseName":"F3"
+                        },
+                        {
+                            "availableStock":"340000",
+                            "availableStockUnit":"PCS",
+                            "emergency":"SAFE",
+                            "estimateStocksLevels":[
+                                {
+                                    "dynamicStock":"0",
+                                    "estimateDate":"1578672000000",
+                                    "safeLowerLimit":null,
+                                    "safeUpperLimit":null,
+                                    "stockStatus":"NORMAL"
+                                }
+                            ],
+                            "inStock":"340000",
+                            "inStockUnit":"PCS",
+                            "inboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "inboundQuantities":null,
+                            "outboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "outboundQuantities":null,
+                            "plannedIn":"0",
+                            "plannedOut":"0",
+                            "warehouseCode":"Y1",
+                            "warehouseName":"Y1"
+                        }
+                    ],
+                    "mgtMode":"VMI",
+                    "partNo":"103S00012",
+                    "totalInStock":"1060000",
+                    "totalInStockUnit":"PCS",
+                    "totalInTransit":"0",
+                    "uom":"PCS"
+                },
+                {
+                    "id":"0118ca13023c5099d2c8036990a014af",
+                    "inventorySituations":[
+                        {
+                            "availableStock":"40000",
+                            "availableStockUnit":"PCS",
+                            "emergency":"SAFE",
+                            "estimateStocksLevels":[
+                                {
+                                    "dynamicStock":"0",
+                                    "estimateDate":"1578672000000",
+                                    "safeLowerLimit":null,
+                                    "safeUpperLimit":null,
+                                    "stockStatus":"NORMAL"
+                                }
+                            ],
+                            "inStock":"40000",
+                            "inStockUnit":"PCS",
+                            "inboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "inboundQuantities":null,
+                            "outboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "outboundQuantities":null,
+                            "plannedIn":"0",
+                            "plannedOut":"0",
+                            "warehouseCode":"E2",
+                            "warehouseName":"E2"
+                        }
+                    ],
+                    "mgtMode":"VMI",
+                    "partNo":"103S00421",
+                    "totalInStock":"40000",
+                    "totalInStockUnit":"PCS",
+                    "totalInTransit":"0",
+                    "uom":"PCS"
+                },
+                {
+                    "id":"e454bdc4a6c6aafac928720203336603",
+                    "inventorySituations":[
+                        {
+                            "availableStock":"2280000",
+                            "availableStockUnit":"PCS",
+                            "emergency":"SAFE",
+                            "estimateStocksLevels":[
+                                {
+                                    "dynamicStock":"0",
+                                    "estimateDate":"1578672000000",
+                                    "safeLowerLimit":null,
+                                    "safeUpperLimit":null,
+                                    "stockStatus":"NORMAL"
+                                }
+                            ],
+                            "inStock":"2280000",
+                            "inStockUnit":"PCS",
+                            "inboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "inboundQuantities":null,
+                            "outboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "outboundQuantities":null,
+                            "plannedIn":"0",
+                            "plannedOut":"0",
+                            "warehouseCode":"E2",
+                            "warehouseName":"E2"
+                        },
+                        {
+                            "availableStock":"840000",
+                            "availableStockUnit":"PCS",
+                            "emergency":"SAFE",
+                            "estimateStocksLevels":[
+                                {
+                                    "dynamicStock":"0",
+                                    "estimateDate":"1578672000000",
+                                    "safeLowerLimit":null,
+                                    "safeUpperLimit":null,
+                                    "stockStatus":"NORMAL"
+                                }
+                            ],
+                            "inStock":"840000",
+                            "inStockUnit":"PCS",
+                            "inboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "inboundQuantities":null,
+                            "outboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "outboundQuantities":null,
+                            "plannedIn":"0",
+                            "plannedOut":"0",
+                            "warehouseCode":"F3",
+                            "warehouseName":"F3"
+                        },
+                        {
+                            "availableStock":"6200000",
+                            "availableStockUnit":"PCS",
+                            "emergency":"SAFE",
+                            "estimateStocksLevels":[
+                                {
+                                    "dynamicStock":"0",
+                                    "estimateDate":"1578672000000",
+                                    "safeLowerLimit":null,
+                                    "safeUpperLimit":null,
+                                    "stockStatus":"NORMAL"
+                                }
+                            ],
+                            "inStock":"6200000",
+                            "inStockUnit":"PCS",
+                            "inboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "inboundQuantities":null,
+                            "outboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"5200"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "outboundQuantities":[
+                                {
+                                    "dateTime":"1578672000000",
+                                    "quantity":"5200"
+                                }
+                            ],
+                            "plannedIn":"0",
+                            "plannedOut":"0",
+                            "warehouseCode":"Y1",
+                            "warehouseName":"Y1"
+                        }
+                    ],
+                    "mgtMode":"VMI",
+                    "partNo":"103S00091",
+                    "totalInStock":"9320000",
+                    "totalInStockUnit":"PCS",
+                    "totalInTransit":"0",
+                    "uom":"PCS"
+                },
+                {
+                    "id":"63d37e171054db1d8e5720d86a77b322",
+                    "inventorySituations":[
+                        {
+                            "availableStock":"1720000",
+                            "availableStockUnit":"PCS",
+                            "emergency":"SAFE",
+                            "estimateStocksLevels":[
+                                {
+                                    "dynamicStock":"0",
+                                    "estimateDate":"1578672000000",
+                                    "safeLowerLimit":null,
+                                    "safeUpperLimit":null,
+                                    "stockStatus":"NORMAL"
+                                }
+                            ],
+                            "inStock":"1720000",
+                            "inStockUnit":"PCS",
+                            "inboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "inboundQuantities":null,
+                            "outboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "outboundQuantities":null,
+                            "plannedIn":"0",
+                            "plannedOut":"0",
+                            "warehouseCode":"E2",
+                            "warehouseName":"E2"
+                        },
+                        {
+                            "availableStock":"7800000",
+                            "availableStockUnit":"PCS",
+                            "emergency":"SAFE",
+                            "estimateStocksLevels":[
+                                {
+                                    "dynamicStock":"0",
+                                    "estimateDate":"1578672000000",
+                                    "safeLowerLimit":null,
+                                    "safeUpperLimit":null,
+                                    "stockStatus":"NORMAL"
+                                }
+                            ],
+                            "inStock":"7800000",
+                            "inStockUnit":"PCS",
+                            "inboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"0"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "inboundQuantities":null,
+                            "outboundPolymerizationQuantities":{
+                                "4":{
+                                    "id":"4",
+                                    "quantity":"4000"
+                                },
+                                "5":{
+                                    "id":"5",
+                                    "quantity":"0"
+                                },
+                                "6":{
+                                    "id":"6",
+                                    "quantity":"0"
+                                },
+                                "7":{
+                                    "id":"7",
+                                    "quantity":"0"
+                                }
+                            },
+                            "outboundQuantities":[
+                                {
+                                    "dateTime":"1578672000000",
+                                    "quantity":"3200"
+                                },
+                                {
+                                    "dateTime":"1578844800000",
+                                    "quantity":"800"
+                                }
+                            ],
+                            "plannedIn":"0",
+                            "plannedOut":"0",
+                            "warehouseCode":"Y1",
+                            "warehouseName":"Y1"
+                        }
+                    ],
+                    "mgtMode":"VMI",
+                    "partNo":"103S00358",
+                    "totalInStock":"9520000",
+                    "totalInStockUnit":"PCS",
+                    "totalInTransit":"0",
+                    "uom":"PCS"
+                }
+            ]
+        },
+        "polymerizationRules":[
+            {
+                "beginDay":"0",
+                "endDay":"3",
+                "id":"4",
+                "title":"plannedInAndOutOneStage",
+                "titleDescribe":"0-3 Days Planned In&Out"
+            },
+            {
+                "beginDay":"4",
+                "endDay":"7",
+                "id":"5",
+                "title":"plannedInAndOutTwoStage",
+                "titleDescribe":"4-7 Days Planned In&Out"
+            },
+            {
+                "beginDay":"8",
+                "endDay":"15",
+                "id":"6",
+                "title":"plannedInAndOutThreeStage",
+                "titleDescribe":"8-15 Days Planned In&Out"
+            },
+            {
+                "beginDay":"16",
+                "endDay":null,
+                "id":"7",
+                "title":"plannedInAndOutThreeStage",
+                "titleDescribe":"16 Days+ Planned In&Out"
+            }
+        ]
+    },
+    "errorCode":null,
+    "errorData":null,
+    "errorType":null,
+    "message":null,
+    "success":true
+}
