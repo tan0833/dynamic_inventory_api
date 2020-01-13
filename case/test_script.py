@@ -35,16 +35,20 @@ class TestRunMain(unittest.TestCase):
         :param data:
         :return:
         '''
+        case_name = data['case_name']
+        case_id = data['case_id']
+        self._testMethodDoc = case_name
+        self.log.info('=======执行第%s条用例开始： %s ========'%(case_id,case_name))
         method = data['method']
-        url = self.request_url  + self.ro.replace_excel(data['path'])
+        url = self.request_url  + self.ro.replace_excel(data['path'])[0]
 
         header = data['header']
-        header = self.ro.replace_excel(header)
+        header = self.ro.replace_excel(header)[0]
         if header.startswith('{'):
             header = eval(header)
 
         params = data['params']
-        params = self.ro.replace_excel(params)
+        params = self.ro.replace_excel(params)[0]
         if params.startswith('{'):
             params = eval(params)
 
@@ -55,18 +59,31 @@ class TestRunMain(unittest.TestCase):
         result = self.run_main.run_main(method, url=url, data=params, header=header)
         self.ro.replace_global_value(global_value,result)
 
+        expect = data['expect']
+        if expect.startswith('['):
+            expect = eval(expect)
+            assert_res = self.ro.replace_expect(expect, result)
+            for i in assert_res:
+                self.log.info('断言结果：%s' % i)
+                eval(i)
+        self.log.info('\n\n' )
+
     @ddt.data(*d)
-    def test_run_mai(self,data):
+    def test_run_main(self,data):
+        case_name = data['case_name']
+        case_id = data['case_id']
+        self._testMethodDoc = case_name
+        self.log.info('=======执行第%s条用例开始： %s ========' % (case_id, case_name))
         method = data['method']
-        url = self.request_url + self.service + self.ro.replace_excel(data['path'])
+        url = self.request_url + self.service + self.ro.replace_excel(data['path'])[0]
 
         header = data['header']
-        header = self.ro.replace_excel(header)
+        header = self.ro.replace_excel(header)[0]
         if header.startswith('{'):
             header = eval(header)
 
         params = data['params']
-        params = self.ro.replace_excel(params)
+        params = self.ro.replace_excel(params)[0]
         if params.startswith('{'):
             params = eval(params)
 
@@ -76,6 +93,16 @@ class TestRunMain(unittest.TestCase):
 
         result = self.run_main.run_main(method, url=url, data=params, header=header)
         self.ro.replace_global_value(global_value, result)
+
+        expect = data['expect']
+        if expect.startswith('['):
+            expect = eval(expect)
+            assert_res = self.ro.replace_expect(expect,result)
+            for i in assert_res:
+                # self.log.info('断言结果：%s'%i)
+                eval(i)
+        self.log.info('\n\n')
+
 
 if __name__ == '__main__':
     unittest.main()
