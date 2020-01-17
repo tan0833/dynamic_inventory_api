@@ -9,10 +9,10 @@ from util.operate_global import GlobalDict
 #定义全局字典
 temp_dict = {}
 
-res = Operate_excel(Conf().get_file_path('data','测试接口.xlsx'),"登录")
+res = Operate_excel(Conf().get_file_path('data','客商门户查单.xlsx'),"登录")
 login = res.excel_dict()
 
-r = Operate_excel(Conf().get_file_path('data','测试接口.xlsx'),"动态库存")
+r = Operate_excel(Conf().get_file_path('data','客商门户查单.xlsx'),"客商门户")
 d = r.excel_dict()
 
 @ddt.ddt
@@ -23,10 +23,9 @@ class TestRunMain(unittest.TestCase):
         cls.conf = Conf()
         cls.log = Log()
         cls.request_url = cls.conf.get_value('request_url','url')
-        cls.service = cls.conf.get_value('service','dynamic')
+        cls.service = cls.conf.get_value('service','waybill_query')
         cls.ro = ReplaceOperte(temp_dict)
         cls.run_main = RunMain()
-
 
     @ddt.data(*login)
     def test_login(self,data):
@@ -40,15 +39,15 @@ class TestRunMain(unittest.TestCase):
         self._testMethodDoc = case_name
         self.log.info('=======执行第%s条用例开始： %s ========'%(case_id,case_name))
         method = data['method']
-        url = self.request_url  + self.ro.replace_excel(data['path'])[0]
+        url = self.request_url  + self.ro.replace_excel(data['path'])
 
         header = data['header']
-        header = self.ro.replace_excel(header)[0]
+        header = self.ro.replace_excel(header)
         if header.startswith('{'):
             header = eval(header)
 
         params = data['params']
-        params = self.ro.replace_excel(params)[0]
+        params = self.ro.replace_excel(params)
         if params.startswith('{'):
             params = eval(params)
 
@@ -68,6 +67,7 @@ class TestRunMain(unittest.TestCase):
                 eval(i)
         self.log.info('\n\n' )
 
+
     @ddt.data(*d)
     def test_run_main(self,data):
         case_name = data['case_name']
@@ -75,15 +75,15 @@ class TestRunMain(unittest.TestCase):
         self._testMethodDoc = case_name
         self.log.info('=======执行第%s条用例开始： %s ========' % (case_id, case_name))
         method = data['method']
-        url = self.request_url + self.service + self.ro.replace_excel(data['path'])[0]
+        url = self.request_url + self.service + self.ro.replace_excel(data['path'])
 
         header = data['header']
-        header = self.ro.replace_excel(header)[0]
+        header = self.ro.replace_excel(header)
         if header.startswith('{'):
             header = eval(header)
 
         params = data['params']
-        params = self.ro.replace_excel(params)[0]
+        params = self.ro.replace_excel(params)
         if params.startswith('{'):
             params = eval(params)
 
@@ -99,7 +99,7 @@ class TestRunMain(unittest.TestCase):
             expect = eval(expect)
             assert_res = self.ro.replace_expect(expect,result)
             for i in assert_res:
-                # self.log.info('断言结果：%s'%i)
+                self.log.info('断言结果：%s'%i)
                 eval(i)
         self.log.info('\n\n')
 
