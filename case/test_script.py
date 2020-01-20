@@ -9,10 +9,10 @@ from util.operate_global import GlobalDict
 #定义全局字典
 temp_dict = {}
 
-res = Operate_excel(Conf().get_file_path('data','客商门户查单.xlsx'),"登录")
+res = Operate_excel(Conf().get_file_path('data','动态库存测试用例.xlsx'),"登录")
 login = res.excel_dict()
 
-r = Operate_excel(Conf().get_file_path('data','客商门户查单.xlsx'),"客商门户")
+r = Operate_excel(Conf().get_file_path('data','动态库存测试用例.xlsx'),"库存列表")
 d = r.excel_dict()
 
 @ddt.ddt
@@ -23,7 +23,7 @@ class TestRunMain(unittest.TestCase):
         cls.conf = Conf()
         cls.log = Log()
         cls.request_url = cls.conf.get_value('request_url','url')
-        cls.service = cls.conf.get_value('service','waybill_query')
+        cls.service = cls.conf.get_value('service','dynamic')
         cls.ro = ReplaceOperte(temp_dict)
         cls.run_main = RunMain()
 

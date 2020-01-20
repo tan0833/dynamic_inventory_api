@@ -86,8 +86,10 @@ class ReplaceOperte:
                 self.log.debug('获取预期结果的键为：%s'%old_value)
                 new_value = self.global_dict.get_dict(old_value)
                 self.log.debug('从全局字典中获取预期结果：%s'%new_value)
-                res_value = jsonpath.jsonpath(result,res)[0]
-                self.log.debug('实际结果：%s'%res_value)
+                res_value = jsonpath.jsonpath(result, res)
+                if isinstance(res_value,list):
+                    res_value = jsonpath.jsonpath(result,res)[0]
+                    self.log.debug('实际结果：%s'%res_value)
                 if descript == 'Equal':
                     self.log.info('预期结果的%s:%s，实际结果的%s:%s'%(key,new_value,key,res_value))
                     temp_list.append('self.assertEqual("%s","%s")'%(new_value,res_value))
@@ -102,7 +104,9 @@ class ReplaceOperte:
                     temp_list.append('self.assertNotIn("%s","%s")' % (new_value, res_value))
 
             else:
-                res_value = jsonpath.jsonpath(result,res)[0]
+                res_value = jsonpath.jsonpath(result,res)
+                if  isinstance(res_value,list):
+                    res_value = jsonpath.jsonpath(result,res)[0]
                 if descript == 'Equal':
                     self.log.info('预期结果的%s:%s，实际结果的%s:%s' % (key, expect, key, res_value))
                     temp_list.append('self.assertEqual("%s","%s")'%(expect,res_value))

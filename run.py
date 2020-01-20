@@ -15,4 +15,4 @@ print(testCase.countTestCases())
 #执行测试用例
 runner = BeautifulReport(testCase)
 #生成测试报告
-runner.report(description='客商门户查单接口测试报告', filename='客商门户查单接口测试报告' + date + '.html', report_dir=report_dir)
+runner.report(description='动态库存接口测试报告', filename='动态库存接口测试报告' + date + '.html', report_dir=report_dir)

@@ -15,12 +15,12 @@ class Login:
         try:
             request_url = self.url + '/authentication/signIn'
             payload = {
-                          "clientId": "client",
-                          "password": "WEBex123",
-                          "redirectUrl": "string",
-                          "route": "string",
-                          "username": "INNOLUX"
-                        }
+                      "clientId": "client",
+                      "password": "Mima123!",
+                      "redirectUrl": "string",
+                      "route": "string",
+                      "username": "MLB2-TEST01"
+                    }
 
             payload = json.dumps(payload)
             headers = {
