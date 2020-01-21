@@ -12,8 +12,13 @@ temp_dict = {}
 res = Operate_excel(Conf().get_file_path('data','动态库存测试用例.xlsx'),"登录")
 login = res.excel_dict()
 
-r = Operate_excel(Conf().get_file_path('data','动态库存测试用例.xlsx'),"库存列表")
+r = Operate_excel(Conf().get_file_path('data','动态库存测试用例-dtp.xlsx'),"首页入库出库")
 d = r.excel_dict()
+
+r1 = Operate_excel(Conf().get_file_path('data','动态库存测试用例.xlsx'),"库存列表")
+d1 = r1.excel_dict()
+
+d.extend(d1)
 
 @ddt.ddt
 class TestRunMain(unittest.TestCase):
