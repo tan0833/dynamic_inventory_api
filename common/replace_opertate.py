@@ -125,9 +125,9 @@ class ReplaceOperte:
 
 
 if __name__ == '__main__':
-
+    from util.test_01 import b
     y = {'a':'13981754228','b':'测试'}
-    x ="{'x':'${#a}','y':'${#b}'}"
+    x ="{'x':'${#a}','y':'${b}'}"
     r = ReplaceOperte(y)
     g = GlobalDict(y)
 

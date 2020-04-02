@@ -30,6 +30,19 @@ class Conf:
         # self.log.info('文件路径为：{}'.format(file_path))
         return file_path
 
+    def is_url(self, url):
+        '''
+        判断url是uat还是sit
+        :param url:
+        :return:
+        '''
+        if 'j1' in url:
+            return 'SIT'
+        elif 'j2' in url:
+            return 'UAT'
+        elif 'dev' in url:
+            return 'DEV'
+
 if __name__ == '__main__':
     c = Conf()
     x = c.get_file_path('usual_url','url')

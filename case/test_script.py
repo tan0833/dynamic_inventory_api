@@ -32,6 +32,7 @@ class TestRunMain(unittest.TestCase):
         cls.ro = ReplaceOperte(temp_dict)
         cls.run_main = RunMain()
 
+
     @ddt.data(*login)
     def test_login(self,data):
         '''
