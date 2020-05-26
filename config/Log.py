@@ -22,13 +22,13 @@ class Log:
     def __console(self,level,message):
         '''创建一个FileHandler,用于写入本地'''
         fh  = logging.FileHandler(self.logname,'a',encoding='utf-8')
-        fh.setLevel(logging.INFO)
+        fh.setLevel(logging.DEBUG)
         fh.setFormatter(self.formatter)
         self.logger.addHandler(fh)
 
         #创建一个StreamHandler，用于输出到控制台
         ch = logging.StreamHandler()
-        ch.setLevel(logging.INFO)
+        ch.setLevel(logging.DEBUG)
         ch.setFormatter(self.formatter)
         self.logger.addHandler(ch)
 

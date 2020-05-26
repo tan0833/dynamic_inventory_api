@@ -1,4 +1,4 @@
-1.获取变量格式为：${变量名}，模糊查询获取变量格式为：${#变量名}
+1.获取变量格式为：${变量名}，模糊查询获取变量格式为：${#变量名} 获取随机数${@变量名(GBK,INT,SYMBOL,LETTER)}
 2.预期结果书写格式为：[['Equal','${变量名}','$..aa'],['In','${#变量名}','$..aa']]
     Equal:相等断言
     In：包含断言
@@ -10,3 +10,6 @@
 4.修改环境在config.conf.ini中修改url和service
 5.test_script.py中修改需要执行的测试用例路径和sheet
 6.在data中添加excel
+
+
+特殊说明：replace_opertate.py中的replace_global_value函数new_value的值 sit为0，uat为-1

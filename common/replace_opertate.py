@@ -1,4 +1,4 @@
-import re,json,jsonpath
+import re,json,jsonpath,random
 from config.get_conf import Conf
 from util.operate_global import GlobalDict
 from config.Log import Log
@@ -8,6 +8,38 @@ class ReplaceOperte:
     def __init__(self,dict):
         self.log = Log()
         self.global_dict = GlobalDict(dict)
+
+    def replace_random(self,random_value='GBK'):
+        '''
+        随机生成汉字，数字，特殊符号写入全局字典
+        :param random_value:
+        :return:
+        '''
+
+        if random_value == 'GBK':
+            cities_name = ["成都","武汉","南京","杭州","北京","广州","上海","西安","天津","沈阳","宁波","深圳","郑州","南宁","长沙","哈尔滨","台北","厦门","宁波"]
+            compellation = ["下单","查单","运输","库存","采购","销售","服务","测试","搜索","物流","交通","服务"]
+            company_type = ["有限公司","服务有限公司","责任有限公司","贸易有限公司","咨询有限公司","厂","经营部","集团有限公司"]
+            company_name = random.choice(cities_name) + random.choice(compellation) +random.choice(company_type)
+            self.global_dict.set_dict('GBK',company_name)
+
+        elif random_value == 'INT':
+            digit = random.randint(0, 99999999)
+            self.global_dict.set_dict('INT', str(digit))
+
+        elif random_value == 'SYMBOL':
+            symbol_name = ['`','~','!','@','#','$','%','^','&','*','(',')','-','_','+','=','{','[','}',']',':',';','"','\,','|',
+                           '\\','<',',','.','>','?','/',' ']
+            symbol = random.choice(symbol_name)
+            self.global_dict.set_dict('SYMBOL',symbol)
+
+        elif random_value == 'LETTER':
+            H = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+            letter = ''
+            for i in range(6):
+                letter = letter + random.choice(H)
+            self.global_dict.set_dict('LETTER',letter)
+
 
     def replace_global_value(self,global_dict,result):
         '''
@@ -21,7 +53,10 @@ class ReplaceOperte:
                 if not isinstance(new_value,bool):
                     new_value = jsonpath.jsonpath(result, value)[0]
                 if new_value:
-                    self.global_dict.set_dict(key,new_value)
+                    if isinstance(new_value,int):
+                        self.global_dict.set_dict(key,str(new_value))
+                    else:
+                        self.global_dict.set_dict(key, new_value)
 
     def replace_excel(self,params):
         '''
@@ -30,7 +65,7 @@ class ReplaceOperte:
         '''
         self.log.debug(u'替换前的参数：%s'%params)
         new_params = params
-        while re.search(r'\${#.+?}',new_params,re.M) or re.search(r'\${.+?}',new_params,re.M):
+        while re.search(r'\${#.+?}',new_params,re.M) or re.search(r'\${@.+?}',new_params,re.M) or re.search(r'\${.+?}',new_params,re.M) :
             #判断是否包含$#用于模糊查询替换
             if re.findall(r'\${#.+?}',new_params,re.M):
                 for i in re.findall(r'\${#.+?}',new_params,re.M):
@@ -53,7 +88,23 @@ class ReplaceOperte:
                                 self.log.debug(u'%s为:%s' % (new_value,type(new_value)))
                         new_params = re.sub(r'\${#%s}'%i,new_value,new_params)
                     self.log.debug(u'替换后的参数为：%s'%new_params)
-                # return new_params
+
+            #判断是否包含$@用于生成随机数查询替换
+            elif re.findall(r'\${@.+?}', new_params, re.M):
+                for i in re.findall(r'\${@.+?}', new_params, re.M):
+                    if re.search(r'\${@(.+?)}', i):
+                        i = re.search(r'\${@(.+?)}', i).group(1)
+                        self.log.debug(u'获取全局变量名：%s' % i)
+                        self.replace_random(i) #生成随机数
+                        new_value = ''
+                        # 判断在全局变量中能否找到对应的键
+                        if self.global_dict.get_dict(i):
+                            new_value = self.global_dict.get_dict(i)
+                            self.log.debug(u'全局变量返回的的值：%s' % new_value)
+                        new_params = re.sub(r'\${@%s}' % i, new_value, new_params)
+                        self.log.debug(u'替换后的参数为：%s' % new_params)
+
+
             #判断是否包含$用于精准查询替换
             elif re.findall(r'\${(.+?)}',new_params,re.M):
                 for i in re.findall(r'\${(.+?)}',new_params,re.M):
@@ -64,7 +115,7 @@ class ReplaceOperte:
                         self.log.debug(u'全局变量返回的的值：%s' % new_value)
                     new_params = re.sub(r'\${%s}'%i,new_value,new_params)
                     self.log.debug(u'替换后的参数为：%s' % new_params)
-                # return new_params
+
             #不用替换
             else:
                 self.log.debug(u'未做任何替换的参数为：%s' % params)
@@ -125,9 +176,9 @@ class ReplaceOperte:
 
 
 if __name__ == '__main__':
-    from util.test_01 import b
+    # y = {}
     y = {'a':'13981754228','b':'测试'}
-    x ="{'x':'${#a}','y':'${b}'}"
+    x ="{'x':'${#a}','y':'${#b}'}"
     r = ReplaceOperte(y)
     g = GlobalDict(y)
 

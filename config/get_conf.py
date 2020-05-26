@@ -30,7 +30,7 @@ class Conf:
         # self.log.info('文件路径为：{}'.format(file_path))
         return file_path
 
-    def is_url(self, url):
+    def is_url(self,url):
         '''
         判断url是uat还是sit
         :param url:
