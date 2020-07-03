@@ -1,5 +1,5 @@
 from configparser import ConfigParser
-import os
+import os,yaml
 from config.Log import Log
 
 class Conf:
@@ -43,7 +43,21 @@ class Conf:
         elif 'dev' in url:
             return 'DEV'
 
+    def get_yaml(self,yaml_file):
+        '''
+        将yaml文件转换为字典
+        :param yaml_file: yaml文件
+        :return:
+        '''
+        fp = open(yaml_file,encoding='utf-8')
+        result = yaml.safe_load(fp)
+        fp.close()
+        return result
+
+
 if __name__ == '__main__':
     c = Conf()
-    x = c.get_file_path('usual_url','url')
-    print(x)
+    x = c.get_file_path('config','excel_file.yml')
+
+    b = c.get_yaml(x)
+    print(b)

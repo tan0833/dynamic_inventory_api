@@ -29,7 +29,7 @@ class ReplaceOperte:
 
         elif random_value == 'SYMBOL':
             symbol_name = ['`','~','!','@','#','$','%','^','&','*','(',')','-','_','+','=','{','[','}',']',':',';','"','\,','|',
-                           '\\','<',',','.','>','?','/',' ']
+                           ' ·@*|','<',',','.','>','?','/',' ']
             symbol = random.choice(symbol_name)
             self.global_dict.set_dict('SYMBOL',symbol)
 
@@ -51,7 +51,14 @@ class ReplaceOperte:
             for key,value in global_dict.items():
                 new_value = jsonpath.jsonpath(result,value)
                 if not isinstance(new_value,bool):
-                    new_value = jsonpath.jsonpath(result, value)[0]
+                    #获取jsonpath 列表的随机数
+
+                    if len(new_value)>1:
+                        new_value_len = random.randint(0, len(new_value) - 1)
+                        new_value = jsonpath.jsonpath(result, value)[new_value_len]
+                    else:
+                        new_value = jsonpath.jsonpath(result, value)[0]
+
                 if new_value:
                     if isinstance(new_value,int):
                         self.global_dict.set_dict(key,str(new_value))

@@ -1,0 +1,16 @@
+
+#查询发送oms状态
+SELECT demand_status_code,send_status, status_call_back_info from shipment_demand where  id = '4448345079268843520'
+
+select a.id,a.demand_status_code,a.send_status,a.status_call_back_info,* from shipment_demand a where  a.demand_status_code='2'
+
+
+
+
+select demand_status_code ,count(*) from shipment_demand group by demand_status_code;
+
+#查询附件发送状态
+SELECT * from message_record where message_type in ('SEND_ORDER_ATTACHMENT', 'PULL_ORDER_ATTACHMENT');
+
+
+

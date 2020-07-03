@@ -16,7 +16,19 @@ class RunMain:
         :param file:需上传文件
         :return:响应结果信息
         '''
-        self.log.info(u'\n请求方法：%s\n请求地址：%s\n请求参数：%s\n请求头部：%s\n上传文件名称：%s'%(method,url,data,header,file))
+        if isinstance(header,dict):
+            header_result = json.dumps(header, sort_keys=True, indent=4, separators=(',', ':'),
+                                         ensure_ascii=False)
+        else:
+            header_result = header
+
+        if isinstance(data,dict):
+            data_result = json.dumps(data, sort_keys=True, indent=4, separators=(',', ':'),
+                                         ensure_ascii=False)
+        else:
+            data_result = data
+
+        self.log.info(u'\n请求方法：%s\n请求地址：%s\n请求参数：%s\n请求头部：%s\n上传文件名称：%s'%(method,url,data_result,header_result,file))
         if method.upper() == 'GET':
             try:
                 result = requests.request(method=method,url=url,params=data,headers = header)

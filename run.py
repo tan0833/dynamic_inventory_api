@@ -19,4 +19,3 @@ print(testCase.countTestCases())
 runner = BeautifulReport(testCase)
 # #生成测试报告
 runner.report(description='运输下单%s接口测试报告'%environment_name, filename='运输下单%s接口测试报告'%environment_name + date + '.html', report_dir=report_dir)
-# runner.report(description='运输查询文字版SIT接口测试报告', filename='运输查询文字版SIT接口测试报告'+date + '.html', report_dir=report_dir)
