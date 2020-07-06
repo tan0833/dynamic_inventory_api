@@ -148,15 +148,15 @@ class TestRunMain(unittest.TestCase):
         self.log.info('\n\n')
 
 
-    def test_temp_dict(self):
-        '''
-        查看全局字典
-        :return:
-        '''
-        import json
-        a = json.dumps(temp_dict, sort_keys=True, indent=4, separators=(',', ':'),
-                                                 ensure_ascii=False)
-        self.log.info(a)
+    # def test_temp_dict(self):
+    #     '''
+    #     查看全局字典
+    #     :return:
+    #     '''
+    #     import json
+    #     a = json.dumps(temp_dict, sort_keys=True, indent=4, separators=(',', ':'),
+    #                                              ensure_ascii=False)
+    #     self.log.info(a)
 
 
 if __name__ == '__main__':
