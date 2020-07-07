@@ -23,7 +23,8 @@ class ReplaceOperte:
                            ]
             compellation = ["下单","查单","运输","库存","采购","销售","服务","测试","搜索","物流","交通","服务"]
             company_type = ["有限公司","服务有限公司","责任有限公司","贸易有限公司","咨询有限公司","厂","经营部","集团有限公司","集团总部"]
-            company_name = random.choice(cities_name) + random.choice(compellation) +random.choice(company_type)
+            char_one = chr(random.randint(0x4e00, 0x9fbf))+chr(random.randint(0x4e00, 0x9fbf))
+            company_name = random.choice(cities_name) + char_one + random.choice(compellation) +random.choice(company_type)
             self.global_dict.set_dict('GBK',company_name)
 
         elif random_value == 'INT':
@@ -42,6 +43,10 @@ class ReplaceOperte:
             for i in range(6):
                 letter = letter + random.choice(H)
             self.global_dict.set_dict('LETTER',letter)
+
+        elif random_value == 'CHAR':
+            char_one = chr(random.randint(0x4e00, 0x9fbf)) + chr(random.randint(0x4e00, 0x9fbf))
+            self.global_dict.set_dict('CHAR',char_one)
 
 
     def replace_global_value(self,global_dict,result):
