@@ -1,0 +1,114 @@
+
+cargowise:
+ ShippingContact: createdBy #下单人
+ TransportMode: shippingModeCode #运输方式
+ ContainerMode: loadingTypeCode #配载方式
+ ShipmentIncoTerm: incotermsCode #贸易术语
+ PlaceOfReceipt: originCityId #起运地 五字码
+ PortOfDestination: destinationCityId #目的地
+ PortOfLoading: originSeaportId #起运港 五字码
+ PlaceOfDelivery: dischargeSeaportId #目的港 五字码
+ ETD: etd
+ ETA: eta
+ PickupRequiredBy: requiredPickupTime #要求出货时间
+ HBLContainerPackModeOverride: serviceModeCode #服务类型
+ ReleaseType: billOfLadingTypeCode #提单类型
+ TranshipmentAllowed: transhipmentAllowed #是否中转
+ PartialShipmentAllowed: partialShipmentAllowed #是否分批
+ Insurance: insurance #保价
+ GoodsValue: CargoValue #货值
+ GoodsValueCurrency: currencyCode #币别
+ InsuranceValue: insuredValue #投保价值
+ CargoType: dangerousCargo #危险品
+ DocumentWeight: grossWeight #重量
+ DocumentWeightUnit: grossWeightUnitCode #重量单位
+ DocumentVolume: totalVolume #体积
+ DocumentVolumeUnit: totalVolumeUnitCode #体积单位
+ OuterPacks: packageQuantity #包装数量
+ OuterPacksUnit: packageUnitCode #包装单位
+ TotalNoOfPacks: pieceQty #板数
+ BulkCarton: bulkCartonQty #散箱数
+ GoodsDescription: cargoDescription #货物描述
+ PaymentMethod: paymentTypeCode #付款方式
+ NoteText: remarks #备注
+ AddressType: shipper # 地址类型，shipper ，consignee，notifyParty，destination
+ OrganizationName: contactPartnerName #公司名称 收发货方公司名称
+ Address1: addressCode #公司地址
+ Country: countryCode #国家编码
+ State: provinceCode #省
+ City: cityCode #城市
+ RegionCode: AdministrativeRegion #行政区域编码
+ Contact: contactName #联系人
+ Email: email
+ telephoneArea: telephoneArea #座机区号
+ Phone: telephoneNumber #座机
+ mobileArea: mobileArea #手机区号
+ Mobile: mobileNumber #手机号
+ PostCode: postCode #邮政编码
+ Type: selfProvidedCabinet #增值服务类型--是否自备柜
+ Value: entrustCustomsDeclaration #委托报关
+ ContainerType: containerSizeCode #集装箱尺寸
+ ContainerCount: requestContainerQty #集装箱数量
+ ReferenceNo: referenceNo #参考单号
+ LineNo: referenceLineNo #参考单项次
+ PartNo: companyPn #料号
+ InvoiceNo: invoiceNumber #发票号
+ HsCode: hsCode #海关编码
+ PackType: packageUnitCode #外包裝单位
+ PackQty: packageQuantity #外包装数量
+
+ideas:
+  orderType: shippingModeCode #运输方式
+  consignor: Consignor #账号公司名称
+  requiredPickupTime: requiredPickupTime #要求出货日期
+  requiredArrivalTime: requiredArrivalTime #要求到货日期
+  wholePalletNum: pieceQty #总板数 待确定
+  wholeCartonNum: packageQuantity #包装数量
+  partsCartonNum: bulkCartonQty #散箱数
+  totalVolume: totalVolume #体积
+  totalGrossWeight: grossWeight #重量
+  loadingMethod: loadingTypeCode #配载方式
+  species: vehicleTypeCode #车辆类型
+  spec: vehicleSpecificationCode #车辆规格
+  customsSupervision: needCustomsSupervision #是否海关监管
+  num: vehicleQty #车辆数量
+  type: escortTypeCode #增值服务类型
+  value: POD #增值服务类型 false true
+  cargoValue: cargoValue #货物价值
+  currency: currencyCode #币别
+  addressType: shipper #地址类型，shipper和consignee必传
+  companyName: contactPartnerName #收发货方公司名称
+  Contact: contactName #联系人
+  Phone: telephoneNumber #座机
+  Mobile: mobileNumber #手机
+  Email: email
+  mobileAreaCode: mobileArea #手机区号
+  mobileArea: Area #行政区域
+  country: countryCode #国家编码
+  state: provinceCode #省
+  city: cityCode #城市
+  district: districtCode #区县
+  postcode: postCode #邮编
+  address: Addr #详细地址
+  costcode: costCode #费用代码
+  originPort: originSeaportId #起运港
+  destinationPort: dischargeSeaportId #目的港
+  transCompany: CarrierName #承运商
+  carrierSLA: CarrierProduct #承运商服务等级
+  notify: NotifyParty #通知方
+  paymentType: paymentTypeCode #付款方式
+  bLPName: uturnAreaCode #一日游区域
+  bLPDocument: uturnDocumentCode #一日游文件
+  businessWay: needContainerJit #货柜JIT
+  fieldName: ContainerNO #柜号
+  lineNO: referenceLineNo #行号
+  saleOrderCode: referenceNo #参考单号
+  itemNo: companyPn #料号
+  itemName: descriptionGoods #品名
+  packageUnit: packageUnitCode #包装单位
+  quantity: packageQuantity #包装数量
+  hscode: hsCode #海关编码
+  invoiceNo: invoiceNumber #发票号
+
+
+

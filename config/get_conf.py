@@ -57,7 +57,7 @@ class Conf:
 
 if __name__ == '__main__':
     c = Conf()
-    x = c.get_file_path('config','excel_file.yml')
+    x = c.get_file_path('config','ideas_cargowise_map.yml')
 
     b = c.get_yaml(x)
     print(b)
