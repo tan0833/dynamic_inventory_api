@@ -1,0 +1,18 @@
+cargowise:
+ 下单人:
+  - ShippingContact
+  - createdBy
+
+ 运输方式:
+  - TransportMode
+  - shippingModeCode
+
+ 配载方式:
+  - ContainerMode
+  - loadingTypeCode
+
+
+
+
+
+

@@ -1,8 +1,40 @@
-import json
+import json,jsonpath
 
 
 
 class Compare_dict:
+
+    def src_dest_equal(self,src_dict,dest_dict,map_dict):
+        '''
+        判断两个字典对应映射字段值是否相同
+        :param src_dict: 第一个
+        :param dest_dict: 第二个
+        :param map_dict: 映射字典
+        :return: 将相同和不同的分类
+        '''
+        equal_list = []
+        not_equal_list = []
+        if isinstance(src_dict,dict) and isinstance(dest_dict,dict) :
+            for key in map_dict.keys():
+                src_key,dest_key = map_dict.get(key)
+                src_value = jsonpath.jsonpath(src_dict,'$..%s'%src_key)
+                dest_value = jsonpath.jsonpath(dest_dict,'$..%s'%dest_key)
+                if src_value == dest_value:
+                    temp_dict01 = {}
+                    temp_dict = {}
+                    temp_dict01[src_key] = src_value
+                    temp_dict01[dest_key] = dest_value
+                    temp_dict[key] = temp_dict01
+                    equal_list.append(temp_dict)
+                else:
+                    temp_dc = {}
+                    temp_d01 = {}
+                    temp_dc[src_key] = src_value
+                    temp_dc[dest_key] = dest_value
+                    temp_d01[key]=temp_dc
+                    not_equal_list.append(temp_d01)
+        return {'equal':equal_list,'not_equal':not_equal_list}
+
 
     def recursion_dict(self):
         __temp_list = []
@@ -68,10 +100,10 @@ if __name__ == '__main__':
 
     a = Compare_dict()
     # b = a.print_keyvalue_all(date_json)
-    a01 = {'a': 'b', 'c': 'd'}
+    a01 = {'a': ['a','aa'], 'b':['c','d'],'c':['e','f'],'d':['f','b'] }
 
-    aa = {"a": 11, "c": 12, 'd': [{"e": 11}, {"e": 13}]}
-    bb = {"aa": 11, "d": 12, 'f': [{"f": 11}, {"b": 13}]}
+    aa = {"a": 11, "c": 12, 'd': [{"e": 11}, {"f": 13}]}
+    bb = {"aa": 11, "d": 12, 'f': [{"f": 12}, {"b": 13}]}
 
     aa_1 = a.recursion_dict()
     bb_1 = a.recursion_dict()
@@ -81,8 +113,10 @@ if __name__ == '__main__':
 
     c = {"key":"value","3":"4","5":"6"}
 
-    # d = a.dict_replace_list(c,c)
-    # print(d)
+    d = a.src_dest_equal(aa,bb,a01)
+    print(d)
+
+
 
 
 

@@ -5,18 +5,18 @@ import json
 conf = Conf()
 cd = Compare_dict()
 
-yaml_path = conf.get_file_path('config','ideas_cargowise_map.yml')
+yaml_path = conf.get_file_path('config','ideas_cargowise_mapping.yml')
 
-map_dict = conf.get_yaml(yaml_path).get('ideas')
+map_dict = conf.get_yaml(yaml_path).get('cargowise')
 
 ideas_path = conf.get_file_path('test_data','ideas.json')
 demand_path = conf.get_file_path('test_data','shipment-deand.json')
 
 with open(ideas_path,'r',encoding='utf-8') as load_f:
-    ideas_dict = json.load(load_f)['4470056766015864832']
+    ideas_dict = json.load(load_f)['4470057186922659840']
 
 with open(demand_path,'r',encoding='utf-8') as load_f:
-    demand_dict = json.load(load_f)['4470056766015864832']
+    demand_dict = json.load(load_f)['4470057186922659840']
 
 # a  = {'a':'b','c':'d'}
 #
@@ -33,18 +33,20 @@ with open(demand_path,'r',encoding='utf-8') as load_f:
 
 # print(aa_1)
 
-ideas_1 = cd.recursion_dict()(ideas_dict)
-demand_1 = cd.recursion_dict()(demand_dict)
-
-ideas = cd.dict_replace_list(map_dict,ideas_1)
-demand = cd.dict_replace_list(map_dict,demand_1)
+# ideas_1 = cd.recursion_dict()(ideas_dict)
+# demand_1 = cd.recursion_dict()(demand_dict)
+#
+# ideas = cd.dict_replace_list(map_dict,ideas_1)
+# demand = cd.dict_replace_list(map_dict,demand_1)
 
 # print(ideas.intersection(demand_1))
 
-print(ideas.difference(demand))
+# print(ideas.difference(demand))
 # print(demand.difference(ideas))
 
+a = cd.src_dest_equal(ideas_dict,demand_dict,map_dict)
 
+print(a)
 
 
 
