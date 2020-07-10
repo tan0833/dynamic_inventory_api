@@ -11,6 +11,427 @@ cargowise:
   - ContainerMode
   - loadingTypeCode
 
+ 贸易术语:
+  - ShipmentIncoTerm
+  - incotermsCode
+
+ 起运地:
+  - PlaceOfReceipt
+  - originCityId
+
+ 目的地:
+  - PortOfDestination
+  - destinationCityId
+
+ 起运港_海港:
+  - PortOfLoading
+  - originSeaportId
+
+ 目的港_海港:
+  - PlaceOfDelivery
+  - dischargeSeaportId
+
+ 起运港_空港:
+  - PortOfLoading
+  - originAirportId
+
+ 目的港_空港:
+  - PlaceOfDelivery
+  - dischargeAirportId
+
+ 预计出发时间:
+  - ETD
+  - etd
+
+ 预计到达时间:
+  - ETA
+  - eta
+
+ 要求出货时间:
+  - PickupRequiredBy
+  - requiredPickupTime
+
+ 服务类型:
+  - HBLContainerPackModeOverride
+  - serviceModeCode
+
+ 提单类型:
+  - ReleaseType
+  - billOfLadingTypeCode
+
+ 是否中转:
+  - TranshipmentAllowed
+  - transhipmentAllowed
+
+ 是否分批:
+  - PartialShipmentAllowed
+  - partialShipmentAllowed
+
+ 保价:
+  - Insurance
+  - insurance
+
+ 货值:
+  - GoodsValue
+  - cargoValue
+
+ 币别:
+  - GoodsValueCurrency
+  - currencyCode
+
+ 危险品:
+  - CargoType
+  - cargoTypeName
+
+ 重量:
+  - DocumentWeight
+  - grossWeight
+
+ 重量单位:
+  - DocumentWeightUnit
+  - grossWeightUnitCode
+
+ 体积:
+  - DocumentVolume
+  - totalVolume
+
+ 体积单位:
+  - DocumentVolumeUnit
+  - totalVolumeUnitCode
+
+ 包装数量:
+  - OuterPacks
+  - totalPackageQty
+
+ 包装单位:
+  - OuterPacksUnit
+  - bulkCartonQtyUnitCode
+
+ 板数:
+  - TotalNoOfPacks
+  - pieceQty
+
+ 散箱数:
+  - BulkCarton
+  - bulkCartonQty
+
+ 货物描述:
+  - GoodsDescription
+  - cargoDescription
+
+ 付款方式:
+  - PaymentMethod
+  - paymentTypeCode
+
+ 备注:
+  - NoteText
+  - remarks
+
+ 地址类型:
+  - AddressType
+  - shipper
+
+ 公司名称:
+  - OrganizationName
+  - contactPartnerName
+
+ 公司地址:
+  - Address1
+  - addressDetail
+
+ 国家编码:
+  - Country
+  - countryCode
+
+ 省:
+  - State
+  - provinceCode
+
+ 城市:
+  - City
+  - cityCode
+
+ 行政区域编码:
+  - RegionCode
+  - AdministrativeRegion
+
+ 联系人:
+  - Contact
+  - contactName
+
+ 邮箱:
+  - Email
+  - email
+
+ 座机:
+  - Phone
+  - telephoneNumber
+
+ 手机号:
+  - Mobile
+  - mobileNumber
+
+ 邮编:
+  - PostCode
+  - postCode
+
+ 增值服务类型:
+  - Type
+  - selfProvidedCabinet
+
+ 委托报关:
+  - Value
+  - entrustCustomsDeclaration
+
+ 集装箱尺寸:
+  - ContainerType
+  - containerSizeCode
+
+ 集装箱数量:
+  - ContainerCount
+  - requestContainerQty
+
+ 参考单号:
+  - ReferenceNo
+  - referenceNo
+
+ 参考单项次:
+  - LineNo
+  - referenceLineNo
+
+ 料号:
+  - PartNo
+  - companyPn
+
+ 发票号:
+  - InvoiceNo
+  - invoiceNumber
+
+ 海关编码:
+  - HsCode
+  - hsCode
+
+ 外包裝单位:
+  - PackType
+  - packageUnitCode
+
+ 外包装数量:
+  - PackQty
+  - packageQuantity
+
+ideas:
+ 运输方式:
+  - orderType
+  - shippingModeCode
+
+ 账号公司名称:
+  - consignor
+  - Consignor
+
+ 要求出货日期:
+  - requiredPickupTime
+  - requiredPickupTime
+
+ 要求到货日期:
+  - requiredArrivalTime
+  - requiredArrivalTime
+
+ 总板数:
+  - wholePalletNum
+  - pieceQty
+
+ 包装数量:
+  - wholeCartonNum
+  - packageQuantity
+
+ 散箱数:
+  - partsCartonNum
+  - bulkCartonQty
+
+ 体积:
+  - totalVolume
+  - totalVolume
+
+ 重量:
+  - totalGrossWeight
+  - grossWeight
+
+ 配载方式:
+  - loadingMethod
+  - loadingTypeCode
+
+ 车辆类型:
+  - species
+  - vehicleTypeCode
+
+ 车辆规格:
+  - spec
+  - vehicleSpecificationCode
+
+ 是否海关监管:
+  - customsSupervision
+  - needCustomsSupervision
+
+ 车辆数量:
+  - num
+  - vehicleQty
+
+ 增值服务类型:
+  - type
+  - escortTypeCode
+
+ 增值服务类型值:
+  - value
+  - POD
+
+ 货物价值:
+  - cargoValue
+  - cargoValue
+
+ 币别:
+  - currency
+  - currencyCode
+
+ 地址类型:
+  - addressType
+  - shipper
+
+ 收发货方公司名称:
+  - companyName
+  - contactPartnerName
+
+ 联系人:
+  - Contact
+  - contactName
+
+ 座机:
+  - Phone
+  - telephoneNumber
+
+ 手机:
+  - Mobile
+  - mobileNumber
+
+ 邮箱:
+  - Email
+  - email
+
+ 手机区号:
+  - mobileAreaCode
+  - mobileArea
+
+ 行政区域:
+  - mobileArea
+  - mobileArea
+
+ 国家编码:
+  - country
+  - countryCode
+
+ 省:
+  - state
+  - provinceCode
+
+ 城市:
+  - city
+  - cityCode
+
+ 区县:
+  - district
+  - districtCode
+
+ 邮编:
+  - postcode
+  - postCode
+
+ 详细地址:
+  - address
+  - Addr
+
+ 费用代码:
+  - costcode
+  - costCode
+
+ 起运港_海港:
+  - originPort
+  - originSeaportId
+
+ 目的港_海港:
+  - destinationPort
+  - dischargeSeaportId
+
+ 起运港_空港:
+  - originPort
+  - originAirportId
+
+ 目的港_空港:
+  - destinationPort
+  - dischargeAirportId
+
+ 承运商:
+  - transCompany
+  - CarrierName
+
+ 承运商服务等级:
+  - carrierSLA
+  - CarrierProduct
+
+ 通知方:
+  - notify
+  - NotifyParty
+
+ 付款方式:
+  - paymentType
+  - paymentTypeCode
+
+ 一日游区域:
+  - bLPName
+  - uturnAreaCode
+
+ 一日游文件:
+  - bLPDocument
+  - uturnDocumentCode
+
+ 货柜JIT:
+  - businessWay
+  - needContainerJit
+
+ 柜号:
+  - fieldName
+  - ContainerNO
+
+ 行号:
+  - lineNO
+  - referenceLineNo
+
+ 参考单号:
+  - saleOrderCode
+  - referenceNo
+
+ 料号:
+  - itemNo
+  - companyPn
+
+ 品名:
+  - itemName
+  - descriptionGoods
+
+ 包装单位:
+  - packageUnit
+  - totalPackageQtyUnitCode
+
+ 数量:
+  - quantity
+  - packageQuantity
+
+ 海关编码:
+  - hscode
+  - hsCode
+
+ 发票号:
+  - invoiceNo
+  - invoiceNumber
+
 
 
 

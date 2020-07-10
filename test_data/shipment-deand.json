@@ -1,11 +1,10 @@
 {
-"4470057186922659840":{
     "data": {
         "audit": {
-            "createdBy": "4469904672632541184",
-            "createdTime": "1594124970051",
-            "lastModifiedBy": "4469904672632541184",
-            "lastModifiedTime": "1594124974916",
+            "createdBy": "4428361352353673216",
+            "createdTime": "1594282941590",
+            "lastModifiedBy": "4428361352353673216",
+            "lastModifiedTime": "1594283002186",
             "proxyOperator": null,
             "orgId": "4403722516546199554"
         },
@@ -13,903 +12,139 @@
             "multiTenancyCode": "TEN_4403722516546199552",
             "multiTenancyName": "中国惠普有限公司"
         },
-        "id": "4470057186922659840",
+        "id": "4471414147480133632",
         "transnationalShipment": true,
-        "shippingModeCode": "TPM_SEA",
+        "shippingModeCode": "TPM_AIR",
         "shippingModeName": null,
         "shipmentOrderNo": null,
         "requestAccount": {
-            "requestAccountId": "4469904672632541184",
-            "requestAccountName": "HP01",
-            "requestAccountTel": "+86-13708330833",
-            "requestAccountMail": "123456789@123456.COM"
+            "requestAccountId": "4428361352353673216",
+            "requestAccountName": "HP",
+            "requestAccountTel": "+86-123456",
+            "requestAccountMail": "11@qq.com"
         },
         "demandStatusCode": "REJECT",
         "demandStatusName": "被驳回",
         "referenceOrderNos": [
-            "123564",
-            "P12345!"
+            "123456789"
         ],
         "shippingInfo": {
             "shipper": {
-                "contactPartnerId": "4470056362285887488",
-                "contactPartnerName": "合肥顥芒下单有限公司",
+                "contactPartnerId": "4454877492598005760",
+                "contactPartnerName": "厦门交通有限公司",
                 "contactPartnerType": "SHIPPER",
                 "tenantCode": null,
                 "companyId": null,
-                "addressAbbreviation": "黄墩镇",
-                "addressCode": "SST201161",
-                "countryCode": "CY",
-                "countryName": "塞浦路斯",
-                "provinceCode": "CY-03",
-                "provinceName": "Larnaka",
-                "cityCode": "SCI213788",
-                "cityName": "Kosi",
-                "districtCode": "SCT103931",
-                "districtName": "怀宁县",
-                "streetCode": "SST201161",
-                "streetName": "茶岭镇",
-                "addressDetail": "茶岭镇",
-                "postCode": "610000",
-                "contactName": "69907943",
-                "telephoneNumber": "69907943",
-                "telephoneArea": "237",
-                "mobileNumber": "69907943",
+                "addressAbbreviation": "成都武侯区",
+                "addressCode": "cd",
+                "countryCode": "SG",
+                "countryName": "新加坡",
+                "provinceCode": "SG-01",
+                "provinceName": "Central Singapore",
+                "cityCode": "SCI414784",
+                "cityName": "Ang Mo Kio Grc",
+                "districtCode": "",
+                "districtName": null,
+                "streetCode": null,
+                "streetName": null,
+                "addressDetail": "交子大道001号",
+                "postCode": "123456",
+                "contactName": "李四",
+                "telephoneNumber": "86（028）861198998",
+                "telephoneArea": "213",
+                "mobileNumber": "008613981754789",
                 "mobileArea": "0086",
-                "email": "12123@qq.com"
+                "email": "456456@aa.com"
             },
-            "shippingAddress": {
-                "contactPartnerAddressId": "4470056370875822080",
-                "addressAbbreviation": "黄墩镇",
-                "addressCode": "SST201161",
-                "countryCode": "CY",
-                "countryName": "塞浦路斯",
-                "provinceCode": "CY-03",
-                "provinceName": "Larnaka",
-                "cityCode": "SCI213788",
-                "cityName": "Kosi",
-                "districtCode": "SCT103931",
-                "districtName": "怀宁县",
-                "streetCode": "SST201161",
-                "streetName": "茶岭镇",
-                "addressDetail": "茶岭镇",
-                "postCode": "610000",
-                "contactName": "31215624",
-                "telephoneNumber": "31215624",
-                "telephoneArea": "237",
-                "mobileNumber": "31215624",
-                "mobileArea": "0086",
-                "email": "12123@qq.com"
-            },
+            "shippingAddress": null,
             "consignee": {
-                "contactPartnerId": "4470056379465756672",
-                "contactPartnerName": "高新西区惼蠈物流责任有限公司",
+                "contactPartnerId": "4454863594083835904",
+                "contactPartnerName": "南京运输厂",
                 "contactPartnerType": "CONSIGNEE",
                 "tenantCode": null,
                 "companyId": null,
-                "addressAbbreviation": "黄墩镇",
-                "addressCode": "SST201162",
-                "countryCode": "VN",
-                "countryName": "越南",
-                "provinceCode": "VN-61",
-                "provinceName": "Tinh Hai Duong",
-                "cityCode": "SCI156402",
-                "cityName": "Huyện Thanh Miện",
-                "districtCode": "SCT103931",
-                "districtName": "怀宁县",
-                "streetCode": "SST201162",
-                "streetName": "公岭镇",
-                "addressDetail": "公岭镇",
-                "postCode": "610000",
-                "contactName": "30241025",
-                "telephoneNumber": "30241025",
-                "telephoneArea": "237",
-                "mobileNumber": "30241025",
+                "addressAbbreviation": "成都",
+                "addressCode": "cd",
+                "countryCode": "TH",
+                "countryName": "泰国",
+                "provinceCode": "TH-15",
+                "provinceName": "Ang Thong",
+                "cityCode": "SCI156466",
+                "cityName": "Chaiyo",
+                "districtCode": "",
+                "districtName": null,
+                "streetCode": null,
+                "streetName": null,
+                "addressDetail": "四川大学",
+                "postCode": "654312",
+                "contactName": "张三",
+                "telephoneNumber": "86（028）861198998",
+                "telephoneArea": "244",
+                "mobileNumber": "008613981754789",
                 "mobileArea": "0086",
-                "email": "12123@qq.com"
+                "email": "456456@qq.com"
             },
-            "receivingAddress": {
-                "contactPartnerAddressId": "4470056379465756673",
-                "addressAbbreviation": "黄墩镇",
-                "addressCode": "SST201162",
-                "countryCode": "VN",
-                "countryName": "越南",
-                "provinceCode": "VN-61",
-                "provinceName": "Tinh Hai Duong",
-                "cityCode": "SCI156402",
-                "cityName": "Huyện Thanh Miện",
-                "districtCode": "SCT103931",
-                "districtName": "怀宁县",
-                "streetCode": "SST201162",
-                "streetName": "公岭镇",
-                "addressDetail": "公岭镇",
-                "postCode": "610000",
-                "contactName": "23858237",
-                "telephoneNumber": "23858237",
-                "telephoneArea": "237",
-                "mobileNumber": "23858237",
-                "mobileArea": "0086",
-                "email": "12123@qq.com"
-            },
-            "serviceModeCode": "SEL_D2C",
-            "serviceModeName": "门到场",
-            "requiredPickupTime": "1622776198000",
-            "requiredArrivalTime": "1622862598000",
-            "pickUp": true,
-            "takeDelivery": true,
-            "originCityId": "SCI107013",
-            "originCityName": "Meade",
-            "destinationCityId": "SCI107000",
-            "destinationCityName": "Lincoln",
-            "loadingTypeCode": "CTM_FCL",
-            "loadingTypeName": "整箱",
-            "notifyParty": {
-                "contactPartnerId": "4470056388055691264",
-                "contactPartnerName": "沈阳处囹测试集团总部",
-                "contactPartnerType": "NOTIFY_PARTY",
-                "tenantCode": null,
-                "companyId": null,
-                "addressAbbreviation": "黄墩镇",
-                "addressCode": "SST201162",
-                "countryCode": "VN",
-                "countryName": "越南",
-                "provinceCode": "VN-61",
-                "provinceName": "Tinh Hai Duong",
-                "cityCode": "SCI156402",
-                "cityName": "Huyện Thanh Miện",
-                "districtCode": "SCT103931",
-                "districtName": "怀宁县",
-                "streetCode": "SST201162",
-                "streetName": "公岭镇",
-                "addressDetail": "公岭镇",
-                "postCode": "610000",
-                "contactName": "22975186",
-                "telephoneNumber": "22975186",
-                "telephoneArea": "237",
-                "mobileNumber": "22975186",
-                "mobileArea": "0086",
-                "email": "12123@qq.com"
-            },
+            "receivingAddress": null,
+            "serviceModeCode": "SEL_P2P",
+            "serviceModeName": "港到港",
+            "requiredPickupTime": "1595492460753",
+            "requiredArrivalTime": null,
+            "pickUp": false,
+            "takeDelivery": false,
+            "originCityId": "SCI105826",
+            "originCityName": "台东县",
+            "destinationCityId": "SCI105825",
+            "destinationCityName": "屏东县",
+            "notifyParty": null,
+            "entrustedParty": null,
+            "incotermsCode": "INT_FCA",
+            "incotermsName": "货交承运人",
+            "etd": "1596183660443",
+            "eta": "1596874860266",
             "paymentTypeCode": "PYT_Collect",
             "paymentTypeName": "实付",
-            "containerInfos": [
-                {
-                    "containerTypeCode": "ICT_BU",
-                    "containerSizeCode": "TKT_40GP",
-                    "requestContainerQty": "12",
-                    "containerTypeName": "干散货集装箱-非加压",
-                    "containerSizeName": "40GP"
-                },
-                {
-                    "containerTypeCode": "ICT_BU",
-                    "containerSizeCode": "TKT_40GP",
-                    "requestContainerQty": "88",
-                    "containerTypeName": "干散货集装箱-非加压",
-                    "containerSizeName": "40GP"
-                },
-                {
-                    "containerTypeCode": "ICT_BU",
-                    "containerSizeCode": "TKT_40GP",
-                    "requestContainerQty": "99",
-                    "containerTypeName": "干散货集装箱-非加压",
-                    "containerSizeName": "40GP"
-                }
-            ],
-            "seaTransportationNode": {
-                "designatedSeaport": true,
-                "originSeaportId": "CNYTG",
-                "originSeaportName": "烟台港",
-                "dischargeSeaportId": "CNRZH",
-                "dischargeSeaportName": "日照港"
-            }
+            "billOfLadingTypeCode": "LBT_OBR",
+            "billOfLadingTypeName": "目的地要求正本汇票",
+            "transhipmentAllowed": true,
+            "partialShipmentAllowed": true,
+            "loadingTypeCode": null,
+            "loadingTypeName": null,
+            "containerInfos": [],
+            "selfProvidedCabinet": null,
+            "seaTransportationNode": null
         },
         "cargoInfo": {
-            "cargoTypeCode": "CAT_DGG",
-            "cargoTypeName": "危险品",
-            "totalPackageQty": "12",
-            "totalPackageQtyUnitCode": "112",
-            "totalPackageQtyUnitName": "112",
-            "pieceQty": "11",
-            "pieceQtyUnitCode": "112",
-            "pieceQtyUnitName": "112",
-            "bulkCartonQty": "14",
-            "bulkCartonQtyUnitCode": "112",
-            "bulkCartonQtyUnitName": "112",
-            "cargoDescription": "1231456asdfasdfasdkfj!",
-            "grossWeight": "12.860000",
-            "grossWeightUnitCode": "112",
-            "grossWeightUnitName": "平方尺",
-            "totalVolume": "13.000000",
-            "totalVolumeUnitCode": "112",
-            "totalVolumeUnitName": "平方尺",
-            "cargoInfoLines": [
-                {
-                    "referenceNo": "asdfasdf#$%",
-                    "referenceLineNo": "456456~@#",
-                    "companyPn": "P123456!",
-                    "descriptionGoods": "123SAFD@#",
-                    "packageQuantity": "12.000000",
-                    "packageUnitCode": "112",
-                    "packageUnitName": "112",
-                    "invoiceNumber": "ASDFaa",
-                    "hsCode": "465ASDFASDF_A"
-                },
-                {
-                    "referenceNo": "asdfasdf#$%",
-                    "referenceLineNo": "456456~@#",
-                    "companyPn": "P123456!",
-                    "descriptionGoods": "123SAFD@#",
-                    "packageQuantity": "12.000000",
-                    "packageUnitCode": "112",
-                    "packageUnitName": "112",
-                    "invoiceNumber": "ASDFaa",
-                    "hsCode": "465ASDFASDF_A"
-                },
-                {
-                    "referenceNo": "asdfasdf#$%",
-                    "referenceLineNo": "456456~@#",
-                    "companyPn": "P123456!",
-                    "descriptionGoods": "123SAFD@#",
-                    "packageQuantity": "12.000000",
-                    "packageUnitCode": "112",
-                    "packageUnitName": "112",
-                    "invoiceNumber": "ASDFaa",
-                    "hsCode": "465ASDFASDF_A"
-                }
-            ]
+            "cargoTypeCode": "CAT_GNC",
+            "cargoTypeName": "普通货物",
+            "totalPackageQty": "1231313132123132",
+            "totalPackageQtyUnitCode": "PUT_CARTON",
+            "totalPackageQtyUnitName": "箱",
+            "pieceQty": "132132132",
+            "pieceQtyUnitCode": "PUT_PALLET",
+            "pieceQtyUnitName": "板",
+            "bulkCartonQty": "123123123",
+            "bulkCartonQtyUnitCode": "PUT_CARTON",
+            "bulkCartonQtyUnitName": "箱",
+            "cargoDescription": "46456456456",
+            "grossWeight": "12312313.000000",
+            "grossWeightUnitCode": "035",
+            "grossWeightUnitName": "千克",
+            "totalVolume": "7897897.000000",
+            "totalVolumeUnitCode": "033",
+            "totalVolumeUnitName": "立方米",
+            "cargoInfoLines": []
         },
         "valueAddedBusiness": {
             "insurance": true,
-            "cargoValue": "10.000000",
-            "currencyCode": "ZAR",
-            "needLoad": null,
-            "needDischarge": null,
-            "urgent": null,
-            "pod": null,
-            "needContainerJit": null,
-            "speedway": null
+            "cargoValue": "444.000000",
+            "currencyCode": "CNY",
+            "insuredValue": "488.400000",
+            "entrustCustomsDeclaration": true
         },
-        "attachments": [
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_COF",
-                "typeName": "原产地证书"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_COU",
-                "typeName": "快递单"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_CST",
-                "typeName": "海关状态通知"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_ISF",
-                "typeName": "进口安全申报"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_CDR",
-                "typeName": "集装箱滞留提醒"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_CIV",
-                "typeName": "商业发票"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_COR",
-                "typeName": "收据"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_IVO",
-                "typeName": "发票"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_PAL",
-                "typeName": "装箱单"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_DAO",
-                "typeName": "D/O"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_MBL",
-                "typeName": "承运商 空运/海运主提单"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_HBL",
-                "typeName": "货代主运单/提单"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_PODF",
-                "typeName": "交货证明"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_BKC",
-                "typeName": "订单确认"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_SLI",
-                "typeName": "托运书"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_PALT",
-                "typeName": "预警"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_AIN",
-                "typeName": "代理指令"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_BKG",
-                "typeName": "预订请求"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_AGI",
-                "typeName": "代理发票"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_ARC",
-                "typeName": "到货通知单及收费单"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_ARN",
-                "typeName": "到达通知"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_BCA",
-                "typeName": "订车建议"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_BOE",
-                "typeName": "入关报关单"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_BOL",
-                "typeName": "提单"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_CAD",
-                "typeName": "运输建议"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_CAU",
-                "typeName": "海关授权书"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_CTR",
-                "typeName": "集装箱放行"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_CUS",
-                "typeName": "海关证明"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_DAL",
-                "typeName": "延迟警报"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_DAN",
-                "typeName": "文件可用通知"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_DEC",
-                "typeName": "清关声明"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_DGF",
-                "typeName": "危险品表格"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_DNO",
-                "typeName": "出发通知单"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_DRC",
-                "typeName": "码头收据"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_ECA",
-                "typeName": "出口运输通知"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_EXD",
-                "typeName": "出口商文件"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_FUM",
-                "typeName": "熏蒸证书"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_FWI",
-                "typeName": "货代说明"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_GTP",
-                "typeName": "通行证"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_ICA",
-                "typeName": "进口拖车建议"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_ICRA",
-                "typeName": "带收据的进口拖车建议"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_INB",
-                "typeName": "进仓（根据业务场景）"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_IRT",
-                "typeName": "临时收据"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_LID",
-                "typeName": "赔偿书"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_MAN",
-                "typeName": "显示"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_MCD",
-                "typeName": "其他海关文件"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_MCF",
-                "typeName": "其他CFS文件"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_MDC",
-                "typeName": "制造商声明"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_NOT",
-                "typeName": "装运通知单"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_OBL",
-                "typeName": "正本提单"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_POA",
-                "typeName": "委托书"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_SDN",
-                "typeName": "托运人启程通知"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_SDS",
-                "typeName": "材料安全数据表"
-            },
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_TSC",
-                "typeName": "时隙确认"
-            }
-        ],
+        "attachments": [],
         "settlementInfo": null,
-        "statusCallBackInfo": "Request cannot be executed; I/O reactor status: STOPPED"
+        "statusCallBackInfo": "Request cannot be executed; I/O reactor status: STOPPED",
+        "remarks": "11123123阿斯顿发送到发"
     },
     "success": true
-}
-,
-
-"4470056766015864832":{
-    "data": {
-        "audit": {
-            "createdBy": "4469904672632541184",
-            "createdTime": "1594124921209",
-            "lastModifiedBy": "4469904672632541184",
-            "lastModifiedTime": "1594124926017",
-            "proxyOperator": null,
-            "orgId": "4403722516546199554"
-        },
-        "multiTenancyInfo": {
-            "multiTenancyCode": "TEN_4403722516546199552",
-            "multiTenancyName": "中国惠普有限公司"
-        },
-        "id": "4470056766015864832",
-        "transnationalShipment": false,
-        "shippingModeCode": "TPM_SEA",
-        "shippingModeName": null,
-        "shipmentOrderNo": null,
-        "requestAccount": {
-            "requestAccountId": "4469904672632541184",
-            "requestAccountName": "HP01",
-            "requestAccountTel": "+86-13708330833",
-            "requestAccountMail": "123456789@123456.COM"
-        },
-        "demandStatusCode": "REJECT",
-        "demandStatusName": "被驳回",
-        "referenceOrderNos": [
-            "123564",
-            "P12345!"
-        ],
-        "shippingInfo": {
-            "shipper": {
-                "contactPartnerId": "4470056181897261056",
-                "contactPartnerName": "南宁昩蕈运输服务有限公司",
-                "contactPartnerType": "SHIPPER",
-                "tenantCode": null,
-                "companyId": null,
-                "addressAbbreviation": "SCT105568",
-                "addressCode": "SST217437",
-                "countryCode": "CN",
-                "countryName": "中国",
-                "provinceCode": "CN-62",
-                "provinceName": "甘肃省",
-                "cityCode": "SCI105767",
-                "cityName": "白银市",
-                "districtCode": "SCT105568",
-                "districtName": "平川区",
-                "streetCode": "SST217437",
-                "streetName": "太平镇",
-                "addressDetail": "黄龙溪镇",
-                "postCode": "610000",
-                "contactName": "1177065",
-                "telephoneNumber": "1177065",
-                "telephoneArea": "237",
-                "mobileNumber": "1177065",
-                "mobileArea": "0086",
-                "email": "12123@qq.com"
-            },
-            "shippingAddress": {
-                "contactPartnerAddressId": "4470056181897261057",
-                "addressAbbreviation": "SCT105568",
-                "addressCode": "SST217437",
-                "countryCode": "CN",
-                "countryName": "中国",
-                "provinceCode": "CN-62",
-                "provinceName": "甘肃省",
-                "cityCode": "SCI105767",
-                "cityName": "白银市",
-                "districtCode": "SCT105568",
-                "districtName": "平川区",
-                "streetCode": "SST217437",
-                "streetName": "太平镇",
-                "addressDetail": "黄龙溪镇",
-                "postCode": "610000",
-                "contactName": "23405811",
-                "telephoneNumber": "23405811",
-                "telephoneArea": "237",
-                "mobileNumber": "23405811",
-                "mobileArea": "0086",
-                "email": "12123@qq.com"
-            },
-            "consignee": {
-                "contactPartnerId": "4470056190487195648",
-                "contactPartnerName": "广州舃桎销售有限公司",
-                "contactPartnerType": "CONSIGNEE",
-                "tenantCode": null,
-                "companyId": null,
-                "addressAbbreviation": "SCT105703",
-                "addressCode": "SST217449",
-                "countryCode": "CN",
-                "countryName": "中国",
-                "provinceCode": "CN-64",
-                "provinceName": "宁夏回族自治区",
-                "cityCode": "SCI105789",
-                "cityName": "固原市",
-                "districtCode": "SCT105703",
-                "districtName": "泾源县",
-                "streetCode": "SST217449",
-                "streetName": "新兴镇",
-                "addressDetail": "大林镇",
-                "postCode": "610000",
-                "contactName": "31098920",
-                "telephoneNumber": "31098920",
-                "telephoneArea": "237",
-                "mobileNumber": "31098920",
-                "mobileArea": "0086",
-                "email": "12123@qq.com"
-            },
-            "receivingAddress": {
-                "contactPartnerAddressId": "4470056190487195649",
-                "addressAbbreviation": "SCT105703",
-                "addressCode": "SST217449",
-                "countryCode": "CN",
-                "countryName": "中国",
-                "provinceCode": "CN-64",
-                "provinceName": "宁夏回族自治区",
-                "cityCode": "SCI105789",
-                "cityName": "固原市",
-                "districtCode": "SCT105703",
-                "districtName": "泾源县",
-                "streetCode": "SST217449",
-                "streetName": "新兴镇",
-                "addressDetail": "大林镇",
-                "postCode": "610000",
-                "contactName": "59839266",
-                "telephoneNumber": "59839266",
-                "telephoneArea": "237",
-                "mobileNumber": "59839266",
-                "mobileArea": "0086",
-                "email": "12123@qq.com"
-            },
-            "serviceModeCode": "SEL_F2C",
-            "serviceModeName": "站到场",
-            "requiredPickupTime": "1622776198000",
-            "requiredArrivalTime": "1622862598000",
-            "pickUp": true,
-            "takeDelivery": true,
-            "originCityId": "SCI107013",
-            "originCityName": "Meade",
-            "destinationCityId": "SCI107000",
-            "destinationCityName": "Lincoln",
-            "loadingTypeCode": "CTM_BBK",
-            "loadingTypeName": "散杂货",
-            "notifyParty": {
-                "contactPartnerId": "4470056199077130240",
-                "contactPartnerName": "呼和浩特鉸崟交通贸易有限公司",
-                "contactPartnerType": "NOTIFY_PARTY",
-                "tenantCode": null,
-                "companyId": null,
-                "addressAbbreviation": "SCT105703",
-                "addressCode": "SST217449",
-                "countryCode": "CN",
-                "countryName": "中国",
-                "provinceCode": "CN-64",
-                "provinceName": "宁夏回族自治区",
-                "cityCode": "SCI105789",
-                "cityName": "固原市",
-                "districtCode": "SCT105703",
-                "districtName": "泾源县",
-                "streetCode": "SST217449",
-                "streetName": "新兴镇",
-                "addressDetail": "大林镇",
-                "postCode": "610000",
-                "contactName": "83453700",
-                "telephoneNumber": "83453700",
-                "telephoneArea": "237",
-                "mobileNumber": "83453700",
-                "mobileArea": "0086",
-                "email": "12123@qq.com"
-            },
-            "paymentTypeCode": "PYT_Collect",
-            "paymentTypeName": "实付",
-            "containerInfos": [
-                {
-                    "containerTypeCode": "ICT_BU",
-                    "containerSizeCode": "TKT_40GP",
-                    "requestContainerQty": "465456",
-                    "containerTypeName": "干散货集装箱-非加压",
-                    "containerSizeName": "40GP"
-                },
-                {
-                    "containerTypeCode": "ICT_BU",
-                    "containerSizeCode": "TKT_40GP",
-                    "requestContainerQty": "31319787",
-                    "containerTypeName": "干散货集装箱-非加压",
-                    "containerSizeName": "40GP"
-                },
-                {
-                    "containerTypeCode": "ICT_BU",
-                    "containerSizeCode": "TKT_40GP",
-                    "requestContainerQty": "65465789",
-                    "containerTypeName": "干散货集装箱-非加压",
-                    "containerSizeName": "40GP"
-                },
-                {
-                    "containerTypeCode": "ICT_BU",
-                    "containerSizeCode": "TKT_40GP",
-                    "requestContainerQty": "313213456",
-                    "containerTypeName": "干散货集装箱-非加压",
-                    "containerSizeName": "40GP"
-                }
-            ],
-            "seaTransportationNode": {
-                "designatedSeaport": true,
-                "originSeaportId": "CNYTG",
-                "originSeaportName": "烟台港",
-                "dischargeSeaportId": "CNRZH",
-                "dischargeSeaportName": "日照港"
-            }
-        },
-        "cargoInfo": {
-            "cargoTypeCode": "CAT_PEM",
-            "cargoTypeName": "精密设备",
-            "totalPackageQty": "12",
-            "totalPackageQtyUnitCode": "112",
-            "totalPackageQtyUnitName": "112",
-            "pieceQty": "11",
-            "pieceQtyUnitCode": "112",
-            "pieceQtyUnitName": "112",
-            "bulkCartonQty": "14",
-            "bulkCartonQtyUnitCode": "112",
-            "bulkCartonQtyUnitName": "112",
-            "cargoDescription": "1231456asdfasdfasdkfj!",
-            "grossWeight": "12.860000",
-            "grossWeightUnitCode": "112",
-            "grossWeightUnitName": "平方尺",
-            "totalVolume": "13.000000",
-            "totalVolumeUnitCode": "112",
-            "totalVolumeUnitName": "平方尺",
-            "cargoInfoLines": [
-                {
-                    "referenceNo": "CEwU8w",
-                    "referenceLineNo": "CEwU8w",
-                    "companyPn": "CEwU8w",
-                    "descriptionGoods": "CEwU8w",
-                    "packageQuantity": "1200.000000",
-                    "packageUnitCode": "PUT_SHELF",
-                    "packageUnitName": "架",
-                    "invoiceNumber": "CEwU8w",
-                    "hsCode": "CEwU8w"
-                },
-                {
-                    "referenceNo": "CEwU8w",
-                    "referenceLineNo": "CEwU8w",
-                    "companyPn": "6939347",
-                    "descriptionGoods": ",",
-                    "packageQuantity": "8700.000000",
-                    "packageUnitCode": "PUT_SHELF",
-                    "packageUnitName": "架",
-                    "invoiceNumber": "CEwU8w",
-                    "hsCode": ","
-                },
-                {
-                    "referenceNo": "CEwU8w",
-                    "referenceLineNo": "CEwU8w",
-                    "companyPn": "CEwU8w",
-                    "descriptionGoods": "CEwU8w",
-                    "packageQuantity": "456446456.000000",
-                    "packageUnitCode": "PUT_SHELF",
-                    "packageUnitName": "架",
-                    "invoiceNumber": "CEwU8w",
-                    "hsCode": "CEwU8w"
-                },
-                {
-                    "referenceNo": "CEwU8w",
-                    "referenceLineNo": "CEwU8w",
-                    "companyPn": "CEwU8w",
-                    "descriptionGoods": "CEwU8w",
-                    "packageQuantity": "465456.000000",
-                    "packageUnitCode": "PUT_SHELF",
-                    "packageUnitName": "架",
-                    "invoiceNumber": "CEwU8w",
-                    "hsCode": "CEwU8w"
-                }
-            ]
-        },
-        "valueAddedBusiness": {
-            "insurance": true,
-            "cargoValue": "10.000000",
-            "currencyCode": "ZAR",
-            "needLoad": false,
-            "needDischarge": true,
-            "urgent": true,
-            "pod": true,
-            "needContainerJit": true,
-            "speedway": true
-        },
-        "attachments": [
-            {
-                "url": "1003",
-                "name": "运输下单常用sql.txt",
-                "typeCode": "FLT_DSD",
-                "typeName": "零担争议附件"
-            }
-        ],
-        "settlementInfo": {
-            "settlementParty": {
-                "settlementPartyId": "4403721588833267713",
-                "settlementCrmCode": "HPPSGJSG",
-                "settlementLegalPerson": "亚利",
-                "settlementCompanyName": "中国惠普有限公司"
-            },
-            "costCode": "ＴＯＴＡＭ０１５"
-        },
-        "statusCallBackInfo": "获取大数据数据异常： Request cannot be executed; I/O reactor status: STOPPED"
-    },
-    "success": true
-}
-
 }

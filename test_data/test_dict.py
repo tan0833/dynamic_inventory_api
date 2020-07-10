@@ -13,10 +13,10 @@ ideas_path = conf.get_file_path('test_data','ideas.json')
 demand_path = conf.get_file_path('test_data','shipment-deand.json')
 
 with open(ideas_path,'r',encoding='utf-8') as load_f:
-    ideas_dict = json.load(load_f)['4470057186922659840']
+    ideas_dict = json.load(load_f)
 
 with open(demand_path,'r',encoding='utf-8') as load_f:
-    demand_dict = json.load(load_f)['4470057186922659840']
+    demand_dict = json.load(load_f)
 
 # a  = {'a':'b','c':'d'}
 #
@@ -46,7 +46,10 @@ with open(demand_path,'r',encoding='utf-8') as load_f:
 
 a = cd.src_dest_equal(ideas_dict,demand_dict,map_dict)
 
-print(a)
+# print(a.get('equal'))
+
+for i in a.get('not_equal'):
+    print(i)
 
 
 
