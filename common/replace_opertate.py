@@ -2,12 +2,16 @@ import re,json,jsonpath,random
 from config.get_conf import Conf
 from util.operate_global import GlobalDict
 from config.Log import Log
+from util.create_random import CreateRandom
+
 
 class ReplaceOperte:
 
     def __init__(self,dict):
         self.log = Log()
         self.global_dict = GlobalDict(dict)
+        self.create_random = CreateRandom()
+
 
     def replace_random(self,random_value='GBK'):
         '''
@@ -17,35 +21,23 @@ class ReplaceOperte:
         '''
 
         if random_value == 'GBK':
-            cities_name = ["成都","武汉","南京","杭州","北京","广州","上海","西安","天津","沈阳","宁波","深圳","郑州","南宁","长沙","哈尔滨","台北","厦门","宁波",
-                           "成都武侯区", "成都金牛区", "成都成华区", "成都高新区", "成都青羊区", "锦江区", "成都郫县", "高新西区", "宜宾", "内江", "眉山", "合肥", "马鞍山", "桂林",
-                           "兰州", "乌鲁木齐", "鄂尔多斯", "呼和浩特", "太原", "大同", "运城", "驻马店", "台州", "西宁", "日喀则"
-                           ]
-            compellation = ["下单","查单","运输","库存","采购","销售","服务","测试","搜索","物流","交通","服务"]
-            company_type = ["有限公司","服务有限公司","责任有限公司","贸易有限公司","咨询有限公司","厂","经营部","集团有限公司","集团总部"]
-            char_one = chr(random.randint(0x4e00, 0x9fbf))+chr(random.randint(0x4e00, 0x9fbf))
-            company_name = random.choice(cities_name) + char_one + random.choice(compellation) +random.choice(company_type)
+            company_name = self.create_random.random_create_company()
             self.global_dict.set_dict('GBK',company_name)
 
         elif random_value == 'INT':
-            digit = random.randint(0, 99999999)
+            digit = self.create_random.random_create_digit()
             self.global_dict.set_dict('INT', str(digit))
 
         elif random_value == 'SYMBOL':
-            symbol_name = ['`','~','!','@','#','$','%','^','&','*','(',')','-','_','+','=','{','[','}',']',':',';','"','\,','|',
-                           ' ·@*|','<',',','.','>','?','/',' ']
-            symbol = random.choice(symbol_name)
+            symbol = self.create_random.random_create_symbol()
             self.global_dict.set_dict('SYMBOL',symbol)
 
         elif random_value == 'LETTER':
-            H = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
-            letter = ''
-            for i in range(6):
-                letter = letter + random.choice(H)
+            letter = self.create_random.random_create_letter()
             self.global_dict.set_dict('LETTER',letter)
 
         elif random_value == 'CHAR':
-            char_one = chr(random.randint(0x4e00, 0x9fbf)) + chr(random.randint(0x4e00, 0x9fbf))
+            char_one = self.create_random.random_create_char()
             self.global_dict.set_dict('CHAR',char_one)
 
 

@@ -1,0 +1,185 @@
+{																																							 "shipper":{																																
+				"internat_shipper_contactPartnerId": "$.result.contactPartnerId",														"contactPartnerId": "${internat_shipper_contactPartnerId}",							["Equal","${internat_shipper_contactPartnerId}","$..shipper..contactPartnerId"],
+        "internat_shipper_contactPartnerName": "$.result.contactPartnerName",												"contactPartnerName": "${internat_shipper_contactPartnerName}",				  ["Equal","${internat_shipper_contactPartnerName}","$..shipper..contactPartnerName"],
+        "internat_shipper_contactPartnerType": "$.result.contactPartnerType",                       "contactPartnerType": "${internat_shipper_contactPartnerType}",					["Equal","${internat_shipper_contactPartnerType}","$..shipper..contactPartnerType"],
+        "internat_shipper_addressAbbreviation": "$.result.addressAbbreviation",											"addressAbbreviation": "${internat_shipper_addressAbbreviation}",				["Equal","${internat_shipper_addressAbbreviation}","$..shipper..addressAbbreviation"],
+        "internat_shipper_addressCode": "$.result.addressCode",																			"addressCode": "${internat_shipper_addressCode}",												["Equal","${internat_shipper_addressCode}","$..shipper..addressCode"],
+        "internat_shipper_countryCode": "$.result.countryCode",																			"countryCode": "${internat_shipper_countryCode}",												["Equal","${internat_shipper_countryCode}","$..shipper..countryCode"],
+        "internat_shipper_countryName": "$.result.countryName",                                     "countryName": "${internat_shipper_countryName}",												["Equal","${internat_shipper_countryName}","$..shipper..countryName"],
+        "internat_shipper_provinceCode": "$.result.provinceCode",																		"provinceCode": "${internat_shipper_provinceCode}",											["Equal","${internat_shipper_provinceCode}","$..shipper..provinceCode"],
+        "internat_shipper_provinceName": "$.result.provinceName",                                   "provinceName": "${internat_shipper_provinceName}",											["Equal","${internat_shipper_provinceName}","$..shipper..provinceName"],
+        "internat_shipper_cityCode": "$.result.cityCode",																						"cityCode": "${internat_shipper_cityCode}",															["Equal","${internat_shipper_cityCode}","$..shipper..cityCode"],
+        "internat_shipper_cityName": "$.result.cityName",                                           "cityName": "${internat_shipper_cityName}",															["Equal","${internat_shipper_cityName}","$..shipper..cityName"],
+        "internat_shipper_districtCode": "$.result.districtCode",																		"districtCode": "${internat_shipper_districtCode}",											["Equal","${internat_shipper_districtCode}","$..shipper..districtCode"],
+        "internat_shipper_districtName": "$.result.districtName",                                   "districtName": "${internat_shipper_districtName}",											["Equal","${internat_shipper_districtName}","$..shipper..districtName"],
+        "internat_shipper_streetCode": "$.result.streetCode",																				"streetCode": "${internat_shipper_streetCode}",													["Equal","${internat_shipper_streetCode}","$..shipper..streetCode"],
+        "internat_shipper_streetName": "$.result.streetName",                                       "streetName": "${internat_shipper_streetName}",													["Equal","${internat_shipper_streetName}","$..shipper..streetName"],
+        "internat_shipper_addressDetail": "$.result.addressDetail",																	"addressDetail": "${internat_shipper_addressDetail}",										["Equal","${internat_shipper_addressDetail}","$..shipper..addressDetail"],
+        "internat_shipper_postCode": "$.result.postCode",																						"postCode": "${internat_shipper_postCode}",															["Equal","${internat_shipper_postCode}","$..shipper..postCode"],
+        "internat_shipper_contactName": "$.result.contactName",																			"contactName": "${internat_shipper_contactName}",												["Equal","${internat_shipper_contactName}","$..shipper..contactName"],
+        "internat_shipper_telephoneArea": "$.result.telephoneArea",																	"telephoneArea": "${internat_shipper_telephoneArea}",  									["Equal","${internat_shipper_telephoneArea}","$..shipper..telephoneArea"],
+        "internat_shipper_telephoneNumber": "$.result.telephoneNumber",                             "telephoneNumber": "${internat_shipper_telephoneNumber}",								["Equal","${internat_shipper_telephoneNumber}","$..shipper..telephoneNumber"],
+        "internat_shipper_mobileNumber": "$.result.mobileNumber",																		"mobileNumber": "${internat_shipper_mobileNumber}",											["Equal","${internat_shipper_mobileNumber}","$..shipper..mobileNumber"],
+        "internat_shipper_mobileArea": "$.result.mobileArea",                                       "mobileArea": "${internat_shipper_mobileArea}",													["Equal","${internat_shipper_mobileArea}","$..shipper..mobileArea"],
+        "internat_shipper_email": "$.result.email"																									"email": "${internat_shipper_email}"																		["Equal","${internat_shipper_email}","$..shipper..email"],
+		}																																													}
+		
+
+		{																																							 "consignee":{																																
+				"internat_consignee_contactPartnerId": "$.result.contactPartnerId",														"contactPartnerId": "${internat_consignee_contactPartnerId}",							["Equal","${internat_consignee_contactPartnerId}","$..consignee..contactPartnerId"],
+        "internat_consignee_contactPartnerName": "$.result.contactPartnerName",												"contactPartnerName": "${internat_consignee_contactPartnerName}",				  ["Equal","${internat_consignee_contactPartnerName}","$..consignee..contactPartnerName"],
+        "internat_consignee_contactPartnerType": "$.result.contactPartnerType",                       "contactPartnerType": "${internat_consignee_contactPartnerType}",					["Equal","${internat_consignee_contactPartnerType}","$..consignee..contactPartnerType"],
+        "internat_consignee_addressAbbreviation": "$.result.addressAbbreviation",											"addressAbbreviation": "${internat_consignee_addressAbbreviation}",				["Equal","${internat_consignee_addressAbbreviation}","$..consignee..addressAbbreviation"],
+        "internat_consignee_addressCode": "$.result.addressCode",																			"addressCode": "${internat_consignee_addressCode}",												["Equal","${internat_consignee_addressCode}","$..consignee..addressCode"],
+        "internat_consignee_countryCode": "$.result.countryCode",																			"countryCode": "${internat_consignee_countryCode}",												["Equal","${internat_consignee_countryCode}","$..consignee..countryCode"],
+        "internat_consignee_countryName": "$.result.countryName",                                     "countryName": "${internat_consignee_countryName}",												["Equal","${internat_consignee_countryName}","$..consignee..countryName"],
+        "internat_consignee_provinceCode": "$.result.provinceCode",																		"provinceCode": "${internat_consignee_provinceCode}",											["Equal","${internat_consignee_provinceCode}","$..consignee..provinceCode"],
+        "internat_consignee_provinceName": "$.result.provinceName",                                   "provinceName": "${internat_consignee_provinceName}",											["Equal","${internat_consignee_provinceName}","$..consignee..provinceName"],
+        "internat_consignee_cityCode": "$.result.cityCode",																						"cityCode": "${internat_consignee_cityCode}",															["Equal","${internat_consignee_cityCode}","$..consignee..cityCode"],
+        "internat_consignee_cityName": "$.result.cityName",                                           "cityName": "${internat_consignee_cityName}",															["Equal","${internat_consignee_cityName}","$..consignee..cityName"],
+        "internat_consignee_districtCode": "$.result.districtCode",																		"districtCode": "${internat_consignee_districtCode}",											["Equal","${internat_consignee_districtCode}","$..consignee..districtCode"],
+        "internat_consignee_districtName": "$.result.districtName",                                   "districtName": "${internat_consignee_districtName}",											["Equal","${internat_consignee_districtName}","$..consignee..districtName"],
+        "internat_consignee_streetCode": "$.result.streetCode",																				"streetCode": "${internat_consignee_streetCode}",													["Equal","${internat_consignee_streetCode}","$..consignee..streetCode"],
+        "internat_consignee_streetName": "$.result.streetName",                                       "streetName": "${internat_consignee_streetName}",													["Equal","${internat_consignee_streetName}","$..consignee..streetName"],
+        "internat_consignee_addressDetail": "$.result.addressDetail",																	"addressDetail": "${internat_consignee_addressDetail}",										["Equal","${internat_consignee_addressDetail}","$..consignee..addressDetail"],
+        "internat_consignee_postCode": "$.result.postCode",																						"postCode": "${internat_consignee_postCode}",															["Equal","${internat_consignee_postCode}","$..consignee..postCode"],
+        "internat_consignee_contactName": "$.result.contactName",																			"contactName": "${internat_consignee_contactName}",												["Equal","${internat_consignee_contactName}","$..consignee..contactName"],
+        "internat_consignee_telephoneArea": "$.result.telephoneArea",																	"telephoneArea": "${internat_consignee_telephoneArea}",  									["Equal","${internat_consignee_telephoneArea}","$..consignee..telephoneArea"],
+        "internat_consignee_telephoneNumber": "$.result.telephoneNumber",                             "telephoneNumber": "${internat_consignee_telephoneNumber}",								["Equal","${internat_consignee_telephoneNumber}","$..consignee..telephoneNumber"],
+        "internat_consignee_mobileNumber": "$.result.mobileNumber",																		"mobileNumber": "${internat_consignee_mobileNumber}",											["Equal","${internat_consignee_mobileNumber}","$..consignee..mobileNumber"],
+        "internat_consignee_mobileArea": "$.result.mobileArea",                                       "mobileArea": "${internat_consignee_mobileArea}",													["Equal","${internat_consignee_mobileArea}","$..consignee..mobileArea"],
+        "internat_consignee_email": "$.result.email"																									"email": "${internat_consignee_email}"																		["Equal","${internat_consignee_email}","$..consignee..email"],
+		}																																													}
+		
+		
+{																																							 "notifyParty":{																																
+				"internat_notifyParty_contactPartnerId": "$.result.contactPartnerId",														"contactPartnerId": "${internat_notifyParty_contactPartnerId}",							["Equal","${internat_notifyParty_contactPartnerId}","$..notifyParty..contactPartnerId"],
+        "internat_notifyParty_contactPartnerName": "$.result.contactPartnerName",												"contactPartnerName": "${internat_notifyParty_contactPartnerName}",				  ["Equal","${internat_notifyParty_contactPartnerName}","$..notifyParty..contactPartnerName"],
+        "internat_notifyParty_contactPartnerType": "$.result.contactPartnerType",                       "contactPartnerType": "${internat_notifyParty_contactPartnerType}",					["Equal","${internat_notifyParty_contactPartnerType}","$..notifyParty..contactPartnerType"],
+        "internat_notifyParty_addressAbbreviation": "$.result.addressAbbreviation",											"addressAbbreviation": "${internat_notifyParty_addressAbbreviation}",				["Equal","${internat_notifyParty_addressAbbreviation}","$..notifyParty..addressAbbreviation"],
+        "internat_notifyParty_addressCode": "$.result.addressCode",																			"addressCode": "${internat_notifyParty_addressCode}",												["Equal","${internat_notifyParty_addressCode}","$..notifyParty..addressCode"],
+        "internat_notifyParty_countryCode": "$.result.countryCode",																			"countryCode": "${internat_notifyParty_countryCode}",												["Equal","${internat_notifyParty_countryCode}","$..notifyParty..countryCode"],
+        "internat_notifyParty_countryName": "$.result.countryName",                                     "countryName": "${internat_notifyParty_countryName}",												["Equal","${internat_notifyParty_countryName}","$..notifyParty..countryName"],
+        "internat_notifyParty_provinceCode": "$.result.provinceCode",																		"provinceCode": "${internat_notifyParty_provinceCode}",											["Equal","${internat_notifyParty_provinceCode}","$..notifyParty..provinceCode"],
+        "internat_notifyParty_provinceName": "$.result.provinceName",                                   "provinceName": "${internat_notifyParty_provinceName}",											["Equal","${internat_notifyParty_provinceName}","$..notifyParty..provinceName"],
+        "internat_notifyParty_cityCode": "$.result.cityCode",																						"cityCode": "${internat_notifyParty_cityCode}",															["Equal","${internat_notifyParty_cityCode}","$..notifyParty..cityCode"],
+        "internat_notifyParty_cityName": "$.result.cityName",                                           "cityName": "${internat_notifyParty_cityName}",															["Equal","${internat_notifyParty_cityName}","$..notifyParty..cityName"],
+        "internat_notifyParty_districtCode": "$.result.districtCode",																		"districtCode": "${internat_notifyParty_districtCode}",											["Equal","${internat_notifyParty_districtCode}","$..notifyParty..districtCode"],
+        "internat_notifyParty_districtName": "$.result.districtName",                                   "districtName": "${internat_notifyParty_districtName}",											["Equal","${internat_notifyParty_districtName}","$..notifyParty..districtName"],
+        "internat_notifyParty_streetCode": "$.result.streetCode",																				"streetCode": "${internat_notifyParty_streetCode}",													["Equal","${internat_notifyParty_streetCode}","$..notifyParty..streetCode"],
+        "internat_notifyParty_streetName": "$.result.streetName",                                       "streetName": "${internat_notifyParty_streetName}",													["Equal","${internat_notifyParty_streetName}","$..notifyParty..streetName"],
+        "internat_notifyParty_addressDetail": "$.result.addressDetail",																	"addressDetail": "${internat_notifyParty_addressDetail}",										["Equal","${internat_notifyParty_addressDetail}","$..notifyParty..addressDetail"],
+        "internat_notifyParty_postCode": "$.result.postCode",																						"postCode": "${internat_notifyParty_postCode}",															["Equal","${internat_notifyParty_postCode}","$..notifyParty..postCode"],
+        "internat_notifyParty_contactName": "$.result.contactName",																			"contactName": "${internat_notifyParty_contactName}",												["Equal","${internat_notifyParty_contactName}","$..notifyParty..contactName"],
+        "internat_notifyParty_telephoneArea": "$.result.telephoneArea",																	"telephoneArea": "${internat_notifyParty_telephoneArea}",  									["Equal","${internat_notifyParty_telephoneArea}","$..notifyParty..telephoneArea"],
+        "internat_notifyParty_telephoneNumber": "$.result.telephoneNumber",                             "telephoneNumber": "${internat_notifyParty_telephoneNumber}",								["Equal","${internat_notifyParty_telephoneNumber}","$..notifyParty..telephoneNumber"],
+        "internat_notifyParty_mobileNumber": "$.result.mobileNumber",																		"mobileNumber": "${internat_notifyParty_mobileNumber}",											["Equal","${internat_notifyParty_mobileNumber}","$..notifyParty..mobileNumber"],
+        "internat_notifyParty_mobileArea": "$.result.mobileArea",                                       "mobileArea": "${internat_notifyParty_mobileArea}",													["Equal","${internat_notifyParty_mobileArea}","$..notifyParty..mobileArea"],
+        "internat_notifyParty_email": "$.result.email"																									"email": "${internat_notifyParty_email}"																		["Equal","${internat_notifyParty_email}","$..notifyParty..email"],
+		}																																													}
+		
+		
+{																																							 "entrustedParty":{																																
+				"internat_entrustedParty_contactPartnerId": "$.result.contactPartnerId",														"contactPartnerId": "${internat_entrustedParty_contactPartnerId}",							["Equal","${internat_entrustedParty_contactPartnerId}","$..entrustedParty..contactPartnerId"],
+        "internat_entrustedParty_contactPartnerName": "$.result.contactPartnerName",												"contactPartnerName": "${internat_entrustedParty_contactPartnerName}",				  ["Equal","${internat_entrustedParty_contactPartnerName}","$..entrustedParty..contactPartnerName"],
+        "internat_entrustedParty_contactPartnerType": "$.result.contactPartnerType",                       "contactPartnerType": "${internat_entrustedParty_contactPartnerType}",					["Equal","${internat_entrustedParty_contactPartnerType}","$..entrustedParty..contactPartnerType"],
+        "internat_entrustedParty_addressAbbreviation": "$.result.addressAbbreviation",											"addressAbbreviation": "${internat_entrustedParty_addressAbbreviation}",				["Equal","${internat_entrustedParty_addressAbbreviation}","$..entrustedParty..addressAbbreviation"],
+        "internat_entrustedParty_addressCode": "$.result.addressCode",																			"addressCode": "${internat_entrustedParty_addressCode}",												["Equal","${internat_entrustedParty_addressCode}","$..entrustedParty..addressCode"],
+        "internat_entrustedParty_countryCode": "$.result.countryCode",																			"countryCode": "${internat_entrustedParty_countryCode}",												["Equal","${internat_entrustedParty_countryCode}","$..entrustedParty..countryCode"],
+        "internat_entrustedParty_countryName": "$.result.countryName",                                     "countryName": "${internat_entrustedParty_countryName}",												["Equal","${internat_entrustedParty_countryName}","$..entrustedParty..countryName"],
+        "internat_entrustedParty_provinceCode": "$.result.provinceCode",																		"provinceCode": "${internat_entrustedParty_provinceCode}",											["Equal","${internat_entrustedParty_provinceCode}","$..entrustedParty..provinceCode"],
+        "internat_entrustedParty_provinceName": "$.result.provinceName",                                   "provinceName": "${internat_entrustedParty_provinceName}",											["Equal","${internat_entrustedParty_provinceName}","$..entrustedParty..provinceName"],
+        "internat_entrustedParty_cityCode": "$.result.cityCode",																						"cityCode": "${internat_entrustedParty_cityCode}",															["Equal","${internat_entrustedParty_cityCode}","$..entrustedParty..cityCode"],
+        "internat_entrustedParty_cityName": "$.result.cityName",                                           "cityName": "${internat_entrustedParty_cityName}",															["Equal","${internat_entrustedParty_cityName}","$..entrustedParty..cityName"],
+        "internat_entrustedParty_districtCode": "$.result.districtCode",																		"districtCode": "${internat_entrustedParty_districtCode}",											["Equal","${internat_entrustedParty_districtCode}","$..entrustedParty..districtCode"],
+        "internat_entrustedParty_districtName": "$.result.districtName",                                   "districtName": "${internat_entrustedParty_districtName}",											["Equal","${internat_entrustedParty_districtName}","$..entrustedParty..districtName"],
+        "internat_entrustedParty_streetCode": "$.result.streetCode",																				"streetCode": "${internat_entrustedParty_streetCode}",													["Equal","${internat_entrustedParty_streetCode}","$..entrustedParty..streetCode"],
+        "internat_entrustedParty_streetName": "$.result.streetName",                                       "streetName": "${internat_entrustedParty_streetName}",													["Equal","${internat_entrustedParty_streetName}","$..entrustedParty..streetName"],
+        "internat_entrustedParty_addressDetail": "$.result.addressDetail",																	"addressDetail": "${internat_entrustedParty_addressDetail}",										["Equal","${internat_entrustedParty_addressDetail}","$..entrustedParty..addressDetail"],
+        "internat_entrustedParty_postCode": "$.result.postCode",																						"postCode": "${internat_entrustedParty_postCode}",															["Equal","${internat_entrustedParty_postCode}","$..entrustedParty..postCode"],
+        "internat_entrustedParty_contactName": "$.result.contactName",																			"contactName": "${internat_entrustedParty_contactName}",												["Equal","${internat_entrustedParty_contactName}","$..entrustedParty..contactName"],
+        "internat_entrustedParty_telephoneArea": "$.result.telephoneArea",																	"telephoneArea": "${internat_entrustedParty_telephoneArea}",  									["Equal","${internat_entrustedParty_telephoneArea}","$..entrustedParty..telephoneArea"],
+        "internat_entrustedParty_telephoneNumber": "$.result.telephoneNumber",                             "telephoneNumber": "${internat_entrustedParty_telephoneNumber}",								["Equal","${internat_entrustedParty_telephoneNumber}","$..entrustedParty..telephoneNumber"],
+        "internat_entrustedParty_mobileNumber": "$.result.mobileNumber",																		"mobileNumber": "${internat_entrustedParty_mobileNumber}",											["Equal","${internat_entrustedParty_mobileNumber}","$..entrustedParty..mobileNumber"],
+        "internat_entrustedParty_mobileArea": "$.result.mobileArea",                                       "mobileArea": "${internat_entrustedParty_mobileArea}",													["Equal","${internat_entrustedParty_mobileArea}","$..entrustedParty..mobileArea"],
+        "internat_entrustedParty_email": "$.result.email"																									"email": "${internat_entrustedParty_email}"																		["Equal","${internat_entrustedParty_email}","$..entrustedParty..email"],
+		}																																													}
+		
+		
+		{																																							 					"shippingAddress":{																																
+				"internat_shippingAddress_contactPartnerAddressId": "$.result.contactPartnerAddressId",							"contactPartnerAddressId": "${internat_shippingAddress_contactPartnerAddressId}",			["Equal","${internat_shippingAddress_contactPartnerAddressId}","$..shippingAddress..contactPartnerAddressId"],
+        "internat_shippingAddress_addressAbbreviation": "$.result.addressAbbreviation",											"addressAbbreviation": "${internat_shippingAddress_addressAbbreviation}",							["Equal","${internat_shippingAddress_addressAbbreviation}","$..shippingAddress..addressAbbreviation"],
+        "internat_shippingAddress_addressCode": "$.result.addressCode",																			"addressCode": "${internat_shippingAddress_addressCode}",															["Equal","${internat_shippingAddress_addressCode}","$..shippingAddress..addressCode"],
+        "internat_shippingAddress_countryCode": "$.result.countryCode",																			"countryCode": "${internat_shippingAddress_countryCode}",															["Equal","${internat_shippingAddress_countryCode}","$..shippingAddress..countryCode"],
+        "internat_shippingAddress_countryName": "$.result.countryName",                                     "countryName": "${internat_shippingAddress_countryName}",															["Equal","${internat_shippingAddress_countryName}","$..shippingAddress..countryName"],
+        "internat_shippingAddress_provinceCode": "$.result.provinceCode",																		"provinceCode": "${internat_shippingAddress_provinceCode}",														["Equal","${internat_shippingAddress_provinceCode}","$..shippingAddress..provinceCode"],
+        "internat_shippingAddress_provinceName": "$.result.provinceName",                                   "provinceName": "${internat_shippingAddress_provinceName}",														["Equal","${internat_shippingAddress_provinceName}","$..shippingAddress..provinceName"],
+        "internat_shippingAddress_cityCode": "$.result.cityCode",																						"cityCode": "${internat_shippingAddress_cityCode}",																		["Equal","${internat_shippingAddress_cityCode}","$..shippingAddress..cityCode"],
+        "internat_shippingAddress_cityName": "$.result.cityName",                                           "cityName": "${internat_shippingAddress_cityName}",																		["Equal","${internat_shippingAddress_cityName}","$..shippingAddress..cityName"],
+        "internat_shippingAddress_districtCode": "$.result.districtCode",																		"districtCode": "${internat_shippingAddress_districtCode}",														["Equal","${internat_shippingAddress_districtCode}","$..shippingAddress..districtCode"],
+        "internat_shippingAddress_districtName": "$.result.districtName",                                   "districtName": "${internat_shippingAddress_districtName}",														["Equal","${internat_shippingAddress_districtName}","$..shippingAddress..districtName"],
+        "internat_shippingAddress_streetCode": "$.result.streetCode",																				"streetCode": "${internat_shippingAddress_streetCode}",																["Equal","${internat_shippingAddress_streetCode}","$..shippingAddress..streetCode"],
+        "internat_shippingAddress_streetName": "$.result.streetName",                                       "streetName": "${internat_shippingAddress_streetName}",																["Equal","${internat_shippingAddress_streetName}","$..shippingAddress..streetName"],
+        "internat_shippingAddress_addressDetail": "$.result.addressDetail",																	"addressDetail": "${internat_shippingAddress_addressDetail}",													["Equal","${internat_shippingAddress_addressDetail}","$..shippingAddress..addressDetail"],
+        "internat_shippingAddress_postCode": "$.result.postCode",																						"postCode": "${internat_shippingAddress_postCode}",																		["Equal","${internat_shippingAddress_postCode}","$..shippingAddress..postCode"],
+        "internat_shippingAddress_contactName": "$.result.contactName",																			"contactName": "${internat_shippingAddress_contactName}",															["Equal","${internat_shippingAddress_contactName}","$..shippingAddress..contactName"],
+        "internat_shippingAddress_telephoneArea": "$.result.telephoneArea",																	"telephoneArea": "${internat_shippingAddress_telephoneArea}",  												["Equal","${internat_shippingAddress_telephoneArea}","$..shippingAddress..telephoneArea"],
+        "internat_shippingAddress_telephoneNumber": "$.result.telephoneNumber",                             "telephoneNumber": "${internat_shippingAddress_telephoneNumber}",											["Equal","${internat_shippingAddress_telephoneNumber}","$..shippingAddress..telephoneNumber"],
+        "internat_shippingAddress_mobileNumber": "$.result.mobileNumber",																		"mobileNumber": "${internat_shippingAddress_mobileNumber}",														["Equal","${internat_shippingAddress_mobileNumber}","$..shippingAddress..mobileNumber"],
+        "internat_shippingAddress_mobileArea": "$.result.mobileArea",                                       "mobileArea": "${internat_shippingAddress_mobileArea}",																["Equal","${internat_shippingAddress_mobileArea}","$..shippingAddress..mobileArea"],
+        "internat_shippingAddress_email": "$.result.email"																									"email": "${internat_shippingAddress_email}"																					["Equal","${internat_shippingAddress_email}","$..shippingAddress..email"],
+		}	
+		
+		
+		{																																							 					"receivingAddress":{																																
+				"internat_receivingAddress_contactPartnerAddressId": "$.result.contactPartnerAddressId",							"contactPartnerAddressId": "${internat_receivingAddress_contactPartnerAddressId}",			["Equal","${internat_receivingAddress_contactPartnerAddressId}","$..receivingAddress..contactPartnerAddressId"],
+        "internat_receivingAddress_addressAbbreviation": "$.result.addressAbbreviation",											"addressAbbreviation": "${internat_receivingAddress_addressAbbreviation}",							["Equal","${internat_receivingAddress_addressAbbreviation}","$..receivingAddress..addressAbbreviation"],
+        "internat_receivingAddress_addressCode": "$.result.addressCode",																			"addressCode": "${internat_receivingAddress_addressCode}",															["Equal","${internat_receivingAddress_addressCode}","$..receivingAddress..addressCode"],
+        "internat_receivingAddress_countryCode": "$.result.countryCode",																			"countryCode": "${internat_receivingAddress_countryCode}",															["Equal","${internat_receivingAddress_countryCode}","$..receivingAddress..countryCode"],
+        "internat_receivingAddress_countryName": "$.result.countryName",                                     "countryName": "${internat_receivingAddress_countryName}",															["Equal","${internat_receivingAddress_countryName}","$..receivingAddress..countryName"],
+        "internat_receivingAddress_provinceCode": "$.result.provinceCode",																		"provinceCode": "${internat_receivingAddress_provinceCode}",														["Equal","${internat_receivingAddress_provinceCode}","$..receivingAddress..provinceCode"],
+        "internat_receivingAddress_provinceName": "$.result.provinceName",                                   "provinceName": "${internat_receivingAddress_provinceName}",														["Equal","${internat_receivingAddress_provinceName}","$..receivingAddress..provinceName"],
+        "internat_receivingAddress_cityCode": "$.result.cityCode",																						"cityCode": "${internat_receivingAddress_cityCode}",																		["Equal","${internat_receivingAddress_cityCode}","$..receivingAddress..cityCode"],
+        "internat_receivingAddress_cityName": "$.result.cityName",                                           "cityName": "${internat_receivingAddress_cityName}",																		["Equal","${internat_receivingAddress_cityName}","$..receivingAddress..cityName"],
+        "internat_receivingAddress_districtCode": "$.result.districtCode",																		"districtCode": "${internat_receivingAddress_districtCode}",														["Equal","${internat_receivingAddress_districtCode}","$..receivingAddress..districtCode"],
+        "internat_receivingAddress_districtName": "$.result.districtName",                                   "districtName": "${internat_receivingAddress_districtName}",														["Equal","${internat_receivingAddress_districtName}","$..receivingAddress..districtName"],
+        "internat_receivingAddress_streetCode": "$.result.streetCode",																				"streetCode": "${internat_receivingAddress_streetCode}",																["Equal","${internat_receivingAddress_streetCode}","$..receivingAddress..streetCode"],
+        "internat_receivingAddress_streetName": "$.result.streetName",                                       "streetName": "${internat_receivingAddress_streetName}",																["Equal","${internat_receivingAddress_streetName}","$..receivingAddress..streetName"],
+        "internat_receivingAddress_addressDetail": "$.result.addressDetail",																	"addressDetail": "${internat_receivingAddress_addressDetail}",													["Equal","${internat_receivingAddress_addressDetail}","$..receivingAddress..addressDetail"],
+        "internat_receivingAddress_postCode": "$.result.postCode",																						"postCode": "${internat_receivingAddress_postCode}",																		["Equal","${internat_receivingAddress_postCode}","$..receivingAddress..postCode"],
+        "internat_receivingAddress_contactName": "$.result.contactName",																			"contactName": "${internat_receivingAddress_contactName}",															["Equal","${internat_receivingAddress_contactName}","$..receivingAddress..contactName"],
+        "internat_receivingAddress_telephoneArea": "$.result.telephoneArea",																	"telephoneArea": "${internat_receivingAddress_telephoneArea}",  												["Equal","${internat_receivingAddress_telephoneArea}","$..receivingAddress..telephoneArea"],
+        "internat_receivingAddress_telephoneNumber": "$.result.telephoneNumber",                             "telephoneNumber": "${internat_receivingAddress_telephoneNumber}",											["Equal","${internat_receivingAddress_telephoneNumber}","$..receivingAddress..telephoneNumber"],
+        "internat_receivingAddress_mobileNumber": "$.result.mobileNumber",																		"mobileNumber": "${internat_receivingAddress_mobileNumber}",														["Equal","${internat_receivingAddress_mobileNumber}","$..receivingAddress..mobileNumber"],
+        "internat_receivingAddress_mobileArea": "$.result.mobileArea",                                       "mobileArea": "${internat_receivingAddress_mobileArea}",																["Equal","${internat_receivingAddress_mobileArea}","$..receivingAddress..mobileArea"],
+        "internat_receivingAddress_email": "$.result.email"																									"email": "${internat_receivingAddress_email}"																					["Equal","${internat_receivingAddress_email}","$..receivingAddress..email"],
+		}																																																		}
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
