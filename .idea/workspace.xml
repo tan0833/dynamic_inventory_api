@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="fb760d30-8d0f-4d3e-8c45-5e79a28bafeb" name="Default" comment="">
       <change afterPath="$PROJECT_DIR$/common/regular_replace.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dynamic_inventory_api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dynamic_inventory_api.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/common/replace_opertate.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/replace_opertate.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/excel_file.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/excel_file.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/运输下单测试用例-SIT.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/运输下单测试用例-SIT.xlsx" afterDir="false" />
+=======
+>>>>>>> 4d74686d73d29d5ed023d22e43e66ec3e27d5358
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -109,9 +130,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="D:\Rj\nodejs\node.exe" />
     <property name="js.eslint.eslintPackage" value="" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../自动化/客商门户/waybill_order_fe" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="$PROJECT_DIR$/../../Rj/nodejs/node" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
+>>>>>>> 4d74686d73d29d5ed023d22e43e66ec3e27d5358
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -237,11 +264,19 @@
       <method v="2" />
     </configuration>
     <list>
+<<<<<<< HEAD
       <item itemvalue="JavaScript Debug.运输下单SIT接口测试报告20200711215044.html" />
       <item itemvalue="Python.run" />
       <item itemvalue="Python.test_dict" />
       <item itemvalue="Python.replace_opertate" />
       <item itemvalue="JavaScript Debug.运输下单SIT接口测试报告20200713180712.html" />
+=======
+      <item itemvalue="JavaScript Debug.运输下单DEV接口测试报告20200704121210.html" />
+      <item itemvalue="JavaScript Debug.运输下单SIT接口测试报告20200711215044.html" />
+      <item itemvalue="Python.compare_dict" />
+      <item itemvalue="Python.run" />
+      <item itemvalue="Python.test_dict" />
+>>>>>>> 4d74686d73d29d5ed023d22e43e66ec3e27d5358
     </list>
     <recent_temporary>
       <list>
@@ -273,8 +308,12 @@
       <workItem from="1594394442629" duration="841000" />
       <workItem from="1594395442412" duration="324000" />
       <workItem from="1594472290572" duration="6594000" />
+<<<<<<< HEAD
       <workItem from="1594600346894" duration="1382000" />
       <workItem from="1594633478252" duration="3253000" />
+=======
+      <workItem from="1595250293308" duration="737000" />
+>>>>>>> 4d74686d73d29d5ed023d22e43e66ec3e27d5358
     </task>
     <servers />
   </component>
@@ -310,7 +349,22 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
+    <state x="527" y="114" key="FileChooserDialogImpl" timestamp="1595251032389">
+      <screen x="0" y="0" width="1600" height="870" />
+    </state>
+    <state x="527" y="114" key="FileChooserDialogImpl/0.0.1600.870@0.0.1600.870" timestamp="1595251032389" />
     <state width="1544" height="350" key="GridCell.Tab.0.bottom" timestamp="1594480069271">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
@@ -327,10 +381,10 @@
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state width="1544" height="350" key="GridCell.Tab.0.right/0.0.1600.870@0.0.1600.870" timestamp="1594480069271" />
-    <state x="169" y="0" key="SettingsEditor" timestamp="1594392351297">
+    <state x="169" y="0" key="SettingsEditor" timestamp="1595251039187">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
-    <state x="169" y="0" key="SettingsEditor/0.0.1600.870@0.0.1600.870" timestamp="1594392351297" />
+    <state x="169" y="0" key="SettingsEditor/0.0.1600.870@0.0.1600.870" timestamp="1595251039187" />
     <state x="532" y="327" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594392405153">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
