@@ -74,10 +74,16 @@ if __name__ == '__main__':
 #     login = Login()
 #     token = json.loads(login.getTorken().text)['data']
 #
-    method = 'GET'
-    url ='https://j2.sccpcloud.com/api-gateway/waybill-query-app/waybill/detail/document'
-    params = {'resourceCode': '2700b4f5e1c7e69b0836b1fecb2d06addb4c11754862de418b8e48fbcbe8f94a8e041b9aa1c65b641cd005835f10e627cb72f29519d19304d8cfd8c74aae24bd661b14badfd6d84764f956155245caf034331c758fa8c3b47cde3953027aba72e89a97bc9cc1314b59673adb43fe1a61afe7dacbf409c6833debd1011eb0dd0030ddedc3deba4cbddf914bbd9bf87c83'}
-    head = {'Content-Type': 'application/x-www-form-urlencoded', 'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZXJtaW5hbF90eXBlIjoid2ViIiwidXNlcl9uYW1lIjoiV1laIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIiwiZm9vIl0sImFwcGxpY2F0aW9uX2NvZGUiOiJob21lIiwiZXhwIjoxNTg4ODUyMjU2LCJ1c2VyYWNjb3VudF9pZCI6IjQ0MTk0OTQ1ODk5MzgzMzU3NDQiLCJqdGkiOiIwYmZhMTQzMC1lMGMzLTRiY2QtYmE1Ni1kZjY2ZGM1NTQ5NjEiLCJjbGllbnRfaWQiOiJob21lIn0.j19CjqevObuabK64QLWbzzEqtjuz61Na7xJArF18DMjBG57MhgjBtwuQEuqnf4VD5vwKxA5JqNdt1-HhAXanfNK8kZRLYTPPYkYsu2NOgG198FTk0z0s737gFKj21xMT5mbix_6hpYbv6S-xNdyfO8cN9P5u5N3lgyYHV0KE86bHY3Dijg8CUiSpiNTJW4bsC4EVkMqSLFSUiwnXkgYjOU2Gf6efI-gDwMdL4gVOQSvB2bsKJNOhKVugyab1eQqdnYjW9SPUKzUOcRFbgEZ3EzDZZVUEC72uMgToBzbhuu4F2Dgyi34GX-wMB94CHoIDiW1vtv30wkzZgS4uK35XjA', 'clientId': 'client'}
+    method = 'POST'
+    url ='https://mpsit.jus-link.com/api/juslink-sccp-shipment-demand-app/shipment-demand/domestic-rail/withdraw/4487020151668707328'
+    params = {}
+    head = {
+    "Authorization":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZXJtaW5hbF90eXBlIjoid2ViIiwidXNlcl9uYW1lIjoiSFAwMiIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSIsImZvbyJdLCJhcHBsaWNhdGlvbl9jb2RlIjoiaG9tZSIsImV4cCI6MTU5NjEzNTYyOCwidXNlcmFjY291bnRfaWQiOiI0NDc1NjA2NjI4MjY0OTc2Mzg0IiwianRpIjoiMWM2NjMxYjItM2NmOS00YTU4LWIzOGUtOGJiODE4OGNjMDllIiwiY2xpZW50X2lkIjoiaG9tZSJ9.ARxzlWyh5GDlPXR8dZ8rZXPDxiDLaofl2hZQFsaPoKAdz-jJySV0o0IjiqI-DGVzc2m4RPSgJvvSmDS3C8C4VoeAbtgONGhbIBSxfD7V9U087kMMrxc-HqM5g4ZeL-ciFTwV5H37tYr1qhUh3-4v5rYSd5MWj13AxltW_G1fp-3rHrIIrD5JlSXKxnyfjDfQYgNHxYoONFLfx89yPZqjEVc4UDRzB33lVgBE9POerOLcjcv9i1ZwfWopFykh2xYMC_lG_xYe8Ih4eZKfmPNBz9vE29UaIgwqK_1y-0xAA1zP-Upeuqqc4kar6ILPO0E-nPPNCqV7IOLtwatQMyhnpw",
+    "Content-Type":"application/json",
+    "accept-language":"en-US",
+    "clientId":"client"
+}
+
     a = run.run_main(method,url,params,head)
     b = jsonpath.jsonpath(dict(a),'$..content-disposition')
     print(b)

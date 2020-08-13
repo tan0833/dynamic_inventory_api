@@ -36,12 +36,13 @@ class Conf:
         :param url:
         :return:
         '''
-        if 'j1' in url:
+        if 'sit' in url or 'j1' in url:
             return 'SIT'
-        elif 'j2' in url:
+        elif 'uat' in url or 'j2' in url:
             return 'UAT'
         elif 'dev' in url:
             return 'DEV'
+
 
     def get_yaml(self,yaml_file):
         '''

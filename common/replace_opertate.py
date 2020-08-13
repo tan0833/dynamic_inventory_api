@@ -3,7 +3,7 @@ from config.get_conf import Conf
 from util.operate_global import GlobalDict
 from config.Log import Log
 from util.create_random import CreateRandom
-
+from common.regular_replace import RegularReplace
 
 class ReplaceOperte:
 
@@ -11,6 +11,7 @@ class ReplaceOperte:
         self.log = Log()
         self.global_dict = GlobalDict(dict)
         self.create_random = CreateRandom()
+        self.replace_re = RegularReplace(dict)
 
 
     def replace_random(self,random_value='GBK'):
@@ -49,21 +50,25 @@ class ReplaceOperte:
         '''
         if isinstance(global_dict,dict) and isinstance(result,dict):
             for key,value in global_dict.items():
-                new_value = jsonpath.jsonpath(result,value)
-                if not isinstance(new_value,bool):
-                    #获取jsonpath 列表的随机数
+                if '$' in value:
+                    new_value = jsonpath.jsonpath(result,value)
+                    if not isinstance(new_value,bool):
+                        #获取jsonpath 列表的随机数
 
-                    if len(new_value)>1:
-                        new_value_len = random.randint(0, len(new_value) - 1)
-                        new_value = jsonpath.jsonpath(result, value)[new_value_len]
-                    else:
-                        new_value = jsonpath.jsonpath(result, value)[0]
+                        if len(new_value) == 1:
+                            new_value = jsonpath.jsonpath(result, value)[0]
 
-                if new_value:
-                    if isinstance(new_value,int):
-                        self.global_dict.set_dict(key,str(new_value))
-                    else:
-                        self.global_dict.set_dict(key, new_value)
+                        elif len(new_value) > 1 :
+                            new_value_len = random.randint(0, len(new_value) - 1)
+                            new_value = jsonpath.jsonpath(result, value)[new_value_len]
+
+                    if new_value:
+                        if isinstance(new_value,int):
+                            self.global_dict.set_dict(key,str(new_value))
+                        else:
+                            self.global_dict.set_dict(key, new_value)
+                elif '$' not in value:
+                    self.global_dict.set_dict(key,value)
 
     def replace_excel(self,params):
         '''

@@ -45,7 +45,7 @@ for excel_name in execute_case_name:
             d2 = res.excel_dict()
             d.extend(d2)
 
-print(d)
+
 
 @ddt.ddt
 class TestRunMain(unittest.TestCase):
