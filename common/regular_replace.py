@@ -1,4 +1,4 @@
-import re
+import re,random
 from config.Log import Log
 from util.operate_global import GlobalDict
 
@@ -22,8 +22,16 @@ class RegularReplace:
                 if self.global_dict.get_dict(i):
                     return_value = self.global_dict.get_dict(i)
                     self.log.debug(u'全局变量返回的的值：%s' % return_value)
-                    new_value = return_value[0:len(return_value) - 1]
-                    self.log.debug(u'截取全局变量返回的值除最后一位：%s' % new_value)
+                    len_return_1 = random.randint(0,len(return_value))
+                    len_return_2 = random.randint(0,len(return_value))
+                    if len_return_1 < len_return_2:
+                        new_value = return_value[len_return_1:len_return_2]
+                    elif len_return_1 > len_return_2:
+                        new_value = return_value[len_return_2:len_return_1]
+                    elif len_return_1==len_return_2:
+                        new_value = return_value[0:len_return_1]
+
+                    self.log.debug(u'随机截取全局变量返回的值除最后一位：%s' % new_value)
                     # 判断new_value类型是否为字符串类型
                     if isinstance(new_value, str):
                         new_key = '#' + i

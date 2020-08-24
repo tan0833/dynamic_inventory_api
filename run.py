@@ -11,7 +11,6 @@ url = Conf().get_value('request_url','url')
 #环境名称
 environment_name = Conf().is_url(url)
 
-
 date = datetime.datetime.now().strftime('%Y%m%d%H%M%S')
 testCase = unittest.defaultTestLoader.discover(start_dir=case_dir, pattern='test*.py')
 print(testCase.countTestCases())
@@ -19,4 +18,4 @@ print(testCase.countTestCases())
 #执行测试用例
 runner = BeautifulReport(testCase)
 #生成测试报告
-runner.report(description='%s运输下单V2.2.0接口测试报告'%environment_name, filename='%s运输下单V2.2.0接口测试报告'%environment_name + date + '.html', report_dir=report_dir)
+runner.report(description='%s运输下单V2.3.0接口测试报告'%environment_name, filename='%s运输下单V2.3.0接口测试报告'%environment_name + date + '.html', report_dir=report_dir)

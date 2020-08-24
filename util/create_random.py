@@ -17,7 +17,7 @@ class CreateRandom:
         '''
         H = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
         letter = ''
-        for i in range(6):
+        for i in range(10):
             letter = letter + random.choice(H)
         return letter
 
@@ -37,7 +37,7 @@ class CreateRandom:
         创建随机数字
         :return:
         '''
-        return random.randint(0, 99999999)
+        return random.randint(0, 999999999999)
 
 
     def gbk2312(self):
@@ -60,12 +60,28 @@ class CreateRandom:
         cities_name = ["成都", "武汉", "南京", "杭州", "北京", "广州", "上海", "西安", "天津", "沈阳", "宁波", "深圳", "郑州", "南宁", "长沙", "哈尔滨",
                        "台北", "厦门", "宁波",
                        "成都武侯区", "成都金牛区", "成都成华区", "成都高新区", "成都青羊区", "锦江区", "成都郫县", "高新西区", "宜宾", "内江", "眉山", "合肥",
-                       "马鞍山", "桂林",
-                       "兰州", "乌鲁木齐", "鄂尔多斯", "呼和浩特", "太原", "大同", "运城", "驻马店", "台州", "西宁", "日喀则"
+                       "马鞍山", "桂林","兰州", "乌鲁木齐", "鄂尔多斯", "呼和浩特", "太原", "大同", "运城", "驻马店", "台州", "西宁", "日喀则",
+                       "温州", "自贡", "保定", "商丘", "石河子", "喀什", "库尔勒", "宜昌", "荆州", "周口", "齐齐哈尔"
                        ]
         compellation = ["下单", "查单", "运输", "库存", "采购", "销售", "服务", "测试", "搜索", "物流", "交通", "服务"]
-        company_type = ["有限公司", "服务有限公司", "责任有限公司", "贸易有限公司", "咨询有限公司", "厂", "经营部", "集团有限公司", "集团总部"]
+        company_type = ["有限公司", "服务有限公司", "责任有限公司", "贸易有限公司", "咨询有限公司", "厂", "经营部", "集团有限公司", "集团"]
 
         company_name = random.choice(cities_name) + self.gbk2312() + self.gbk2312() + random.choice(compellation) + random.choice(company_type)
         return company_name
 
+
+    def random_create_mobile_phone(self):
+        '''
+        随机创建手机号码
+        :return:
+        '''
+        num_start = ['134', '135', '136', '137', '138', '139', '150', '151', '152', '158', '159', '157', '182', '187',
+                     '188','147', '130', '131', '132', '155', '156', '185', '186', '133', '153', '180', '189','199']
+        phone_num = random.choice(num_start) + str(random.randint(10000000,99999999))
+        return phone_num
+
+
+if __name__ == '__main__':
+        t = CreateRandom()
+        a = t.random_create_mobile_phone()
+        print(a)
