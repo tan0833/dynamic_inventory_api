@@ -1,4 +1,5 @@
 import random
+from random_words import RandomWords
 
 class CreateRandom:
 
@@ -80,8 +81,42 @@ class CreateRandom:
         phone_num = random.choice(num_start) + str(random.randint(10000000,99999999))
         return phone_num
 
+    def random_create_word(self):
+        '''
+        随机生成单词
+        :return:
+        '''
+        lower_letter='abcdefghilmnoprstvw'
+        rw = RandomWords()
+        random_letter = random.choice(lower_letter)
+        words = rw.random_words(letter=random_letter, count=50)
+        word = random.choice(words)
+        return word
+
+    def random_create_english_company(self):
+        '''
+        随机生成英文公司名称
+        :return:
+        '''
+        company_suffix = ['Co.Ltd.','Corp.','S.A.','GmbH','BHD','SDN','S.A.R.L','B.V.N.V','AG','S.A.','S.P.A.','S.R.L.','PLC','AB','OY']
+        word1 = self.random_create_word().capitalize()
+        word2 = self.random_create_word().capitalize()
+        word3 = self.random_create_word().capitalize()
+        english_company_name = word1 + ' ' + word2 + ' ' + word3 + ' '+  random.choice(company_suffix)
+        return english_company_name
+
+    def random_create_email(self):
+        '''
+        随机生成邮箱
+        :return:
+        '''
+        email_suffix = ['@189.com','@qq.com','@126.com','@163.com','@inc.com','@aa.com']
+        letter = self.random_create_letter()
+        email_name = letter + random.choice(email_suffix)
+        return email_name
+
 
 if __name__ == '__main__':
         t = CreateRandom()
-        a = t.random_create_mobile_phone()
+        a = t.random_create_email()
         print(a)

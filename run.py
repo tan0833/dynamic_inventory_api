@@ -18,4 +18,4 @@ print(testCase.countTestCases())
 #执行测试用例
 runner = BeautifulReport(testCase)
 #生成测试报告
-runner.report(description='%s运输下单V2.3.0接口测试报告'%environment_name, filename='%s运输下单V2.3.0接口测试报告'%environment_name + date + '.html', report_dir=report_dir)
+runner.report(description='%s运输下单V2.4.0接口测试报告'%environment_name, filename='%s运输下单V2.4.0接口测试报告'%environment_name + date + '.html', report_dir=report_dir)

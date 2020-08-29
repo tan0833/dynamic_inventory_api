@@ -45,6 +45,17 @@ class ReplaceOperte:
             phone = self.create_random.random_create_mobile_phone()
             self.global_dict.set_dict('PHONE',phone)
 
+        elif random_value == 'ENGLISH_COMPANY':
+            phone = self.create_random.random_create_english_company()
+            self.global_dict.set_dict('ENGLISH_COMPANY',phone)
+
+        elif random_value == 'WORDS':
+            phone = self.create_random.random_create_word()
+            self.global_dict.set_dict('WORDS',phone)
+
+        elif random_value == 'EMAIL':
+            phone = self.create_random.random_create_email()
+            self.global_dict.set_dict('EMAIL',phone)
 
     def replace_global_value(self,global_dict,result):
         '''

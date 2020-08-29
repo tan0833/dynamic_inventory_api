@@ -1,4 +1,8 @@
+import datetime
+
 import xlrd
+import xlwt
+from config.get_conf import Conf
 
 class Operate_excel:
 
@@ -48,7 +52,31 @@ class Operate_excel:
             title.append(th_dict)
         return title
 
+class WriteExcel:
+
+    def excel_write(self,excle_content):
+        '''
+        生成随机excel文件
+        :return:
+        '''
+        time_stamp = '{0:%Y-%m-%d %H_%M_%S}'.format(datetime.datetime.now())
+        test_dir = Conf().get_file_path('test_file', 'test_file_%s.xlsx'%time_stamp)
+        # 创建excel文件
+        filename = xlwt.Workbook(encoding="utf-8")
+        # 给工作表命名，test
+        sheet = filename.add_sheet("test")
+        # 写入内容，第4行第3列写入excle_content
+        sheet.write(1, 1, excle_content)
+        # 指定存储路径，如果当前路径存在同名文件，会覆盖掉同名文件
+        filename.save(test_dir)
+
+
+
 
 if __name__ == '__main__':
-    o = Operate_excel('D:\\文档\\运输可视化相关文档\\自动化\\克隆\\dynamic_inventory\\data\\动态库存接口测试用例.xlsx','登录')
-    print(o.get_row_values(2))
+    # o = Operate_excel('D:\\文档\\运输可视化相关文档\\自动化\\克隆\\dynamic_inventory\\data\\动态库存接口测试用例.xlsx','登录')
+    # print(o.get_row_values(2))
+
+
+    a = WriteExcel()
+    a.excel_write('asdfasdfas')
