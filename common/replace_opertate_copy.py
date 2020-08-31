@@ -85,156 +85,6 @@ class ReplaceOperte:
                 elif '$' not in value:
                     self.global_dict.set_dict(key,value)
 
-
-
-
-    def fuzzy_replace(self,input_parmas):
-        '''
-        用户模糊替换，包含$#
-        :param parmas:
-        :return:
-        '''
-        search_fuzzy_parmas_list = re.findall(r'\${#.+?}', input_parmas, re.M)
-        num = 0
-        params = ''
-
-        def common_replace(input_data):
-            '''
-            抽取公共部分未函数
-            :param input_data:
-            :return:
-            '''
-            data = input_data
-            if re.search(r'\${#(.+?)}', data):
-                i = re.search(r'\${#(.+?)}', data).group(1)
-                self.log.debug(u'获取全局变量名：%s' % i)
-                new_value = ''
-                # 判断在全局变量中能否找到对应的键
-                if self.global_dict.get_dict(i):
-                    return_value = self.global_dict.get_dict(i)
-                    self.log.debug(u'全局变量返回的的值：%s' % return_value)
-                    len_return_1 = random.randint(0, len(return_value))
-                    len_return_2 = random.randint(0, len(return_value))
-                    if len_return_1 < len_return_2:
-                        new_value = return_value[len_return_1:len_return_2]
-                    elif len_return_1 > len_return_2:
-                        new_value = return_value[len_return_2:len_return_1]
-                    elif len_return_1 == len_return_2:
-                        new_value = return_value[0:len_return_1]
-                    self.log.debug(u'随机截取全局变量返回的值：%s' % new_value)
-                    # 判断new_value类型是否为字符串类型
-                    if isinstance(new_value, str):
-                        new_key = '#' + i
-                        self.global_dict.set_dict(new_key, new_value)
-                        self.log.debug(u'新的键：%s和值：%s写入全局字典中用于预期结果调用' % (new_key, new_value))
-                    else:
-                        self.log.debug(u'%s为:%s' % (new_value, type(new_value)))
-                params = re.sub(r'\${#%s}' % i, new_value, data)
-                self.log.debug(u'替换后的参数为：%s' % params)
-                return params
-            else:
-                return data
-
-        #如果没有匹配返回输入参数
-        if len(search_fuzzy_parmas_list) == 0:
-            params = input_parmas
-        else:
-            for j in search_fuzzy_parmas_list:
-                #第一个参数用输入的参数替换
-                if re.search(r'\${#(.+?)}', input_parmas) and num == 0:
-                    params = common_replace(input_parmas)
-                    num = num + 1
-                else:
-                    # 第二个开始用第一个已替换的结果作为替换的入参
-                    params = common_replace(params)
-                    num = num + 1
-        return  params
-
-
-    def random_replace(self,input_parmas):
-        '''
-        用户随机替换，包含$@
-        :param input_parmas:
-        :return:
-        '''
-        search_random_list = re.findall(r'\${@.+?}',input_parmas,re.M)
-        num = 0
-        params = ''
-
-        def common_replace(input_data):
-            '''
-            将公共部分提取为函数
-            :param input_data:
-            :return:
-            '''
-            data = input_data
-            if re.search(r'\${@(.+?)}', data):
-                i = re.search(r'\${@(.+?)}', data).group(1)
-                self.log.debug(u'获取全局变量名：%s' % i)
-                self.replace_random(i)  # 生成随机数
-                new_value = ''
-                # 判断在全局变量中能否找到对应的键
-                if self.global_dict.get_dict(i):
-                    new_value = self.global_dict.get_dict(i)
-                    self.log.debug(u'全局变量返回的的值：%s' % new_value)
-                new_params = re.sub(r'\${@%s}' % i, new_value, data)
-                self.log.debug(u'替换后的参数为：%s' % new_params)
-                return new_params
-            return data
-
-        if len(search_random_list) == 0:
-            params = input_parmas
-        else:
-            for j in search_random_list:
-                if re.search(r'\${@(.+?)}', input_parmas) and num == 0:
-                    params = common_replace(input_parmas)
-                    num = num + 1
-                else:
-                    params = common_replace(params)
-        return params
-
-    def accurate_replace(self,input_params):
-        '''
-        用户精准替换，包含$
-        :param input_params:
-        :return:
-        '''
-        search_list = re.findall(r'\${.+?}',input_params,re.M)
-        num = 0
-        params = ''
-
-        def common_replace(input_data):
-            '''
-            将重用部分抽取为公共函数
-            :param input_data:
-            :return:
-            '''
-            data = input_data
-            if re.search(r'\${.+?}',data):
-                i = re.search(r'\${(.+?)}',data).group(1)
-                self.log.debug(u'获取全局变量名：%s' % i)
-                new_value = ''
-                if self.global_dict.get_dict(i):
-                    new_value = self.global_dict.get_dict(i)
-                    self.log.debug(u'全局变量返回的的值：%s' % new_value)
-                new_params = re.sub(r'\${%s}' % i, new_value, data)
-                self.log.debug(u'替换后的参数为：%s' % new_params)
-                return new_params
-            return data
-
-        if len(search_list) == 0:
-            params = input_params
-        else:
-            for j in search_list:
-                if re.search(r'\${.+?}',input_params) and num == 0:
-                    params = common_replace(input_params)
-                    num = num + 1
-                else:
-                    params = common_replace(params)
-        return params
-
-
-
     def replace_excel(self,params):
         '''
         :param params: 需要替换的内容
@@ -362,9 +212,11 @@ class ReplaceOperte:
 if __name__ == '__main__':
     # y = {}
     y = {'a':'13981754228','b':'测试'}
-    x ="{'x':'aa','y':'${b}'}"
+    x ="{'x':'${@INT}.00','y':'${b}.zz'}"
     r = ReplaceOperte(y)
     g = GlobalDict(y)
 
-    z = r.accurate_replace(x)
+    z = r.replace_excel(x)
     print(z)
+
+

@@ -5,9 +5,9 @@ from config.get_conf import Conf
 from util.operate_excel import Operate_excel
 from runMain.run_main import RunMain
 from util.operate_global import GlobalDict
+from config.global_dict import temp_dict
 
-#定义全局字典
-temp_dict = {}
+
 conf = Conf()
 login = None
 d = []
