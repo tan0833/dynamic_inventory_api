@@ -49,6 +49,9 @@ class ReplaceOperte(ReplaceKinds):
         # 判断是否包含$@用于生成随机数查询替换
         data = self.random_replace(data)
 
+        #判断是否包含$__attachment用于附件列表
+        data = self.attachment_replace(data)
+
         # 判断是否包含$用于精准查询替换
         data = self.accurate_replace(data)
         return data
@@ -111,7 +114,7 @@ class ReplaceOperte(ReplaceKinds):
 if __name__ == '__main__':
     # y = {}
     y = {'a':'13981754228','b':'测试'}
-    x ="{'x':'${#a} ${@INT}','y':'${b} ${@GBK}'}"
+    x ="{'x':$__attachment{internat_air},'y':'${b} ${@GBK}'}"
     r = ReplaceOperte(y)
     g = GlobalDict(y)
 

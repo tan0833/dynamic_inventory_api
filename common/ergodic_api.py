@@ -5,7 +5,7 @@ from util.operate_global import GlobalDict
 from runMain.run_main import RunMain
 from util.operate_excel import WriteExcel
 from util.operate_os import FindNewFile
-import jsonpath,json
+import jsonpath,json,random
 from config.get_conf import Conf
 from config.global_dict import temp_dict
 
@@ -22,16 +22,26 @@ class ErgodicApi:
         self.test_file_path = Conf().get_file_path('test_file')
 
 
-    def attachment_ergodic(self,attachment_dict):
+    def attachment_ergodic(self,mode='TPM_SEA',is_internat=True):
 
         #附件接口输入参数
-        method ,url,header,data= attachment_dict.get('method'),attachment_dict.get('url'),attachment_dict.get('header'),attachment_dict.get('data')
-        result = self.runner.run_main(method=method,url=url,header=header,data=data)
-        res = jsonpath.jsonpath(result,'$..id')
+        method = 'POST'
+        url = basic_url + '/juslink-sccp-shipment-demand-app/shipment-basic/file-types'
+        header = {"Content-Type":"application/json",
+                    "Authorization":token,
+                    "clientId":"client",
+                    "accept-language":"en-US"
+                 }
+        data = {
+                "shippingMode":"%s"%mode,
+                "transnationalShipment":is_internat
+                }
+        result = self.runner.run_main(method=method,url=url,header=header,data=data)        #附件类型接口返回结果
+        res = jsonpath.jsonpath(result,'$..id')                                             #获取附件类型接口所有id列表
         attachments_list = []
         for i in res:
-            self.new_excel_file.excel_write(i)
-            new_file = self.get_new_excel_file.find_new_file(self.test_file_path)
+            self.new_excel_file.excel_write(i)                                              #生成包含附件类型excel
+            new_file = self.get_new_excel_file.find_new_file(self.test_file_path)           #查找最新excel用于附件上传
             oss_method = 'POST'
             oss_url = basic_url + '/oss/objects'
             oss_header = {
@@ -41,19 +51,21 @@ class ErgodicApi:
                  }
             oss_data = {'fileName': '%d'%random.randint(10000,99999),'bucketDirs': 'ShipmentDemand'}
             oss_file = [ ('file', open(new_file,'rb'))]
+            #将最新的excel上传至文件服务返回的结果
             result1 = self.runner.run_main(method=oss_method,url=oss_url,header=oss_header,file=oss_file,data=oss_data)
 
-            file_id = jsonpath.jsonpath(result1,'$..data..id')
-            file_name = jsonpath.jsonpath(result1,'$..data..originName')
-            attachment_dict = {"name": file_name,"typeCode": i,"url": file_id}
+            file_id = jsonpath.jsonpath(result1,'$..data..id')[0]
+            file_name = jsonpath.jsonpath(result1,'$..data..originName')[0]
+            attachment_dict = {"name": file_name,"typeCode": i,"url": file_id}          #将文件类型，文件名称，文件id写入附件列表
             attachments_list.append(attachment_dict)
+        self.get_new_excel_file.remove_file(self.test_file_path,4)                      #删除多余的excel文件，保留5个excel文件
 
         return str(attachments_list)
 
 
 
 if __name__ == '__main__':
-    import random
+
     e = ErgodicApi()
     test_attachment = {
         'method':'POST',
@@ -69,17 +81,5 @@ if __name__ == '__main__':
                 }
     }
 
-    oss_dict = {
-        'oss_method':'POST',
-        'oss_url':basic_url + '/oss/objects',
-        'oss_header':{
-                    "Authorization":token,
-                    "clientId":"client",
-                    "accept-language":"en-US"
-                 },
-        'oss_data':{'fileName': '%d'%random.randint(10000,99999),
-                    'bucketDirs': 'ShipmentDemand'},
-        'oss_file':[  ('file', open(Conf().get_file_path('data','运输下单常用sql.txt'),'rb'))]
-    }
-    res = e.attachment_ergodic(test_attachment)
+    res = e.attachment_ergodic()
     print(str(res))

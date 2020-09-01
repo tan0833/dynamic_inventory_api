@@ -4,6 +4,7 @@ from util.operate_global import GlobalDict
 from config.Log import Log
 from util.create_random import CreateRandom
 from common.regular_replace import RegularReplace
+from common.ergodic_api import ErgodicApi
 
 class ReplaceKinds:
 
@@ -12,6 +13,7 @@ class ReplaceKinds:
         self.global_dict = GlobalDict(dict)
         self.create_random = CreateRandom()
         self.replace_re = RegularReplace(dict)
+        self.accurate = ErgodicApi()
 
     def replace_random(self,random_value='GBK'):
         '''
@@ -118,7 +120,6 @@ class ReplaceKinds:
                     num = num + 1
         return params
 
-
     def random_replace(self,input_parmas):
         '''
         用户随机替换，包含$@
@@ -202,3 +203,79 @@ class ReplaceKinds:
         return params
 
 
+    def mode_accessory(self,mode_params='internat_sea'):
+        '''
+        根据运输模式生成附件类型列表
+        :param mode_params:
+        :return:
+        '''
+        if mode_params == 'internat_sea':
+            attachment_lists = self.accurate.attachment_ergodic('TPM_SEA',True)
+            self.global_dict.set_dict('internat_sea',attachment_lists)
+        elif mode_params == 'internat_air':
+            attachment_lists = self.accurate.attachment_ergodic('TPM_AIR', True)
+            self.global_dict.set_dict('internat_air', attachment_lists)
+        elif mode_params == 'internat_rail':
+            attachment_lists = self.accurate.attachment_ergodic('TPM_RAIL', True)
+            self.global_dict.set_dict('internat_rail', attachment_lists)
+        elif mode_params == 'internat_express':
+            attachment_lists = self.accurate.attachment_ergodic('TPM_EXPRESS', True)
+            self.global_dict.set_dict('internat_express', attachment_lists)
+        elif mode_params == 'cn_sea':
+            attachment_lists = self.accurate.attachment_ergodic('TPM_SEA', False)
+            self.global_dict.set_dict('cn_sea', attachment_lists)
+        elif mode_params == 'cn_air':
+            attachment_lists = self.accurate.attachment_ergodic('TPM_AIR', False)
+            self.global_dict.set_dict('cn_air', attachment_lists)
+        elif mode_params == 'cn_road':
+            attachment_lists = self.accurate.attachment_ergodic('TPM_ROAD', False)
+            self.global_dict.set_dict('cn_road', attachment_lists)
+        elif mode_params == 'cn_rail':
+            attachment_lists = self.accurate.attachment_ergodic('TPM_RAIL', False)
+            self.global_dict.set_dict('cn_rail', attachment_lists)
+        elif mode_params == 'cn_express':
+            attachment_lists = self.accurate.attachment_ergodic('TPM_EXPRESS', False)
+            self.global_dict.set_dict('cn_express', attachment_lists)
+
+
+    def attachment_replace(self,input_params):
+        '''
+        附件列表替换包含 如：${__attachment(internat_sea)}
+        :param input_params:
+        :return:
+        '''
+
+        search_attachment_list = re.findall(r'\$__attachment{.+?}', input_params, re.M)
+        num = 0
+        params = ''
+
+        def common_replace(input_data):
+            '''
+            将重复代码抽出
+            :param input_data:
+            :return:
+            '''
+            data = input_data
+            if re.search(r'\$__attachment{.+?}',data):
+                i = re.search(r'\$__attachment{(.+?)}',data).group(1)
+                self.log.debug(u'获取全局变量名：%s' % i)
+                self.mode_accessory(i)  #根据运输模式的附件类型生成上传不重复的附件列表
+                new_value = ''
+                if self.global_dict.get_dict(i):
+                    new_value = self.global_dict.get_dict(i)
+                    self.log.debug(u'全局变量返回的的值：%s' % new_value)
+                new_params = re.sub(r'\$__attachment{%s}' % i, new_value, data)
+                self.log.debug(u'替换后的参数为：%s' % new_params)
+                return new_params
+            return data
+
+        if len(search_attachment_list)==0:
+            params = input_params
+        else:
+            for j in search_attachment_list:
+                if re.search(r'\$__attachment{(.+?)}', input_params) and num == 0:
+                    params = common_replace(input_params)
+                    num = num + 1
+                else:
+                    params = common_replace(params)
+        return params
