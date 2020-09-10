@@ -7,19 +7,20 @@ from util.operate_excel import WriteExcel
 from util.operate_os import FindNewFile
 import jsonpath,json,random
 from config.get_conf import Conf
-from config.global_dict import temp_dict
+
 
 basic_url = Conf().get_value('request_url','url')
-token = GlobalDict(temp_dict).get_dict('token')
 
 
-class ErgodicApi:
 
-    def __init__(self):
+class ErgodicApi():
+
+    def __init__(self,dict):
         self.runner = RunMain()
         self.new_excel_file = WriteExcel()
         self.get_new_excel_file = FindNewFile()
         self.test_file_path = Conf().get_file_path('test_file')
+        self.token = dict.get('token')
 
 
     def attachment_ergodic(self,mode='TPM_SEA',is_internat=True):
@@ -28,7 +29,7 @@ class ErgodicApi:
         method = 'POST'
         url = basic_url + '/juslink-sccp-shipment-demand-app/shipment-basic/file-types'
         header = {"Content-Type":"application/json",
-                    "Authorization":token,
+                    "Authorization":self.token,
                     "clientId":"client",
                     "accept-language":"en-US"
                  }
@@ -40,16 +41,16 @@ class ErgodicApi:
         res = jsonpath.jsonpath(result,'$..id')                                             #获取附件类型接口所有id列表
         attachments_list = []
         for i in res:
-            self.new_excel_file.excel_write(i)                                              #生成包含附件类型excel
+            self.new_excel_file.excel_write(i,i)                                              #生成包含附件类型excel
             new_file = self.get_new_excel_file.find_new_file(self.test_file_path)           #查找最新excel用于附件上传
             oss_method = 'POST'
             oss_url = basic_url + '/oss/objects'
             oss_header = {
-                    "Authorization":token,
+                    "Authorization":self.token,
                     "clientId":"client",
                     "accept-language":"en-US"
                  }
-            oss_data = {'fileName': '%d'%random.randint(10000,99999),'bucketDirs': 'ShipmentDemand'}
+            oss_data = {'fileName': '%d'%random.randint(10000000,99999999999),'bucketDirs': 'ShipmentDemand'}
             oss_file = [ ('file', open(new_file,'rb'))]
             #将最新的excel上传至文件服务返回的结果
             result1 = self.runner.run_main(method=oss_method,url=oss_url,header=oss_header,file=oss_file,data=oss_data)
@@ -66,12 +67,12 @@ class ErgodicApi:
 
 if __name__ == '__main__':
 
-    e = ErgodicApi()
+    e = ErgodicApi(dict)
     test_attachment = {
         'method':'POST',
         'url':basic_url + '/juslink-sccp-shipment-demand-app/shipment-basic/file-types',
         'header':{"Content-Type":"application/json",
-                    "Authorization":token,
+                    "Authorization":'token',
                     "clientId":"client",
                     "accept-language":"en-US"
                  },

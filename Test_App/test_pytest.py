@@ -44,7 +44,7 @@ if __name__ == '__main__':
     # pytest.main(["test_pytest.py", "-n","2"])  # pip install -U pytest-xdist  多线程运行
     # pytest.main(["test_pytest.py", "--reruns", "2"])  # 重试运行cases  pip install -U pytest-rerunfailures
     # pytest.main(["test_pytest.py", "-s","-n","4"])       #同时运行4个进程，又想打印出print的内容
-    # pytest.main(["--html","./Test_App/report.html"])   #pip install pytest-html
+    # pytest.main(["--html","./Test_Flow/report.html"])   #pip install pytest-html
     # pytest.main(["--showlocals"])       # 在回溯中显示局部变量
     # pytest.main(["--pdb"])  # 每次遇到失败都跳转到 PDB
     # pytest.main(["-x","--pdb"])  # 第一次遇到失败就跳转到 PDB，结束测试执行

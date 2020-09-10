@@ -13,7 +13,7 @@ class ReplaceKinds:
         self.global_dict = GlobalDict(dict)
         self.create_random = CreateRandom()
         self.replace_re = RegularReplace(dict)
-        self.accurate = ErgodicApi()
+        self.accurate = ErgodicApi(dict)
 
     def replace_random(self,random_value='GBK'):
         '''

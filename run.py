@@ -3,7 +3,7 @@ from BeautifulReport import BeautifulReport
 from config.get_conf import Conf
 
 #测试用例目录
-case_dir = Conf().get_file_path('case')
+case_dir = Conf().get_file_path('case','Test_Api')
 #测试报告目录
 report_dir = Conf().get_file_path('report')
 #环境地址

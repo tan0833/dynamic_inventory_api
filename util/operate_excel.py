@@ -54,13 +54,13 @@ class Operate_excel:
 
 class WriteExcel:
 
-    def excel_write(self,excle_content):
+    def excel_write(self,excle_content,file_name):
         '''
         生成随机excel文件
         :return:
         '''
-        time_stamp = '{0:%Y-%m-%d %H_%M_%S.%f}'.format(datetime.datetime.now())
-        test_dir = Conf().get_file_path('test_file', 'test_file_%s.xlsx'%time_stamp)
+        time_stamp = '{0:%Y-%m-%d %H_%M_%S}'.format(datetime.datetime.now())
+        test_dir = Conf().get_file_path('test_file', '%s_%s.xlsx'%(file_name,time_stamp))
         # 创建excel文件
         filename = xlwt.Workbook(encoding="utf-8")
         # 给工作表命名，test
@@ -79,4 +79,4 @@ if __name__ == '__main__':
 
 
     a = WriteExcel()
-    a.excel_write('asdfasdfas')
+    a.excel_write('asdfasdfas','')
