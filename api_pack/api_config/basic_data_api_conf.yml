@@ -1,0 +1,266 @@
+
+
+header:
+  Content-Type: application/json
+  Authorization:
+  clientId: client
+
+#服务类型
+server_level:
+  method: POST
+  url: /juslink-sccp-shipment-demand-app/shipment-basic/server-level
+  params:
+    ctCode: id
+    ctDescribe: name
+    enumeration: SERVICE
+    loadingType: CTM_LCL
+    monitorInfo: serviceModeCode
+    nameSpace: domestic
+    reduxTitle: service
+    selfName: serviceModeCode
+    shippingMode: TPM_SEA
+    showCode: false
+    title:
+    transnationalShipment: false
+
+#电话区号
+international_areas:
+  url: /jusda-basic/international-areas
+  method: GET
+
+
+#付款方式
+paying_types:
+  url: /juslink-sccp-shipment-demand-app/shipment-basic/paying-types
+  method: POST
+  params:
+    ctCode: "id"
+    ctDescribe: "name"
+    enumeration: "PAYMENT"
+    nameSpace: "domestic"
+    reduxTitle: "payment"
+    selfName: "paymentTypeCode"
+    shippingMode: "TPM_ROAD"
+    showCode: false
+    test: "aa"
+    title: "payment"
+    transnationalShipment: false
+
+#车辆类型
+vehicle_type:
+  url: /juslink-sccp-shipment-demand-app/shipment-basic/vehicle-type
+  method: POST
+  params:
+    transnationalShipment: false
+
+
+#车辆规格
+vehicle_specification:
+  url: /juslink-sccp-shipment-demand-app/shipment-basic//vehicle-specification
+  method: POST
+  params:
+    vehicleSpeciesCodeEq: TKG_SPC
+
+
+#是否海关监管
+customs_supervision:
+  url: /juslink-sccp-shipment-demand-app/shipment-basic/customs-supervision
+  method: POST
+  params:
+    specificationEq: TKT_20FR
+    vehicleSpeciesCodeEq: TKG_SPC
+
+
+
+#配载方式
+container_mode:
+  url: /juslink-sccp-shipment-demand-app/shipment-basic/container-mode
+  method: POST
+  params:
+    clearAddressId: serviceModeCode
+    ctCode: id
+    ctDescribe: name
+    monitorInfo: loadingTypeCode
+    nameSpace: domestic
+    reduxTitle: loadingType
+    selfName: loadingTypeCode
+    shippingMode: TPM_SEA
+    showCode: false
+    title: loadingType
+    transnationalShipment: false
+
+#集装箱类型
+container_types:
+  url: /juslink-sccp-shipment-demand-app/shipment-basic/container-types
+  method: POST
+  params:
+    test:
+
+#集装箱尺寸
+container_size:
+  url: /juslink-sccp-shipment-demand-app/shipment-basic/container-size
+  method: POST
+  params:
+    ctCode: "id"
+    ctDescribe: "name"
+    enumeration: "CONTAINERSIZECODE"
+    nameSpace: "international"
+    reduxTitle: "containerSizeCode"
+    shippingMode: "TPM_ROAD"
+    showCode: false
+    title: "containerSizeCode"
+    transnationalShipment: false
+
+
+
+
+#提单类型
+lading_bill_types:
+  url: /juslink-sccp-shipment-demand-app/shipment-basic/lading-bill-types
+  method: POST
+  params:
+    ctCode: id
+    ctDescribe: name
+    enumeration: BILLTYPE
+    reduxTitle: billType
+    selfName: billOfLadingTypeCode
+    shippingMode: TPM_AIR
+    showCode: false
+    title: billType
+    transnationalShipment: true
+
+#贸易术语
+incoterm_types:
+  url: /juslink-sccp-shipment-demand-app/shipment-basic/incoterm-types
+  method: POST
+  params:
+    ctCode: id
+    ctDescribe: name
+    enumeration: TARDETERMS
+    localeCodeEq: zh_CN
+    reduxTitle: tardeTerms
+    selfName: incotermsCode
+    shippingMode: TPM_AIR
+    showCode: false
+    showSignName: false
+    title: tardeTerms
+    transnationalShipment: true
+
+
+#参考单类型
+reference_order_types:
+  url: /juslink-sccp-shipment-demand-app/shipment-basic/reference-order-types
+  method: POST
+  params:
+    ctCode: id
+    ctDescribe: description
+    transnationalShipment: true
+
+
+#货物明细包装单位类型
+line_package_unit_types:
+  url: /juslink-sccp-shipment-demand-app/shipment-basic/line-package-unit-types
+  method: POST
+  params:
+    shippingMode: TPM_AIR
+    transnationalShipment: true
+
+
+#货币类型
+currency_types:
+  url: /juslink-sccp-shipment-demand-app/shipment-basic/currency-types
+  method: POST
+  params:
+    shippingMode: TPM_AIR
+    transnationalShipment: true
+
+
+#包装单位类型
+package_unit_types:
+  url: /juslink-sccp-shipment-demand-app/shipment-basic/package-unit-types
+  method: POST
+  params:
+    test:
+
+
+#附件类型
+file_types:
+  url: /juslink-sccp-shipment-demand-app/shipment-basic/file-types
+  method: POST
+  params:
+    shippingMode: TPM_AIR
+    transnationalShipment: true
+
+
+#货物类型
+cargo_types:
+  url: /juslink-sccp-shipment-demand-app/shipment-basic/cargo-types
+  method: POST
+  params:
+    test:
+
+#运输方式
+transportation_types:
+  url: /juslink-sccp-shipment-demand-app/shipment-basic/transportation-types
+  method: POST
+  params:
+    nameLike: ""
+
+
+#一日游区域
+bonded_areas:
+  url: /jusda-basic/bonded-areas/search
+  method: POST
+  params:
+    test:
+
+#一日游文件
+blp_file_modes:
+  url: /jusda-basic/blp-file-modes/search
+  method: POST
+  params:
+    test:
+
+
+#车站查询
+transport_station:
+  url: /jusda-basic/transport-location/search
+  method: POST
+  params:
+    countryCodeEq: "CN"
+    ctCode: "id"
+    ctDescribe: "nameLocal"
+    enumeration: "ORIGINSTATION"
+    nameOrNameLocalLike: "aa"
+    nameSpace: "domestic"
+    reduxTitle: "originStation"
+    selfName: "originRailwayStationId"
+    title: "originStation"
+    typeCodeEq: "TLT_TRAIL_STATION"
+
+
+#港口/机场查询
+ports_search:
+  url: /jusda-basic/ports/search
+  method: POST
+  params:
+    codeOrNameOrLocalLike: "a"
+    portType: "PTT_HARBOUR"
+    shippingMode: "TPM_SEA"
+
+
+#城市五字码查询
+transport_location_search:
+  url: /jusda-basic/transport-location/paged-search
+  method: POST
+  params:
+    pageCondition:
+      pageIndex: 1
+      pageSize: 10
+    transportLocationSearchCondition:
+      cityCodeNull: false
+      idOrNameOrLocalLike: "aaa"
+      externalSystemCodeIn:
+        - UN
+        - CARGOWISE
+
