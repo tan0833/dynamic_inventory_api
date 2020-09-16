@@ -14,5 +14,13 @@ class Test001(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    # unittest.main()
+    a = {"aa":{"bb":{"cc":13}}}
+    dict = {'Name': 'Zara', 'Age': 7,"aa":{"bb":{"cc":12,"dd":1}}}
+    dict2 = {'Sex': 'female'}
+    # dict['aa']['bb']['cc'] = 5
+    exec("dict['aa']['bb']['cc']='mm'")
+
+
+    print(dict)
 

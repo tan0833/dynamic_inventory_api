@@ -1,5 +1,7 @@
+#基础数据单接口请求参数配置
 
 
+#公共请求头
 header:
   Content-Type: application/json
   Authorization:

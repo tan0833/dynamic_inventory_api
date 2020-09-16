@@ -1,3 +1,7 @@
+'''
+主要封装基础数据单接口，方便遍历基础数据单位
+'''
+
 from config.get_conf import Conf
 from runMain.run_main import RunMain
 
@@ -414,14 +418,15 @@ class BasicData:
         result = self.runner.run_main(method=method, url=url, data=params, header=header)
         return result
 
+
 if __name__ == '__main__':
     from config.global_dict import temp_dict
     b = BasicData(temp_dict)
     # a = b.server_level(loadingType='CTM_LCL')
-    a = b.transport_location_search()
+    a = b.incoterm_types()
     # a= b.ports_search(codeOrNameOrLocalLike='',mode='TMP_SEA',portType='PTT_HARBOUR')
     # a = b.transport_station(nameOrNameLocalLike='武汉')
     # a = b.vehicle_specification('TKG_SPC')
     # a = b.customs_supervision(specificationEq='TKT_20FR',vehicleSpeciesCodeEq='TKG_SPC')
 
-    print(type(a))
+    print(a)
