@@ -26,9 +26,10 @@ class InternatSeaApi:
         url = self.basic_url + internat_sea_save_dict.get('url')
         method = internat_sea_save_dict.get('method')
         params = internat_sea_save_dict.get('params')
-        num = 0
+
         for i,j in kwargs.items():  #获取跟进字典的键
             temp_str = ''
+            num = 0
             key_list = i.split('.')
             for m in key_list:
                 if num == 0:
@@ -75,6 +76,6 @@ class InternatSeaApi:
 if __name__ == '__main__':
     from config.global_dict import temp_dict
     i = InternatSeaApi(temp_dict)
-    a = i.internat_sea_save(**{"shippingInfo.consignee.addressCode":"测试"})
+    a = i.internat_sea_save(**{"shippingInfo.consignee.addressCode":"测试","cargoInfo.bulkCartonQtyUnitCode":"sit测试",})
     # a = i.internat_sea_submit(id=4522581089311580160)
     print(a)
