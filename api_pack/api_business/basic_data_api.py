@@ -423,10 +423,10 @@ if __name__ == '__main__':
     from config.global_dict import temp_dict
     b = BasicData(temp_dict)
     # a = b.server_level(loadingType='CTM_LCL')
-    a = b.incoterm_types()
+    # a = b.server_level(loadingType='CTM_FTL')
     # a= b.ports_search(codeOrNameOrLocalLike='',mode='TMP_SEA',portType='PTT_HARBOUR')
     # a = b.transport_station(nameOrNameLocalLike='武汉')
     # a = b.vehicle_specification('TKG_SPC')
-    # a = b.customs_supervision(specificationEq='TKT_20FR',vehicleSpeciesCodeEq='TKG_SPC')
-
+    a = b.customs_supervision(specificationEq='TKT_20FR',vehicleSpeciesCodeEq='TKG_SPC')
+    # a=b.server_level(mode='TPM_AIR',transnationalShipment=True,loadingType='CTM_FTL')
     print(a)

@@ -1,4 +1,4 @@
-#国际海运相关接口请求参数
+#国际空运相关接口请求参数
 
 
 #公共请求头
@@ -8,14 +8,14 @@ header:
   clientId: client
 
 #提交
-internat_sea_submit:
-  url: /juslink-sccp-shipment-demand-app/shipment-demand/international-sea/submit/
+internat_air_submit:
+  url: /juslink-sccp-shipment-demand-app/shipment-demand/international-air/submit/
   method: POST
 
 
 #保存
-internat_sea_save:
-  url: /juslink-sccp-shipment-demand-app/shipment-demand/international-sea/save
+internat_air_save:
+  url: /juslink-sccp-shipment-demand-app/shipment-demand/international-air/save
   method: POST
   params:
     {
@@ -25,84 +25,88 @@ internat_sea_save:
         "cargoDescription":"1231456asdfasdfasdkfj!",
         "cargoInfoLines":[
         {
-          "amount":"92",
-          "cargoQuantity":13,
+          "amount":"75",
+          "cargoQuantity":1000,
           "companyPn":"P123456!",
           "currencyCode":"CHF",
+          "dangerousCargo":true,
           "descriptionGoods":"123SAFD@#",
-          "grossWeight":"92",
-          "height":"492",
+          "grossWeight":"44512.1455",
+          "height":"475",
           "hsCode":"465ASDFASDF_A",
           "invoiceNumber":"ASDFaa",
-          "length":"92",
-          "netWeight":"92",
+          "length":"75",
+          "netWeight":"4589.55",
           "packageQuantity":12,
           "packageUnitCode":"PUT_BAGBAO",
           "referenceLineNo":"456456~@#",
           "referenceNo":"asdfasdf#$%",
-          "unitPrice":"92",
-          "volume":"92",
-          "width":"92"
+          "unitPrice":"75",
+          "volume":"75",
+          "width":"75"
         },
         {
-          "amount":"92",
-          "cargoQuantity":13,
+          "amount":"75",
+          "cargoQuantity":1000,
           "companyPn":"P123456!",
           "currencyCode":"CHF",
+          "dangerousCargo":true,
           "descriptionGoods":"123SAFD@#",
-          "grossWeight":"92",
-          "height":"492",
+          "grossWeight":"44512.1455",
+          "height":"475",
           "hsCode":"465ASDFASDF_A",
           "invoiceNumber":"ASDFaa",
-          "length":"92",
-          "netWeight":"92",
+          "length":"75",
+          "netWeight":"4589.55",
           "packageQuantity":12,
           "packageUnitCode":"PUT_BAGBAO",
           "referenceLineNo":"456456~@#",
           "referenceNo":"asdfasdf#$%",
-          "unitPrice":"92",
-          "volume":"92",
-          "width":"92"
+          "unitPrice":"75",
+          "volume":"75",
+          "width":"75"
         },
         {
-          "amount":"92",
-          "cargoQuantity":13,
+          "amount":"75",
+          "cargoQuantity":1000,
           "companyPn":"P123456!",
           "currencyCode":"CHF",
+          "dangerousCargo":true,
           "descriptionGoods":"123SAFD@#",
-          "grossWeight":"92",
-          "height":"492",
+          "grossWeight":"44512.1455",
+          "height":"475",
           "hsCode":"465ASDFASDF_A",
           "invoiceNumber":"ASDFaa",
-          "length":"92",
-          "netWeight":"92",
+          "length":"75",
+          "netWeight":"4589.55",
           "packageQuantity":12,
           "packageUnitCode":"PUT_BAGBAO",
           "referenceLineNo":"456456~@#",
           "referenceNo":"asdfasdf#$%",
-          "unitPrice":"92",
-          "volume":"92",
-          "width":"92"
+          "unitPrice":"75",
+          "volume":"75",
+          "width":"75"
         },
         {
-          "amount":"92",
-          "cargoQuantity":13,
+          "amount":"75",
+          "cargoQuantity":1000,
           "companyPn":"P123456!",
           "currencyCode":"CHF",
+          "dangerousCargo":true,
           "descriptionGoods":"123SAFD@#",
-          "grossWeight":"92",
-          "height":"492",
+          "grossWeight":"44512.1455",
+          "height":"475",
           "hsCode":"465ASDFASDF_A",
           "invoiceNumber":"ASDFaa",
-          "length":"92",
-          "netWeight":"92",
+          "length":"75",
+          "netWeight":"4589.55",
           "packageQuantity":12,
           "packageUnitCode":"PUT_BAGBAO",
           "referenceLineNo":"456456~@#",
           "referenceNo":"asdfasdf#$%",
-          "unitPrice":"92",
-          "volume":"92",
-          "width":"92"
+          "unitPrice":"75",
+          "volume":"75",
+          "width":"75"
         }
         ],
         "cargoTypeCode":"CAT_PEM",
@@ -118,12 +122,17 @@ internat_sea_save:
       },
       "referenceOrders":[
       {
-        "referenceOrderNo":"15240588430",
+        "referenceOrderNo":"13464402843",
         "referenceOrderType":"FLT_SALE"
       }
       ],
       "remarks":"123456asdfasdf",
       "shippingInfo":{
+        "airTransportationNode":{
+          "designatedAirport":true,
+          "dischargeAirportId":"SHA",
+          "originAirportId":"BFL"
+        },
         "billOfLadingTypeCode":"LBT_OBO",
         "consignee":{
           "addressAbbreviation":"United States of America",
@@ -153,29 +162,6 @@ internat_sea_save:
           "telephoneNumber":"86",
           "transportLocationCode":"USZET"
         },
-        "containerInfos":[
-        {
-          "containerSizeCode":"CTT_40HC",
-          "containerSizeName":"20GP",
-          "containerType":"BU",
-          "containerTypeCode":"ICT_BU",
-          "requestContainerQty":12
-        },
-        {
-          "containerSizeCode":"CTT_40HC",
-          "containerSizeName":"20GP",
-          "containerType":"BU",
-          "containerTypeCode":"ICT_BU",
-          "requestContainerQty":88
-        },
-        {
-          "containerSizeCode":"CTT_40HC",
-          "containerSizeName":"20GP",
-          "containerType":"BU",
-          "containerTypeCode":"ICT_BU",
-          "requestContainerQty":99
-        }
-        ],
         "destinationCityId":"SCI106251",
         "destinationLocationCode":"USZET",
         "entrustedParty":{
@@ -209,7 +195,6 @@ internat_sea_save:
         "eta":1689320368000,
         "etd":1657784368000,
         "incotermsCode":"INT_EXW",
-        "loadingTypeCode":"CTM_LCL",
         "notifyParty":{
           "addressAbbreviation":"United States of America",
           "addressCode":"Pirkanmaa",
@@ -271,12 +256,6 @@ internat_sea_save:
         },
         "requiredArrivalTime":1622862598000,
         "requiredPickupTime":1622776198000,
-        "seaTransportationNode":{
-          "designatedSeaport":true,
-          "dischargeSeaportId":"CNYAT",
-          "originSeaportId":"CNWEF"
-        },
-        "selfProvidedCabinet":true,
         "serviceModeCode":"SEL_D2D",
         "shipper":{
           "addressAbbreviation":"Finland",

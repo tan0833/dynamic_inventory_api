@@ -1,31 +1,31 @@
 '''
-国际海运相关接口封装
+国内陆运相关接口封装
 '''
 
 from config.get_conf import Conf
 from runMain.run_main import RunMain
 
 
-class InternatSeaApi:
+class DomesticRoadApi:
 
     def __init__(self,dict):
         self.conf = Conf()
         self.basic_url = self.conf.get_value('request_url','url')
-        self.basic_dict = self.conf.get_yaml(self.conf.get_file_path('api_pack','api_config','international_sea_api_conf.yml'))
+        self.basic_dict = self.conf.get_yaml(self.conf.get_file_path('api_pack','api_config','domestic_road_api_conf.yml'))
         self.runner = RunMain()
         self.token = dict.get('token')
 
 
-    def internat_sea_save(self,**kwargs):
+    def domestic_road_save(self,**kwargs):
         '''
-        国际海运保存，输入的kwargs字典暂时只支持一个键
+        国内陆运保存，输入的kwargs字典暂时只支持一个键
         :param **kwargs: 多级字典命名方式如：{"shippingInfo.consignee.addressCode":"测试"}
         :return:
         '''
-        internat_sea_save_dict = self.basic_dict.get('internat_sea_save')
-        url = self.basic_url + internat_sea_save_dict.get('url')
-        method = internat_sea_save_dict.get('method')
-        params = internat_sea_save_dict.get('params')
+        domestic_road_save_dict = self.basic_dict.get('domestic_road_save')
+        url = self.basic_url + domestic_road_save_dict.get('url')
+        method = domestic_road_save_dict.get('method')
+        params = domestic_road_save_dict.get('params')
 
         for i,j in kwargs.items():  #获取跟进字典的键
             temp_str = ''
@@ -60,16 +60,16 @@ class InternatSeaApi:
         result = self.runner.run_main(method=method,url=url,data=params,header=header)
         return result
 
-    def internat_sea_submit(self,id):
+    def domestic_road_submit(self,id):
         '''
         提交下单
         :param id:
         :return:
         '''
-        internat_sea_submit_dict = self.basic_dict.get('internat_sea_submit')
-        path_url = internat_sea_submit_dict.get('url') + '%s'%id
+        domestic_road_submit_dict = self.basic_dict.get('domestic_road_submit')
+        path_url = domestic_road_submit_dict.get('url') + '%s'%id
         url = self.basic_url + path_url
-        method = internat_sea_submit_dict.get('method')
+        method = domestic_road_submit_dict.get('method')
         header = self.basic_dict.get('header')
 
         header['Authorization'] = '%s' % self.token
@@ -79,7 +79,7 @@ class InternatSeaApi:
 
 if __name__ == '__main__':
     from config.global_dict import temp_dict
-    i = InternatSeaApi(temp_dict)
-    a = i.internat_sea_save(**{"shippingInfo.consignee.addressCode":"测试",'referenceOrders.0.referenceOrderNo':13134567978945})
-    # a = i.internat_sea_submit(id=4522581089311580160)
+    i = DomesticRoadApi(temp_dict)
+    a = i.domestic_road_save(**{"shippingInfo.consignee.addressCode":"测试",'referenceOrders.0.referenceOrderNo':13134567978945})
+    # a = i.domestic_road_submit(id=4522581089311580160)
     print(a)
