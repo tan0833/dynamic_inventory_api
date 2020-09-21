@@ -1,5 +1,5 @@
 '''
-国内海运相关接口封装
+国内铁运相关接口封装
 '''
 
 from config.get_conf import Conf

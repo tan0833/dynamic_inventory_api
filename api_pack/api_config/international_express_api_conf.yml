@@ -1,0 +1,463 @@
+#国际快递相关接口请求参数
+
+
+#公共请求头
+header:
+  Content-Type: application/json
+  Authorization:
+  clientId: client
+
+#提交
+internat_express_submit:
+  url: /juslink-sccp-shipment-demand-app/shipment-demand/international-express/submit/
+  method: POST
+
+
+#保存
+internat_express_save:
+  url: /juslink-sccp-shipment-demand-app/shipment-demand/international-express/save
+  method: POST
+  params:
+    {
+      "attachments":[
+      {
+        "name":"FLT_ABN_2020-09-21 17_20_23.xlsx",
+        "typeCode":"FLT_ABN",
+        "url":20271
+      },
+      {
+        "name":"FLT_ACT_2020-09-21 17_20_23.xlsx",
+        "typeCode":"FLT_ACT",
+        "url":20272
+      },
+      {
+        "name":"FLT_ECT_2020-09-21 17_20_24.xlsx",
+        "typeCode":"FLT_ECT",
+        "url":20273
+      },
+      {
+        "name":"FLT_EDF_2020-09-21 17_20_24.xlsx",
+        "typeCode":"FLT_EDF",
+        "url":20274
+      },
+      {
+        "name":"FLT_EMF_2020-09-21 17_20_24.xlsx",
+        "typeCode":"FLT_EMF",
+        "url":20275
+      },
+      {
+        "name":"FLT_EMR_2020-09-21 17_20_25.xlsx",
+        "typeCode":"FLT_EMR",
+        "url":20276
+      },
+      {
+        "name":"FLT_EPM_2020-09-21 17_20_25.xlsx",
+        "typeCode":"FLT_EPM",
+        "url":20277
+      },
+      {
+        "name":"FLT_FAP_2020-09-21 17_20_26.xlsx",
+        "typeCode":"FLT_FAP",
+        "url":20278
+      },
+      {
+        "name":"FLT_GMF_2020-09-21 17_20_26.xlsx",
+        "typeCode":"FLT_GMF",
+        "url":20279
+      },
+      {
+        "name":"FLT_HAWB_2020-09-21 17_20_26.xlsx",
+        "typeCode":"FLT_HAWB",
+        "url":20280
+      },
+      {
+        "name":"FLT_ICR_2020-09-21 17_20_27.xlsx",
+        "typeCode":"FLT_ICR",
+        "url":20281
+      },
+      {
+        "name":"FLT_IDF_2020-09-21 17_20_27.xlsx",
+        "typeCode":"FLT_IDF",
+        "url":20282
+      },
+      {
+        "name":"FLT_IMF_2020-09-21 17_20_28.xlsx",
+        "typeCode":"FLT_IMF",
+        "url":20283
+      },
+      {
+        "name":"FLT_IMFW_2020-09-21 17_20_28.xlsx",
+        "typeCode":"FLT_IMFW",
+        "url":20284
+      },
+      {
+        "name":"FLT_IOM_2020-09-21 17_20_28.xlsx",
+        "typeCode":"FLT_IOM",
+        "url":20285
+      },
+      {
+        "name":"FLT_IVO_2020-09-21 17_20_29.xlsx",
+        "typeCode":"FLT_IVO",
+        "url":20286
+      },
+      {
+        "name":"FLT_PAL_2020-09-21 17_20_29.xlsx",
+        "typeCode":"FLT_PAL",
+        "url":20287
+      },
+      {
+        "name":"FLT_AFD_2020-09-21 17_20_29.xlsx",
+        "typeCode":"FLT_AFD",
+        "url":20288
+      },
+      {
+        "name":"FLT_AIV_2020-09-21 17_20_30.xlsx",
+        "typeCode":"FLT_AIV",
+        "url":20289
+      },
+      {
+        "name":"FLT_APA_2020-09-21 17_20_30.xlsx",
+        "typeCode":"FLT_APA",
+        "url":20290
+      },
+      {
+        "name":"FLT_APF_2020-09-21 17_20_31.xlsx",
+        "typeCode":"FLT_APF",
+        "url":20291
+      },
+      {
+        "name":"FLT_APP_2020-09-21 17_20_31.xlsx",
+        "typeCode":"FLT_APP",
+        "url":20292
+      },
+      {
+        "name":"FLT_ATT_2020-09-21 17_20_31.xlsx",
+        "typeCode":"FLT_ATT",
+        "url":20293
+      },
+      {
+        "name":"FLT_CTF_2020-09-21 17_20_32.xlsx",
+        "typeCode":"FLT_CTF",
+        "url":20294
+      },
+      {
+        "name":"FLT_DAO_2020-09-21 17_20_41.xlsx",
+        "typeCode":"FLT_DAO",
+        "url":20295
+      },
+      {
+        "name":"FLT_DSD_2020-09-21 17_20_42.xlsx",
+        "typeCode":"FLT_DSD",
+        "url":20296
+      },
+      {
+        "name":"FLT_ECR_2020-09-21 17_20_42.xlsx",
+        "typeCode":"FLT_ECR",
+        "url":20297
+      },
+      {
+        "name":"FLT_POD_2020-09-21 17_20_43.xlsx",
+        "typeCode":"FLT_POD",
+        "url":20298
+      },
+      {
+        "name":"FLT_RDD_2020-09-21 17_20_43.xlsx",
+        "typeCode":"FLT_RDD",
+        "url":20299
+      },
+      {
+        "name":"FLT_ROC_2020-09-21 17_20_43.xlsx",
+        "typeCode":"FLT_ROC",
+        "url":20300
+      },
+      {
+        "name":"FLT_SAO_2020-09-21 17_20_44.xlsx",
+        "typeCode":"FLT_SAO",
+        "url":20301
+      },
+      {
+        "name":"FLT_SPO_2020-09-21 17_20_44.xlsx",
+        "typeCode":"FLT_SPO",
+        "url":20302
+      }
+      ],
+      "cargoInfo":{
+        "bulkCartonQty":14,
+        "bulkCartonQtyUnitCode":"PUT_PALLET",
+        "cargoDescription":"1231456asdfasdfasdkfj!",
+        "cargoInfoLines":[
+        {
+          "amount":"64",
+          "companyPn":"P5TqtbgrGF",
+          "currencyCode":"MXN",
+          "descriptionGoods":"P5TqtbgrGF",
+          "grossWeight":"12345678.11",
+          "height":"46",
+          "hsCode":"P5TqtbgrGF",
+          "invoiceNumber":"P5TqtbgrGF",
+          "length":"67",
+          "netWeight":"12345.55",
+          "packageQuantity":1200,
+          "packageUnitCode":"PUT_CARTON",
+          "referenceLineNo":"P5TqtbgrGF",
+          "referenceNo":"P5TqtbgrGF",
+          "unitPrice":"16",
+          "volume":"26",
+          "width":"63"
+        },
+        {
+          "amount":"65",
+          "companyPn":"P5TqtbgrGF",
+          "currencyCode":"MXN",
+          "descriptionGoods":"P5TqtbgrGF",
+          "grossWeight":"44512.1455",
+          "height":"46",
+          "hsCode":"P5TqtbgrGF",
+          "invoiceNumber":"P5TqtbgrGF",
+          "length":"69",
+          "netWeight":"4589.55",
+          "packageQuantity":1200,
+          "packageUnitCode":"PUT_CARTON",
+          "referenceLineNo":"P5TqtbgrGF",
+          "referenceNo":"P5TqtbgrGF",
+          "unitPrice":"61",
+          "volume":"62",
+          "width":"63"
+        },
+        {
+          "amount":"67",
+          "companyPn":"P5TqtbgrGF",
+          "currencyCode":"MXN",
+          "descriptionGoods":"P5TqtbgrGF",
+          "grossWeight":"789456.1152",
+          "height":"64",
+          "hsCode":"P5TqtbgrGF",
+          "invoiceNumber":"P5TqtbgrGF",
+          "length":"6",
+          "netWeight":"123456.5577",
+          "packageQuantity":1200,
+          "packageUnitCode":"PUT_CARTON",
+          "referenceLineNo":"P5TqtbgrGF",
+          "referenceNo":"P5TqtbgrGF",
+          "unitPrice":"61",
+          "volume":"69",
+          "width":"69"
+        },
+        {
+          "amount":"64",
+          "companyPn":"P5TqtbgrGF",
+          "currencyCode":"MXN",
+          "descriptionGoods":"P5TqtbgrGF",
+          "grossWeight":"44545231.1125",
+          "height":"466",
+          "hsCode":"P5TqtbgrGF",
+          "invoiceNumber":"P5TqtbgrGF",
+          "length":"63",
+          "netWeight":"444.55",
+          "packageQuantity":1200,
+          "packageUnitCode":"PUT_CARTON",
+          "referenceLineNo":"P5TqtbgrGF",
+          "referenceNo":"P5TqtbgrGF",
+          "unitPrice":"61",
+          "volume":"68",
+          "width":"67"
+        },
+        {
+          "amount":"6",
+          "companyPn":"P5TqtbgrGF",
+          "currencyCode":"MXN",
+          "descriptionGoods":"P5TqtbgrGF",
+          "grossWeight":"3214521.1154",
+          "height":"46",
+          "hsCode":"P5TqtbgrGF",
+          "invoiceNumber":"P5TqtbgrGF",
+          "length":"6",
+          "netWeight":"123456.55",
+          "packageQuantity":1200,
+          "packageUnitCode":"PUT_CARTON",
+          "referenceLineNo":"P5TqtbgrGF",
+          "referenceNo":"P5TqtbgrGF",
+          "unitPrice":"6",
+          "volume":"6",
+          "width":"6"
+        },
+        {
+          "amount":"65",
+          "companyPn":"P5TqtbgrGF",
+          "currencyCode":"MXN",
+          "descriptionGoods":"P5TqtbgrGF",
+          "grossWeight":"222222.456456",
+          "height":"46",
+          "hsCode":"P5TqtbgrGF",
+          "invoiceNumber":"P5TqtbgrGF",
+          "length":"62",
+          "netWeight":"32144.456789",
+          "packageQuantity":1200,
+          "packageUnitCode":"PUT_CARTON",
+          "referenceLineNo":"P5TqtbgrGF",
+          "referenceNo":"P5TqtbgrGF",
+          "unitPrice":"61",
+          "volume":"6",
+          "width":"67"
+        },
+        {
+          "amount":"64",
+          "companyPn":"P5TqtbgrGF",
+          "currencyCode":"MXN",
+          "descriptionGoods":"P5TqtbgrGF",
+          "grossWeight":"111.11254",
+          "height":"46",
+          "hsCode":"P5TqtbgrGF",
+          "invoiceNumber":"P5TqtbgrGF",
+          "length":"65",
+          "netWeight":"44.5566",
+          "packageQuantity":1200,
+          "packageUnitCode":"PUT_CARTON",
+          "referenceLineNo":"P5TqtbgrGF",
+          "referenceNo":"P5TqtbgrGF",
+          "unitPrice":"61",
+          "volume":"62",
+          "width":"63"
+        }
+        ],
+        "cargoTypeCode":"CAT_GNC",
+        "grossWeight":12.86,
+        "grossWeightUnitCode":"KG",
+        "pieceQty":11,
+        "pieceQtyUnitCode":"PUT_PALLET",
+        "totalPackageQty":12,
+        "totalPackageQtyUnitCode":"PUT_PALLET",
+        "totalVolume":13,
+        "totalVolumeUnitCode":"M3"
+      },
+      "referenceOrders":[
+      {
+        "referenceOrderNo":"13353367980",
+        "referenceOrderType":"FLT_PUR"
+      }
+      ],
+      "settlementInfo":{
+        "consignorId":"4403721588833267713",
+        "costCode":"100008"
+      },
+      "shippingInfo":{
+        "consignee":{
+          "addressAbbreviation":"丹东市",
+          "addressCode":"铁东区",
+          "addressDetail":"施家镇",
+          "cityCode":"SCI105484",
+          "cityName":"Anshan",
+          "contactName":"43",
+          "contactPartnerId":"4526363641239642112",
+          "contactPartnerName":"太原戕体采购贸易有限公司",
+          "contactPartnerType":"CONSIGNEE",
+          "countryCode":"CN",
+          "countryName":"China",
+          "districtCode":"SCT103414",
+          "districtName":"Tiedong",
+          "email":"12123@qq.com",
+          "isDefault":true,
+          "isInternationalPartner":false,
+          "mobileArea":"0086",
+          "mobileNumber":"43",
+          "postCode":"610000",
+          "provinceCode":"CN-21",
+          "provinceName":"Liaoning Province",
+          "streetCode":"SST220689",
+          "streetName":"Shiqiao Town",
+          "telephoneArea":"1809",
+          "telephoneNumber":"15796636823"
+        },
+        "destinationCityId":"SCI407589",
+        "originCityId":"SCI388797",
+        "paymentTypeCode":"PYT_Collect",
+        "pickUp":true,
+        "receivingAddress":{
+          "addressAbbreviation":"丹东市",
+          "addressCode":"铁东区",
+          "addressDetail":"施家镇",
+          "cityCode":"SCI105484",
+          "cityName":"Anshan",
+          "contactName":"34",
+          "contactPartnerAddressId":"4526363641239642114",
+          "countryCode":"CN",
+          "countryName":"China",
+          "districtCode":"SCT103414",
+          "districtName":"Tiedong",
+          "email":"12123@qq.com",
+          "isDefault":false,
+          "isInternationalPartner":false,
+          "mobileArea":"0086",
+          "mobileNumber":"34",
+          "postCode":"610000",
+          "provinceCode":"CN-21",
+          "provinceName":"Liaoning Province",
+          "streetCode":"SST220689",
+          "streetName":"Shiqiao Town",
+          "telephoneArea":"1809",
+          "telephoneNumber":"13822354536"
+        },
+        "requiredArrivalTime":1622862598000,
+        "requiredPickupTime":1622776198000,
+        "serviceModeCode":"SEL_D2F",
+        "shipper":{
+          "addressAbbreviation":"黄南藏族自治州",
+          "addressCode":"祁连县",
+          "addressDetail":"大林镇",
+          "cityCode":"SCI105780",
+          "cityName":"Haibeizangzu",
+          "contactName":"36",
+          "contactPartnerId":"4526363632649707520",
+          "contactPartnerName":"太原仙狱库存有限公司",
+          "contactPartnerType":"SHIPPER",
+          "countryCode":"CN",
+          "countryName":"China",
+          "districtCode":"SCT105659",
+          "districtName":"Gangcha",
+          "email":"12123@qq.com",
+          "isDefault":true,
+          "isInternationalPartner":false,
+          "mobileArea":"0086",
+          "mobileNumber":"13189618151",
+          "postCode":"610000",
+          "provinceCode":"CN-63",
+          "provinceName":"Qinghai Province",
+          "streetCode":"SST217438",
+          "streetName":"Yongxing Town",
+          "telephoneArea":"1809",
+          "telephoneNumber":"36"
+        },
+        "shippingAddress":{
+          "addressAbbreviation":"黄南藏族自治州",
+          "addressCode":"祁连县",
+          "addressDetail":"大林镇",
+          "cityCode":"SCI105780",
+          "cityName":"Haibeizangzu",
+          "contactName":"23",
+          "contactPartnerAddressId":"4526363632649707522",
+          "countryCode":"CN",
+          "countryName":"China",
+          "districtCode":"SCT105659",
+          "districtName":"Gangcha",
+          "email":"12123@qq.com",
+          "isDefault":false,
+          "isInternationalPartner":false,
+          "mobileArea":"0086",
+          "mobileNumber":"23",
+          "postCode":"610000",
+          "provinceCode":"CN-63",
+          "provinceName":"Qinghai Province",
+          "streetCode":"SST217438",
+          "streetName":"Yongxing Town",
+          "telephoneArea":"1809",
+          "telephoneNumber":"18876120868"
+        },
+        "takeDelivery":true
+      },
+      "valueAddedBusiness":{
+        "cargoValue":10.0,
+        "currencyCode":"MXN",
+        "insurance":true,
+        "pod":true
+      }
+    }

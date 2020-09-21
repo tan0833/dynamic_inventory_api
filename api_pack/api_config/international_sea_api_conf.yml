@@ -19,325 +19,593 @@ internat_sea_save:
   method: POST
   params:
     {
+      "attachments":[
+      {
+        "name":"FLT_BOL_2020-09-21 17_19_06.xlsx",
+        "typeCode":"FLT_BOL",
+        "url":20089
+      },
+      {
+        "name":"FLT_CAD_2020-09-21 17_19_07.xlsx",
+        "typeCode":"FLT_CAD",
+        "url":20090
+      },
+      {
+        "name":"FLT_CAU_2020-09-21 17_19_07.xlsx",
+        "typeCode":"FLT_CAU",
+        "url":20092
+      },
+      {
+        "name":"FLT_CDR_2020-09-21 17_19_07.xlsx",
+        "typeCode":"FLT_CDR",
+        "url":20093
+      },
+      {
+        "name":"FLT_CIV_2020-09-21 17_19_08.xlsx",
+        "typeCode":"FLT_CIV",
+        "url":20094
+      },
+      {
+        "name":"FLT_COF_2020-09-21 17_19_08.xlsx",
+        "typeCode":"FLT_COF",
+        "url":20095
+      },
+      {
+        "name":"FLT_COR_2020-09-21 17_19_09.xlsx",
+        "typeCode":"FLT_COR",
+        "url":20096
+      },
+      {
+        "name":"FLT_COU_2020-09-21 17_19_09.xlsx",
+        "typeCode":"FLT_COU",
+        "url":20097
+      },
+      {
+        "name":"FLT_CST_2020-09-21 17_19_09.xlsx",
+        "typeCode":"FLT_CST",
+        "url":20098
+      },
+      {
+        "name":"FLT_CTR_2020-09-21 17_19_10.xlsx",
+        "typeCode":"FLT_CTR",
+        "url":20099
+      },
+      {
+        "name":"FLT_CUS_2020-09-21 17_19_10.xlsx",
+        "typeCode":"FLT_CUS",
+        "url":20100
+      },
+      {
+        "name":"FLT_DAL_2020-09-21 17_19_11.xlsx",
+        "typeCode":"FLT_DAL",
+        "url":20101
+      },
+      {
+        "name":"FLT_DAN_2020-09-21 17_19_11.xlsx",
+        "typeCode":"FLT_DAN",
+        "url":20102
+      },
+      {
+        "name":"FLT_DAO_2020-09-21 17_19_12.xlsx",
+        "typeCode":"FLT_DAO",
+        "url":20103
+      },
+      {
+        "name":"FLT_DEC_2020-09-21 17_19_12.xlsx",
+        "typeCode":"FLT_DEC",
+        "url":20104
+      },
+      {
+        "name":"FLT_DGF_2020-09-21 17_19_12.xlsx",
+        "typeCode":"FLT_DGF",
+        "url":20105
+      },
+      {
+        "name":"FLT_DNO_2020-09-21 17_19_13.xlsx",
+        "typeCode":"FLT_DNO",
+        "url":20106
+      },
+      {
+        "name":"FLT_DRC_2020-09-21 17_19_13.xlsx",
+        "typeCode":"FLT_DRC",
+        "url":20107
+      },
+      {
+        "name":"FLT_ECA_2020-09-21 17_19_14.xlsx",
+        "typeCode":"FLT_ECA",
+        "url":20108
+      },
+      {
+        "name":"FLT_EXD_2020-09-21 17_19_14.xlsx",
+        "typeCode":"FLT_EXD",
+        "url":20109
+      },
+      {
+        "name":"FLT_FUM_2020-09-21 17_19_14.xlsx",
+        "typeCode":"FLT_FUM",
+        "url":20110
+      },
+      {
+        "name":"FLT_FWI_2020-09-21 17_19_15.xlsx",
+        "typeCode":"FLT_FWI",
+        "url":20111
+      },
+      {
+        "name":"FLT_GTP_2020-09-21 17_19_15.xlsx",
+        "typeCode":"FLT_GTP",
+        "url":20112
+      },
+      {
+        "name":"FLT_HBL_2020-09-21 17_19_16.xlsx",
+        "typeCode":"FLT_HBL",
+        "url":20113
+      },
+      {
+        "name":"FLT_ICA_2020-09-21 17_19_16.xlsx",
+        "typeCode":"FLT_ICA",
+        "url":20114
+      },
+      {
+        "name":"FLT_ICRA_2020-09-21 17_19_16.xlsx",
+        "typeCode":"FLT_ICRA",
+        "url":20115
+      },
+      {
+        "name":"FLT_INB_2020-09-21 17_19_17.xlsx",
+        "typeCode":"FLT_INB",
+        "url":20116
+      },
+      {
+        "name":"FLT_IRT_2020-09-21 17_19_17.xlsx",
+        "typeCode":"FLT_IRT",
+        "url":20117
+      },
+      {
+        "name":"FLT_ISF_2020-09-21 17_19_18.xlsx",
+        "typeCode":"FLT_ISF",
+        "url":20118
+      },
+      {
+        "name":"FLT_IVO_2020-09-21 17_19_18.xlsx",
+        "typeCode":"FLT_IVO",
+        "url":20119
+      },
+      {
+        "name":"FLT_LID_2020-09-21 17_19_18.xlsx",
+        "typeCode":"FLT_LID",
+        "url":20120
+      },
+      {
+        "name":"FLT_MAN_2020-09-21 17_19_19.xlsx",
+        "typeCode":"FLT_MAN",
+        "url":20121
+      },
+      {
+        "name":"FLT_MBL_2020-09-21 17_19_19.xlsx",
+        "typeCode":"FLT_MBL",
+        "url":20122
+      },
+      {
+        "name":"FLT_MCD_2020-09-21 17_19_20.xlsx",
+        "typeCode":"FLT_MCD",
+        "url":20123
+      },
+      {
+        "name":"FLT_MCF_2020-09-21 17_19_20.xlsx",
+        "typeCode":"FLT_MCF",
+        "url":20124
+      },
+      {
+        "name":"FLT_MDC_2020-09-21 17_19_20.xlsx",
+        "typeCode":"FLT_MDC",
+        "url":20125
+      },
+      {
+        "name":"FLT_NOT_2020-09-21 17_19_21.xlsx",
+        "typeCode":"FLT_NOT",
+        "url":20126
+      },
+      {
+        "name":"FLT_OBL_2020-09-21 17_19_21.xlsx",
+        "typeCode":"FLT_OBL",
+        "url":20127
+      },
+      {
+        "name":"FLT_PAL_2020-09-21 17_19_22.xlsx",
+        "typeCode":"FLT_PAL",
+        "url":20128
+      },
+      {
+        "name":"FLT_PALT_2020-09-21 17_19_22.xlsx",
+        "typeCode":"FLT_PALT",
+        "url":20129
+      },
+      {
+        "name":"FLT_PODF_2020-09-21 17_19_22.xlsx",
+        "typeCode":"FLT_PODF",
+        "url":20130
+      },
+      {
+        "name":"FLT_SDN_2020-09-21 17_19_23.xlsx",
+        "typeCode":"FLT_SDN",
+        "url":20131
+      },
+      {
+        "name":"FLT_SDS_2020-09-21 17_19_23.xlsx",
+        "typeCode":"FLT_SDS",
+        "url":20132
+      },
+      {
+        "name":"FLT_SLI_2020-09-21 17_19_23.xlsx",
+        "typeCode":"FLT_SLI",
+        "url":20133
+      },
+      {
+        "name":"FLT_TSC_2020-09-21 17_19_24.xlsx",
+        "typeCode":"FLT_TSC",
+        "url":20134
+      },
+      {
+        "name":"FLT_AGI_2020-09-21 17_19_24.xlsx",
+        "typeCode":"FLT_AGI",
+        "url":20135
+      },
+      {
+        "name":"FLT_AIN_2020-09-21 17_19_25.xlsx",
+        "typeCode":"FLT_AIN",
+        "url":20136
+      },
+      {
+        "name":"FLT_ARC_2020-09-21 17_19_25.xlsx",
+        "typeCode":"FLT_ARC",
+        "url":20137
+      },
+      {
+        "name":"FLT_ARN_2020-09-21 17_19_26.xlsx",
+        "typeCode":"FLT_ARN",
+        "url":20138
+      },
+      {
+        "name":"FLT_BCA_2020-09-21 17_19_26.xlsx",
+        "typeCode":"FLT_BCA",
+        "url":20139
+      },
+      {
+        "name":"FLT_BKC_2020-09-21 17_19_26.xlsx",
+        "typeCode":"FLT_BKC",
+        "url":20140
+      },
+      {
+        "name":"FLT_BKG_2020-09-21 17_19_27.xlsx",
+        "typeCode":"FLT_BKG",
+        "url":20141
+      },
+      {
+        "name":"FLT_BOE_2020-09-21 17_19_27.xlsx",
+        "typeCode":"FLT_BOE",
+        "url":20142
+      }
+      ],
       "cargoInfo":{
         "bulkCartonQty":14,
-        "bulkCartonQtyUnitCode":"PUT_CARTON",
+        "bulkCartonQtyUnitCode":"PUT_PALLET",
         "cargoDescription":"1231456asdfasdfasdkfj!",
         "cargoInfoLines":[
         {
-          "amount":"92",
+          "amount":"0",
           "cargoQuantity":13,
           "companyPn":"P123456!",
-          "currencyCode":"CHF",
+          "currencyCode":"MXN",
           "descriptionGoods":"123SAFD@#",
-          "grossWeight":"92",
-          "height":"492",
+          "grossWeight":"0",
+          "height":"40",
           "hsCode":"465ASDFASDF_A",
           "invoiceNumber":"ASDFaa",
-          "length":"92",
-          "netWeight":"92",
+          "length":"0",
+          "netWeight":"0",
           "packageQuantity":12,
-          "packageUnitCode":"PUT_BAGBAO",
+          "packageUnitCode":"PUT_CASE",
           "referenceLineNo":"456456~@#",
           "referenceNo":"asdfasdf#$%",
-          "unitPrice":"92",
-          "volume":"92",
-          "width":"92"
+          "unitPrice":"0",
+          "volume":"0",
+          "width":"0"
         },
         {
-          "amount":"92",
+          "amount":"0",
           "cargoQuantity":13,
           "companyPn":"P123456!",
-          "currencyCode":"CHF",
+          "currencyCode":"MXN",
           "descriptionGoods":"123SAFD@#",
-          "grossWeight":"92",
-          "height":"492",
+          "grossWeight":"0",
+          "height":"40",
           "hsCode":"465ASDFASDF_A",
           "invoiceNumber":"ASDFaa",
-          "length":"92",
-          "netWeight":"92",
+          "length":"0",
+          "netWeight":"0",
           "packageQuantity":12,
-          "packageUnitCode":"PUT_BAGBAO",
+          "packageUnitCode":"PUT_CASE",
           "referenceLineNo":"456456~@#",
           "referenceNo":"asdfasdf#$%",
-          "unitPrice":"92",
-          "volume":"92",
-          "width":"92"
+          "unitPrice":"0",
+          "volume":"0",
+          "width":"0"
         },
         {
-          "amount":"92",
+          "amount":"0",
           "cargoQuantity":13,
           "companyPn":"P123456!",
-          "currencyCode":"CHF",
+          "currencyCode":"MXN",
           "descriptionGoods":"123SAFD@#",
-          "grossWeight":"92",
-          "height":"492",
+          "grossWeight":"0",
+          "height":"40",
           "hsCode":"465ASDFASDF_A",
           "invoiceNumber":"ASDFaa",
-          "length":"92",
-          "netWeight":"92",
+          "length":"0",
+          "netWeight":"0",
           "packageQuantity":12,
-          "packageUnitCode":"PUT_BAGBAO",
+          "packageUnitCode":"PUT_CASE",
           "referenceLineNo":"456456~@#",
           "referenceNo":"asdfasdf#$%",
-          "unitPrice":"92",
-          "volume":"92",
-          "width":"92"
+          "unitPrice":"0",
+          "volume":"0",
+          "width":"0"
         },
         {
-          "amount":"92",
+          "amount":"0",
           "cargoQuantity":13,
           "companyPn":"P123456!",
-          "currencyCode":"CHF",
+          "currencyCode":"MXN",
           "descriptionGoods":"123SAFD@#",
-          "grossWeight":"92",
-          "height":"492",
+          "grossWeight":"0",
+          "height":"40",
           "hsCode":"465ASDFASDF_A",
           "invoiceNumber":"ASDFaa",
-          "length":"92",
-          "netWeight":"92",
+          "length":"0",
+          "netWeight":"0",
           "packageQuantity":12,
-          "packageUnitCode":"PUT_BAGBAO",
+          "packageUnitCode":"PUT_CASE",
           "referenceLineNo":"456456~@#",
           "referenceNo":"asdfasdf#$%",
-          "unitPrice":"92",
-          "volume":"92",
-          "width":"92"
+          "unitPrice":"0",
+          "volume":"0",
+          "width":"0"
         }
         ],
-        "cargoTypeCode":"CAT_PEM",
+        "cargoTypeCode":"CAT_GNC",
         "dangerousCargo":true,
         "grossWeight":12.86,
         "grossWeightUnitCode":"KG",
         "pieceQty":11,
-        "pieceQtyUnitCode":"PUT_CARTON",
+        "pieceQtyUnitCode":"PUT_PALLET",
         "totalPackageQty":12,
-        "totalPackageQtyUnitCode":"PUT_CARTON",
+        "totalPackageQtyUnitCode":"PUT_PALLET",
         "totalVolume":13,
         "totalVolumeUnitCode":"M3"
       },
       "referenceOrders":[
       {
-        "referenceOrderNo":"15240588430",
-        "referenceOrderType":"FLT_SALE"
+        "referenceOrderNo":"18850757156",
+        "referenceOrderType":"FLT_REM"
       }
       ],
       "remarks":"123456asdfasdf",
       "shippingInfo":{
-        "billOfLadingTypeCode":"LBT_OBO",
+        "billOfLadingTypeCode":"LBT_SWB",
         "consignee":{
           "addressAbbreviation":"United States of America",
-          "addressCode":"Connecticut",
-          "addressDetail":"Tolland",
-          "cityCode":"SCI106251",
-          "cityName":"Tolland",
-          "contactName":"boot",
-          "contactPartnerId":"4518749557573292032",
-          "contactPartnerName":"Inference Toothpicks Cell S.P.A.",
+          "addressCode":"Washington",
+          "addressDetail":"Grant",
+          "cityCode":"SCI108980",
+          "cityName":"Grant",
+          "contactName":"appearance",
+          "contactPartnerId":"4526363778678595584",
+          "contactPartnerName":"Inaction Appraisals Alternate BHD",
           "contactPartnerType":"CONSIGNEE",
           "countryCode":"US",
           "countryName":"United States of America",
-          "districtCode":"SCT104227",
-          "districtName":"Zhaoyuan",
-          "email":"YMzlDAjdlX@126.com",
+          "districtCode":"SCT103414",
+          "districtName":"Tiedong",
+          "email":"koxGy7nWG7@189.com",
           "isDefault":true,
           "isInternationalPartner":true,
-          "mobileArea":"423",
-          "mobileNumber":"13120992776",
-          "postCode":"86",
-          "provinceCode":"US-CT",
-          "provinceName":"Connecticut",
-          "streetCode":"SST220688",
-          "streetName":"Jiancheng Town",
-          "telephoneArea":"423",
-          "telephoneNumber":"86",
-          "transportLocationCode":"USZET"
+          "mobileArea":"1809",
+          "mobileNumber":"13337781495",
+          "postCode":"27",
+          "provinceCode":"US-WA",
+          "provinceName":"Washington",
+          "streetCode":"SST220689",
+          "streetName":"Shiqiao Town",
+          "telephoneArea":"1809",
+          "telephoneNumber":"27",
+          "transportLocationCode":"USMWH"
         },
         "containerInfos":[
         {
           "containerSizeCode":"CTT_40HC",
-          "containerSizeName":"20GP",
+          "containerSizeName":"40GP",
           "containerType":"BU",
           "containerTypeCode":"ICT_BU",
           "requestContainerQty":12
         },
         {
           "containerSizeCode":"CTT_40HC",
-          "containerSizeName":"20GP",
+          "containerSizeName":"40GP",
           "containerType":"BU",
           "containerTypeCode":"ICT_BU",
           "requestContainerQty":88
         },
         {
           "containerSizeCode":"CTT_40HC",
-          "containerSizeName":"20GP",
+          "containerSizeName":"40GP",
           "containerType":"BU",
           "containerTypeCode":"ICT_BU",
           "requestContainerQty":99
         }
         ],
-        "destinationCityId":"SCI106251",
-        "destinationLocationCode":"USZET",
+        "destinationCityId":"SCI108980",
+        "destinationLocationCode":"USMWH",
         "entrustedParty":{
-          "addressAbbreviation":"Finland",
-          "addressCode":"Connecticut",
-          "addressDetail":"Vehkajarvi",
-          "cityCode":"SCI236683",
-          "cityName":"Vehkajarvi",
-          "contactName":"persons",
-          "contactPartnerId":"4518749583343095808",
-          "contactPartnerName":"Frame Bracket Fruits Corp.",
+          "addressAbbreviation":"United Arab Emirates",
+          "addressCode":"Washington",
+          "addressDetail":"Habshan",
+          "cityCode":"SCI177069",
+          "cityName":"Habshan",
+          "contactName":"bread",
+          "contactPartnerId":"4526363804448399360",
+          "contactPartnerName":"Instrumentation Mouth Housefalls S.R.L.",
           "contactPartnerType":"CONSIGNOR",
           "countryCode":"CN",
           "countryName":"China",
-          "districtCode":"SCT104227",
-          "districtName":"Zhaoyuan",
-          "email":"VZhy6CPFXo@163.com",
+          "districtCode":"SCT103414",
+          "districtName":"Tiedong",
+          "email":"2BElzWtBqH@aa.com",
           "isDefault":true,
           "isInternationalPartner":true,
-          "mobileArea":"423",
-          "mobileNumber":"14763266815",
-          "postCode":"77",
-          "provinceCode":"FI-11",
-          "provinceName":"Pirkanmaa",
-          "streetCode":"SST220688",
-          "streetName":"Jiancheng Town",
-          "telephoneArea":"423",
-          "telephoneNumber":"77",
-          "transportLocationCode":"USZET"
+          "mobileArea":"1809",
+          "mobileNumber":"13265795478",
+          "postCode":"33",
+          "provinceCode":"AE-AZ",
+          "provinceName":"Abu Dhabi",
+          "streetCode":"SST220689",
+          "streetName":"Shiqiao Town",
+          "telephoneArea":"1809",
+          "telephoneNumber":"33",
+          "transportLocationCode":"USMWH"
         },
         "eta":1689320368000,
         "etd":1657784368000,
-        "incotermsCode":"INT_EXW",
+        "incotermsCode":"INT_FOB",
         "loadingTypeCode":"CTM_LCL",
+        "marksAndNumbers":"脪粷",
         "notifyParty":{
           "addressAbbreviation":"United States of America",
-          "addressCode":"Pirkanmaa",
-          "addressDetail":"Tolland",
-          "cityCode":"SCI106251",
-          "cityName":"Tolland",
-          "contactName":"analog",
-          "contactPartnerId":"4518749574753161216",
-          "contactPartnerName":"Fits Braids Item AB",
+          "addressCode":"Abu Dhabi",
+          "addressDetail":"Grant",
+          "cityCode":"SCI108980",
+          "cityName":"Grant",
+          "contactName":"weldings",
+          "contactPartnerId":"4526363795858464768",
+          "contactPartnerName":"Labor Lieutenant Pipes PLC",
           "contactPartnerType":"NOTIFY_PARTY",
           "countryCode":"US",
           "countryName":"United States of America",
-          "districtCode":"SCT104217",
-          "districtName":"Guangrao",
-          "email":"LFJUcQatk3@189.com",
+          "districtCode":"SCT105656",
+          "districtName":"Menyuanhuizuzizhi Automomous",
+          "email":"tQv5Gp2HSS@126.com",
           "isDefault":true,
           "isInternationalPartner":true,
-          "mobileArea":"423",
-          "mobileNumber":"15181436848",
-          "postCode":"38",
-          "provinceCode":"US-CT",
-          "provinceName":"Connecticut",
-          "streetCode":"SST217440",
-          "streetName":"Zhengxing Town",
-          "telephoneArea":"423",
-          "telephoneNumber":"38",
-          "transportLocationCode":"FIXX6"
+          "mobileArea":"1809",
+          "mobileNumber":"15629745559",
+          "postCode":"65",
+          "provinceCode":"US-WA",
+          "provinceName":"Washington",
+          "streetCode":"SST217438",
+          "streetName":"Yongxing Town",
+          "telephoneArea":"1809",
+          "telephoneNumber":"65",
+          "transportLocationCode":"AEHAB"
         },
-        "originCityId":"SCI236683",
-        "originLocationCode":"FIXX6",
+        "originCityId":"SCI177069",
+        "originLocationCode":"AEHAB",
         "partialShipmentAllowed":true,
-        "paymentTypeCode":"PYT_Collect",
+        "paymentTypeCode":"PYT_PrePaid",
         "pickUp":true,
         "receivingAddress":{
           "addressAbbreviation":"United States of America",
-          "addressCode":"Connecticut",
-          "addressDetail":"Tolland",
-          "cityCode":"SCI106251",
-          "cityName":"Tolland",
-          "contactName":"residents",
-          "contactPartnerAddressId":"4518749557573292034",
+          "addressCode":"Washington",
+          "addressDetail":"Grant",
+          "cityCode":"SCI108980",
+          "cityName":"Grant",
+          "contactName":"guns",
+          "contactPartnerAddressId":"4526363787268530176",
           "countryCode":"US",
           "countryName":"United States of America",
-          "districtCode":"SCT104227",
-          "districtName":"Zhaoyuan",
-          "email":"LStf4ZWh1I@inc.com",
+          "districtCode":"SCT103414",
+          "districtName":"Tiedong",
+          "email":"bdVK2IBcic@inc.com",
           "isDefault":false,
           "isInternationalPartner":true,
-          "mobileArea":"423",
-          "mobileNumber":"13682912722",
-          "postCode":"74",
-          "provinceCode":"US-CT",
-          "provinceName":"Connecticut",
-          "streetCode":"SST220688",
-          "streetName":"Jiancheng Town",
-          "telephoneArea":"423",
-          "telephoneNumber":"74",
-          "transportLocationCode":"USZET"
+          "mobileArea":"1809",
+          "mobileNumber":"13259090212",
+          "postCode":"47",
+          "provinceCode":"US-WA",
+          "provinceName":"Washington",
+          "streetCode":"SST220689",
+          "streetName":"Shiqiao Town",
+          "telephoneArea":"1809",
+          "telephoneNumber":"47",
+          "transportLocationCode":"USMWH"
         },
         "requiredArrivalTime":1622862598000,
         "requiredPickupTime":1622776198000,
         "seaTransportationNode":{
           "designatedSeaport":true,
-          "dischargeSeaportId":"CNYAT",
-          "originSeaportId":"CNWEF"
+          "dischargeSeaportId":"CNQDG",
+          "originSeaportId":"CNRZH"
         },
         "selfProvidedCabinet":true,
         "serviceModeCode":"SEL_D2D",
         "shipper":{
-          "addressAbbreviation":"Finland",
-          "addressCode":"Pirkanmaa",
-          "addressDetail":"Vehkajarvi",
-          "cityCode":"SCI236683",
-          "cityName":"Vehkajarvi",
-          "contactName":"light",
-          "contactPartnerId":"4518749540393422848",
-          "contactPartnerName":"Basket Finger Decreases BHD",
+          "addressAbbreviation":"United Arab Emirates",
+          "addressCode":"Abu Dhabi",
+          "addressDetail":"Habshan",
+          "cityCode":"SCI177069",
+          "cityName":"Habshan",
+          "contactName":"gallon",
+          "contactPartnerId":"4526363770088660992",
+          "contactPartnerName":"Laundries Liquors Workings OY",
           "contactPartnerType":"SHIPPER",
           "countryCode":"CN",
           "countryName":"China",
-          "districtCode":"SCT104217",
-          "districtName":"Guangrao",
-          "email":"Vyg7PokgGU@aa.com",
+          "districtCode":"SCT105656",
+          "districtName":"Menyuanhuizuzizhi Automomous",
+          "email":"RLjwRkmG59@189.com",
           "isDefault":true,
           "isInternationalPartner":true,
-          "mobileArea":"423",
-          "mobileNumber":"13117987869",
-          "postCode":"11",
-          "provinceCode":"FI-11",
-          "provinceName":"Pirkanmaa",
-          "streetCode":"SST217440",
-          "streetName":"Zhengxing Town",
-          "telephoneArea":"423",
-          "telephoneNumber":"11",
-          "transportLocationCode":"FIXX6"
+          "mobileArea":"1809",
+          "mobileNumber":"18978201598",
+          "postCode":"92",
+          "provinceCode":"AE-AZ",
+          "provinceName":"Abu Dhabi",
+          "streetCode":"SST217438",
+          "streetName":"Yongxing Town",
+          "telephoneArea":"1809",
+          "telephoneNumber":"92",
+          "transportLocationCode":"AEHAB"
         },
         "shippingAddress":{
-          "addressAbbreviation":"Finland",
-          "addressCode":"Pirkanmaa",
-          "addressDetail":"Vehkajarvi",
-          "cityCode":"SCI236683",
-          "cityName":"Vehkajarvi",
-          "contactName":"illustrations",
-          "contactPartnerAddressId":"4518749540393422850",
+          "addressAbbreviation":"United Arab Emirates",
+          "addressCode":"Abu Dhabi",
+          "addressDetail":"Habshan",
+          "cityCode":"SCI177069",
+          "cityName":"Habshan",
+          "contactName":"balloons",
+          "contactPartnerAddressId":"4526363770088660994",
           "countryCode":"CN",
           "countryName":"China",
-          "districtCode":"SCT104217",
-          "districtName":"Guangrao",
-          "email":"sLzuR0WSF1@189.com",
+          "districtCode":"SCT105656",
+          "districtName":"Menyuanhuizuzizhi Automomous",
+          "email":"TzABCbR4nW@aa.com",
           "isDefault":false,
           "isInternationalPartner":true,
-          "mobileArea":"423",
-          "mobileNumber":"15884218857",
-          "postCode":"52",
-          "provinceCode":"FI-11",
-          "provinceName":"Pirkanmaa",
-          "streetCode":"SST217440",
-          "streetName":"Zhengxing Town",
-          "telephoneArea":"423",
-          "telephoneNumber":"52",
-          "transportLocationCode":"FIXX6"
+          "mobileArea":"1809",
+          "mobileNumber":"19928471185",
+          "postCode":"26",
+          "provinceCode":"AE-AZ",
+          "provinceName":"Abu Dhabi",
+          "streetCode":"SST217438",
+          "streetName":"Yongxing Town",
+          "telephoneArea":"1809",
+          "telephoneNumber":"26",
+          "transportLocationCode":"AEHAB"
         },
         "takeDelivery":true,
         "transhipmentAllowed":true
       },
       "valueAddedBusiness":{
         "cargoValue":10,
-        "currencyCode":"CHF",
+        "currencyCode":"MXN",
         "entrustCustomsDeclaration":true,
         "insurance":true,
         "insuredValue":11

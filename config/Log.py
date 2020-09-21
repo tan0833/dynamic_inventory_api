@@ -14,7 +14,7 @@ class Log:
         '''文件命名'''
         self.logname = os.path.join(log_path,'%s.log'%time.strftime('%Y_%m_%d'))
         self.logger = logging.getLogger()
-        self.logger.setLevel(logging.WARNING)
+        self.logger.setLevel(logging.INFO)
 
         #输入日志格式
         self.formatter = logging.Formatter('[%(asctime)s - %(filename)s - %(lineno)s] - %(levelname)s:%(message)s')
