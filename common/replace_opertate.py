@@ -12,7 +12,7 @@ class ReplaceOperte(ReplaceKinds):
         :param result:响应结果对应的值获取后存入全局字典中
         :return:
         '''
-        if isinstance(global_dict,dict) and isinstance(result,dict):
+        if isinstance(global_dict,dict) and isinstance(result,dict) :
             for key,value in global_dict.items():
                 if '$' in value:
                     new_value = jsonpath.jsonpath(result,value)
@@ -31,6 +31,7 @@ class ReplaceOperte(ReplaceKinds):
                             self.global_dict.set_dict(key,str(new_value))
                         else:
                             self.global_dict.set_dict(key, new_value)
+
                 elif '$' not in value:
                     self.global_dict.set_dict(key,value)
 

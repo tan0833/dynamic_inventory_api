@@ -13,13 +13,6 @@ from config.global_dict import temp_dict,temp_list
 basic_data = BasicData(temp_dict)
 
 
-def paying_types():
-    '''
-    付款方式
-    '''
-    paying_params = basic_data.paying_types(mode='TPM_SEA', transnationalShipment=True)
-    paying_id_list = jsonpath.jsonpath(paying_params, '$..id')
-    return paying_id_list
 
 #提单类型
 lading_bill_type = basic_data.lading_bill_types(mode='TPM_SEA',transnationalShipment=True)
@@ -54,25 +47,6 @@ class TestInternatSea(unittest.TestCase):
         cls.log = Log()
         cls.mock_data = CreateRandom()
 
-    # @unittest.skip
-    @ddt.data(*paying_types())
-    def test_paying_types(self,paying_id):
-        self._testMethodDoc = '国际海运遍历付款方式'
-        id = None
-        phone = self.mock_data.random_create_mobile_phone()
-        try:
-            result = self.internat_sea.internat_sea_save(**{'shippingInfo.paymentTypeCode': paying_id,'referenceOrders.0.referenceOrderNo':phone})
-            id = jsonpath.jsonpath(result, '$..data')[0]
-            self.assertEqual(result.get('success'),True)
-
-            res = self.internat_sea.internat_sea_submit(id)
-            self.assertEqual(res.get('success'), True)
-        except Exception as e:
-            raise e
-        finally:
-            self.log.warning('id:%s,付款方式单位为：%s,参考单号：%s' % (id, paying_id,phone))
-            temp_list.append(id)
-        self.log.info('\n\n')
 
     # @unittest.skip
     @ddt.data(*lading_bill_type_list)
