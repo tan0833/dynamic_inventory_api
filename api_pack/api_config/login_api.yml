@@ -1,14 +1,41 @@
+#登录
 
+#公共请求头
+header:
+    clientId: Visual_transport_order
+    Authorization: token
 
-
+#登录
 login:
-  -
-    login:
-      url: /usercenter-service/login
-      method: POST
-      body:
-        username: HP02
-        password: Jusda#123
-        clientId: Visual_transport_order
-      headers:
-        Content-Type: application/json
+  params:
+    username: HP02
+    password: Jusda#123
+    clientId: Visual_transport_order
+  url: /usercenter-service/login
+  method: POST
+  header:
+
+#用户身份列表
+identities:
+  url: /usercenter-service/identities
+  method: GET
+
+
+#身份认证
+authentication:
+  url: /usercenter-service/authentication/login-as/
+  method: POST
+
+
+#获取token
+token:
+  url: /usercenter-service/authentication/oauth/token
+  method: GET
+  params:
+   code: verificationCode
+
+
+
+
+
+
