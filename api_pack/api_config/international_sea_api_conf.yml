@@ -19,360 +19,93 @@ internat_sea_save:
   method: POST
   params:
     {
-      "attachments":[
-      {
-        "name":"FLT_BOL_2020-09-21 17_19_06.xlsx",
-        "typeCode":"FLT_BOL",
-        "url":20089
-      },
-      {
-        "name":"FLT_CAD_2020-09-21 17_19_07.xlsx",
-        "typeCode":"FLT_CAD",
-        "url":20090
-      },
-      {
-        "name":"FLT_CAU_2020-09-21 17_19_07.xlsx",
-        "typeCode":"FLT_CAU",
-        "url":20092
-      },
-      {
-        "name":"FLT_CDR_2020-09-21 17_19_07.xlsx",
-        "typeCode":"FLT_CDR",
-        "url":20093
-      },
-      {
-        "name":"FLT_CIV_2020-09-21 17_19_08.xlsx",
-        "typeCode":"FLT_CIV",
-        "url":20094
-      },
-      {
-        "name":"FLT_COF_2020-09-21 17_19_08.xlsx",
-        "typeCode":"FLT_COF",
-        "url":20095
-      },
-      {
-        "name":"FLT_COR_2020-09-21 17_19_09.xlsx",
-        "typeCode":"FLT_COR",
-        "url":20096
-      },
-      {
-        "name":"FLT_COU_2020-09-21 17_19_09.xlsx",
-        "typeCode":"FLT_COU",
-        "url":20097
-      },
-      {
-        "name":"FLT_CST_2020-09-21 17_19_09.xlsx",
-        "typeCode":"FLT_CST",
-        "url":20098
-      },
-      {
-        "name":"FLT_CTR_2020-09-21 17_19_10.xlsx",
-        "typeCode":"FLT_CTR",
-        "url":20099
-      },
-      {
-        "name":"FLT_CUS_2020-09-21 17_19_10.xlsx",
-        "typeCode":"FLT_CUS",
-        "url":20100
-      },
-      {
-        "name":"FLT_DAL_2020-09-21 17_19_11.xlsx",
-        "typeCode":"FLT_DAL",
-        "url":20101
-      },
-      {
-        "name":"FLT_DAN_2020-09-21 17_19_11.xlsx",
-        "typeCode":"FLT_DAN",
-        "url":20102
-      },
-      {
-        "name":"FLT_DAO_2020-09-21 17_19_12.xlsx",
-        "typeCode":"FLT_DAO",
-        "url":20103
-      },
-      {
-        "name":"FLT_DEC_2020-09-21 17_19_12.xlsx",
-        "typeCode":"FLT_DEC",
-        "url":20104
-      },
-      {
-        "name":"FLT_DGF_2020-09-21 17_19_12.xlsx",
-        "typeCode":"FLT_DGF",
-        "url":20105
-      },
-      {
-        "name":"FLT_DNO_2020-09-21 17_19_13.xlsx",
-        "typeCode":"FLT_DNO",
-        "url":20106
-      },
-      {
-        "name":"FLT_DRC_2020-09-21 17_19_13.xlsx",
-        "typeCode":"FLT_DRC",
-        "url":20107
-      },
-      {
-        "name":"FLT_ECA_2020-09-21 17_19_14.xlsx",
-        "typeCode":"FLT_ECA",
-        "url":20108
-      },
-      {
-        "name":"FLT_EXD_2020-09-21 17_19_14.xlsx",
-        "typeCode":"FLT_EXD",
-        "url":20109
-      },
-      {
-        "name":"FLT_FUM_2020-09-21 17_19_14.xlsx",
-        "typeCode":"FLT_FUM",
-        "url":20110
-      },
-      {
-        "name":"FLT_FWI_2020-09-21 17_19_15.xlsx",
-        "typeCode":"FLT_FWI",
-        "url":20111
-      },
-      {
-        "name":"FLT_GTP_2020-09-21 17_19_15.xlsx",
-        "typeCode":"FLT_GTP",
-        "url":20112
-      },
-      {
-        "name":"FLT_HBL_2020-09-21 17_19_16.xlsx",
-        "typeCode":"FLT_HBL",
-        "url":20113
-      },
-      {
-        "name":"FLT_ICA_2020-09-21 17_19_16.xlsx",
-        "typeCode":"FLT_ICA",
-        "url":20114
-      },
-      {
-        "name":"FLT_ICRA_2020-09-21 17_19_16.xlsx",
-        "typeCode":"FLT_ICRA",
-        "url":20115
-      },
-      {
-        "name":"FLT_INB_2020-09-21 17_19_17.xlsx",
-        "typeCode":"FLT_INB",
-        "url":20116
-      },
-      {
-        "name":"FLT_IRT_2020-09-21 17_19_17.xlsx",
-        "typeCode":"FLT_IRT",
-        "url":20117
-      },
-      {
-        "name":"FLT_ISF_2020-09-21 17_19_18.xlsx",
-        "typeCode":"FLT_ISF",
-        "url":20118
-      },
-      {
-        "name":"FLT_IVO_2020-09-21 17_19_18.xlsx",
-        "typeCode":"FLT_IVO",
-        "url":20119
-      },
-      {
-        "name":"FLT_LID_2020-09-21 17_19_18.xlsx",
-        "typeCode":"FLT_LID",
-        "url":20120
-      },
-      {
-        "name":"FLT_MAN_2020-09-21 17_19_19.xlsx",
-        "typeCode":"FLT_MAN",
-        "url":20121
-      },
-      {
-        "name":"FLT_MBL_2020-09-21 17_19_19.xlsx",
-        "typeCode":"FLT_MBL",
-        "url":20122
-      },
-      {
-        "name":"FLT_MCD_2020-09-21 17_19_20.xlsx",
-        "typeCode":"FLT_MCD",
-        "url":20123
-      },
-      {
-        "name":"FLT_MCF_2020-09-21 17_19_20.xlsx",
-        "typeCode":"FLT_MCF",
-        "url":20124
-      },
-      {
-        "name":"FLT_MDC_2020-09-21 17_19_20.xlsx",
-        "typeCode":"FLT_MDC",
-        "url":20125
-      },
-      {
-        "name":"FLT_NOT_2020-09-21 17_19_21.xlsx",
-        "typeCode":"FLT_NOT",
-        "url":20126
-      },
-      {
-        "name":"FLT_OBL_2020-09-21 17_19_21.xlsx",
-        "typeCode":"FLT_OBL",
-        "url":20127
-      },
-      {
-        "name":"FLT_PAL_2020-09-21 17_19_22.xlsx",
-        "typeCode":"FLT_PAL",
-        "url":20128
-      },
-      {
-        "name":"FLT_PALT_2020-09-21 17_19_22.xlsx",
-        "typeCode":"FLT_PALT",
-        "url":20129
-      },
-      {
-        "name":"FLT_PODF_2020-09-21 17_19_22.xlsx",
-        "typeCode":"FLT_PODF",
-        "url":20130
-      },
-      {
-        "name":"FLT_SDN_2020-09-21 17_19_23.xlsx",
-        "typeCode":"FLT_SDN",
-        "url":20131
-      },
-      {
-        "name":"FLT_SDS_2020-09-21 17_19_23.xlsx",
-        "typeCode":"FLT_SDS",
-        "url":20132
-      },
-      {
-        "name":"FLT_SLI_2020-09-21 17_19_23.xlsx",
-        "typeCode":"FLT_SLI",
-        "url":20133
-      },
-      {
-        "name":"FLT_TSC_2020-09-21 17_19_24.xlsx",
-        "typeCode":"FLT_TSC",
-        "url":20134
-      },
-      {
-        "name":"FLT_AGI_2020-09-21 17_19_24.xlsx",
-        "typeCode":"FLT_AGI",
-        "url":20135
-      },
-      {
-        "name":"FLT_AIN_2020-09-21 17_19_25.xlsx",
-        "typeCode":"FLT_AIN",
-        "url":20136
-      },
-      {
-        "name":"FLT_ARC_2020-09-21 17_19_25.xlsx",
-        "typeCode":"FLT_ARC",
-        "url":20137
-      },
-      {
-        "name":"FLT_ARN_2020-09-21 17_19_26.xlsx",
-        "typeCode":"FLT_ARN",
-        "url":20138
-      },
-      {
-        "name":"FLT_BCA_2020-09-21 17_19_26.xlsx",
-        "typeCode":"FLT_BCA",
-        "url":20139
-      },
-      {
-        "name":"FLT_BKC_2020-09-21 17_19_26.xlsx",
-        "typeCode":"FLT_BKC",
-        "url":20140
-      },
-      {
-        "name":"FLT_BKG_2020-09-21 17_19_27.xlsx",
-        "typeCode":"FLT_BKG",
-        "url":20141
-      },
-      {
-        "name":"FLT_BOE_2020-09-21 17_19_27.xlsx",
-        "typeCode":"FLT_BOE",
-        "url":20142
-      }
-      ],
       "cargoInfo":{
         "bulkCartonQty":14,
         "bulkCartonQtyUnitCode":"PUT_PALLET",
         "cargoDescription":"1231456asdfasdfasdkfj!",
         "cargoInfoLines":[
         {
-          "amount":"0",
+          "amount":"43",
           "cargoQuantity":13,
           "companyPn":"P123456!",
-          "currencyCode":"MXN",
+          "currencyCode":"MYR",
           "descriptionGoods":"123SAFD@#",
-          "grossWeight":"0",
-          "height":"40",
+          "grossWeight":"43",
+          "height":"443",
           "hsCode":"465ASDFASDF_A",
           "invoiceNumber":"ASDFaa",
-          "length":"0",
-          "netWeight":"0",
+          "length":"43",
+          "netWeight":"43",
           "packageQuantity":12,
-          "packageUnitCode":"PUT_CASE",
+          "packageUnitCode":"PUT_BAGBAO",
           "referenceLineNo":"456456~@#",
           "referenceNo":"asdfasdf#$%",
-          "unitPrice":"0",
-          "volume":"0",
-          "width":"0"
+          "unitPrice":"43",
+          "volume":"43",
+          "width":"43"
         },
         {
-          "amount":"0",
+          "amount":"43",
           "cargoQuantity":13,
           "companyPn":"P123456!",
-          "currencyCode":"MXN",
+          "currencyCode":"MYR",
           "descriptionGoods":"123SAFD@#",
-          "grossWeight":"0",
-          "height":"40",
+          "grossWeight":"43",
+          "height":"443",
           "hsCode":"465ASDFASDF_A",
           "invoiceNumber":"ASDFaa",
-          "length":"0",
-          "netWeight":"0",
+          "length":"43",
+          "netWeight":"43",
           "packageQuantity":12,
-          "packageUnitCode":"PUT_CASE",
+          "packageUnitCode":"PUT_BAGBAO",
           "referenceLineNo":"456456~@#",
           "referenceNo":"asdfasdf#$%",
-          "unitPrice":"0",
-          "volume":"0",
-          "width":"0"
+          "unitPrice":"43",
+          "volume":"43",
+          "width":"43"
         },
         {
-          "amount":"0",
+          "amount":"43",
           "cargoQuantity":13,
           "companyPn":"P123456!",
-          "currencyCode":"MXN",
+          "currencyCode":"MYR",
           "descriptionGoods":"123SAFD@#",
-          "grossWeight":"0",
-          "height":"40",
+          "grossWeight":"43",
+          "height":"443",
           "hsCode":"465ASDFASDF_A",
           "invoiceNumber":"ASDFaa",
-          "length":"0",
-          "netWeight":"0",
+          "length":"43",
+          "netWeight":"43",
           "packageQuantity":12,
-          "packageUnitCode":"PUT_CASE",
+          "packageUnitCode":"PUT_BAGBAO",
           "referenceLineNo":"456456~@#",
           "referenceNo":"asdfasdf#$%",
-          "unitPrice":"0",
-          "volume":"0",
-          "width":"0"
+          "unitPrice":"43",
+          "volume":"43",
+          "width":"43"
         },
         {
-          "amount":"0",
+          "amount":"43",
           "cargoQuantity":13,
           "companyPn":"P123456!",
-          "currencyCode":"MXN",
+          "currencyCode":"MYR",
           "descriptionGoods":"123SAFD@#",
-          "grossWeight":"0",
-          "height":"40",
+          "grossWeight":"43",
+          "height":"443",
           "hsCode":"465ASDFASDF_A",
           "invoiceNumber":"ASDFaa",
-          "length":"0",
-          "netWeight":"0",
+          "length":"43",
+          "netWeight":"43",
           "packageQuantity":12,
-          "packageUnitCode":"PUT_CASE",
+          "packageUnitCode":"PUT_BAGBAO",
           "referenceLineNo":"456456~@#",
           "referenceNo":"asdfasdf#$%",
-          "unitPrice":"0",
-          "volume":"0",
-          "width":"0"
+          "unitPrice":"43",
+          "volume":"43",
+          "width":"43"
         }
         ],
-        "cargoTypeCode":"CAT_GNC",
+        "cargoTypeCode":"CAT_SLC",
         "dangerousCargo":true,
         "grossWeight":12.86,
         "grossWeightUnitCode":"KG",
@@ -385,227 +118,227 @@ internat_sea_save:
       },
       "referenceOrders":[
       {
-        "referenceOrderNo":"18850757156",
-        "referenceOrderType":"FLT_REM"
+        "referenceOrderNo":"15327751019",
+        "referenceOrderType":"FLT_PUR"
       }
       ],
       "remarks":"123456asdfasdf",
       "shippingInfo":{
-        "billOfLadingTypeCode":"LBT_SWB",
+        "billOfLadingTypeCode":"LBT_OBO",
         "consignee":{
-          "addressAbbreviation":"United States of America",
-          "addressCode":"Washington",
-          "addressDetail":"Grant",
-          "cityCode":"SCI108980",
-          "cityName":"Grant",
-          "contactName":"appearance",
-          "contactPartnerId":"4526363778678595584",
-          "contactPartnerName":"Inaction Appraisals Alternate BHD",
+          "addressAbbreviation":"Japan",
+          "addressCode":"Saitama",
+          "addressDetail":"Koshigaya",
+          "cityCode":"SCI110113",
+          "cityName":"Koshigaya",
+          "contactName":"closure",
+          "contactPartnerId":"4542645484297449472",
+          "contactPartnerName":"Winding Hashmark Gold S.P.A.",
           "contactPartnerType":"CONSIGNEE",
           "countryCode":"US",
           "countryName":"United States of America",
-          "districtCode":"SCT103414",
-          "districtName":"Tiedong",
-          "email":"koxGy7nWG7@189.com",
+          "districtCode":"SCT106636",
+          "districtName":"Fengtai",
+          "email":"8988H2t4dF@qq.com",
           "isDefault":true,
           "isInternationalPartner":true,
-          "mobileArea":"1809",
-          "mobileNumber":"13337781495",
-          "postCode":"27",
-          "provinceCode":"US-WA",
-          "provinceName":"Washington",
-          "streetCode":"SST220689",
-          "streetName":"Shiqiao Town",
-          "telephoneArea":"1809",
-          "telephoneNumber":"27",
-          "transportLocationCode":"USMWH"
+          "mobileArea":"267",
+          "mobileNumber":"13796334340",
+          "postCode":"35",
+          "provinceCode":"JP-11",
+          "provinceName":"Saitama",
+          "streetCode":"SST220704",
+          "streetName":"Sanhe Town",
+          "telephoneArea":"267",
+          "telephoneNumber":"35",
+          "transportLocationCode":"JPKOA"
         },
         "containerInfos":[
         {
-          "containerSizeCode":"CTT_40HC",
-          "containerSizeName":"40GP",
+          "containerSizeCode":"CTT_40GP",
+          "containerSizeName":"40HC",
           "containerType":"BU",
           "containerTypeCode":"ICT_BU",
           "requestContainerQty":12
         },
         {
-          "containerSizeCode":"CTT_40HC",
-          "containerSizeName":"40GP",
+          "containerSizeCode":"CTT_40GP",
+          "containerSizeName":"40HC",
           "containerType":"BU",
           "containerTypeCode":"ICT_BU",
           "requestContainerQty":88
         },
         {
-          "containerSizeCode":"CTT_40HC",
-          "containerSizeName":"40GP",
+          "containerSizeCode":"CTT_40GP",
+          "containerSizeName":"40HC",
           "containerType":"BU",
           "containerTypeCode":"ICT_BU",
           "requestContainerQty":99
         }
         ],
-        "destinationCityId":"SCI108980",
-        "destinationLocationCode":"USMWH",
+        "destinationCityId":"SCI110113",
+        "destinationLocationCode":"JPKOA",
         "entrustedParty":{
-          "addressAbbreviation":"United Arab Emirates",
-          "addressCode":"Washington",
-          "addressDetail":"Habshan",
-          "cityCode":"SCI177069",
-          "cityName":"Habshan",
-          "contactName":"bread",
-          "contactPartnerId":"4526363804448399360",
-          "contactPartnerName":"Instrumentation Mouth Housefalls S.R.L.",
+          "addressAbbreviation":"United States of America",
+          "addressCode":"Saitama",
+          "addressDetail":"Rockingham",
+          "cityCode":"SCI107847",
+          "cityName":"Rockingham",
+          "contactName":"butts",
+          "contactPartnerId":"4542645510067253248",
+          "contactPartnerName":"Alternative Explanations Revision GmbH",
           "contactPartnerType":"CONSIGNOR",
           "countryCode":"CN",
           "countryName":"China",
-          "districtCode":"SCT103414",
-          "districtName":"Tiedong",
-          "email":"2BElzWtBqH@aa.com",
+          "districtCode":"SCT106636",
+          "districtName":"Fengtai",
+          "email":"m6p0KqVku5@163.com",
           "isDefault":true,
           "isInternationalPartner":true,
-          "mobileArea":"1809",
-          "mobileNumber":"13265795478",
-          "postCode":"33",
-          "provinceCode":"AE-AZ",
-          "provinceName":"Abu Dhabi",
-          "streetCode":"SST220689",
-          "streetName":"Shiqiao Town",
-          "telephoneArea":"1809",
-          "telephoneNumber":"33",
-          "transportLocationCode":"USMWH"
+          "mobileArea":"267",
+          "mobileNumber":"13799989815",
+          "postCode":"52",
+          "provinceCode":"US-NH",
+          "provinceName":"New Hampshire",
+          "streetCode":"SST220704",
+          "streetName":"Sanhe Town",
+          "telephoneArea":"267",
+          "telephoneNumber":"52",
+          "transportLocationCode":"JPKOA"
         },
         "eta":1689320368000,
         "etd":1657784368000,
-        "incotermsCode":"INT_FOB",
+        "incotermsCode":"INT_CIP",
         "loadingTypeCode":"CTM_LCL",
-        "marksAndNumbers":"脪粷",
+        "marksAndNumbers":"騳詉",
         "notifyParty":{
-          "addressAbbreviation":"United States of America",
-          "addressCode":"Abu Dhabi",
-          "addressDetail":"Grant",
-          "cityCode":"SCI108980",
-          "cityName":"Grant",
-          "contactName":"weldings",
-          "contactPartnerId":"4526363795858464768",
-          "contactPartnerName":"Labor Lieutenant Pipes PLC",
+          "addressAbbreviation":"Japan",
+          "addressCode":"New Hampshire",
+          "addressDetail":"Koshigaya",
+          "cityCode":"SCI110113",
+          "cityName":"Koshigaya",
+          "contactName":"lent",
+          "contactPartnerId":"4542645501477318656",
+          "contactPartnerName":"Condensation Content Odor GmbH",
           "contactPartnerType":"NOTIFY_PARTY",
           "countryCode":"US",
           "countryName":"United States of America",
-          "districtCode":"SCT105656",
-          "districtName":"Menyuanhuizuzizhi Automomous",
-          "email":"tQv5Gp2HSS@126.com",
+          "districtCode":"SCT106446",
+          "districtName":"Binhaixin",
+          "email":"3Se9Fj5O0K@163.com",
           "isDefault":true,
           "isInternationalPartner":true,
-          "mobileArea":"1809",
-          "mobileNumber":"15629745559",
-          "postCode":"65",
-          "provinceCode":"US-WA",
-          "provinceName":"Washington",
-          "streetCode":"SST217438",
-          "streetName":"Yongxing Town",
-          "telephoneArea":"1809",
-          "telephoneNumber":"65",
-          "transportLocationCode":"AEHAB"
+          "mobileArea":"267",
+          "mobileNumber":"15287623127",
+          "postCode":"12",
+          "provinceCode":"JP-11",
+          "provinceName":"Saitama",
+          "streetCode":"SST217448",
+          "streetName":"Shengli Town",
+          "telephoneArea":"267",
+          "telephoneNumber":"12",
+          "transportLocationCode":"USRYO"
         },
-        "originCityId":"SCI177069",
-        "originLocationCode":"AEHAB",
+        "originCityId":"SCI107847",
+        "originLocationCode":"USRYO",
         "partialShipmentAllowed":true,
-        "paymentTypeCode":"PYT_PrePaid",
+        "paymentTypeCode":"PYT_Collect",
         "pickUp":true,
         "receivingAddress":{
-          "addressAbbreviation":"United States of America",
-          "addressCode":"Washington",
-          "addressDetail":"Grant",
-          "cityCode":"SCI108980",
-          "cityName":"Grant",
-          "contactName":"guns",
-          "contactPartnerAddressId":"4526363787268530176",
+          "addressAbbreviation":"Japan",
+          "addressCode":"Saitama",
+          "addressDetail":"Koshigaya",
+          "cityCode":"SCI110113",
+          "cityName":"Koshigaya",
+          "contactName":"weaves",
+          "contactPartnerAddressId":"4542645484297449474",
           "countryCode":"US",
           "countryName":"United States of America",
-          "districtCode":"SCT103414",
-          "districtName":"Tiedong",
-          "email":"bdVK2IBcic@inc.com",
+          "districtCode":"SCT106636",
+          "districtName":"Fengtai",
+          "email":"jdtEDK7h7g@189.com",
           "isDefault":false,
           "isInternationalPartner":true,
-          "mobileArea":"1809",
-          "mobileNumber":"13259090212",
-          "postCode":"47",
-          "provinceCode":"US-WA",
-          "provinceName":"Washington",
-          "streetCode":"SST220689",
-          "streetName":"Shiqiao Town",
-          "telephoneArea":"1809",
-          "telephoneNumber":"47",
-          "transportLocationCode":"USMWH"
+          "mobileArea":"267",
+          "mobileNumber":"15755012605",
+          "postCode":"1",
+          "provinceCode":"JP-11",
+          "provinceName":"Saitama",
+          "streetCode":"SST220704",
+          "streetName":"Sanhe Town",
+          "telephoneArea":"267",
+          "telephoneNumber":"1",
+          "transportLocationCode":"JPKOA"
         },
         "requiredArrivalTime":1622862598000,
         "requiredPickupTime":1622776198000,
         "seaTransportationNode":{
           "designatedSeaport":true,
-          "dischargeSeaportId":"CNQDG",
-          "originSeaportId":"CNRZH"
+          "dischargeSeaportId":"CNWHR",
+          "originSeaportId":"CNRSN"
         },
         "selfProvidedCabinet":true,
-        "serviceModeCode":"SEL_D2D",
+        "serviceModeCode":"SEL_Y2D",
         "shipper":{
-          "addressAbbreviation":"United Arab Emirates",
-          "addressCode":"Abu Dhabi",
-          "addressDetail":"Habshan",
-          "cityCode":"SCI177069",
-          "cityName":"Habshan",
-          "contactName":"gallon",
-          "contactPartnerId":"4526363770088660992",
-          "contactPartnerName":"Laundries Liquors Workings OY",
+          "addressAbbreviation":"United States of America",
+          "addressCode":"New Hampshire",
+          "addressDetail":"Rockingham",
+          "cityCode":"SCI107847",
+          "cityName":"Rockingham",
+          "contactName":"bonds",
+          "contactPartnerId":"4542645475707514880",
+          "contactPartnerName":"Hashmarks Hair Ingredients S.R.L.",
           "contactPartnerType":"SHIPPER",
           "countryCode":"CN",
           "countryName":"China",
-          "districtCode":"SCT105656",
-          "districtName":"Menyuanhuizuzizhi Automomous",
-          "email":"RLjwRkmG59@189.com",
+          "districtCode":"SCT106446",
+          "districtName":"Binhaixin",
+          "email":"sDGSw8s9ro@aa.com",
           "isDefault":true,
           "isInternationalPartner":true,
-          "mobileArea":"1809",
-          "mobileNumber":"18978201598",
-          "postCode":"92",
-          "provinceCode":"AE-AZ",
-          "provinceName":"Abu Dhabi",
-          "streetCode":"SST217438",
-          "streetName":"Yongxing Town",
-          "telephoneArea":"1809",
-          "telephoneNumber":"92",
-          "transportLocationCode":"AEHAB"
+          "mobileArea":"267",
+          "mobileNumber":"15152522147",
+          "postCode":"27",
+          "provinceCode":"US-NH",
+          "provinceName":"New Hampshire",
+          "streetCode":"SST217448",
+          "streetName":"Shengli Town",
+          "telephoneArea":"267",
+          "telephoneNumber":"27",
+          "transportLocationCode":"USRYO"
         },
         "shippingAddress":{
-          "addressAbbreviation":"United Arab Emirates",
-          "addressCode":"Abu Dhabi",
-          "addressDetail":"Habshan",
-          "cityCode":"SCI177069",
-          "cityName":"Habshan",
-          "contactName":"balloons",
-          "contactPartnerAddressId":"4526363770088660994",
+          "addressAbbreviation":"United States of America",
+          "addressCode":"New Hampshire",
+          "addressDetail":"Rockingham",
+          "cityCode":"SCI107847",
+          "cityName":"Rockingham",
+          "contactName":"hammers",
+          "contactPartnerAddressId":"4542645475707514882",
           "countryCode":"CN",
           "countryName":"China",
-          "districtCode":"SCT105656",
-          "districtName":"Menyuanhuizuzizhi Automomous",
-          "email":"TzABCbR4nW@aa.com",
+          "districtCode":"SCT106446",
+          "districtName":"Binhaixin",
+          "email":"oHduPNmL0M@163.com",
           "isDefault":false,
           "isInternationalPartner":true,
-          "mobileArea":"1809",
-          "mobileNumber":"19928471185",
-          "postCode":"26",
-          "provinceCode":"AE-AZ",
-          "provinceName":"Abu Dhabi",
-          "streetCode":"SST217438",
-          "streetName":"Yongxing Town",
-          "telephoneArea":"1809",
-          "telephoneNumber":"26",
-          "transportLocationCode":"AEHAB"
+          "mobileArea":"267",
+          "mobileNumber":"13130248382",
+          "postCode":"45",
+          "provinceCode":"US-NH",
+          "provinceName":"New Hampshire",
+          "streetCode":"SST217448",
+          "streetName":"Shengli Town",
+          "telephoneArea":"267",
+          "telephoneNumber":"45",
+          "transportLocationCode":"USRYO"
         },
         "takeDelivery":true,
         "transhipmentAllowed":true
       },
       "valueAddedBusiness":{
         "cargoValue":10,
-        "currencyCode":"MXN",
+        "currencyCode":"MYR",
         "entrustCustomsDeclaration":true,
         "insurance":true,
         "insuredValue":11

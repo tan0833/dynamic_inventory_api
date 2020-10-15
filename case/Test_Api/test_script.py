@@ -100,7 +100,7 @@ class TestRunMain(unittest.TestCase):
             expect = eval(expect)
             assert_res = self.ro.replace_expect(expect, result)
             for i in assert_res:
-                self.log.info('断言结果：%s' % i)
+                # self.log.info('断言结果：%s' % i)
                 eval(i)
         self.log.info('\n\n' )
 
@@ -143,7 +143,7 @@ class TestRunMain(unittest.TestCase):
             expect = eval(expect)
             assert_res = self.ro.replace_expect(expect,result)
             for i in assert_res:
-                self.log.info('断言结果：%s'%i)
+                # self.log.info('断言结果：%s'%i)
                 eval(i)
         self.log.info('\n\n')
 

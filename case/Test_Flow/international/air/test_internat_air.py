@@ -24,7 +24,7 @@ incoterm_type_list = jsonpath.jsonpath(incoterm_types,'$..id')
 
 
 #包装单位
-package_unit_types = basic_data.package_unit_types()
+package_unit_types = basic_data.package_unit_types(mode='TPM_AIR',transnationalShipment=True)
 package_unit_types_list = jsonpath.jsonpath(package_unit_types,'$..id')
 
 
@@ -54,7 +54,7 @@ class TestInternatSea(unittest.TestCase):
         cls.mock_data = CreateRandom()
 
 
-    @unittest.skip
+    # @unittest.skip
     @ddt.data(*lading_bill_type_list)
     def test_lading_bill_type(self, lading_bill_id):
         self._testMethodDoc = '国际空运遍历提单类型'
@@ -75,7 +75,7 @@ class TestInternatSea(unittest.TestCase):
         self.log.info('\n\n')
 
 
-    @unittest.skip
+    # @unittest.skip
     @ddt.data(*server_level_list)
     def test_server_level(self,server_level_id):
         self._testMethodDoc = '国际空运遍历服务类型'
@@ -96,7 +96,7 @@ class TestInternatSea(unittest.TestCase):
             temp_list.append(id)
         self.log.info('\n\n')
 
-    @unittest.skip
+    # @unittest.skip
     @ddt.data(*incoterm_type_list)
     def test_incoterm_type(self,incoterm_type_id):
         self._testMethodDoc = '国际空运遍历贸易术语'
@@ -118,7 +118,7 @@ class TestInternatSea(unittest.TestCase):
         self.log.info('\n\n')
 
 
-    @unittest.skip
+    # @unittest.skip
     @ddt.data(*package_unit_types_list)
     def test_package_unit_types(self, package_unit_type_id):
         self._testMethodDoc = '国际空运遍历包装单位'
@@ -139,7 +139,7 @@ class TestInternatSea(unittest.TestCase):
             temp_list.append(id)
         self.log.info('\n\n')
 
-    @unittest.skip
+    # @unittest.skip
     @ddt.data(*line_package_unit_types_list)
     def test_line_package_unit_types(self, line_package_unit_types_id):
         self._testMethodDoc = '国际空运遍历货物明细包装单位'
@@ -161,7 +161,7 @@ class TestInternatSea(unittest.TestCase):
             temp_list.append(id)
         self.log.info('\n\n')
 
-    @unittest.skip
+    # @unittest.skip
     @ddt.data(*currency_type_list)
     def test_currency_type_list(self, currency_type_list_id):
         self._testMethodDoc = '国际空运遍历货物明细货币和保价货币'

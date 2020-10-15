@@ -19,7 +19,7 @@ loading_type_list = jsonpath.jsonpath(loading_type,'$..id')
 
 
 #包装单位
-package_unit_types = basic_data.package_unit_types()
+package_unit_types = basic_data.package_unit_types(mode='TPM_ROAD', transnationalShipment=False)
 package_unit_types_list = jsonpath.jsonpath(package_unit_types,'$..id')
 
 
@@ -60,7 +60,7 @@ class TestInternatSea(unittest.TestCase):
         cls.log = Log()
         cls.mock_data = CreateRandom()
 
-    @unittest.skip
+    # @unittest.skip
     @ddt.data(*loading_type_list)
     def test_loading_type(self,loading_type_id):
         self._testMethodDoc = '国内陆运遍历配载方式'
@@ -82,7 +82,7 @@ class TestInternatSea(unittest.TestCase):
         self.log.info('\n\n')
 
 
-    @unittest.skip
+    # @unittest.skip
     @ddt.data(*server_level_list)
     def test_server_level(self,server_level_id):
         self._testMethodDoc = '国内陆运遍历服务类型'
@@ -141,7 +141,7 @@ class TestInternatSea(unittest.TestCase):
                 self.log.warning('id:%s,车辆类型：%s，车辆规格：%s' % (id, vehicle_type,vehicle_specification))
         self.log.warning('无车辆规格的车辆类型%s'%str(no_specification_list))
 
-    @unittest.skip
+    # @unittest.skip
     def test_container_type_or_size(self):
         self._testMethodDoc = '国内陆运遍历集装箱类型和尺寸'
         id = None
@@ -171,7 +171,7 @@ class TestInternatSea(unittest.TestCase):
                     temp_list.append(id)
                 self.log.info('\n\n')
 
-    @unittest.skip
+    # @unittest.skip
     @ddt.data(*bonded_areas_list)
     def test_bonded_areas(self,bonded_areas_id):
         self._testMethodDoc = '国内陆运遍历一日游区域'
@@ -192,7 +192,7 @@ class TestInternatSea(unittest.TestCase):
             temp_list.append(id)
         self.log.info('\n\n')
 
-    @unittest.skip
+    # @unittest.skip
     @ddt.data(*blp_file_modes_list)
     def test_blp_file_modes(self, blp_file_modes_id):
         self._testMethodDoc = '国内陆运遍历一日游文件'
@@ -213,7 +213,7 @@ class TestInternatSea(unittest.TestCase):
             temp_list.append(id)
         self.log.info('\n\n')
 
-    @unittest.skip
+    # @unittest.skip
     @ddt.data(*cargo_type_list)
     def test_cargo_type(self, cargo_type_id):
         self._testMethodDoc = '国内陆运遍历货物类型'
@@ -234,7 +234,7 @@ class TestInternatSea(unittest.TestCase):
             temp_list.append(id)
         self.log.info('\n\n')
 
-    @unittest.skip
+    # @unittest.skip
     @ddt.data(*package_unit_types_list)
     def test_package_unit_types(self, package_unit_type_id):
         self._testMethodDoc = '国内陆运遍历包装单位'
@@ -255,7 +255,7 @@ class TestInternatSea(unittest.TestCase):
             temp_list.append(id)
         self.log.info('\n\n')
 
-    @unittest.skip
+    # @unittest.skip
     @ddt.data(*line_package_unit_types_list)
     def test_line_package_unit_types(self, line_package_unit_types_id):
         self._testMethodDoc = '国内陆运遍历货物明细包装单位'
@@ -277,7 +277,7 @@ class TestInternatSea(unittest.TestCase):
             temp_list.append(id)
         self.log.info('\n\n')
 
-    @unittest.skip
+    # @unittest.skip
     @ddt.data(*currency_type_list)
     def test_currency_type_list(self, currency_type_list_id):
         self._testMethodDoc = '国内陆运遍历货物明细货币和保价货币'

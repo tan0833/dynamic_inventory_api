@@ -18,7 +18,7 @@ paying_type_list = jsonpath.jsonpath(paying_types,'$..id')
 
 
 #包装单位
-package_unit_types = basic_data.package_unit_types()
+package_unit_types = basic_data.package_unit_types(mode='TPM_AIR',transnationalShipment=False)
 package_unit_types_list = jsonpath.jsonpath(package_unit_types,'$..id')
 
 
@@ -50,7 +50,7 @@ class TestInternatSea(unittest.TestCase):
         cls.log = Log()
         cls.mock_data = CreateRandom()
 
-    @unittest.skip
+    # @unittest.skip
     @ddt.data(*paying_type_list)
     def test_paying_type(self, paying_type_id):
         self._testMethodDoc = '国内空运遍历付款方式'
@@ -71,7 +71,7 @@ class TestInternatSea(unittest.TestCase):
             temp_list.append(id)
         self.log.info('\n\n')
 
-    @unittest.skip
+    # @unittest.skip
     @ddt.data(*server_level_list)
     def test_server_level(self, server_level_id):
         self._testMethodDoc = '国内空运遍历服务类型'
@@ -93,7 +93,7 @@ class TestInternatSea(unittest.TestCase):
         self.log.info('\n\n')
 
 
-    @unittest.skip
+    # @unittest.skip
     @ddt.data(*cargo_type_list)
     def test_cargo_type(self, cargo_type_id):
         self._testMethodDoc = '国内空运遍历货物类型'
@@ -114,7 +114,7 @@ class TestInternatSea(unittest.TestCase):
             temp_list.append(id)
         self.log.info('\n\n')
 
-    @unittest.skip
+    # @unittest.skip
     @ddt.data(*package_unit_types_list)
     def test_package_unit_types(self, package_unit_type_id):
         self._testMethodDoc = '国内空运遍历包装单位'
@@ -135,7 +135,7 @@ class TestInternatSea(unittest.TestCase):
             temp_list.append(id)
         self.log.info('\n\n')
 
-    @unittest.skip
+    # @unittest.skip
     @ddt.data(*line_package_unit_types_list)
     def test_line_package_unit_types(self, line_package_unit_types_id):
         self._testMethodDoc = '国内空运遍历货物明细包装单位'
@@ -157,7 +157,7 @@ class TestInternatSea(unittest.TestCase):
             temp_list.append(id)
         self.log.info('\n\n')
 
-    @unittest.skip
+    # @unittest.skip
     @ddt.data(*currency_type_list)
     def test_currency_type_list(self, currency_type_list_id):
         self._testMethodDoc = '国内空运遍历货物明细货币和保价货币'

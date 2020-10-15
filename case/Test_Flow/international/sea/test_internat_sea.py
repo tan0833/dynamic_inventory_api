@@ -24,7 +24,7 @@ incoterm_type_list = jsonpath.jsonpath(incoterm_types,'$..id')
 
 
 #包装单位
-package_unit_types = basic_data.package_unit_types()
+package_unit_types = basic_data.package_unit_types(mode='TPM_SEA',transnationalShipment=True)
 package_unit_types_list = jsonpath.jsonpath(package_unit_types,'$..id')
 
 
@@ -36,6 +36,24 @@ line_package_unit_types_list = jsonpath.jsonpath(line_package_unit_types,'$..id'
 #货币类型
 currency_type = basic_data.currency_types(mode='TPM_SEA',transnationalShipment=True)
 currency_type_list = jsonpath.jsonpath(currency_type,'$..code')
+
+#服务类型
+def server_level():
+    # 配载方式
+    container_server_level_list = []
+    container_mode = basic_data.container_mode(mode='TPM_SEA', transnationalShipment=True)
+    container_mode_list = jsonpath.jsonpath(container_mode, '$..id')
+    for container_type in container_mode_list:
+        server_level = basic_data.server_level(mode='TPM_SEA', loadingType=container_type, transnationalShipment=True)
+        server_level_list = jsonpath.jsonpath(server_level, '$..id')
+        for i in server_level_list:
+            phone = CreateRandom().random_create_mobile_phone()
+            temp_server_dict = {}
+            temp_server_dict["container_type"] = container_type
+            temp_server_dict["server_type"] = i
+            temp_server_dict["phone"] = phone
+            container_server_level_list.append(temp_server_dict)
+    return container_server_level_list
 
 
 @ddt.ddt
@@ -64,39 +82,32 @@ class TestInternatSea(unittest.TestCase):
         except Exception as e:
             raise e
         finally:
-            self.log.warning('id:%s,提单类型：%s,参考单号：%s' % (id, lading_bill_id,phone))
+            self.log.warning('国际海运id:%s,提单类型：%s,参考单号：%s' % (id, lading_bill_id,phone))
             temp_list.append(id)
         self.log.info('\n\n')
 
 
-    @unittest.skip
-    def test_container_or_server_level(self):
+    # @unittest.skip
+    @ddt.data(*server_level())
+    def test_container_or_server_level(self,server_type):
         self._testMethodDoc = '国际海运遍历配载方式和服务类型'
         id = None
+        try:
+            result = self.internat_sea.internat_sea_save(**{'shippingInfo.loadingTypeCode': server_type["container_type"],
+                                                            'shippingInfo.serviceModeCode': server_type["server_type"],
+                                                            'referenceOrders.0.referenceOrderNo':server_type["phone"]})
+            id = jsonpath.jsonpath(result, '$..data')[0]
+            self.assertEqual(result.get('success'), True)
 
-        # 配载方式
-        container_mode = basic_data.container_mode(mode='TPM_SEA', transnationalShipment=True)
-        container_mode_list = jsonpath.jsonpath(container_mode, '$..id')
-        for container_type in container_mode_list:
-            server_level = basic_data.server_level(mode='TPM_SEA',loadingType=container_type,transnationalShipment=True)
-            server_level_list = jsonpath.jsonpath(server_level,'$..id')
-            for i in server_level_list:
-                phone = self.mock_data.random_create_mobile_phone()
-                try:
-                    result = self.internat_sea.internat_sea_save(**{'shippingInfo.loadingTypeCode': container_type,
-                                                                    'shippingInfo.serviceModeCode': i,
-                                                                    'referenceOrders.0.referenceOrderNo':phone})
-                    id = jsonpath.jsonpath(result, '$..data')[0]
-                    self.assertEqual(result.get('success'), True)
+            res = self.internat_sea.internat_sea_submit(id)
+            self.assertEqual(res.get('success'), True)
+        except Exception as e:
+            raise e
+        finally:
+            self.log.warning('国际海运id:%s,配载方式：%s,服务类型：%s,参考单号：%s' % (id, server_type["container_type"],server_type["server_type"],server_type["phone"]))
+            temp_list.append(id)
+        self.log.info('\n\n')
 
-                    res = self.internat_sea.internat_sea_submit(id)
-                    self.assertEqual(res.get('success'), True)
-                except Exception as e:
-                    raise e
-                finally:
-                    self.log.warning('id:%s,配载方式：%s,服务类型：%s,参考单号：%s' % (id, container_type,i,phone))
-                    temp_list.append(id)
-                self.log.info('\n\n')
 
     @unittest.skip
     @ddt.data(*incoterm_type_list)
@@ -115,7 +126,7 @@ class TestInternatSea(unittest.TestCase):
         except Exception as e:
             raise e
         finally:
-            self.log.warning('id:%s,贸易术语：%s，参考单号：%s' % (id, incoterm_type_id,phone))
+            self.log.warning('国际海运id:%s,贸易术语：%s，参考单号：%s' % (id, incoterm_type_id,phone))
             temp_list.append(id)
         self.log.info('\n\n')
 
@@ -145,7 +156,7 @@ class TestInternatSea(unittest.TestCase):
                 except Exception as e:
                     raise e
                 finally:
-                    self.log.warning('id:%s,集装类型：%s,集装箱尺寸：%s,参考单号：%s' % (id, container_type,i,phone))
+                    self.log.warning('国际海运id:%s,集装类型：%s,集装箱尺寸：%s,参考单号：%s' % (id, container_type,i,phone))
                     temp_list.append(id)
                 self.log.info('\n\n')
 
@@ -167,7 +178,7 @@ class TestInternatSea(unittest.TestCase):
         except Exception as e:
             raise e
         finally:
-            self.log.warning('id:%s,包装单位：%s，参考单号：%s' % (id, package_unit_type_id, phone))
+            self.log.warning('国际海运id:%s,包装单位：%s，参考单号：%s' % (id, package_unit_type_id, phone))
             temp_list.append(id)
         self.log.info('\n\n')
 
@@ -189,7 +200,7 @@ class TestInternatSea(unittest.TestCase):
         except Exception as e:
             raise e
         finally:
-            self.log.warning('id:%s,货物明细包装单位：%s，参考单号：%s' % (id, line_package_unit_types_id, phone))
+            self.log.warning('国际海运id:%s,货物明细包装单位：%s，参考单号：%s' % (id, line_package_unit_types_id, phone))
             temp_list.append(id)
         self.log.info('\n\n')
 
@@ -212,7 +223,7 @@ class TestInternatSea(unittest.TestCase):
         except Exception as e:
             raise e
         finally:
-            self.log.warning('id:%s,货币：%s，参考单号：%s' % (id, currency_type_list_id, phone))
+            self.log.warning('国际海运id:%s,货币：%s，参考单号：%s' % (id, currency_type_list_id, phone))
             temp_list.append(id)
         self.log.info('\n\n')
 

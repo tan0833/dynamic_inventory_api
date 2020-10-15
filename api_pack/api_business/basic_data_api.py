@@ -268,7 +268,7 @@ class BasicData:
         return result
 
 
-    def package_unit_types(self):
+    def package_unit_types(self,mode='TPM_SEA',transnationalShipment=True):
         '''
         包装单位类型
         :return:
@@ -277,6 +277,8 @@ class BasicData:
         url = self.basic_url + package_unit_types_dict.get('url')
         method = package_unit_types_dict.get('method')
         params = package_unit_types_dict.get('params')
+        params['shippingMode'] = '%s' % mode
+        params['transnationalShipment'] = transnationalShipment
 
         header = self.basic_dict.get('header')
         header['Authorization'] = '%s' % self.token

@@ -38,7 +38,7 @@ class CreateRandom:
         创建随机数字
         :return:
         '''
-        return random.randint(0, 99)
+        return random.randint(0, 999999)
 
 
     def gbk2312(self):
