@@ -1,6 +1,8 @@
 from configparser import ConfigParser
 import os,yaml
 from config.Log import Log
+from ruamel import yaml as yml
+
 
 class Conf:
     # cf = ConfigParser()
@@ -55,10 +57,33 @@ class Conf:
         fp.close()
         return result
 
+    def write_yaml(self,input_params,write_file):
+        '''
+        将字典写入ymal文件
+        :param input_params: 输入字典参数
+        :param write_file: 写入的ymal文件
+        :return:
+        '''
+        fp = open(write_file, "w", encoding="utf-8")
+        yml.dump(input_params,fp,Dumper=yml.RoundTripDumper)
+        fp.close()
+
 
 if __name__ == '__main__':
     c = Conf()
-    x = c.get_file_path('config','ideas_cargowise_map.yml')
+    x = c.get_file_path('test_data','domestic_road_save_api_params.yml')
 
-    b = c.get_yaml(x)
+    desired_caps = {
+        'platformName': 'Android',
+        'platformVersion': '7.0',
+        'deviceName': 'A5RNW18316011440',
+        'appPackage': 'com.tencent.mm',
+        'appActivity': '.ui.LauncherUI',
+        'automationName': 'Uiautomator2',
+        'unicodeKeyboard': True,
+        'resetKeyboard': True,
+        'noReset': True,
+        'chromeOptions': {'androidProcess': {"aa":12,"bb":[12,13]}}
+    }
+    b = c.write_yaml(desired_caps,x)
     print(b)
