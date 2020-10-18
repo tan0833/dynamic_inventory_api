@@ -93,14 +93,14 @@ class TestRunMain(unittest.TestCase):
             global_value = eval(global_value)
 
         result = self.run_main.run_main(method, url=url, data=params, header=header,file=file)
-        self.ro.replace_global_value(global_value,result)
+        self.ro.replace_global_value(global_value,result,params=params)
 
         expect = data['expect']
         if expect.startswith('['):
             expect = eval(expect)
             assert_res = self.ro.replace_expect(expect, result)
             for i in assert_res:
-                self.log.info('断言结果：%s' % i)
+                # self.log.info('断言结果：%s' % i)
                 eval(i)
         self.log.info('\n\n' )
 
@@ -136,28 +136,28 @@ class TestRunMain(unittest.TestCase):
             file = eval(file)
 
         result = self.run_main.run_main(method, url=url, data=params, header=header,file=file)
-        self.ro.replace_global_value(global_value, result)
+        self.ro.replace_global_value(global_value, result,params=params)
 
         expect = data['expect']
         if expect.startswith('['):
             expect = eval(expect)
             assert_res = self.ro.replace_expect(expect,result)
             for i in assert_res:
-                self.log.info('断言结果：%s'%i)
+                # self.log.info('断言结果：%s'%i)
                 eval(i)
         self.log.info('\n\n')
 
     temp_dict = temp_dict
 
-    # def test_temp_dict(self):
-    #     '''
-    #     查看全局字典
-    #     :return:
-    #     '''
-    #     import json
-    #     a = json.dumps(temp_dict, sort_keys=True, indent=4, separators=(',', ':'),
-    #                                              ensure_ascii=False)
-    #     self.log.info(a)
+    def test_temp_dict(self):
+        '''
+        查看全局字典
+        :return:
+        '''
+        import json
+        a = json.dumps(temp_dict, sort_keys=True, indent=4, separators=(',', ':'),
+                                                 ensure_ascii=False)
+        self.log.info(a)
 
 
 if __name__ == '__main__':

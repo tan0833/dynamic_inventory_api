@@ -6,14 +6,15 @@ from util.operate_global import GlobalDict
 class ReplaceOperte(ReplaceKinds):
 
 
-    def replace_global_value(self,global_dict,result):
+    def replace_global_value(self,global_dict,result,params=None):
         '''
         :param global_dict: 将excel中的global写入全局字典中
         :param result:响应结果对应的值获取后存入全局字典中
         :return:
         '''
-        if isinstance(global_dict,dict) and isinstance(result,dict):
+        if isinstance(global_dict,dict) and isinstance(result,dict) :
             for key,value in global_dict.items():
+                #全局字典包含$返回结果查找有的值写入全局字典
                 if '$' in value:
                     new_value = jsonpath.jsonpath(result,value)
                     if not isinstance(new_value,bool):
@@ -31,7 +32,13 @@ class ReplaceOperte(ReplaceKinds):
                             self.global_dict.set_dict(key,str(new_value))
                         else:
                             self.global_dict.set_dict(key, new_value)
-                elif '$' not in value:
+
+                #将输入参数写入全局字典
+                elif 'input_params' in value:
+                    self.global_dict.set_dict(key,params)
+
+                #自定义的值输入全局字典
+                elif '$' not in value and 'input_params' not in value:
                     self.global_dict.set_dict(key,value)
 
 
@@ -112,11 +119,12 @@ class ReplaceOperte(ReplaceKinds):
 
 
 if __name__ == '__main__':
-    # y = {}
-    y = {'a':'13981754228','b':'测试'}
+    m = {"aa":"123456"}
+    y = {'a':'13981754228','b':'input_params'}
     x ="{'x':$__attachment{internat_air},'y':'${b} ${@GBK}'}"
     r = ReplaceOperte(y)
     g = GlobalDict(y)
 
-    z = r.replace_excel(x)
-    print(z)
+    z = r.replace_global_value(y,y,m)
+
+    print(y)

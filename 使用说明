@@ -7,7 +7,7 @@ $__attachment{(internat_sea,cn_express)}国内国际海空陆铁快递}
     NotIn：不包含断言
     aa:表示返回结果中的字段
 
-3.全局字典书写格式：{'自定义键':"$..aa"}
+3.全局字典书写格式：{'自定义键':"$..aa",'自定义键'：input_params,'自定义键'：自定义值,}
 4.修改环境在config.conf.ini中修改url和service
 5.test_script.py中修改需要执行的测试用例路径和sheet
 6.在data中添加excel
