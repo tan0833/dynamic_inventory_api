@@ -1,0 +1,573 @@
+{
+    "referenceOrders": [
+        {
+            "referenceOrderNo": "15240125313",
+            "referenceOrderType": "FLT_MES"
+        }
+    ],
+    "remarks": "123456asdfasdf",
+    "shippingInfo": {
+        "shipper": {
+            "contactPartnerId": "4547081841921847296",
+            "contactPartnerName": "Injector Valve Violations GmbH",
+            "contactPartnerType": "SHIPPER",
+            "addressAbbreviation": "United States of America",
+            "addressCode": "Massachusetts",
+            "countryCode": "CN",
+            "countryName": "China",
+            "provinceCode": "US-MA",
+            "provinceName": "Massachusetts",
+            "cityCode": "SCI107124",
+            "cityName": "Middlesex",
+            "districtCode": "SCT105173",
+            "districtName": "Honghuagang",
+            "streetCode": "SST217433",
+            "streetName": "Zhonghe Street",
+            "addressDetail": "Middlesex",
+            "postCode": "633292",
+            "contactName": "feed",
+            "telephoneArea": "213",
+            "telephoneNumber": "633292",
+            "mobileNumber": "15669856277",
+            "mobileArea": "213",
+            "email": "pVK5hlMXhh@aa.com",
+            "transportLocationCode": "USXII",
+            "isDefault": true,
+            "isInternationalPartner": true
+        },
+        "pickUp": true,
+        "marksAndNumbers": "\u828f\u6796",
+        "shippingAddress": {
+            "contactPartnerAddressId": "4547081850511781888",
+            "addressAbbreviation": "United States of America",
+            "addressCode": "Massachusetts",
+            "countryCode": "CN",
+            "countryName": "China",
+            "provinceCode": "US-MA",
+            "provinceName": "Massachusetts",
+            "cityCode": "SCI107124",
+            "cityName": "Middlesex",
+            "districtCode": "SCT105173",
+            "districtName": "Honghuagang",
+            "streetCode": "SST217433",
+            "streetName": "Zhonghe Street",
+            "addressDetail": "Middlesex",
+            "postCode": "623650",
+            "contactName": "meal",
+            "telephoneArea": "213",
+            "telephoneNumber": "623650",
+            "mobileNumber": "15238204282",
+            "mobileArea": "213",
+            "email": "PYswXSmNrv@126.com",
+            "transportLocationCode": "USXII",
+            "isDefault": false,
+            "isInternationalPartner": true
+        },
+        "consignee": {
+            "contactPartnerId": "4547081859101716480",
+            "contactPartnerName": "Lash Repairs Wage S.R.L.",
+            "contactPartnerType": "CONSIGNEE",
+            "addressAbbreviation": "Tunisia",
+            "addressCode": "Ben Arous",
+            "countryCode": "US",
+            "countryName": "United States of America",
+            "provinceCode": "TN-13",
+            "provinceName": "Ben Arous",
+            "cityCode": "SCI436221",
+            "cityName": "Ben Arous",
+            "districtCode": "SCT104503",
+            "districtName": "Wujiagang",
+            "streetCode": "SST220697",
+            "streetName": "Yangma Town",
+            "addressDetail": "Ben Arous",
+            "postCode": "603336",
+            "contactName": "voucher",
+            "telephoneArea": "213",
+            "telephoneNumber": "603336",
+            "mobileNumber": "13852444545",
+            "mobileArea": "213",
+            "email": "Mvggpjy0Vp@126.com",
+            "transportLocationCode": "TNBAR",
+            "isDefault": true,
+            "isInternationalPartner": true
+        },
+        "takeDelivery": true,
+        "receivingAddress": {
+            "contactPartnerAddressId": "4547081859101716482",
+            "addressAbbreviation": "Tunisia",
+            "addressCode": "Ben Arous",
+            "countryCode": "US",
+            "countryName": "United States of America",
+            "provinceCode": "TN-13",
+            "provinceName": "Ben Arous",
+            "cityCode": "SCI436221",
+            "cityName": "Ben Arous",
+            "districtCode": "SCT104503",
+            "districtName": "Wujiagang",
+            "streetCode": "SST220697",
+            "streetName": "Yangma Town",
+            "addressDetail": "Ben Arous",
+            "postCode": "974575",
+            "contactName": "fruit",
+            "telephoneArea": "213",
+            "telephoneNumber": "974575",
+            "mobileNumber": "13660272962",
+            "mobileArea": "213",
+            "email": "LG3V638awF@qq.com",
+            "transportLocationCode": "TNBAR",
+            "isDefault": false,
+            "isInternationalPartner": true
+        },
+        "notifyParty": {
+            "contactPartnerId": "4547081876281585664",
+            "contactPartnerName": "Blower Hubs Options BHD",
+            "contactPartnerType": "NOTIFY_PARTY",
+            "addressAbbreviation": "Tunisia",
+            "addressCode": "Massachusetts",
+            "countryCode": "US",
+            "countryName": "United States of America",
+            "provinceCode": "TN-13",
+            "provinceName": "Ben Arous",
+            "cityCode": "SCI436221",
+            "cityName": "Ben Arous",
+            "districtCode": "SCT105173",
+            "districtName": "Honghuagang",
+            "streetCode": "SST217433",
+            "streetName": "Zhonghe Street",
+            "addressDetail": "Ben Arous",
+            "postCode": "715339",
+            "contactName": "abbreviations",
+            "telephoneArea": "213",
+            "telephoneNumber": "715339",
+            "mobileNumber": "15242813120",
+            "mobileArea": "213",
+            "email": "QtNuFx5PF0@126.com",
+            "transportLocationCode": "USXII",
+            "isDefault": true,
+            "isInternationalPartner": true
+        },
+        "entrustedParty": {
+            "contactPartnerId": "4547081876281585666",
+            "contactPartnerName": "Tailor Feeds Navigation B.V.N.V",
+            "contactPartnerType": "CONSIGNOR",
+            "addressAbbreviation": "United States of America",
+            "addressCode": "Ben Arous",
+            "countryCode": "CN",
+            "countryName": "China",
+            "provinceCode": "US-MA",
+            "provinceName": "Massachusetts",
+            "cityCode": "SCI107124",
+            "cityName": "Middlesex",
+            "districtCode": "SCT104503",
+            "districtName": "Wujiagang",
+            "streetCode": "SST220697",
+            "streetName": "Yangma Town",
+            "addressDetail": "Middlesex",
+            "postCode": "732800",
+            "contactName": "correlations",
+            "telephoneArea": "213",
+            "telephoneNumber": "732800",
+            "mobileNumber": "13226039975",
+            "mobileArea": "213",
+            "email": "74MDWTCNMx@inc.com",
+            "transportLocationCode": "TNBAR",
+            "isDefault": true,
+            "isInternationalPartner": true
+        },
+        "originCityId": "SCI107124",
+        "originLocationCode": "USXII",
+        "destinationCityId": "SCI436221",
+        "destinationLocationCode": "TNBAR",
+        "requiredPickupTime": 1622776198000,
+        "requiredArrivalTime": 1622862598000,
+        "etd": 1657784368000,
+        "eta": 1689320368000,
+        "serviceModeCode": "SEL_D2D",
+        "incotermsCode": "INT_CIF",
+        "airTransportationNode": {
+            "designatedAirport": true,
+            "dischargeAirportId": "MVS",
+            "originAirportId": "SZX"
+        },
+        "billOfLadingTypeCode": "LBT_FBL"
+    },
+    "cargoInfo": {
+        "dangerousCargo": true,
+        "cargoTypeCode": "CAT_DGG",
+        "grossWeight": 12.86,
+        "grossWeightUnitCode": "KG",
+        "pieceQty": 11,
+        "pieceQtyUnitCode": "PUT_CARTON",
+        "totalPackageQty": 12,
+        "totalPackageQtyUnitCode": "PUT_CARTON",
+        "totalVolume": 13,
+        "totalVolumeUnitCode": "M3",
+        "bulkCartonQty": 14,
+        "bulkCartonQtyUnitCode": "PUT_CARTON",
+        "cargoDescription": "1231456asdfasdfasdkfj!",
+        "cargoInfoLines": [
+            {
+                "dangerousCargo": true,
+                "companyPn": "P123456!",
+                "descriptionGoods": "123SAFD@#",
+                "hsCode": "465ASDFASDF_A",
+                "invoiceNumber": "ASDFaa",
+                "packageQuantity": 12,
+                "packageUnitCode": "PUT_PALLET",
+                "referenceLineNo": "456456~@#",
+                "referenceNo": "asdfasdf#$%",
+                "unitPrice": "751739",
+                "volume": "751739",
+                "width": "751739",
+                "amount": "751739",
+                "height": "4751739",
+                "length": "751739",
+                "currencyCode": "GBP",
+                "grossWeight": "44512.1455",
+                "netWeight": "4589.55",
+                "cargoQuantity": 1000
+            },
+            {
+                "dangerousCargo": true,
+                "companyPn": "P123456!",
+                "descriptionGoods": "123SAFD@#",
+                "hsCode": "465ASDFASDF_A",
+                "invoiceNumber": "ASDFaa",
+                "packageQuantity": 12,
+                "packageUnitCode": "PUT_PALLET",
+                "referenceLineNo": "456456~@#",
+                "referenceNo": "asdfasdf#$%",
+                "unitPrice": "751739",
+                "volume": "751739",
+                "width": "751739",
+                "amount": "751739",
+                "height": "4751739",
+                "length": "751739",
+                "currencyCode": "GBP",
+                "grossWeight": "44512.1455",
+                "netWeight": "4589.55",
+                "cargoQuantity": 1000
+            },
+            {
+                "dangerousCargo": true,
+                "companyPn": "P123456!",
+                "descriptionGoods": "123SAFD@#",
+                "hsCode": "465ASDFASDF_A",
+                "invoiceNumber": "ASDFaa",
+                "packageQuantity": 12,
+                "packageUnitCode": "PUT_PALLET",
+                "referenceLineNo": "456456~@#",
+                "referenceNo": "asdfasdf#$%",
+                "unitPrice": "751739",
+                "volume": "751739",
+                "width": "751739",
+                "amount": "751739",
+                "height": "4751739",
+                "length": "751739",
+                "currencyCode": "GBP",
+                "grossWeight": "44512.1455",
+                "netWeight": "4589.55",
+                "cargoQuantity": 1000
+            },
+            {
+                "dangerousCargo": true,
+                "companyPn": "P123456!",
+                "descriptionGoods": "123SAFD@#",
+                "hsCode": "465ASDFASDF_A",
+                "invoiceNumber": "ASDFaa",
+                "packageQuantity": 12,
+                "packageUnitCode": "PUT_PALLET",
+                "referenceLineNo": "456456~@#",
+                "referenceNo": "asdfasdf#$%",
+                "unitPrice": "751739",
+                "volume": "751739",
+                "width": "751739",
+                "amount": "751739",
+                "height": "4751739",
+                "length": "751739",
+                "currencyCode": "GBP",
+                "grossWeight": "44512.1455",
+                "netWeight": "4589.55",
+                "cargoQuantity": 1000
+            }
+        ]
+    },
+    "valueAddedBusiness": {
+        "cargoValue": 10,
+        "currencyCode": "GBP",
+        "insurance": true,
+        "entrustCustomsDeclaration": false,
+        "customsBroker": "{@INT}",
+        "insuredValue": 11
+    },
+    "attachments": [
+        {
+            "name": "FLT_AGI_2020-10-19 15_26_18.xlsx",
+            "typeCode": "FLT_AGI",
+            "url": 30333
+        },
+        {
+            "name": "FLT_AIN_2020-10-19 15_26_19.xlsx",
+            "typeCode": "FLT_AIN",
+            "url": 30334
+        },
+        {
+            "name": "FLT_ARC_2020-10-19 15_26_19.xlsx",
+            "typeCode": "FLT_ARC",
+            "url": 30335
+        },
+        {
+            "name": "FLT_ARN_2020-10-19 15_26_20.xlsx",
+            "typeCode": "FLT_ARN",
+            "url": 30336
+        },
+        {
+            "name": "FLT_BCA_2020-10-19 15_26_20.xlsx",
+            "typeCode": "FLT_BCA",
+            "url": 30337
+        },
+        {
+            "name": "FLT_BKC_2020-10-19 15_26_21.xlsx",
+            "typeCode": "FLT_BKC",
+            "url": 30338
+        },
+        {
+            "name": "FLT_BKG_2020-10-19 15_26_21.xlsx",
+            "typeCode": "FLT_BKG",
+            "url": 30339
+        },
+        {
+            "name": "FLT_BOE_2020-10-19 15_26_22.xlsx",
+            "typeCode": "FLT_BOE",
+            "url": 30340
+        },
+        {
+            "name": "FLT_BOL_2020-10-19 15_26_23.xlsx",
+            "typeCode": "FLT_BOL",
+            "url": 30341
+        },
+        {
+            "name": "FLT_CAD_2020-10-19 15_26_23.xlsx",
+            "typeCode": "FLT_CAD",
+            "url": 30342
+        },
+        {
+            "name": "FLT_CAU_2020-10-19 15_26_23.xlsx",
+            "typeCode": "FLT_CAU",
+            "url": 30343
+        },
+        {
+            "name": "FLT_CDR_2020-10-19 15_26_24.xlsx",
+            "typeCode": "FLT_CDR",
+            "url": 30344
+        },
+        {
+            "name": "FLT_CIV_2020-10-19 15_26_24.xlsx",
+            "typeCode": "FLT_CIV",
+            "url": 30345
+        },
+        {
+            "name": "FLT_COF_2020-10-19 15_26_25.xlsx",
+            "typeCode": "FLT_COF",
+            "url": 30346
+        },
+        {
+            "name": "FLT_COR_2020-10-19 15_26_25.xlsx",
+            "typeCode": "FLT_COR",
+            "url": 30347
+        },
+        {
+            "name": "FLT_COU_2020-10-19 15_26_26.xlsx",
+            "typeCode": "FLT_COU",
+            "url": 30348
+        },
+        {
+            "name": "FLT_CST_2020-10-19 15_26_27.xlsx",
+            "typeCode": "FLT_CST",
+            "url": 30349
+        },
+        {
+            "name": "FLT_CTR_2020-10-19 15_26_27.xlsx",
+            "typeCode": "FLT_CTR",
+            "url": 30350
+        },
+        {
+            "name": "FLT_CUS_2020-10-19 15_26_28.xlsx",
+            "typeCode": "FLT_CUS",
+            "url": 30351
+        },
+        {
+            "name": "FLT_DAL_2020-10-19 15_26_28.xlsx",
+            "typeCode": "FLT_DAL",
+            "url": 30352
+        },
+        {
+            "name": "FLT_DAN_2020-10-19 15_26_29.xlsx",
+            "typeCode": "FLT_DAN",
+            "url": 30353
+        },
+        {
+            "name": "FLT_DAO_2020-10-19 15_26_29.xlsx",
+            "typeCode": "FLT_DAO",
+            "url": 30354
+        },
+        {
+            "name": "FLT_DEC_2020-10-19 15_26_30.xlsx",
+            "typeCode": "FLT_DEC",
+            "url": 30355
+        },
+        {
+            "name": "FLT_DGF_2020-10-19 15_26_30.xlsx",
+            "typeCode": "FLT_DGF",
+            "url": 30356
+        },
+        {
+            "name": "FLT_DNO_2020-10-19 15_26_31.xlsx",
+            "typeCode": "FLT_DNO",
+            "url": 30357
+        },
+        {
+            "name": "FLT_DRC_2020-10-19 15_26_31.xlsx",
+            "typeCode": "FLT_DRC",
+            "url": 30358
+        },
+        {
+            "name": "FLT_ECA_2020-10-19 15_26_32.xlsx",
+            "typeCode": "FLT_ECA",
+            "url": 30359
+        },
+        {
+            "name": "FLT_EXD_2020-10-19 15_26_32.xlsx",
+            "typeCode": "FLT_EXD",
+            "url": 30360
+        },
+        {
+            "name": "FLT_FUM_2020-10-19 15_26_33.xlsx",
+            "typeCode": "FLT_FUM",
+            "url": 30361
+        },
+        {
+            "name": "FLT_FWI_2020-10-19 15_26_33.xlsx",
+            "typeCode": "FLT_FWI",
+            "url": 30362
+        },
+        {
+            "name": "FLT_GTP_2020-10-19 15_26_34.xlsx",
+            "typeCode": "FLT_GTP",
+            "url": 30363
+        },
+        {
+            "name": "FLT_HBL_2020-10-19 15_26_34.xlsx",
+            "typeCode": "FLT_HBL",
+            "url": 30364
+        },
+        {
+            "name": "FLT_ICA_2020-10-19 15_26_35.xlsx",
+            "typeCode": "FLT_ICA",
+            "url": 30365
+        },
+        {
+            "name": "FLT_ICRA_2020-10-19 15_26_35.xlsx",
+            "typeCode": "FLT_ICRA",
+            "url": 30366
+        },
+        {
+            "name": "FLT_INB_2020-10-19 15_26_36.xlsx",
+            "typeCode": "FLT_INB",
+            "url": 30367
+        },
+        {
+            "name": "FLT_IRT_2020-10-19 15_26_36.xlsx",
+            "typeCode": "FLT_IRT",
+            "url": 30368
+        },
+        {
+            "name": "FLT_ISF_2020-10-19 15_26_37.xlsx",
+            "typeCode": "FLT_ISF",
+            "url": 30369
+        },
+        {
+            "name": "FLT_IVO_2020-10-19 15_26_37.xlsx",
+            "typeCode": "FLT_IVO",
+            "url": 30370
+        },
+        {
+            "name": "FLT_LID_2020-10-19 15_26_38.xlsx",
+            "typeCode": "FLT_LID",
+            "url": 30371
+        },
+        {
+            "name": "FLT_MAN_2020-10-19 15_26_38.xlsx",
+            "typeCode": "FLT_MAN",
+            "url": 30372
+        },
+        {
+            "name": "FLT_MBL_2020-10-19 15_26_39.xlsx",
+            "typeCode": "FLT_MBL",
+            "url": 30373
+        },
+        {
+            "name": "FLT_MCD_2020-10-19 15_26_39.xlsx",
+            "typeCode": "FLT_MCD",
+            "url": 30374
+        },
+        {
+            "name": "FLT_MCF_2020-10-19 15_26_39.xlsx",
+            "typeCode": "FLT_MCF",
+            "url": 30375
+        },
+        {
+            "name": "FLT_MDC_2020-10-19 15_26_40.xlsx",
+            "typeCode": "FLT_MDC",
+            "url": 30376
+        },
+        {
+            "name": "FLT_NOT_2020-10-19 15_26_40.xlsx",
+            "typeCode": "FLT_NOT",
+            "url": 30377
+        },
+        {
+            "name": "FLT_OBL_2020-10-19 15_26_41.xlsx",
+            "typeCode": "FLT_OBL",
+            "url": 30378
+        },
+        {
+            "name": "FLT_PAL_2020-10-19 15_26_41.xlsx",
+            "typeCode": "FLT_PAL",
+            "url": 30379
+        },
+        {
+            "name": "FLT_PALT_2020-10-19 15_26_42.xlsx",
+            "typeCode": "FLT_PALT",
+            "url": 30380
+        },
+        {
+            "name": "FLT_PODF_2020-10-19 15_26_42.xlsx",
+            "typeCode": "FLT_PODF",
+            "url": 30381
+        },
+        {
+            "name": "FLT_SDN_2020-10-19 15_26_43.xlsx",
+            "typeCode": "FLT_SDN",
+            "url": 30382
+        },
+        {
+            "name": "FLT_SDS_2020-10-19 15_26_43.xlsx",
+            "typeCode": "FLT_SDS",
+            "url": 30383
+        },
+        {
+            "name": "FLT_SLI_2020-10-19 15_26_43.xlsx",
+            "typeCode": "FLT_SLI",
+            "url": 30384
+        },
+        {
+            "name": "FLT_TSC_2020-10-19 15_26_44.xlsx",
+            "typeCode": "FLT_TSC",
+            "url": 30385
+        }
+    ],
+    "documentsAttachesGenerate": {
+        "letterOfAttorneyGenerate": false
+    }
+}

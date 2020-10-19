@@ -1,5 +1,6 @@
 import unittest,ddt
 from common.replace_opertate import ReplaceOperte
+from common.save_api_params import SaveApiParams
 from config.Log import Log
 from config.get_conf import Conf
 from util.operate_excel import Operate_excel
@@ -56,6 +57,7 @@ class TestRunMain(unittest.TestCase):
         cls.request_url = cls.conf.get_value('request_url','url')
         cls.service = cls.conf.get_value('service','waybill_query')
         cls.ro = ReplaceOperte(temp_dict)
+        cls.save_params = SaveApiParams(temp_dict)
         cls.run_main = RunMain()
 
 
@@ -94,6 +96,7 @@ class TestRunMain(unittest.TestCase):
 
         result = self.run_main.run_main(method, url=url, data=params, header=header,file=file)
         self.ro.replace_global_value(global_value,result,params=params)
+        self.save_params.save_params()
 
         expect = data['expect']
         if expect.startswith('['):
@@ -137,6 +140,7 @@ class TestRunMain(unittest.TestCase):
 
         result = self.run_main.run_main(method, url=url, data=params, header=header,file=file)
         self.ro.replace_global_value(global_value, result,params=params)
+        self.save_params.save_params()
 
         expect = data['expect']
         if expect.startswith('['):
@@ -147,17 +151,17 @@ class TestRunMain(unittest.TestCase):
                 eval(i)
         self.log.info('\n\n')
 
-    temp_dict = temp_dict
-
-    def test_temp_dict(self):
-        '''
-        查看全局字典
-        :return:
-        '''
-        import json
-        a = json.dumps(temp_dict, sort_keys=True, indent=4, separators=(',', ':'),
-                                                 ensure_ascii=False)
-        self.log.info(a)
+    # temp_dict = temp_dict
+    #
+    # def test_temp_dict(self):
+    #     '''
+    #     查看全局字典
+    #     :return:
+    #     '''
+    #     import json
+    #     a = json.dumps(temp_dict, sort_keys=True, indent=4, separators=(',', ':'),
+    #                                              ensure_ascii=False)
+    #     self.log.info(a)
 
 
 if __name__ == '__main__':
