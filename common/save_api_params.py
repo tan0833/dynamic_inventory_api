@@ -114,6 +114,6 @@ class SaveApiParams:
 
 
 if __name__ == '__main__':
-    a = {"save_demestic_air_params":{"aa":12,"bb":13}}
+    a = {"save_demestic_air_params":{"aa":"张三李四","bb":13}}
     s = SaveApiParams(a)
     s.save_params()

@@ -75,7 +75,7 @@ class Conf:
         :param write_file: 写入的json文件
         :return:
         '''
-        json_str = json.dumps(input_params, indent=4)
+        json_str = json.dumps(input_params, indent=4,ensure_ascii=False)
         fp = open(write_file, "w", encoding="utf-8")
         fp.write(json_str)
         fp.close()
