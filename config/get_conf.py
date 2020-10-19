@@ -1,5 +1,5 @@
 from configparser import ConfigParser
-import os,yaml
+import os,yaml,json
 from config.Log import Log
 from ruamel import yaml as yml
 
@@ -68,14 +68,26 @@ class Conf:
         yml.dump(input_params,fp,Dumper=yml.RoundTripDumper)
         fp.close()
 
+    def write_json(self,input_params,write_file):
+        '''
+        将字典写入json文件
+        :param input_params: 字典参数
+        :param write_file: 写入的json文件
+        :return:
+        '''
+        json_str = json.dumps(input_params, indent=4)
+        fp = open(write_file, "w", encoding="utf-8")
+        fp.write(json_str)
+        fp.close()
+
 
 if __name__ == '__main__':
     c = Conf()
-    x = c.get_file_path('test_data','domestic_road_save_api_params.yml')
+    x = c.get_file_path('api_pack','api_params','SIT','domestic_road_save_api_params.json')
 
     desired_caps = {
         'platformName': 'Android',
-        'platformVersion': '7.0',
+        'platformVersion': '8.0',
         'deviceName': 'A5RNW18316011440',
         'appPackage': 'com.tencent.mm',
         'appActivity': '.ui.LauncherUI',
@@ -85,5 +97,5 @@ if __name__ == '__main__':
         'noReset': True,
         'chromeOptions': {'androidProcess': {"aa":12,"bb":[12,13]}}
     }
-    b = c.write_yaml(desired_caps,x)
+    b = c.write_json(desired_caps,x)
     print(b)
