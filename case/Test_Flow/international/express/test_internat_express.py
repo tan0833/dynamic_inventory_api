@@ -65,7 +65,7 @@ class TestInternatSea(unittest.TestCase):
         except Exception as e:
             raise e
         finally:
-            self.log.warning('id:%s,配载方式单位为：%s,参考单号：%s' % (id, paying_type_id, phone))
+            self.log.warning('国际快递id:%s,配载方式单位为：%s,参考单号：%s' % (id, paying_type_id, phone))
             temp_list.append(id)
         self.log.info('\n\n')
 
@@ -86,7 +86,7 @@ class TestInternatSea(unittest.TestCase):
         except Exception as e:
             raise e
         finally:
-            self.log.warning('id:%s,服务类型：%s,参考单号：%s' % (id, server_level_id, phone))
+            self.log.warning('国际快递id:%s,服务类型：%s,参考单号：%s' % (id, server_level_id, phone))
             temp_list.append(id)
         self.log.info('\n\n')
 
@@ -108,7 +108,7 @@ class TestInternatSea(unittest.TestCase):
         except Exception as e:
             raise e
         finally:
-            self.log.warning('id:%s,货物类型：%s,参考单号：%s' % (id, cargo_type_id, phone))
+            self.log.warning('国际快递id:%s,货物类型：%s,参考单号：%s' % (id, cargo_type_id, phone))
             temp_list.append(id)
         self.log.info('\n\n')
 
@@ -129,7 +129,7 @@ class TestInternatSea(unittest.TestCase):
         except Exception as e:
             raise e
         finally:
-            self.log.warning('id:%s,包装单位：%s，参考单号：%s' % (id, package_unit_type_id, phone))
+            self.log.warning('国际快递id:%s,包装单位：%s，参考单号：%s' % (id, package_unit_type_id, phone))
             temp_list.append(id)
         self.log.info('\n\n')
 
@@ -151,7 +151,7 @@ class TestInternatSea(unittest.TestCase):
         except Exception as e:
             raise e
         finally:
-            self.log.warning('id:%s,货物明细包装单位：%s，参考单号：%s' % (id, line_package_unit_types_id, phone))
+            self.log.warning('国际快递id:%s,货物明细包装单位：%s，参考单号：%s' % (id, line_package_unit_types_id, phone))
             temp_list.append(id)
         self.log.info('\n\n')
 
@@ -174,7 +174,7 @@ class TestInternatSea(unittest.TestCase):
         except Exception as e:
             raise e
         finally:
-            self.log.warning('id:%s,货币：%s，参考单号：%s' % (id, currency_type_list_id, phone))
+            self.log.warning('国际快递id:%s,货币：%s，参考单号：%s' % (id, currency_type_list_id, phone))
             temp_list.append(id)
         self.log.info('\n\n')
 

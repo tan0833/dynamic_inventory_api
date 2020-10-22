@@ -46,6 +46,45 @@ server_level_list = jsonpath.jsonpath(server_level,'$..id')
 cargo_type = basic_data.cargo_types()
 cargo_type_list = jsonpath.jsonpath(cargo_type,'$..id')
 
+def container_type_or_size():
+    '''
+    集装箱类型和尺寸
+    :return:
+    '''
+    container_type_size_list = []
+    container_type = basic_data.container_types()
+    container_type_list = jsonpath.jsonpath(container_type, '$..id')
+    for container_type in container_type_list:
+        container_size = basic_data.container_size(mode='TPM_SEA', transnationalShipment=False)
+        container_size_list = jsonpath.jsonpath(container_size, '$..id')
+        for i in container_size_list:
+            phone = CreateRandom().random_create_mobile_phone()
+            temp_server_dict = {}
+            temp_server_dict["container_type"] = container_type
+            temp_server_dict["container_size"] = i
+            temp_server_dict["phone"] = phone
+            container_type_size_list.append(temp_server_dict)
+    return container_type_size_list
+
+def server_loading_type():
+    # 配载方式和服务类型
+    container_type_server_list = []
+    container_mode = basic_data.container_mode(mode='TPM_SEA', transnationalShipment=False)
+    container_mode_list = jsonpath.jsonpath(container_mode, '$..id')
+    for container_type in container_mode_list:
+        server_level = basic_data.server_level(mode='TPM_SEA', loadingType=container_type,
+                                               transnationalShipment=False)
+        server_level_list = jsonpath.jsonpath(server_level, '$..id')
+        for i in server_level_list:
+            phone = CreateRandom().random_create_mobile_phone()
+            temp_server_dict = {}
+            temp_server_dict["container_type"] = container_type
+            temp_server_dict["server_type"] = i
+            temp_server_dict["phone"] = phone
+            container_type_server_list.append(temp_server_dict)
+    return container_type_server_list
+
+
 @ddt.ddt
 class TestInternatSea(unittest.TestCase):
 
@@ -72,7 +111,7 @@ class TestInternatSea(unittest.TestCase):
         except Exception as e:
             raise e
         finally:
-            self.log.warning('id:%s,配载方式单位为：%s,参考单号：%s' % (id, paying_type_id, phone))
+            self.log.warning('国内海运id:%s,配载方式单位为：%s,参考单号：%s' % (id, paying_type_id, phone))
             temp_list.append(id)
         self.log.info('\n\n')
 
@@ -93,70 +132,62 @@ class TestInternatSea(unittest.TestCase):
         except Exception as e:
             raise e
         finally:
-            self.log.warning('id:%s,配载方式单位为：%s,参考单号：%s' % (id, loading_type_id,phone))
+            self.log.warning('国内海运id:%s,配载方式单位为：%s,参考单号：%s' % (id, loading_type_id,phone))
             temp_list.append(id)
         self.log.info('\n\n')
 
 
     # @unittest.skip
-    def test_server_level(self):
+    @ddt.data(*server_loading_type())
+    def test_server_level(self,server_type_loading_params):
         self._testMethodDoc = '国内海运遍历服务类型'
         id = None
-        # 配载方式
-        container_mode = basic_data.container_mode(mode='TPM_SEA', transnationalShipment=False)
-        container_mode_list = jsonpath.jsonpath(container_mode, '$..id')
-        for container_type in container_mode_list:
-            server_level = basic_data.server_level(mode='TPM_SEA', loadingType=container_type,
-                                                   transnationalShipment=False)
-            server_level_list = jsonpath.jsonpath(server_level, '$..id')
-            for i in server_level_list:
-                phone = self.mock_data.random_create_mobile_phone()
-                try:
-                    result = self.domestic_sea.domestic_sea_save(**{'shippingInfo.loadingTypeCode': container_type,
-                                                                    'shippingInfo.serviceModeCode': i,
-                                                                    'referenceOrders.0.referenceOrderNo': phone})
-                    id = jsonpath.jsonpath(result, '$..data')[0]
-                    self.assertEqual(result.get('success'), True)
+        container_type = server_type_loading_params.get('container_type')
+        server_type = server_type_loading_params.get('server_type')
+        phone = server_type_loading_params.get('phone')
 
-                    res = self.domestic_sea.domestic_sea_submit(id)
-                    self.assertEqual(res.get('success'), True)
-                except Exception as e:
-                    raise e
-                finally:
-                    self.log.warning('id:%s,配载方式：%s,服务类型：%s,参考单号：%s' % (id, container_type, i, phone))
-                    temp_list.append(id)
-                self.log.info('\n\n')
+        try:
+            result = self.domestic_sea.domestic_sea_save(**{'shippingInfo.loadingTypeCode': container_type,
+                                                            'shippingInfo.serviceModeCode': server_type,
+                                                            'referenceOrders.0.referenceOrderNo': phone})
+            id = jsonpath.jsonpath(result, '$..data')[0]
+            self.assertEqual(result.get('success'), True)
+
+            res = self.domestic_sea.domestic_sea_submit(id)
+            self.assertEqual(res.get('success'), True)
+        except Exception as e:
+            raise e
+        finally:
+            self.log.warning('国内海运id:%s,配载方式：%s,服务类型：%s,参考单号：%s' % (id, container_type, server_type, phone))
+            temp_list.append(id)
+        self.log.info('\n\n')
 
 
     # @unittest.skip
-    def test_container_type_or_size(self):
+    @ddt.data(*container_type_or_size())
+    def test_container_type_or_size(self,container_type_or_size_params):
         self._testMethodDoc = '国内海运遍历集装箱类型和尺寸'
         id = None
+        container_type = container_type_or_size_params.get('container_type')
+        container_size = container_type_or_size_params.get('container_size')
+        phone = container_type_or_size_params.get('phone')
 
-        # 集装箱类型
-        container_type = basic_data.container_types()
-        container_type_list = jsonpath.jsonpath(container_type, '$..id')
-        for container_type in container_type_list:
-            container_size = basic_data.container_size(mode='TPM_SEA', transnationalShipment=False)
-            container_size_list = jsonpath.jsonpath(container_size, '$..id')
-            for i in container_size_list:
-                phone = self.mock_data.random_create_mobile_phone()
-                try:
-                    result = self.domestic_sea.domestic_sea_save(**{'shippingInfo.loadingTypeCode': 'CTM_FCL',
-                                                                    'shippingInfo.containerInfos.0.containerTypeCode': container_type,
-                                                                    'shippingInfo.containerInfos.0.containerSizeCode': i,
-                                                                    'referenceOrders.0.referenceOrderNo': phone})
-                    id = jsonpath.jsonpath(result, '$..data')[0]
-                    self.assertEqual(result.get('success'), True)
+        try:
+            result = self.domestic_sea.domestic_sea_save(**{'shippingInfo.loadingTypeCode': 'CTM_FCL',
+                                                            'shippingInfo.containerInfos.0.containerTypeCode': container_type,
+                                                            'shippingInfo.containerInfos.0.containerSizeCode': container_size,
+                                                            'referenceOrders.0.referenceOrderNo': phone})
+            id = jsonpath.jsonpath(result, '$..data')[0]
+            self.assertEqual(result.get('success'), True)
 
-                    res = self.domestic_sea.domestic_sea_submit(id)
-                    self.assertEqual(res.get('success'), True)
-                except Exception as e:
-                    raise e
-                finally:
-                    self.log.warning('id:%s,集装类型：%s,集装箱尺寸：%s,参考单号：%s' % (id, container_type, i, phone))
-                    temp_list.append(id)
-                self.log.info('\n\n')
+            res = self.domestic_sea.domestic_sea_submit(id)
+            self.assertEqual(res.get('success'), True)
+        except Exception as e:
+            raise e
+        finally:
+            self.log.warning('国内海运id:%s,集装类型：%s,集装箱尺寸：%s,参考单号：%s' % (id, container_type, container_size, phone))
+            temp_list.append(id)
+        self.log.info('\n\n')
 
 
     # @unittest.skip
@@ -176,7 +207,7 @@ class TestInternatSea(unittest.TestCase):
         except Exception as e:
             raise e
         finally:
-            self.log.warning('id:%s,货物类型：%s,参考单号：%s' % (id, cargo_type_id, phone))
+            self.log.warning('国内海运id:%s,货物类型：%s,参考单号：%s' % (id, cargo_type_id, phone))
             temp_list.append(id)
         self.log.info('\n\n')
 
@@ -197,7 +228,7 @@ class TestInternatSea(unittest.TestCase):
         except Exception as e:
             raise e
         finally:
-            self.log.warning('id:%s,包装单位：%s，参考单号：%s' % (id, package_unit_type_id, phone))
+            self.log.warning('国内海运id:%s,包装单位：%s，参考单号：%s' % (id, package_unit_type_id, phone))
             temp_list.append(id)
         self.log.info('\n\n')
 
@@ -219,7 +250,7 @@ class TestInternatSea(unittest.TestCase):
         except Exception as e:
             raise e
         finally:
-            self.log.warning('id:%s,货物明细包装单位：%s，参考单号：%s' % (id, line_package_unit_types_id, phone))
+            self.log.warning('国内海运id:%s,货物明细包装单位：%s，参考单号：%s' % (id, line_package_unit_types_id, phone))
             temp_list.append(id)
         self.log.info('\n\n')
 
@@ -242,7 +273,7 @@ class TestInternatSea(unittest.TestCase):
         except Exception as e:
             raise e
         finally:
-            self.log.warning('id:%s,货币：%s，参考单号：%s' % (id, currency_type_list_id, phone))
+            self.log.warning('国内海运id:%s,货币：%s，参考单号：%s' % (id, currency_type_list_id, phone))
             temp_list.append(id)
         self.log.info('\n\n')
 

@@ -100,7 +100,7 @@ class BasicData:
         result = self.runner.run_main(method=method, url=url, data=params, header=header)
         return result
 
-    def customs_supervision(self,specificationEq,vehicleSpeciesCodeEq):
+    def customs_supervision(self,vehicleSpeciesCodeEq,specificationEq):
         '''
         是否海关监管
         :param specificationEq:
@@ -429,6 +429,6 @@ if __name__ == '__main__':
     # a= b.ports_search(codeOrNameOrLocalLike='',mode='TMP_SEA',portType='PTT_HARBOUR')
     # a = b.transport_station(nameOrNameLocalLike='武汉')
     # a = b.vehicle_specification('TKG_SPC')
-    a = b.customs_supervision(specificationEq='TKT_20FR',vehicleSpeciesCodeEq='TKG_SPC')
+    a = b.customs_supervision('TKG_SEV','TKT_9P6M')
     # a=b.server_level(mode='TPM_AIR',transnationalShipment=True,loadingType='CTM_FTL')
     print(a)

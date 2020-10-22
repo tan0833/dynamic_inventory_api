@@ -55,6 +55,25 @@ def server_level():
             container_server_level_list.append(temp_server_dict)
     return container_server_level_list
 
+def container_type_or_size():
+    '''
+    集装箱类型和尺寸
+    :return:
+    '''
+    container_type_size_list = []
+    container_type = basic_data.container_types()
+    container_type_list = jsonpath.jsonpath(container_type, '$..id')
+    for container_type in container_type_list:
+        container_size = basic_data.container_size(mode='TPM_SEA', transnationalShipment=True)
+        container_size_list = jsonpath.jsonpath(container_size, '$..id')
+        for i in container_size_list:
+            phone = CreateRandom().random_create_mobile_phone()
+            temp_server_dict = {}
+            temp_server_dict["container_type"] = container_type
+            temp_server_dict["container_size"] = i
+            temp_server_dict["phone"] = phone
+            container_type_size_list.append(temp_server_dict)
+    return container_type_size_list
 
 @ddt.ddt
 class TestInternatSea(unittest.TestCase):
@@ -66,7 +85,7 @@ class TestInternatSea(unittest.TestCase):
         cls.mock_data = CreateRandom()
 
 
-    @unittest.skip
+    # @unittest.skip
     @ddt.data(*lading_bill_type_list)
     def test_lading_bill_type(self, lading_bill_id):
         self._testMethodDoc = '国际海运遍历提单类型'
@@ -109,7 +128,7 @@ class TestInternatSea(unittest.TestCase):
         self.log.info('\n\n')
 
 
-    @unittest.skip
+    # @unittest.skip
     @ddt.data(*incoterm_type_list)
     def test_incoterm_type(self,incoterm_type_id):
         self._testMethodDoc = '国际海运遍历贸易术语'
@@ -130,38 +149,33 @@ class TestInternatSea(unittest.TestCase):
             temp_list.append(id)
         self.log.info('\n\n')
 
-    @unittest.skip
-    def test_container_type_or_size(self):
+    # @unittest.skip
+    @ddt.data(*container_type_or_size())
+    def test_container_type_or_size(self,container_type_or_size_params):
         self._testMethodDoc = '国际海运遍历集装箱类型和尺寸'
         id = None
+        container_type = container_type_or_size_params.get('container_type')
+        container_size = container_type_or_size_params.get('container_size')
+        phone = container_type_or_size_params.get('phone')
+        try:
+            result = self.internat_sea.internat_sea_save(**{'shippingInfo.loadingTypeCode': 'CTM_FCL',
+                                                            'shippingInfo.containerInfos.0.containerTypeCode': container_type,
+                                                            'shippingInfo.containerInfos.0.containerSizeCode': container_size,
+                                                            'referenceOrders.0.referenceOrderNo':phone})
+            id = jsonpath.jsonpath(result, '$..data')[0]
+            self.assertEqual(result.get('success'), True)
 
-        # 集装箱类型
-        container_type = basic_data.container_types()
-        container_type_list = jsonpath.jsonpath(container_type, '$..id')
-        for container_type in container_type_list:
-            container_size = basic_data.container_size(mode='TPM_SEA',transnationalShipment=True)
-            container_size_list = jsonpath.jsonpath(container_size,'$..id')
-            for i in container_size_list:
-                phone = self.mock_data.random_create_mobile_phone()
-                try:
-                    result = self.internat_sea.internat_sea_save(**{'shippingInfo.loadingTypeCode': 'CTM_FCL',
-                                                                    'shippingInfo.containerInfos.0.containerTypeCode': container_type,
-                                                                    'shippingInfo.containerInfos.0.containerSizeCode': i,
-                                                                    'referenceOrders.0.referenceOrderNo':phone})
-                    id = jsonpath.jsonpath(result, '$..data')[0]
-                    self.assertEqual(result.get('success'), True)
-
-                    res = self.internat_sea.internat_sea_submit(id)
-                    self.assertEqual(res.get('success'), True)
-                except Exception as e:
-                    raise e
-                finally:
-                    self.log.warning('国际海运id:%s,集装类型：%s,集装箱尺寸：%s,参考单号：%s' % (id, container_type,i,phone))
-                    temp_list.append(id)
-                self.log.info('\n\n')
+            res = self.internat_sea.internat_sea_submit(id)
+            self.assertEqual(res.get('success'), True)
+        except Exception as e:
+            raise e
+        finally:
+            self.log.warning('国际海运id:%s,集装类型：%s,集装箱尺寸：%s,参考单号：%s' % (id, container_type,container_size,phone))
+            temp_list.append(id)
+        self.log.info('\n\n')
 
 
-    @unittest.skip
+    # @unittest.skip
     @ddt.data(*package_unit_types_list)
     def test_package_unit_types(self, package_unit_type_id):
         self._testMethodDoc = '国际海运遍历包装单位'
@@ -182,7 +196,7 @@ class TestInternatSea(unittest.TestCase):
             temp_list.append(id)
         self.log.info('\n\n')
 
-    @unittest.skip
+    # @unittest.skip
     @ddt.data(*line_package_unit_types_list)
     def test_line_package_unit_types(self, line_package_unit_types_id):
         self._testMethodDoc = '国际海运遍历货物明细包装单位'
@@ -204,7 +218,7 @@ class TestInternatSea(unittest.TestCase):
             temp_list.append(id)
         self.log.info('\n\n')
 
-    @unittest.skip
+    # @unittest.skip
     @ddt.data(*currency_type_list)
     def test_currency_type_list(self, currency_type_list_id):
         self._testMethodDoc = '国际海运遍历货物明细货币和保价货币'

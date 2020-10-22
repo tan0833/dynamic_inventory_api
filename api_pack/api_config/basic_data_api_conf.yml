@@ -54,7 +54,7 @@ vehicle_type:
   method: POST
   params:
     transnationalShipment: false
-
+    "shippingMode": "TPM_ROAD"
 
 #车辆规格
 vehicle_specification:
