@@ -11,7 +11,11 @@ class InternatAirApi:
     def __init__(self,dict):
         self.conf = Conf()
         self.basic_url = self.conf.get_value('request_url','url')
-        self.basic_dict = self.conf.get_yaml(self.conf.get_file_path('api_pack','api_config','international_air_api_conf.yml'))
+        environment_name = self.conf.is_url(self.basic_url)
+        self.params = self.conf.road_json(self.conf.get_file_path('api_pack', 'api_params', environment_name,
+                                                                  'international_air_save_api_params.json'))
+        self.basic_dict = self.conf.get_yaml(
+            self.conf.get_file_path('api_pack', 'api_config', 'international_air_api_conf.yml'))
         self.runner = RunMain()
         self.token = dict.get('token')
 
@@ -25,7 +29,7 @@ class InternatAirApi:
         internat_sea_save_dict = self.basic_dict.get('internat_air_save')
         url = self.basic_url + internat_sea_save_dict.get('url')
         method = internat_sea_save_dict.get('method')
-        params = internat_sea_save_dict.get('params')
+        params = self.params
 
         for i,j in kwargs.items():  #获取跟进字典的键
             temp_str = ''

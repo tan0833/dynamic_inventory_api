@@ -6,7 +6,7 @@ from config.get_conf import Conf
 from util.operate_excel import Operate_excel
 from runMain.run_main import RunMain
 from config.global_dict import temp_dict
-
+from time import sleep
 
 conf = Conf()
 login = None
@@ -94,6 +94,14 @@ class TestRunMain(unittest.TestCase):
         if global_value.startswith('{'):
             global_value = eval(global_value)
 
+        sleep_value = data['sleep']
+        try:
+            int(sleep_value)
+            sleep(int(sleep_value))
+        except ValueError as e:
+            pass
+
+
         result = self.run_main.run_main(method, url=url, data=params, header=header,file=file)
         self.ro.replace_global_value(global_value,result,params=params)
         self.save_params.save_params()
@@ -137,6 +145,14 @@ class TestRunMain(unittest.TestCase):
         file = self.ro.replace_excel(file)
         if file.startswith('[') or file.startswith('{'):
             file = eval(file)
+
+
+        sleep_value = data['sleep']
+        try:
+            int(sleep_value)
+            sleep(int(sleep_value))
+        except ValueError as e:
+            pass
 
         result = self.run_main.run_main(method, url=url, data=params, header=header,file=file)
         self.ro.replace_global_value(global_value, result,params=params)

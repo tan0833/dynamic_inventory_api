@@ -1,0 +1,573 @@
+{
+    "referenceOrders": [
+        {
+            "referenceOrderNo": "13567194514",
+            "referenceOrderType": "FLT_CUST"
+        }
+    ],
+    "remarks": "123456asdfasdf",
+    "shippingInfo": {
+        "shipper": {
+            "contactPartnerId": "4549849553203146752",
+            "contactPartnerName": "Rakes Challenge Occasion AB",
+            "contactPartnerType": "SHIPPER",
+            "addressAbbreviation": "Germany",
+            "addressCode": "North Rhine-Westphalia",
+            "countryCode": "CN",
+            "countryName": "China",
+            "provinceCode": "DE-NW",
+            "provinceName": "North Rhine-Westphalia",
+            "cityCode": "SCI432161",
+            "cityName": "Wuppertal",
+            "districtCode": "SCT105280",
+            "districtName": "Shidian",
+            "streetCode": "SST217454",
+            "streetName": "Hejiang Town",
+            "addressDetail": "Wuppertal",
+            "postCode": "654906",
+            "contactName": "cracks",
+            "telephoneArea": "60",
+            "telephoneNumber": "654906",
+            "mobileNumber": "18055669100",
+            "mobileArea": "60",
+            "email": "9qfJ8C7cKA@163.com",
+            "transportLocationCode": "DEWUP",
+            "isDefault": true,
+            "isInternationalPartner": true
+        },
+        "pickUp": true,
+        "marksAndNumbers": "徵壈",
+        "shippingAddress": {
+            "contactPartnerAddressId": "4549849553203146754",
+            "addressAbbreviation": "Germany",
+            "addressCode": "North Rhine-Westphalia",
+            "countryCode": "CN",
+            "countryName": "China",
+            "provinceCode": "DE-NW",
+            "provinceName": "North Rhine-Westphalia",
+            "cityCode": "SCI432161",
+            "cityName": "Wuppertal",
+            "districtCode": "SCT105280",
+            "districtName": "Shidian",
+            "streetCode": "SST217454",
+            "streetName": "Hejiang Town",
+            "addressDetail": "Wuppertal",
+            "postCode": "130610",
+            "contactName": "relocation",
+            "telephoneArea": "60",
+            "telephoneNumber": "130610",
+            "mobileNumber": "13247055452",
+            "mobileArea": "60",
+            "email": "WZj6QUOikg@aa.com",
+            "transportLocationCode": "DEWUP",
+            "isDefault": false,
+            "isInternationalPartner": true
+        },
+        "consignee": {
+            "contactPartnerId": "4549849570383015936",
+            "contactPartnerName": "Reactions Operabilities Value SDN",
+            "contactPartnerType": "CONSIGNEE",
+            "addressAbbreviation": "Brazil",
+            "addressCode": "Sao Paulo",
+            "countryCode": "US",
+            "countryName": "United States of America",
+            "provinceCode": "BR-SP",
+            "provinceName": "Sao Paulo",
+            "cityCode": "SCI431339",
+            "cityName": "Pederneiras",
+            "districtCode": "SCT103755",
+            "districtName": "Haizhou",
+            "streetCode": "SST220711",
+            "streetName": "Caochi Town",
+            "addressDetail": "Pederneiras",
+            "postCode": "485774",
+            "contactName": "ones",
+            "telephoneArea": "60",
+            "telephoneNumber": "485774",
+            "mobileNumber": "18677426859",
+            "mobileArea": "60",
+            "email": "ZoISC0zQ4V@163.com",
+            "transportLocationCode": "BRPNS",
+            "isDefault": true,
+            "isInternationalPartner": true
+        },
+        "takeDelivery": true,
+        "receivingAddress": {
+            "contactPartnerAddressId": "4549849570383015938",
+            "addressAbbreviation": "Brazil",
+            "addressCode": "Sao Paulo",
+            "countryCode": "US",
+            "countryName": "United States of America",
+            "provinceCode": "BR-SP",
+            "provinceName": "Sao Paulo",
+            "cityCode": "SCI431339",
+            "cityName": "Pederneiras",
+            "districtCode": "SCT103755",
+            "districtName": "Haizhou",
+            "streetCode": "SST220711",
+            "streetName": "Caochi Town",
+            "addressDetail": "Pederneiras",
+            "postCode": "791131",
+            "contactName": "interiors",
+            "telephoneArea": "60",
+            "telephoneNumber": "791131",
+            "mobileNumber": "15290067119",
+            "mobileArea": "60",
+            "email": "ag0XGkedKM@163.com",
+            "transportLocationCode": "BRPNS",
+            "isDefault": false,
+            "isInternationalPartner": true
+        },
+        "notifyParty": {
+            "contactPartnerId": "4549849587562885120",
+            "contactPartnerName": "Behavior Tents Fathom OY",
+            "contactPartnerType": "NOTIFY_PARTY",
+            "addressAbbreviation": "Brazil",
+            "addressCode": "North Rhine-Westphalia",
+            "countryCode": "US",
+            "countryName": "United States of America",
+            "provinceCode": "BR-SP",
+            "provinceName": "Sao Paulo",
+            "cityCode": "SCI431339",
+            "cityName": "Pederneiras",
+            "districtCode": "SCT105280",
+            "districtName": "Shidian",
+            "streetCode": "SST217454",
+            "streetName": "Hejiang Town",
+            "addressDetail": "Pederneiras",
+            "postCode": "354585",
+            "contactName": "rain",
+            "telephoneArea": "60",
+            "telephoneNumber": "354585",
+            "mobileNumber": "19940596532",
+            "mobileArea": "60",
+            "email": "jZ631msdRD@163.com",
+            "transportLocationCode": "DEWUP",
+            "isDefault": true,
+            "isInternationalPartner": true
+        },
+        "entrustedParty": {
+            "contactPartnerId": "4549849587562885122",
+            "contactPartnerName": "Educators Organ Winch S.A.",
+            "contactPartnerType": "CONSIGNOR",
+            "addressAbbreviation": "Germany",
+            "addressCode": "Sao Paulo",
+            "countryCode": "CN",
+            "countryName": "China",
+            "provinceCode": "DE-NW",
+            "provinceName": "North Rhine-Westphalia",
+            "cityCode": "SCI432161",
+            "cityName": "Wuppertal",
+            "districtCode": "SCT103755",
+            "districtName": "Haizhou",
+            "streetCode": "SST220711",
+            "streetName": "Caochi Town",
+            "addressDetail": "Wuppertal",
+            "postCode": "324450",
+            "contactName": "dusts",
+            "telephoneArea": "60",
+            "telephoneNumber": "324450",
+            "mobileNumber": "18277882671",
+            "mobileArea": "60",
+            "email": "0Zhufq74bm@aa.com",
+            "transportLocationCode": "BRPNS",
+            "isDefault": true,
+            "isInternationalPartner": true
+        },
+        "originCityId": "SCI432161",
+        "originLocationCode": "DEWUP",
+        "destinationCityId": "SCI431339",
+        "destinationLocationCode": "BRPNS",
+        "requiredPickupTime": 1622776198000,
+        "requiredArrivalTime": 1622862598000,
+        "etd": 1657784368000,
+        "eta": 1689320368000,
+        "serviceModeCode": "SEL_D2D",
+        "incotermsCode": "INT_DAT",
+        "airTransportationNode": {
+            "designatedAirport": true,
+            "dischargeAirportId": "UNK",
+            "originAirportId": "DRS"
+        },
+        "billOfLadingTypeCode": "LBT_FBL"
+    },
+    "cargoInfo": {
+        "dangerousCargo": true,
+        "cargoTypeCode": "CAT_RWK",
+        "grossWeight": 12.86,
+        "grossWeightUnitCode": "KG",
+        "pieceQty": 11,
+        "pieceQtyUnitCode": "PUT_CARTON",
+        "totalPackageQty": 12,
+        "totalPackageQtyUnitCode": "PUT_CARTON",
+        "totalVolume": 13,
+        "totalVolumeUnitCode": "M3",
+        "bulkCartonQty": 14,
+        "bulkCartonQtyUnitCode": "PUT_CARTON",
+        "cargoDescription": "1231456asdfasdfasdkfj!",
+        "cargoInfoLines": [
+            {
+                "dangerousCargo": true,
+                "companyPn": "P123456!",
+                "descriptionGoods": "123SAFD@#",
+                "hsCode": "465ASDFASDF_A",
+                "invoiceNumber": "ASDFaa",
+                "packageQuantity": 12,
+                "packageUnitCode": "PUT_CARTON",
+                "referenceLineNo": "456456~@#",
+                "referenceNo": "asdfasdf#$%",
+                "unitPrice": "965491",
+                "volume": "965491",
+                "width": "965491",
+                "amount": "965491",
+                "height": "4965491",
+                "length": "965491",
+                "currencyCode": "USD",
+                "grossWeight": "44512.1455",
+                "netWeight": "4589.55",
+                "cargoQuantity": 1000
+            },
+            {
+                "dangerousCargo": true,
+                "companyPn": "P123456!",
+                "descriptionGoods": "123SAFD@#",
+                "hsCode": "465ASDFASDF_A",
+                "invoiceNumber": "ASDFaa",
+                "packageQuantity": 12,
+                "packageUnitCode": "PUT_CARTON",
+                "referenceLineNo": "456456~@#",
+                "referenceNo": "asdfasdf#$%",
+                "unitPrice": "965491",
+                "volume": "965491",
+                "width": "965491",
+                "amount": "965491",
+                "height": "4965491",
+                "length": "965491",
+                "currencyCode": "USD",
+                "grossWeight": "44512.1455",
+                "netWeight": "4589.55",
+                "cargoQuantity": 1000
+            },
+            {
+                "dangerousCargo": true,
+                "companyPn": "P123456!",
+                "descriptionGoods": "123SAFD@#",
+                "hsCode": "465ASDFASDF_A",
+                "invoiceNumber": "ASDFaa",
+                "packageQuantity": 12,
+                "packageUnitCode": "PUT_CARTON",
+                "referenceLineNo": "456456~@#",
+                "referenceNo": "asdfasdf#$%",
+                "unitPrice": "965491",
+                "volume": "965491",
+                "width": "965491",
+                "amount": "965491",
+                "height": "4965491",
+                "length": "965491",
+                "currencyCode": "USD",
+                "grossWeight": "44512.1455",
+                "netWeight": "4589.55",
+                "cargoQuantity": 1000
+            },
+            {
+                "dangerousCargo": true,
+                "companyPn": "P123456!",
+                "descriptionGoods": "123SAFD@#",
+                "hsCode": "465ASDFASDF_A",
+                "invoiceNumber": "ASDFaa",
+                "packageQuantity": 12,
+                "packageUnitCode": "PUT_CARTON",
+                "referenceLineNo": "456456~@#",
+                "referenceNo": "asdfasdf#$%",
+                "unitPrice": "965491",
+                "volume": "965491",
+                "width": "965491",
+                "amount": "965491",
+                "height": "4965491",
+                "length": "965491",
+                "currencyCode": "USD",
+                "grossWeight": "44512.1455",
+                "netWeight": "4589.55",
+                "cargoQuantity": 1000
+            }
+        ]
+    },
+    "valueAddedBusiness": {
+        "cargoValue": 10,
+        "currencyCode": "USD",
+        "insurance": true,
+        "entrustCustomsDeclaration": false,
+        "customsBroker": "{@INT}",
+        "insuredValue": 11
+    },
+    "attachments": [
+        {
+            "name": "FLT_AGI_2020-10-23 08_58_18.xlsx",
+            "typeCode": "FLT_AGI",
+            "url": 1838866
+        },
+        {
+            "name": "FLT_AIN_2020-10-23 08_58_18.xlsx",
+            "typeCode": "FLT_AIN",
+            "url": 1838867
+        },
+        {
+            "name": "FLT_ARC_2020-10-23 08_58_19.xlsx",
+            "typeCode": "FLT_ARC",
+            "url": 1838868
+        },
+        {
+            "name": "FLT_ARN_2020-10-23 08_58_19.xlsx",
+            "typeCode": "FLT_ARN",
+            "url": 1838869
+        },
+        {
+            "name": "FLT_BCA_2020-10-23 08_58_20.xlsx",
+            "typeCode": "FLT_BCA",
+            "url": 1838870
+        },
+        {
+            "name": "FLT_BKC_2020-10-23 08_58_20.xlsx",
+            "typeCode": "FLT_BKC",
+            "url": 1838871
+        },
+        {
+            "name": "FLT_BKG_2020-10-23 08_58_21.xlsx",
+            "typeCode": "FLT_BKG",
+            "url": 1838872
+        },
+        {
+            "name": "FLT_BOE_2020-10-23 08_58_21.xlsx",
+            "typeCode": "FLT_BOE",
+            "url": 1838873
+        },
+        {
+            "name": "FLT_BOL_2020-10-23 08_58_22.xlsx",
+            "typeCode": "FLT_BOL",
+            "url": 1838874
+        },
+        {
+            "name": "FLT_CAD_2020-10-23 08_58_22.xlsx",
+            "typeCode": "FLT_CAD",
+            "url": 1838875
+        },
+        {
+            "name": "FLT_CAU_2020-10-23 08_58_23.xlsx",
+            "typeCode": "FLT_CAU",
+            "url": 1838876
+        },
+        {
+            "name": "FLT_CDR_2020-10-23 08_58_23.xlsx",
+            "typeCode": "FLT_CDR",
+            "url": 1838877
+        },
+        {
+            "name": "FLT_CIV_2020-10-23 08_58_24.xlsx",
+            "typeCode": "FLT_CIV",
+            "url": 1838878
+        },
+        {
+            "name": "FLT_COF_2020-10-23 08_58_25.xlsx",
+            "typeCode": "FLT_COF",
+            "url": 1838879
+        },
+        {
+            "name": "FLT_COR_2020-10-23 08_58_25.xlsx",
+            "typeCode": "FLT_COR",
+            "url": 1838880
+        },
+        {
+            "name": "FLT_COU_2020-10-23 08_58_25.xlsx",
+            "typeCode": "FLT_COU",
+            "url": 1838881
+        },
+        {
+            "name": "FLT_CST_2020-10-23 08_58_26.xlsx",
+            "typeCode": "FLT_CST",
+            "url": 1838882
+        },
+        {
+            "name": "FLT_CTR_2020-10-23 08_58_27.xlsx",
+            "typeCode": "FLT_CTR",
+            "url": 1838883
+        },
+        {
+            "name": "FLT_CUS_2020-10-23 08_58_27.xlsx",
+            "typeCode": "FLT_CUS",
+            "url": 1838884
+        },
+        {
+            "name": "FLT_DAL_2020-10-23 08_58_28.xlsx",
+            "typeCode": "FLT_DAL",
+            "url": 1838885
+        },
+        {
+            "name": "FLT_DAN_2020-10-23 08_58_28.xlsx",
+            "typeCode": "FLT_DAN",
+            "url": 1838886
+        },
+        {
+            "name": "FLT_DAO_2020-10-23 08_58_29.xlsx",
+            "typeCode": "FLT_DAO",
+            "url": 1838887
+        },
+        {
+            "name": "FLT_DEC_2020-10-23 08_58_29.xlsx",
+            "typeCode": "FLT_DEC",
+            "url": 1838888
+        },
+        {
+            "name": "FLT_DGF_2020-10-23 08_58_30.xlsx",
+            "typeCode": "FLT_DGF",
+            "url": 1838889
+        },
+        {
+            "name": "FLT_DNO_2020-10-23 08_58_30.xlsx",
+            "typeCode": "FLT_DNO",
+            "url": 1838890
+        },
+        {
+            "name": "FLT_DRC_2020-10-23 08_58_30.xlsx",
+            "typeCode": "FLT_DRC",
+            "url": 1838891
+        },
+        {
+            "name": "FLT_ECA_2020-10-23 08_58_31.xlsx",
+            "typeCode": "FLT_ECA",
+            "url": 1838892
+        },
+        {
+            "name": "FLT_EXD_2020-10-23 08_58_31.xlsx",
+            "typeCode": "FLT_EXD",
+            "url": 1838893
+        },
+        {
+            "name": "FLT_FUM_2020-10-23 08_58_32.xlsx",
+            "typeCode": "FLT_FUM",
+            "url": 1838894
+        },
+        {
+            "name": "FLT_FWI_2020-10-23 08_58_32.xlsx",
+            "typeCode": "FLT_FWI",
+            "url": 1838895
+        },
+        {
+            "name": "FLT_GTP_2020-10-23 08_58_33.xlsx",
+            "typeCode": "FLT_GTP",
+            "url": 1838896
+        },
+        {
+            "name": "FLT_HBL_2020-10-23 08_58_33.xlsx",
+            "typeCode": "FLT_HBL",
+            "url": 1838897
+        },
+        {
+            "name": "FLT_ICA_2020-10-23 08_58_34.xlsx",
+            "typeCode": "FLT_ICA",
+            "url": 1838898
+        },
+        {
+            "name": "FLT_ICRA_2020-10-23 08_58_34.xlsx",
+            "typeCode": "FLT_ICRA",
+            "url": 1838899
+        },
+        {
+            "name": "FLT_INB_2020-10-23 08_58_35.xlsx",
+            "typeCode": "FLT_INB",
+            "url": 1838900
+        },
+        {
+            "name": "FLT_IRT_2020-10-23 08_58_35.xlsx",
+            "typeCode": "FLT_IRT",
+            "url": 1838901
+        },
+        {
+            "name": "FLT_ISF_2020-10-23 08_58_36.xlsx",
+            "typeCode": "FLT_ISF",
+            "url": 1838902
+        },
+        {
+            "name": "FLT_IVO_2020-10-23 08_58_36.xlsx",
+            "typeCode": "FLT_IVO",
+            "url": 1838903
+        },
+        {
+            "name": "FLT_LID_2020-10-23 08_58_37.xlsx",
+            "typeCode": "FLT_LID",
+            "url": 1838904
+        },
+        {
+            "name": "FLT_MAN_2020-10-23 08_58_37.xlsx",
+            "typeCode": "FLT_MAN",
+            "url": 1838905
+        },
+        {
+            "name": "FLT_MBL_2020-10-23 08_58_38.xlsx",
+            "typeCode": "FLT_MBL",
+            "url": 1838906
+        },
+        {
+            "name": "FLT_MCD_2020-10-23 08_58_38.xlsx",
+            "typeCode": "FLT_MCD",
+            "url": 1838907
+        },
+        {
+            "name": "FLT_MCF_2020-10-23 08_58_39.xlsx",
+            "typeCode": "FLT_MCF",
+            "url": 1838908
+        },
+        {
+            "name": "FLT_MDC_2020-10-23 08_58_39.xlsx",
+            "typeCode": "FLT_MDC",
+            "url": 1838909
+        },
+        {
+            "name": "FLT_NOT_2020-10-23 08_58_40.xlsx",
+            "typeCode": "FLT_NOT",
+            "url": 1838910
+        },
+        {
+            "name": "FLT_OBL_2020-10-23 08_58_40.xlsx",
+            "typeCode": "FLT_OBL",
+            "url": 1838911
+        },
+        {
+            "name": "FLT_PAL_2020-10-23 08_58_41.xlsx",
+            "typeCode": "FLT_PAL",
+            "url": 1838912
+        },
+        {
+            "name": "FLT_PALT_2020-10-23 08_58_41.xlsx",
+            "typeCode": "FLT_PALT",
+            "url": 1838913
+        },
+        {
+            "name": "FLT_PODF_2020-10-23 08_58_42.xlsx",
+            "typeCode": "FLT_PODF",
+            "url": 1838914
+        },
+        {
+            "name": "FLT_SDN_2020-10-23 08_58_42.xlsx",
+            "typeCode": "FLT_SDN",
+            "url": 1838915
+        },
+        {
+            "name": "FLT_SDS_2020-10-23 08_58_43.xlsx",
+            "typeCode": "FLT_SDS",
+            "url": 1838916
+        },
+        {
+            "name": "FLT_SLI_2020-10-23 08_58_44.xlsx",
+            "typeCode": "FLT_SLI",
+            "url": 1838917
+        },
+        {
+            "name": "FLT_TSC_2020-10-23 08_58_44.xlsx",
+            "typeCode": "FLT_TSC",
+            "url": 1838918
+        }
+    ],
+    "documentsAttachesGenerate": {
+        "letterOfAttorneyGenerate": false
+    }
+}

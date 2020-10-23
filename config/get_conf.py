@@ -80,6 +80,17 @@ class Conf:
         fp.write(json_str)
         fp.close()
 
+    def road_json(self,road_file):
+        '''
+        读取json文件内容转换为字典
+        :param road_file: json文件路径
+        :return: 字典
+        '''
+        fp = open(road_file,'r',encoding='UTF-8')
+        json_dict = json.load(fp)
+        fp.close()
+        return json_dict
+
 
 if __name__ == '__main__':
     c = Conf()
@@ -97,5 +108,5 @@ if __name__ == '__main__':
         'noReset': True,
         'chromeOptions': {'androidProcess': {"aa":12,"bb":[12,13]}}
     }
-    b = c.write_json(desired_caps,x)
+    b = c.road_json(x)
     print(b)
