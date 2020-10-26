@@ -1,0 +1,22 @@
+#bms查询和导出
+
+#公共请求头
+header:
+  Content-Type: application/json
+  Authorization:
+  clientId: client
+
+#仓储查询
+bms_query_params:
+  url: /juslink-sccp-bill-query/bill-query/storage-search
+  method: GET
+  params:
+    month: 6
+
+
+#下载
+bms_download_params:
+  url: /juslink-sccp-bill-query/bill-query/download
+  method: GET
+  params:
+    billNo: RBL202009111407
