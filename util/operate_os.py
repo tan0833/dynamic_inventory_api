@@ -7,21 +7,21 @@ class FindNewFile:
         lists = os.listdir(path)
 
         #对获取的文件根据修改时间进行排序
-        lists.sort(key=lambda x:os.path.getmtime(path +'\\'+x))
+        lists.sort(key=lambda x:os.path.getmtime(os.path.join(path,x)),reverse=False)
 
         #把目录和文件名合成一个路径
         file_new = os.path.join(path,lists[-1])
 
         return file_new
 
-    def remove_file(self,dir_path,file_num=59):
+    def remove_file(self,dir_path,file_num=3):
         '''
         指定文件夹超过60个时删除
         :param path:
         :return:
         '''
         file_list = os.listdir(dir_path)
-        file_list.sort(key=lambda x:os.path.getmtime(dir_path +'\\'+x),reverse=True)
+        file_list.sort(key=lambda x:os.path.getmtime(os.path.join(dir_path,x)),reverse=True)
         if len(file_list)>file_num:
             for i in file_list[file_num:-1]:
                 file_addr = os.path.join(dir_path,i)
@@ -31,4 +31,7 @@ class FindNewFile:
 if __name__ =='__main__':
     from config.get_conf import Conf
     p = Conf().get_file_path('test_file')
+
+
     newfile = FindNewFile().remove_file(p)
+    print(newfile)

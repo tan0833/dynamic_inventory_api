@@ -59,7 +59,7 @@ class WriteExcel:
         生成随机excel文件
         :return:
         '''
-        time_stamp = '{0:%Y-%m-%d %H_%M_%S}'.format(datetime.datetime.now())
+        time_stamp = '{0:%Y-%m-%d__%H_%M_%S}'.format(datetime.datetime.now())
         test_dir = Conf().get_file_path('test_file', '%s_%s.xlsx'%(file_name,time_stamp))
         # 创建excel文件
         filename = xlwt.Workbook(encoding="utf-8")
