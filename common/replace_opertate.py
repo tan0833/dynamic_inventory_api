@@ -85,18 +85,18 @@ class ReplaceOperte(ReplaceKinds):
                 res_value = jsonpath.jsonpath(result, res)
                 if isinstance(res_value,list):
                     res_value = jsonpath.jsonpath(result,res)[0]
-                    self.log.debug('实际结果：%s'%res_value)
+                    self.log.debug('实际结果：%s\n\n\n'%res_value)
                 if descript == 'Equal':
-                    self.log.info('预期结果的%s:%s，实际结果的%s:%s'%(key,new_value,key,res_value))
+                    self.log.info('预期结果的%s:%s，实际结果的%s:%s\n\n\n'%(key,new_value,key,res_value))
                     temp_list.append('self.assertEqual("%s","%s")'%(new_value,res_value))
                 if descript == 'NotEqual':
-                    self.log.info('预期结果的%s:%s，实际结果的%s:%s'%(key,new_value,key,res_value))
+                    self.log.info('预期结果的%s:%s，实际结果的%s:%s\n\n\n'%(key,new_value,key,res_value))
                     temp_list.append('self.assertNotEqual("%s","%s")'%(new_value,res_value))
                 elif descript == 'In':
-                    self.log.info('预期结果的%s:%s，实际结果的%s:%s' % (key, new_value, key, res_value))
+                    self.log.info('预期结果的%s:%s，实际结果的%s:%s\n\n\n' % (key, new_value, key, res_value))
                     temp_list.append('self.assertIn("%s","%s")' % (new_value, res_value))
                 elif descript == 'NotIn':
-                    self.log.info('预期结果的%s:%s，实际结果的%s:%s' % (key, new_value, key, res_value))
+                    self.log.info('预期结果的%s:%s，实际结果的%s:%s\n\n\n' % (key, new_value, key, res_value))
                     temp_list.append('self.assertNotIn("%s","%s")' % (new_value, res_value))
 
             else:
@@ -104,16 +104,16 @@ class ReplaceOperte(ReplaceKinds):
                 if  isinstance(res_value,list):
                     res_value = jsonpath.jsonpath(result,res)[0]
                 if descript == 'Equal':
-                    self.log.info('预期结果的%s:%s，实际结果的%s:%s' % (key, expect, key, res_value))
+                    self.log.info('预期结果的%s:%s，实际结果的%s:%s\n\n\n' % (key, expect, key, res_value))
                     temp_list.append('self.assertEqual("%s","%s")'%(expect,res_value))
                 elif descript == 'NotEqual':
-                    self.log.info('预期结果的%s:%s，实际结果的%s:%s' % (key, expect, key, res_value))
+                    self.log.info('预期结果的%s:%s，实际结果的%s:%s\n\n\n' % (key, expect, key, res_value))
                     temp_list.append('self.assertNotEqual("%s","%s")'%(expect,res_value))
                 elif descript == 'In':
-                    self.log.info('预期结果的%s:%s，实际结果的%s:%s' % (key, expect, key, res_value))
+                    self.log.info('预期结果的%s:%s，实际结果的%s:%s\n\n\n' % (key, expect, key, res_value))
                     temp_list.append('self.assertIn("%s","%s")'%(expect,res_value))
                 elif descript == 'NotIn':
-                    self.log.info('预期结果的%s:%s，实际结果的%s:%s' % (key, expect, key, res_value))
+                    self.log.info('预期结果的%s:%s，实际结果的%s:%s\n\n\n' % (key, expect, key, res_value))
                     temp_list.append('self.assertNotIn("%s","%s")'%(expect,res_value))
         return temp_list
 

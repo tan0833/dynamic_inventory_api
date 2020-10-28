@@ -54,7 +54,7 @@ vehicle_type:
   method: POST
   params:
     transnationalShipment: false
-    "shippingMode": "TPM_ROAD"
+    shippingMode: "TPM_ROAD"
 
 #车辆规格
 vehicle_specification:
@@ -62,6 +62,8 @@ vehicle_specification:
   method: POST
   params:
     vehicleSpeciesCodeEq: TKG_SPC
+    transnationalShipment: false
+    shippingMode: "TPM_ROAD"
 
 
 #是否海关监管

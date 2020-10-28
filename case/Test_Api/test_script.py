@@ -49,6 +49,10 @@ for excel_name in execute_case_name:
 
 @ddt.ddt
 class TestRunMain(unittest.TestCase):
+    '''
+    接口测试类
+    '''
+
 
     @classmethod
     def setUp(cls):
@@ -71,6 +75,8 @@ class TestRunMain(unittest.TestCase):
         case_name = data['case_name']
         case_id = data['case_id']
         self._testMethodDoc = case_name
+        self._testMethodName = '登录测试'
+
         self.log.info('=======执行第%s条用例开始： %s ========'%(case_id,case_name))
         method = data['method']
         url = self.request_url  + self.ro.replace_excel(data['path'])
@@ -113,7 +119,7 @@ class TestRunMain(unittest.TestCase):
             for i in assert_res:
                 # self.log.info('断言结果：%s' % i)
                 eval(i)
-        self.log.info('\n\n' )
+
 
 
     # @unittest.skip
@@ -122,6 +128,7 @@ class TestRunMain(unittest.TestCase):
         case_name = data['case_name']
         case_id = data['case_id']
         self._testMethodDoc = case_name
+        self._testMethodName = '运输下单测试'
         self.log.info('=======执行第%s条用例开始： %s ========' % (case_id, case_name))
         method = data['method']
         # url = self.request_url + self.service + self.ro.replace_excel(data['path'])
@@ -165,7 +172,8 @@ class TestRunMain(unittest.TestCase):
             for i in assert_res:
                 # self.log.info('断言结果：%s'%i)
                 eval(i)
-        self.log.info('\n\n')
+
+
 
     # temp_dict = temp_dict
     #

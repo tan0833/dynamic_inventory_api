@@ -28,7 +28,7 @@ class RunMain:
         else:
             data_result = data
 
-        self.log.info(u'\n请求方法：%s\n请求地址：%s\n请求参数：%s\n请求头部：%s\n上传文件名称：%s'%(method,url,data_result,header_result,file))
+        self.log.info(u'\n请求方法：%s\n请求地址：%s\n请求参数：%s\n请求头部：%s\n上传文件名称：%s\n'%(method,url,data_result,header_result,file))
         if method.upper() == 'GET':
             try:
                 result = requests.request(method=method,url=url,params=data,headers = header)
@@ -54,16 +54,16 @@ class RunMain:
             r = json.loads(response)
             response_result = json.dumps(r, sort_keys=True, indent=4, separators=(',', ':'),
                                          ensure_ascii=False)
-            self.log.info('响应结果：\n%s'%response_result)
+            self.log.info('\n响应结果：%s\n'%response_result)
             return r
         elif not response.startswith('{') and result.status_code==200:
             header = dict(result.headers)
             response_result = json.dumps(header, sort_keys=True, indent=4, separators=(',', ':'),
                                          ensure_ascii=False)
-            self.log.info('响应头部信息：\n%s' % response_result)
+            self.log.info('\n响应头部信息：%s\n' % response_result)
             return header
         else:
-            self.log.info('响应结果为：%s'%response)
+            self.log.info('\n响应结果为：%s\n'%response)
             return response
 
 
