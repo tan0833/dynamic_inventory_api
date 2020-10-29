@@ -22,5 +22,6 @@ if __name__ == '__main__':
     exec("dict['aa']['bb']['cc']='mm'")
 
 
-    print(dict)
+    # print(dict)
+
 

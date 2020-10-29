@@ -1,14 +1,12 @@
 # -*- encoding: utf-8 -*-
 
-
-import logging
-import re
+from config.Log import Log
 import requests
 from jsonpath import jsonpath
 
 # 无效的接口地址
 void_api_path = ['actuator', 'error']
-
+log = Log()
 
 class SwaggerApi:
 
@@ -23,7 +21,7 @@ class SwaggerApi:
         if isinstance(self.url_list, list):
             api_url = self.url_list
         else:
-            logging.error('swagger地址信息必须是列表')
+            log.error('swagger地址信息必须是列表')
             raise TypeError
         return api_url
 
