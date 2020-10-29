@@ -1,7 +1,7 @@
 import unittest,time,datetime
 from BeautifulReport import BeautifulReport
 from config.get_conf import Conf
-
+from api_count.api_count_main import api_count_probability
 
 #测试用例目录
 case_dir = Conf().get_file_path('case','Test_Api')
@@ -16,7 +16,12 @@ environment_name = Conf().is_url(url)
 
 date = datetime.datetime.now().strftime('%Y%m%d%H%M%S')
 testCase = unittest.defaultTestLoader.discover(start_dir=case_dir, pattern='test*.py')
+
+#实际接口数量
+api_count_probability(81)
+#打印用例数
 print(testCase.countTestCases())
+
 
 #执行测试用例
 runner = BeautifulReport(testCase)
