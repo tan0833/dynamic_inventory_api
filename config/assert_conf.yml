@@ -1,0 +1,22 @@
+#测试框架断言方法
+
+
+unittest:
+  Equal: "self.assertEqual"
+  NotEqual: "self.assertNotEqual"
+  In: "self.assertIn"
+  NotIn: "self.assertNotIn"
+  AssertGreater: "self.assertGreater"
+  AssertGreaterEqual: "self.assertGreaterEqual"
+  AssertLess: "self.assertLess"
+  AssertLessEqual: "self.assertLessEqual"
+
+pytest:
+  Equal: "=="
+  NotEqual: "!="
+  In: "in"
+  NotIn: "not in"
+  AssertGreater: ">"
+  AssertGreaterEqual: ">="
+  AssertLess: "<"
+  AssertLessEqual: "<="

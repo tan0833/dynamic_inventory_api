@@ -1,10 +1,12 @@
 import re,json,jsonpath,random
 from common.replace_kinds import ReplaceKinds
 from util.operate_global import GlobalDict
-
+from config.get_conf import Conf
 
 class ReplaceOperte(ReplaceKinds):
 
+    __conf = Conf()
+    __assert_dict = __conf.get_yaml(__conf.get_file_path('config','assert_conf.yml'))
 
     def replace_global_value(self,global_dict,result,params=None):
         '''
@@ -63,58 +65,88 @@ class ReplaceOperte(ReplaceKinds):
         data = self.accurate_replace(data)
         return data
 
-
-    def replace_expect(self,params,result):
+    def replace_expect(self, params, result):
         '''
-        断言
+        unittest断言
         :param params: excel中的expect
         :param result: 响应结果
         :return:
         '''
         temp_list = []
+        unittest_assert_dict = self.__assert_dict.get('unittest') #获取断言配置文件中unittest的断言方法
 
         for i in params:
-            descript,expect,res = i     #描述，预期结果，实际结果
-            self.log.debug('描述：%s,预期结果：%s，实际结果：%s'%(descript,expect,res))
-            key = re.search(r'\$\.\.(.*)',res).group(1)
-            if re.search(r'\${(.+?)}',expect):
-                old_value = re.search(r'\${(.+?)}',expect).group(1)
-                self.log.debug('获取预期结果的键为：%s'%old_value)
+            descript, expect, res = i  # 描述，预期结果，实际结果
+            self.log.debug('描述：%s,预期结果：%s，实际结果：%s' % (descript, expect, res))
+            key = re.search(r'\$\.\.(.*)', res).group(1)
+            if re.search(r'\${(.+?)}', expect):
+                old_value = re.search(r'\${(.+?)}', expect).group(1)
+                self.log.debug('获取预期结果的键为：%s' % old_value)
                 new_value = self.global_dict.get_dict(old_value)
-                self.log.debug('从全局字典中获取预期结果：%s'%new_value)
+                self.log.debug('从全局字典中获取预期结果：%s' % new_value)
                 res_value = jsonpath.jsonpath(result, res)
-                if isinstance(res_value,list):
-                    res_value = jsonpath.jsonpath(result,res)[0]
-                    self.log.debug('实际结果：%s\n\n\n'%res_value)
-                if descript == 'Equal':
-                    self.log.info('预期结果的%s:%s，实际结果的%s:%s\n\n\n'%(key,new_value,key,res_value))
-                    temp_list.append('self.assertEqual("%s","%s")'%(new_value,res_value))
-                if descript == 'NotEqual':
-                    self.log.info('预期结果的%s:%s，实际结果的%s:%s\n\n\n'%(key,new_value,key,res_value))
-                    temp_list.append('self.assertNotEqual("%s","%s")'%(new_value,res_value))
-                elif descript == 'In':
-                    self.log.info('预期结果的%s:%s，实际结果的%s:%s\n\n\n' % (key, new_value, key, res_value))
-                    temp_list.append('self.assertIn("%s","%s")' % (new_value, res_value))
-                elif descript == 'NotIn':
-                    self.log.info('预期结果的%s:%s，实际结果的%s:%s\n\n\n' % (key, new_value, key, res_value))
-                    temp_list.append('self.assertNotIn("%s","%s")' % (new_value, res_value))
+                if isinstance(res_value, list):
+                    res_value = jsonpath.jsonpath(result, res)[0]
+                    self.log.debug('实际结果：%s\n\n\n' % res_value)
+
+                self.log.info('预期结果的%s:%s，实际结果的%s:%s\n\n\n' % (key, new_value, key, res_value))
+                if descript == 'In' or descript == 'NotIn':
+                    temp_list.append('%s ("%s","%s")' % (unittest_assert_dict.get(descript), new_value.lower(), res_value.lower()))
+                else:
+                    temp_list.append('%s ("%s","%s")' % (unittest_assert_dict.get(descript), new_value, res_value))
 
             else:
-                res_value = jsonpath.jsonpath(result,res)
-                if  isinstance(res_value,list):
-                    res_value = jsonpath.jsonpath(result,res)[0]
-                if descript == 'Equal':
-                    self.log.info('预期结果的%s:%s，实际结果的%s:%s\n\n\n' % (key, expect, key, res_value))
-                    temp_list.append('self.assertEqual("%s","%s")'%(expect,res_value))
-                elif descript == 'NotEqual':
-                    self.log.info('预期结果的%s:%s，实际结果的%s:%s\n\n\n' % (key, expect, key, res_value))
-                    temp_list.append('self.assertNotEqual("%s","%s")'%(expect,res_value))
-                elif descript == 'In':
-                    self.log.info('预期结果的%s:%s，实际结果的%s:%s\n\n\n' % (key, expect, key, res_value))
-                    temp_list.append('self.assertIn("%s","%s")'%(expect,res_value))
-                elif descript == 'NotIn':
-                    self.log.info('预期结果的%s:%s，实际结果的%s:%s\n\n\n' % (key, expect, key, res_value))
-                    temp_list.append('self.assertNotIn("%s","%s")'%(expect,res_value))
+                res_value = jsonpath.jsonpath(result, res)
+                if isinstance(res_value, list):
+                    res_value = jsonpath.jsonpath(result, res)[0]
+
+                self.log.info('预期结果的%s:%s，实际结果的%s:%s\n\n\n' % (key, expect, key, res_value))
+                if descript == 'In' or descript == 'NotIn':
+                    temp_list.append('%s ("%s","%s")' % (unittest_assert_dict.get(descript), expect.lower(), res_value.lower()))
+                else:
+                    temp_list.append('%s ("%s","%s")' % (unittest_assert_dict.get(descript), expect, res_value))
+        return temp_list
+
+
+    def replace_expect_pytest(self,params,result):
+        '''
+        pytest断言
+        :param params: excel中的expect
+        :param result: 响应结果
+        :return:
+        '''
+        temp_list = []
+        pytest_assert_dict = self.__assert_dict.get('pytest')  # 获取断言配置文件中pytest的断言方法
+
+        for i in params:
+            descript, expect, res = i  # 描述，预期结果，实际结果
+            self.log.debug('描述：%s,预期结果：%s，实际结果：%s' % (descript, expect, res))
+            key = re.search(r'\$\.\.(.*)', res).group(1)
+            if re.search(r'\${(.+?)}', expect):
+                old_value = re.search(r'\${(.+?)}', expect).group(1)
+                self.log.debug('获取预期结果的键为：%s' % old_value)
+                new_value = self.global_dict.get_dict(old_value)
+                self.log.debug('从全局字典中获取预期结果：%s' % new_value)
+                res_value = jsonpath.jsonpath(result, res)
+                if isinstance(res_value, list):
+                    res_value = jsonpath.jsonpath(result, res)[0]
+                    self.log.debug('实际结果：%s\n\n\n' % res_value)
+
+                self.log.info('预期结果的%s:%s，实际结果的%s:%s\n\n\n' % (key, new_value, key, res_value))
+                if descript == 'In' or descript == 'NotIn':
+                    temp_list.append('assert("%s"%s"%s")' % (new_value.lower(),pytest_assert_dict.get(descript), res_value.lower()))
+                else:
+                    temp_list.append('assert("%s"%s"%s")' % (new_value, pytest_assert_dict.get(descript), res_value))
+            else:
+                res_value = jsonpath.jsonpath(result, res)
+                if isinstance(res_value, list):
+                    res_value = jsonpath.jsonpath(result, res)[0]
+
+                self.log.info('预期结果的%s:%s，实际结果的%s:%s\n\n\n' % (key, expect, key, res_value))
+                if descript == 'In' or descript == 'NotIn':
+                    temp_list.append('assert("%s"%s"%s")' % (expect.lower(),pytest_assert_dict.get(descript),res_value.lower()))
+                else:
+                    temp_list.append('assert("%s"%s"%s")' % (expect, pytest_assert_dict.get(descript), res_value))
         return temp_list
 
 

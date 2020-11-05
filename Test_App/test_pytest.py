@@ -8,7 +8,7 @@ import pytest # 引入pytest包
 #     return request.parmas
 
 def return_test_data():
-    return [(1,2),(0,3)]
+    return [{1,2},{0,3}]
 
 class Test_ABC:
     # 测试类级开始
@@ -21,18 +21,18 @@ class Test_ABC:
 
     def test_a(self):
         print("------->test_a")
-        assert 1
+        assert  ("True"=="True")
 
-    @pytest.mark.parametrize("a,b", return_test_data())  # 使用函数返回值的形式传入参数值
+    @pytest.mark.parametrize( 'a',return_test_data())  # 使用函数返回值的形式传入参数值
     # @pytest.mark.parametrize("a", [3, 6])   #参数化
     # @pytest.mark.xfail(2 > 1, reason="标注为预期失败")
     # @pytest.mark.skipif(2>1, reason="测试跳过函数")
-    def test_b(self,a,b):
+    def test_b(self,a):
         print(a)
 
 
 if __name__ == '__main__':
-    # pytest.main(["-s", "test_pytest.py"]) # 调用pytest的main函数执行测试
+    pytest.main(["-s", "test_pytest.py"]) # 调用pytest的main函数执行测试
     # pytest.main(['-x'])   # 第01次失败，就停止测试
     # pytest.main(["--maxfail","2"])   # 出现2个失败就终止测试
     # pytest.main(["test_pytest.py"])     #指定测试模块
@@ -51,4 +51,4 @@ if __name__ == '__main__':
     # pytest.main(["--pdb","--maxfail","3"])  # 只有前三次失败跳转到 PDB
     # pytest.main(["--durations", "3"])       #获取最慢的3个用例的执行耗时
     # pytest.main(["-p", "no:doctest"])           #关闭 doctest 插件
-    pytest.main(["-qq"], plugins=[Test_ABC()])      #从Python代码中调用pytest
+    # pytest.main(["-qq"], plugins=[Test_ABC()])      #从Python代码中调用pytest

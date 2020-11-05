@@ -23,10 +23,9 @@ print(testCase.countTestCases())
 #实际接口数量
 api_count_probability(81)
 
-
 #执行测试用例
 runner = BeautifulReport(testCase)
 #生成测试报告
-runner.report(description='%s运输下单V2.6.0接口测试报告'%environment_name, filename='%s运输下单V2.6.0接口测试报告'%environment_name + date + '.html', report_dir=report_dir)
+runner.report(description='%s运输下单V2.7.0接口测试报告'%environment_name, filename='%s运输下单V2.7.0接口测试报告'%environment_name + date + '.html', report_dir=report_dir)
 # runner.report(description='%s运输下单基础数据遍历接口测试报告'%environment_name, filename='%s运输下单基础数据遍历接口测试报告'%environment_name + date + '.html', report_dir=report_dir)
 

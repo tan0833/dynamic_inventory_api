@@ -5,6 +5,10 @@ $__attachment{(internat_sea,cn_express)}国内国际海空陆铁快递}
     In：包含断言
     NotEqual:不相等断言
     NotIn：不包含断言
+    AssertGreater:大于
+    AssertGreaterEqual：大于等于
+    AssertLess：小于
+    AssertLessEqual：小于等于
     aa:表示返回结果中的字段
 
 3.全局字典书写格式：{'自定义键':"$..aa",'自定义键'：input_params,'自定义键'：自定义值,}
