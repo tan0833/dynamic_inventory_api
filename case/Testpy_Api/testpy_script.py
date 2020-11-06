@@ -1,6 +1,6 @@
 '''基于pytest测试框架的接口测试'''
 
-from common.get_excel_case_list import excel_case_list
+from common.get_excel_case_list import ChainExcelData
 import pytest
 from common.replace_opertate import ReplaceOperte
 from common.save_api_params import SaveApiParams
@@ -10,6 +10,8 @@ from runMain.run_main import RunMain
 from config.global_dict import temp_dict
 from time import sleep
 
+
+chain_excel_data = ChainExcelData()
 
 class TestApi:
 
@@ -24,7 +26,7 @@ class TestApi:
         self.run_main = RunMain()
 
 
-    @pytest.mark.parametrize('data',excel_case_list())
+    @pytest.mark.parametrize('data',chain_excel_data.excel_case_generator())
     def test_api(self,data):
         case_name = data['case_name']
         case_id = data['case_id']

@@ -9,44 +9,45 @@ from util.operate_excel import Operate_excel
 from runMain.run_main import RunMain
 from config.global_dict import temp_dict
 from time import sleep
-from common.get_excel_case_list import excel_case_list
+from common.get_excel_case_list import ChainExcelData
 
+chain_excel_data = ChainExcelData()
 
-conf = Conf()
-d = []
-#环境地址
-environment_url = conf.get_value('request_url','url')
-#环境名称
-environment_name = conf.is_url(environment_url)
-#读取yaml文件中需要执行的excel文件名和sheet名
-execute_case_name = conf.get_yaml(conf.get_file_path('config','excel_file.yml')).get('file_name')
-for project_name in execute_case_name:
-    for key in project_name.keys():
-        excel_name = project_name[key]
-        if environment_name in excel_name.get('excel_name'):
-            excel_file_name = excel_name.get('excel_name')
-            sheet_list = excel_name.get('sheet_name')
-            for sheet in sheet_list:
-                if sheet == '登录':
-                    res = Operate_excel(conf.get_file_path('data', excel_file_name),sheet)
-                    login = res.excel_dict()
-                    d.extend(login)
-                elif sheet == '基础数据':
-                    res = Operate_excel(conf.get_file_path('data', excel_file_name), sheet)
-                    d01 = res.excel_dict()
-                    d.extend(d01)
-                else:
-                    res = Operate_excel(conf.get_file_path('data', excel_file_name), sheet)
-                    d02 = res.excel_dict()
-                    d.extend(d02)
-
-        elif 'UAT' not in excel_name.get('excel_name') and 'SIT' not in excel_name.get('excel_name') and 'DEV' not in excel_name.get('excel_name'):
-            excel_file_name = excel_name.get('excel_name')
-            sheet_list = excel_name.get('sheet_name')
-            for sheet in sheet_list:
-                res = Operate_excel(conf.get_file_path('data',excel_file_name),sheet)
-                d2 = res.excel_dict()
-                d.extend(d2)
+# conf = Conf()
+# d = []
+# #环境地址
+# environment_url = conf.get_value('request_url','url')
+# #环境名称
+# environment_name = conf.is_url(environment_url)
+# #读取yaml文件中需要执行的excel文件名和sheet名
+# execute_case_name = conf.get_yaml(conf.get_file_path('config','excel_file.yml')).get('file_name')
+# for project_name in execute_case_name:
+#     for key in project_name.keys():
+#         excel_name = project_name[key]
+#         if environment_name in excel_name.get('excel_name'):
+#             excel_file_name = excel_name.get('excel_name')
+#             sheet_list = excel_name.get('sheet_name')
+#             for sheet in sheet_list:
+#                 if sheet == '登录':
+#                     res = Operate_excel(conf.get_file_path('data', excel_file_name),sheet)
+#                     login = res.excel_dict()
+#                     d.extend(login)
+#                 elif sheet == '基础数据':
+#                     res = Operate_excel(conf.get_file_path('data', excel_file_name), sheet)
+#                     d01 = res.excel_dict()
+#                     d.extend(d01)
+#                 else:
+#                     res = Operate_excel(conf.get_file_path('data', excel_file_name), sheet)
+#                     d02 = res.excel_dict()
+#                     d.extend(d02)
+#
+#         elif 'UAT' not in excel_name.get('excel_name') and 'SIT' not in excel_name.get('excel_name') and 'DEV' not in excel_name.get('excel_name'):
+#             excel_file_name = excel_name.get('excel_name')
+#             sheet_list = excel_name.get('sheet_name')
+#             for sheet in sheet_list:
+#                 res = Operate_excel(conf.get_file_path('data',excel_file_name),sheet)
+#                 d2 = res.excel_dict()
+#                 d.extend(d2)
 
 
 
@@ -69,7 +70,7 @@ class TestRunMain(unittest.TestCase):
 
 
     # @unittest.skip
-    @ddt.data(*d)
+    @ddt.data(*chain_excel_data.excel_case_generator())
     def test_b_run_main(self,data):
         case_name = data['case_name']
         case_id = data['case_id']
@@ -112,8 +113,9 @@ class TestRunMain(unittest.TestCase):
         self.save_params.save_params()
 
         expect = data['expect']
+
         if expect.startswith('['):
-            expect = exec(expect)
+            expect = eval(expect)
             assert_res = self.ro.replace_expect(expect,result)
             for i in assert_res:
                 # self.log.info('断言结果：%s'%i)

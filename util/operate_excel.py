@@ -1,5 +1,5 @@
 import datetime
-
+from itertools import chain
 import xlrd
 import xlwt
 from config.get_conf import Conf
@@ -52,6 +52,19 @@ class Operate_excel:
             title.append(th_dict)
         return title
 
+    def excel_dict_generator(self):
+        '''
+        将excel英文标题作为键，每行内容作为值写入字典中，方便后续操作调用
+        :return: 以生成器形式返回
+        '''
+
+        row_count = self.get_rows()
+        for i in range(1, row_count):
+            key = self.get_row_values(0)
+            value = self.get_row_values(i)
+            th_dict = dict(zip(key, value))
+            yield th_dict
+
 class WriteExcel:
 
     def excel_write(self,excle_content,file_name):
@@ -74,9 +87,13 @@ class WriteExcel:
 
 
 if __name__ == '__main__':
-    # o = Operate_excel('D:\\文档\\运输可视化相关文档\\自动化\\克隆\\dynamic_inventory\\data\\动态库存接口测试用例.xlsx','登录')
-    # print(o.get_row_values(2))
 
+    o1 = Operate_excel(Conf().get_file_path('data','客户对账测试用例-SIT.xlsx'),'登录').excel_dict_generator()
+    o2 = Operate_excel(Conf().get_file_path('data','客户对账测试用例-SIT.xlsx'),'客户对账').excel_dict_generator()
+    o3 = ([])
+    generator3 = chain(o1,o3, o2)
+    for i in generator3:
+        print(i)
 
-    a = WriteExcel()
-    a.excel_write('asdfasdfas','')
+    # a = WriteExcel()
+    # a.excel_write('asdfasdfas','')
