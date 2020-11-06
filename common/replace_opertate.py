@@ -89,7 +89,7 @@ class ReplaceOperte(ReplaceKinds):
                     res_value = jsonpath.jsonpath(result, res)[0]
                     self.log.debug('实际结果：%s\n\n\n' % res_value)
 
-                self.log.info('预期结果的%s:%s，实际结果的%s:%s\n\n\n' % (key, new_value, key, res_value))
+                self.log.info('预期结果的%s:%s，实际结果的%s:%s' % (key, new_value, key, res_value))
                 if descript == 'In' or descript == 'NotIn':
                     temp_list.append('%s ("%s","%s")' % (unittest_assert_dict.get(descript), new_value.lower(), res_value.lower()))
                 else:
@@ -100,7 +100,7 @@ class ReplaceOperte(ReplaceKinds):
                 if isinstance(res_value, list):
                     res_value = jsonpath.jsonpath(result, res)[0]
 
-                self.log.info('预期结果的%s:%s，实际结果的%s:%s\n\n\n' % (key, expect, key, res_value))
+                self.log.info('预期结果的%s:%s，实际结果的%s:%s' % (key, expect, key, res_value))
                 if descript == 'In' or descript == 'NotIn':
                     temp_list.append('%s ("%s","%s")' % (unittest_assert_dict.get(descript), expect.lower(), res_value.lower()))
                 else:
@@ -130,9 +130,9 @@ class ReplaceOperte(ReplaceKinds):
                 res_value = jsonpath.jsonpath(result, res)
                 if isinstance(res_value, list):
                     res_value = jsonpath.jsonpath(result, res)[0]
-                    self.log.debug('实际结果：%s\n\n\n' % res_value)
+                    self.log.debug('实际结果：%s' % res_value)
 
-                self.log.info('预期结果的%s:%s，实际结果的%s:%s\n\n\n' % (key, new_value, key, res_value))
+                self.log.info('预期结果的%s:%s，实际结果的%s:%s' % (key, new_value, key, res_value))
                 if descript == 'In' or descript == 'NotIn':
                     temp_list.append('assert("%s"%s"%s")' % (new_value.lower(),pytest_assert_dict.get(descript), res_value.lower()))
                 else:
@@ -142,7 +142,7 @@ class ReplaceOperte(ReplaceKinds):
                 if isinstance(res_value, list):
                     res_value = jsonpath.jsonpath(result, res)[0]
 
-                self.log.info('预期结果的%s:%s，实际结果的%s:%s\n\n\n' % (key, expect, key, res_value))
+                self.log.info('预期结果的%s:%s，实际结果的%s:%s' % (key, expect, key, res_value))
                 if descript == 'In' or descript == 'NotIn':
                     temp_list.append('assert("%s"%s"%s")' % (expect.lower(),pytest_assert_dict.get(descript),res_value.lower()))
                 else:

@@ -111,7 +111,6 @@ class TestRunMain(unittest.TestCase):
         result = self.run_main.run_main(method, url=url, data=params, header=header,file=file)
         self.ro.replace_global_value(global_value, result,params=params)
         self.save_params.save_params()
-
         expect = data['expect']
 
         if expect.startswith('['):
