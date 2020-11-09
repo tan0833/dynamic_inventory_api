@@ -12,7 +12,6 @@ import requests
 basic_url = Conf().get_value('request_url','url')
 
 
-
 class ErgodicApi():
 
     def __init__(self,dict):

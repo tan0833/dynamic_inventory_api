@@ -1,0 +1,14 @@
+#已创建订单的在全局字典中的键,用于删除
+
+shipment_demand_key:  #运输下单
+  - cn_rail_order_id
+  - submit_cn_rail_order_id
+  - cn_rail_save_id
+
+middle_data_key:    #中台的收发货方
+  contacts_key:
+    - shpper_id
+    - internat_shpper_id
+  contacts_addr_key:
+    - shpper_addr_id
+    - internat_shpper_addr_id

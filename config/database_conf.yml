@@ -1,0 +1,59 @@
+#数据库配置
+
+ysxd:
+  TEST:
+    host: "10.0.6.6"
+    port: 5432
+    database: "shipment-demand-sit"
+    user: "basic_sit"
+    password: "JshKxSKh"
+
+  UAT:
+    host: "10.0.6.6"
+    port: 5432
+    database: "shipment-demand-uat"
+    user: "basic_sit"
+    password: "JshKxSKh"
+
+  DEV:
+    host: "10.0.10.151"
+    port: 5432
+    database: "shipment-demand"
+    user: "admin"
+    password: "ju#sda_admin%"
+
+  SIT:
+    host: "10.25.7.107"
+    port: 5432
+    database: "shipment_demand"
+    user: "postgres"
+    password: "123"
+
+middle:
+  TEST:
+    host: "10.0.6.6"
+    port: 5432
+    database: "tenant_basic"
+    user: "basic_sit"
+    password: "JshKxSKh"
+
+  UAT:
+    host: "10.0.6.6"
+    port: 5432
+    database: "tenant_basic_uat"
+    user: "basic_sit"
+    password: "JshKxSKh"
+
+  DEV:
+    host: "10.0.10.151"
+    port: 5432
+    database: "shipment-demand"
+    user: "admin"
+    password: "ju#sda_admin%"
+
+  SIT:
+    host: "10.25.7.107"
+    port: 5432
+    database: "tenant_basic"
+    user: "postgres"
+    password: "123"

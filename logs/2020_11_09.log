@@ -1,0 +1,23 @@
+[2020-11-09 14:19:03,587 - Log.py - 42] - ERROR:删除失败：/nTraceback (most recent call last):
+  File "D:/文档/运输可视化相关文档/测试数据/dynamic_inventory_api/common/delete_test_data.py", line 39, in sql_delete_data
+    postgresql.execute("DELETE from shipment_demand where id in (%s);" % self.get_create_order_id())
+  File "D:\文档\运输可视化相关文档\测试数据\dynamic_inventory_api\util\operate_postgresql.py", line 27, in execute
+    self.cursor.execute(*args)
+psycopg2.errors.UndefinedTable: 错误:  关系 "shipment_demand" 不存在
+LINE 1: DELETE from shipment_demand where id in (4558959771548823552...
+                    ^
+
+
+[2020-11-09 14:21:15,876 - Log.py - 42] - ERROR:删除失败：
+Traceback (most recent call last):
+  File "D:/文档/运输可视化相关文档/测试数据/dynamic_inventory_api/common/delete_test_data.py", line 39, in sql_delete_data
+    postgresql.execute("DELETE from shipment_demand where id in (%s);" % self.get_create_order_id())
+  File "D:\文档\运输可视化相关文档\测试数据\dynamic_inventory_api\util\operate_postgresql.py", line 27, in execute
+    self.cursor.execute(*args)
+psycopg2.errors.UndefinedTable: 错误:  关系 "shipment_demand" 不存在
+LINE 1: DELETE from shipment_demand where id in (4558959771548823552...
+                    ^
+
+
+[2020-11-09 14:24:08,237 - Log.py - 36] - INFO:删除：4558959771548823552,978451341,789413456成功
+[2020-11-09 14:27:26,056 - Log.py - 36] - INFO:删除：4558959771548823552,978451341,789413456成功
