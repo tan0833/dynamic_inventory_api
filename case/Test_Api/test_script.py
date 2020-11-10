@@ -90,6 +90,14 @@ class TestRunMain(unittest.TestCase):
                 # self.log.info('断言结果：%s'%i)
                 exec(i)
 
+    # def test_zdelete_order_id(self):
+    #     '''
+    #     删除已创建的id
+    #     :return:
+    #     '''
+    #     self._testMethodDoc = '删除已创建的订单id'
+    #     self._testMethodName = '回收测试数据'
+    #     self.delete_test_data.sql_delete_data()
 
 
     # temp_dict = temp_dict
@@ -99,10 +107,12 @@ class TestRunMain(unittest.TestCase):
     #     查看全局字典
     #     :return:
     #     '''
-    #     import json
-    #     a = json.dumps(temp_dict, sort_keys=True, indent=4, separators=(',', ':'),
-    #                                              ensure_ascii=False)
-    #     self.log.info(a)
+        # import json
+        # a = json.dumps(temp_dict, sort_keys=True, indent=4, separators=(',', ':'),
+        #                                          ensure_ascii=False)
+        # self.log.info(a)
+
+
 
 
 if __name__ == '__main__':

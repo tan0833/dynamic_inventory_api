@@ -38,7 +38,7 @@ class DeleteTestData:
             postgresql.execute("DELETE from message_record where shipment_demand_id in (%s);" % self.get_create_order_id())
             postgresql.execute("DELETE from shipment_demand where id in (%s);" % self.get_create_order_id())
             postgresql.commit()
-            self.log.info('删除：%s成功'%self.get_create_order_id())
+            self.log.info('删除订单id：(%s)成功'%self.get_create_order_id())
         except Exception as e:
             excepttion = str(traceback.format_exc())
             self.log.error('删除失败：\n%s'%excepttion)

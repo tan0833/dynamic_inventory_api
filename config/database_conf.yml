@@ -1,7 +1,7 @@
 #数据库配置
 
 ysxd:
-  TEST:
+  SIT:
     host: "10.0.6.6"
     port: 5432
     database: "shipment-demand-sit"
@@ -22,7 +22,7 @@ ysxd:
     user: "admin"
     password: "ju#sda_admin%"
 
-  SIT:
+  TEST:
     host: "10.25.7.107"
     port: 5432
     database: "shipment_demand"
