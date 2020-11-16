@@ -33,6 +33,10 @@ class ChainExcelData:
                             d.extend(login)
                         elif sheet == '基础数据':
                             res = Operate_excel(conf.get_file_path('data', excel_file_name), sheet)
+                            d03 = res.excel_dict()
+                            d.extend(d03)
+                        elif sheet == '采购订单':
+                            res = Operate_excel(conf.get_file_path('data', excel_file_name), sheet)
                             d01 = res.excel_dict()
                             d.extend(d01)
                         else:

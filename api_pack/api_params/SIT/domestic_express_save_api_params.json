@@ -1,272 +1,272 @@
 {
     "referenceOrders": [
         {
-            "referenceOrderNo": "15398230975",
+            "referenceOrderNo": "15620510925",
             "referenceOrderType": "FLT_SALE"
         }
     ],
     "attachments": [
         {
-            "name": "FLT_IMF_2020-11-06__16_50_59.xlsx",
+            "name": "FLT_IMF_2020-11-16__16_51_18.xlsx",
             "typeCode": "FLT_IMF",
-            "url": 45263
+            "url": 50828
         },
         {
-            "name": "FLT_ABN_2020-11-06__16_51_00.xlsx",
+            "name": "FLT_ABN_2020-11-16__16_51_18.xlsx",
             "typeCode": "FLT_ABN",
-            "url": 45264
+            "url": 50829
         },
         {
-            "name": "FLT_ACT_2020-11-06__16_51_01.xlsx",
+            "name": "FLT_ACT_2020-11-16__16_51_19.xlsx",
             "typeCode": "FLT_ACT",
-            "url": 45265
+            "url": 50830
         },
         {
-            "name": "FLT_ECT_2020-11-06__16_51_02.xlsx",
-            "typeCode": "FLT_ECT",
-            "url": 45266
-        },
-        {
-            "name": "FLT_EDF_2020-11-06__16_51_03.xlsx",
-            "typeCode": "FLT_EDF",
-            "url": 45267
-        },
-        {
-            "name": "FLT_EMF_2020-11-06__16_51_03.xlsx",
-            "typeCode": "FLT_EMF",
-            "url": 45268
-        },
-        {
-            "name": "FLT_EMR_2020-11-06__16_51_04.xlsx",
-            "typeCode": "FLT_EMR",
-            "url": 45269
-        },
-        {
-            "name": "FLT_EPM_2020-11-06__16_51_05.xlsx",
-            "typeCode": "FLT_EPM",
-            "url": 45270
-        },
-        {
-            "name": "FLT_FAP_2020-11-06__16_51_05.xlsx",
-            "typeCode": "FLT_FAP",
-            "url": 45271
-        },
-        {
-            "name": "FLT_GMF_2020-11-06__16_51_06.xlsx",
-            "typeCode": "FLT_GMF",
-            "url": 45272
-        },
-        {
-            "name": "FLT_AFD_2020-11-06__16_51_07.xlsx",
+            "name": "FLT_AFD_2020-11-16__16_51_19.xlsx",
             "typeCode": "FLT_AFD",
-            "url": 45273
+            "url": 50831
         },
         {
-            "name": "FLT_AIV_2020-11-06__16_51_07.xlsx",
+            "name": "FLT_AIV_2020-11-16__16_51_20.xlsx",
             "typeCode": "FLT_AIV",
-            "url": 45274
+            "url": 50832
         },
         {
-            "name": "FLT_APA_2020-11-06__16_51_08.xlsx",
+            "name": "FLT_APA_2020-11-16__16_51_21.xlsx",
             "typeCode": "FLT_APA",
-            "url": 45275
+            "url": 50833
         },
         {
-            "name": "FLT_APF_2020-11-06__16_51_09.xlsx",
+            "name": "FLT_APF_2020-11-16__16_51_21.xlsx",
             "typeCode": "FLT_APF",
-            "url": 45276
+            "url": 50834
         },
         {
-            "name": "FLT_APP_2020-11-06__16_51_10.xlsx",
+            "name": "FLT_APP_2020-11-16__16_51_22.xlsx",
             "typeCode": "FLT_APP",
-            "url": 45277
+            "url": 50835
         },
         {
-            "name": "FLT_ATT_2020-11-06__16_51_11.xlsx",
+            "name": "FLT_ATT_2020-11-16__16_51_22.xlsx",
             "typeCode": "FLT_ATT",
-            "url": 45278
+            "url": 50836
         },
         {
-            "name": "FLT_CTF_2020-11-06__16_51_11.xlsx",
+            "name": "FLT_CTF_2020-11-16__16_51_22.xlsx",
             "typeCode": "FLT_CTF",
-            "url": 45279
+            "url": 50837
         },
         {
-            "name": "FLT_DAO_2020-11-06__16_51_12.xlsx",
+            "name": "FLT_DAO_2020-11-16__16_51_23.xlsx",
             "typeCode": "FLT_DAO",
-            "url": 45280
+            "url": 50838
         },
         {
-            "name": "FLT_DSD_2020-11-06__16_51_13.xlsx",
+            "name": "FLT_DSD_2020-11-16__16_51_23.xlsx",
             "typeCode": "FLT_DSD",
-            "url": 45281
+            "url": 50839
         },
         {
-            "name": "FLT_ECR_2020-11-06__16_51_13.xlsx",
+            "name": "FLT_ECR_2020-11-16__16_51_24.xlsx",
             "typeCode": "FLT_ECR",
-            "url": 45282
+            "url": 50840
         },
         {
-            "name": "FLT_HAWB_2020-11-06__16_51_14.xlsx",
+            "name": "FLT_ECT_2020-11-16__16_51_24.xlsx",
+            "typeCode": "FLT_ECT",
+            "url": 50841
+        },
+        {
+            "name": "FLT_EDF_2020-11-16__16_51_25.xlsx",
+            "typeCode": "FLT_EDF",
+            "url": 50842
+        },
+        {
+            "name": "FLT_EMF_2020-11-16__16_51_25.xlsx",
+            "typeCode": "FLT_EMF",
+            "url": 50843
+        },
+        {
+            "name": "FLT_EMR_2020-11-16__16_51_26.xlsx",
+            "typeCode": "FLT_EMR",
+            "url": 50844
+        },
+        {
+            "name": "FLT_EPM_2020-11-16__16_51_26.xlsx",
+            "typeCode": "FLT_EPM",
+            "url": 50845
+        },
+        {
+            "name": "FLT_FAP_2020-11-16__16_51_27.xlsx",
+            "typeCode": "FLT_FAP",
+            "url": 50846
+        },
+        {
+            "name": "FLT_GMF_2020-11-16__16_51_27.xlsx",
+            "typeCode": "FLT_GMF",
+            "url": 50847
+        },
+        {
+            "name": "FLT_HAWB_2020-11-16__16_51_28.xlsx",
             "typeCode": "FLT_HAWB",
-            "url": 45283
+            "url": 50848
         },
         {
-            "name": "FLT_ICR_2020-11-06__16_51_14.xlsx",
+            "name": "FLT_ICR_2020-11-16__16_51_28.xlsx",
             "typeCode": "FLT_ICR",
-            "url": 45284
+            "url": 50849
         },
         {
-            "name": "FLT_IDF_2020-11-06__16_51_15.xlsx",
+            "name": "FLT_IDF_2020-11-16__16_51_29.xlsx",
             "typeCode": "FLT_IDF",
-            "url": 45285
+            "url": 50850
         },
         {
-            "name": "FLT_IMFW_2020-11-06__16_51_15.xlsx",
+            "name": "FLT_IMFW_2020-11-16__16_51_29.xlsx",
             "typeCode": "FLT_IMFW",
-            "url": 45286
+            "url": 50851
         },
         {
-            "name": "FLT_IOM_2020-11-06__16_51_16.xlsx",
+            "name": "FLT_IOM_2020-11-16__16_51_30.xlsx",
             "typeCode": "FLT_IOM",
-            "url": 45287
+            "url": 50852
         },
         {
-            "name": "FLT_IVO_2020-11-06__16_51_17.xlsx",
+            "name": "FLT_IVO_2020-11-16__16_51_31.xlsx",
             "typeCode": "FLT_IVO",
-            "url": 45288
+            "url": 50853
         },
         {
-            "name": "FLT_PAL_2020-11-06__16_51_17.xlsx",
+            "name": "FLT_PAL_2020-11-16__16_51_31.xlsx",
             "typeCode": "FLT_PAL",
-            "url": 45289
+            "url": 50854
         },
         {
-            "name": "FLT_POD_2020-11-06__16_51_18.xlsx",
+            "name": "FLT_POD_2020-11-16__16_51_32.xlsx",
             "typeCode": "FLT_POD",
-            "url": 45290
+            "url": 50855
         },
         {
-            "name": "FLT_RDD_2020-11-06__16_51_19.xlsx",
+            "name": "FLT_RDD_2020-11-16__16_51_32.xlsx",
             "typeCode": "FLT_RDD",
-            "url": 45291
+            "url": 50856
         },
         {
-            "name": "FLT_ROC_2020-11-06__16_51_19.xlsx",
+            "name": "FLT_ROC_2020-11-16__16_51_33.xlsx",
             "typeCode": "FLT_ROC",
-            "url": 45292
+            "url": 50857
         },
         {
-            "name": "FLT_SAO_2020-11-06__16_51_20.xlsx",
+            "name": "FLT_SAO_2020-11-16__16_51_33.xlsx",
             "typeCode": "FLT_SAO",
-            "url": 45293
+            "url": 50858
         },
         {
-            "name": "FLT_SPO_2020-11-06__16_51_21.xlsx",
+            "name": "FLT_SPO_2020-11-16__16_51_33.xlsx",
             "typeCode": "FLT_SPO",
-            "url": 45294
+            "url": 50859
         }
     ],
     "shippingInfo": {
         "shipper": {
-            "contactPartnerId": "4560485515729661952",
-            "contactPartnerName": "宁波霁编下单集团",
+            "contactPartnerId": "4567905724568530944",
+            "contactPartnerName": "宁波欧硌运输集团有限公司",
             "contactPartnerType": "SHIPPER",
-            "addressAbbreviation": "锦州市",
-            "addressCode": "太和区",
+            "addressAbbreviation": "云林县",
+            "addressCode": "海端乡",
             "countryCode": "CN",
             "countryName": "CHINA",
-            "provinceCode": "CN-21",
-            "provinceName": "LIAONING PROVINCE",
-            "cityCode": "SCI105488",
-            "cityName": "JINZHOU",
-            "districtCode": "SCT103446",
-            "districtName": "BEIZHEN",
-            "streetCode": "SST217441",
-            "streetName": "PENG TOWN",
-            "addressDetail": "金桥镇",
+            "provinceCode": "CN-71",
+            "provinceName": "TAIWAN PROVINCE",
+            "cityCode": "SCI105826",
+            "cityName": "TAITUNG",
+            "districtCode": "SCT106143",
+            "districtName": "CHISHANG TOWNSHIP",
+            "streetCode": "SST217451",
+            "streetName": "WANAN TOWN",
+            "addressDetail": "白沙镇",
             "postCode": "610000",
-            "contactName": "507636",
-            "telephoneArea": "673",
-            "telephoneNumber": "507636",
-            "mobileNumber": "13099343578",
+            "contactName": "947311",
+            "telephoneArea": "352",
+            "telephoneNumber": "947311",
+            "mobileNumber": "15053720639",
             "mobileArea": "0086",
             "email": "12123@qq.com",
             "isDefault": true,
             "isInternationalPartner": false
         },
         "shippingAddress": {
-            "contactPartnerAddressId": "4560485524319596544",
-            "addressAbbreviation": "锦州市",
-            "addressCode": "太和区",
+            "contactPartnerAddressId": "4567905724568530946",
+            "addressAbbreviation": "云林县",
+            "addressCode": "海端乡",
             "countryCode": "CN",
             "countryName": "CHINA",
-            "provinceCode": "CN-21",
-            "provinceName": "LIAONING PROVINCE",
-            "cityCode": "SCI105488",
-            "cityName": "JINZHOU",
-            "districtCode": "SCT103446",
-            "districtName": "BEIZHEN",
-            "streetCode": "SST217441",
-            "streetName": "PENG TOWN",
-            "addressDetail": "金桥镇",
+            "provinceCode": "CN-71",
+            "provinceName": "TAIWAN PROVINCE",
+            "cityCode": "SCI105826",
+            "cityName": "TAITUNG",
+            "districtCode": "SCT106143",
+            "districtName": "CHISHANG TOWNSHIP",
+            "streetCode": "SST217451",
+            "streetName": "WANAN TOWN",
+            "addressDetail": "白沙镇",
             "postCode": "610000",
-            "contactName": "25846",
-            "telephoneArea": "673",
-            "telephoneNumber": "15952343219",
-            "mobileNumber": "25846",
+            "contactName": "716977",
+            "telephoneArea": "352",
+            "telephoneNumber": "18951712475",
+            "mobileNumber": "716977",
             "mobileArea": "0086",
             "email": "12123@qq.com",
             "isDefault": false,
             "isInternationalPartner": false
         },
         "consignee": {
-            "contactPartnerId": "4560485532909531136",
-            "contactPartnerName": "内江静姬搜索贸易有限公司",
+            "contactPartnerId": "4567905733158465536",
+            "contactPartnerName": "宜宾吭疆交通集团",
             "contactPartnerType": "CONSIGNEE",
-            "addressAbbreviation": "普洱市",
-            "addressCode": "永胜县",
+            "addressAbbreviation": "珠海市",
+            "addressCode": "望牛墩镇",
             "countryCode": "CN",
             "countryName": "CHINA",
-            "provinceCode": "CN-53",
-            "provinceName": "YUNNAN PROVINCE",
-            "cityCode": "SCI105736",
-            "cityName": "LIJIANG",
-            "districtCode": "SCT105298",
-            "districtName": "HUAPING",
-            "streetCode": "SST220693",
-            "streetName": "PINGQUAN TOWN",
-            "addressDetail": "平武镇",
+            "provinceCode": "CN-44",
+            "provinceName": "GUANGDONG PROVINCE",
+            "cityCode": "SCI105661",
+            "cityName": "DONGGUAN",
+            "districtCode": "SCT106303",
+            "districtName": "HENGLI TOWN",
+            "streetCode": "SST220735",
+            "streetName": "HAILUO TOWNSHIP",
+            "addressDetail": "踏水镇",
             "postCode": "610000",
-            "contactName": "496096",
-            "telephoneArea": "673",
-            "telephoneNumber": "15828419927",
-            "mobileNumber": "496096",
+            "contactName": "301016",
+            "telephoneArea": "352",
+            "telephoneNumber": "15884282248",
+            "mobileNumber": "301016",
             "mobileArea": "0086",
             "email": "12123@qq.com",
             "isDefault": true,
             "isInternationalPartner": false
         },
         "receivingAddress": {
-            "contactPartnerAddressId": "4560485532909531138",
-            "addressAbbreviation": "普洱市",
-            "addressCode": "永胜县",
+            "contactPartnerAddressId": "4567905733158465538",
+            "addressAbbreviation": "珠海市",
+            "addressCode": "望牛墩镇",
             "countryCode": "CN",
             "countryName": "CHINA",
-            "provinceCode": "CN-53",
-            "provinceName": "YUNNAN PROVINCE",
-            "cityCode": "SCI105736",
-            "cityName": "LIJIANG",
-            "districtCode": "SCT105298",
-            "districtName": "HUAPING",
-            "streetCode": "SST220693",
-            "streetName": "PINGQUAN TOWN",
-            "addressDetail": "平武镇",
+            "provinceCode": "CN-44",
+            "provinceName": "GUANGDONG PROVINCE",
+            "cityCode": "SCI105661",
+            "cityName": "DONGGUAN",
+            "districtCode": "SCT106303",
+            "districtName": "HENGLI TOWN",
+            "streetCode": "SST220735",
+            "streetName": "HAILUO TOWNSHIP",
+            "addressDetail": "踏水镇",
             "postCode": "610000",
-            "contactName": "770103",
-            "telephoneArea": "673",
-            "telephoneNumber": "13595390386",
-            "mobileNumber": "770103",
+            "contactName": "666154",
+            "telephoneArea": "352",
+            "telephoneNumber": "15068832340",
+            "mobileNumber": "666154",
             "mobileArea": "0086",
             "email": "12123@qq.com",
             "isDefault": false,
@@ -274,43 +274,43 @@
         },
         "pickUp": true,
         "takeDelivery": true,
-        "originCityId": "SCI437424",
-        "destinationCityId": "SCI244473",
-        "requiredPickupTime": 1622776198000,
-        "requiredArrivalTime": 1622862598000,
-        "serviceModeCode": "SEL_F2D",
-        "paymentTypeCode": "PYT_PrePaid"
+        "originCityId": "SCI105676",
+        "destinationCityId": "SCI106299",
+        "reqTimeOfDepart": 1622776198000,
+        "reqTimeOfArrival ": 1622862598000,
+        "serviceModeCode": "SEL_D2F",
+        "paymentTypeCode": "PYT_PB3"
     },
     "cargoInfo": {
-        "cargoTypeCode": "CAT_SLC",
+        "cargoTypeCode": "CAT_TSC",
         "grossWeight": 12.86,
         "grossWeightUnitCode": "KG",
         "pieceQty": 11,
-        "pieceQtyUnitCode": "PUT_PALLET",
+        "pieceQtyUnitCode": "PUT_KEG",
         "totalPackageQty": 12,
-        "totalPackageQtyUnitCode": "PUT_PALLET",
+        "totalPackageQtyUnitCode": "PUT_KEG",
         "totalVolume": 13,
         "totalVolumeUnitCode": "M3",
         "bulkCartonQty": 14,
-        "bulkCartonQtyUnitCode": "PUT_PALLET",
+        "bulkCartonQtyUnitCode": "PUT_KEG",
         "cargoDescription": "1231456asdfasdfasdkfj!",
         "cargoInfoLines": [
             {
-                "companyPn": "Wr5QJ83Aio",
-                "descriptionGoods": "Wr5QJ83Aio",
-                "hsCode": "Wr5QJ83Aio",
-                "invoiceNumber": "Wr5QJ83Aio",
+                "companyPn": "AeOyBZk5vh",
+                "descriptionGoods": "AeOyBZk5vh",
+                "hsCode": "AeOyBZk5vh",
+                "invoiceNumber": "AeOyBZk5vh",
                 "packageQuantity": 1200,
-                "packageUnitCode": "PUT_PCS",
-                "referenceLineNo": "Wr5QJ83Aio",
-                "referenceNo": "Wr5QJ83Aio",
-                "unitPrice": "1918453",
-                "volume": "2918453",
-                "width": "9184533",
-                "amount": "9184534",
-                "height": "4918453",
-                "length": "9184537",
-                "currencyCode": "USD",
+                "packageUnitCode": "PUT_PIECEJIAN",
+                "referenceLineNo": "AeOyBZk5vh",
+                "referenceNo": "AeOyBZk5vh",
+                "unitPrice": "1304866",
+                "volume": "2304866",
+                "width": "3048663",
+                "amount": "3048664",
+                "height": "4304866",
+                "length": "3048667",
+                "currencyCode": "THB",
                 "grossWeight": "12345678.11",
                 "netWeight": "12345.55"
             }
@@ -318,7 +318,7 @@
     },
     "valueAddedBusiness": {
         "cargoValue": 10.0,
-        "currencyCode": "USD",
+        "currencyCode": "THB",
         "insurance": true,
         "pod": true
     },
