@@ -21,7 +21,7 @@ testCase = unittest.defaultTestLoader.discover(start_dir=case_dir, pattern='test
 print(testCase.countTestCases())
 
 #实际接口数量
-api_count_probability(81)
+api_count_probability(87)
 
 #执行测试用例
 runner = BeautifulReport(testCase)

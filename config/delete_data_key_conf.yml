@@ -5,26 +5,34 @@ shipment_demand_key:  #运输下单
   - submit_cn_rail_order_id
   - cn_rail_save_id
   - cn_sea_save_id
+  - cn_rail_po_save_order_id
   - submit_cn_sea_order_id
   - cn_sea_order_id
+  - cn_sea_po_save_order_id
   - cn_air_save_id
   - submit_cn_air_order_id
   - cn_air_order_id
+  - cn_air_po_save_order_id
   - cn_road_save_id
   - submit_cn_road_order_id
   - road_order_id
+  - cn_road_po_save_order_id
   - cn_express_save_id
   - submit_cn_express_order_id
   - express_order_id
+  - cn_express_po_save_order_id
   - internat_sea_save_id
   - submit_internat_sea_order_id
   - internat_sea_order_id
+  - internatal_sea_po_save_order_id
   - internat_air_save_id
   - submit_internat_air_order_id
   - inernat_air_order_id
+  - internatal_air_po_save_order_id
   - international_express_save_id
   - submit_internat_express_order_id
   - internat_express_order_id
+  - internatal_express_po_save_order_id
   - copy_order_id
   - success_create_road_receiving_order_id
 
