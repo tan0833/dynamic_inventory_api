@@ -14,10 +14,34 @@ class ReplaceOperte(ReplaceKinds):
         :param result:响应结果对应的值获取后存入全局字典中
         :return:
         '''
+        random_int = None
         if isinstance(global_dict,dict) and isinstance(result,dict) :
             for key,value in global_dict.items():
+                # 获取json文件同一组的的不同参数
+                if value.startswith('same_group_'):
+                    value = value[11:]
+                    new_value = jsonpath.jsonpath(result, value)
+                    if not isinstance(new_value, bool):
+                        # 获取jsonpath 列表的随机数
+                        if random_int == None:
+                            if len(new_value) == 1 :
+                                random_int = 0
+                                new_value = jsonpath.jsonpath(result, value)[random_int]
+
+                            elif len(new_value) > 1:
+                                random_int = random.randint(0, len(new_value) - 1)
+                                new_value = jsonpath.jsonpath(result, value)[random_int]
+                        else:
+                            new_value = jsonpath.jsonpath(result, value)[random_int]
+
+                    if new_value:
+                        if isinstance(new_value, int):
+                            self.global_dict.set_dict(key, str(new_value))
+                        else:
+                            self.global_dict.set_dict(key, new_value)
+
                 #全局字典包含$返回结果查找有的值写入全局字典
-                if '$' in value:
+                elif '$' in value:
                     new_value = jsonpath.jsonpath(result,value)
                     if not isinstance(new_value,bool):
                         #获取jsonpath 列表的随机数
@@ -40,9 +64,8 @@ class ReplaceOperte(ReplaceKinds):
                     self.global_dict.set_dict(key,params)
 
                 #自定义的值输入全局字典
-                elif '$' not in value and 'input_params' not in value:
+                elif '$' not in value and 'input_params' not in value and 'same_group' not in value:
                     self.global_dict.set_dict(key,value)
-
 
     def replace_excel(self,params):
         '''
@@ -107,7 +130,6 @@ class ReplaceOperte(ReplaceKinds):
                     temp_list.append('%s ("%s","%s")' % (unittest_assert_dict.get(descript), expect, res_value))
         return temp_list
 
-
     def replace_expect_pytest(self,params,result):
         '''
         pytest断言
@@ -150,13 +172,15 @@ class ReplaceOperte(ReplaceKinds):
         return temp_list
 
 
+
 if __name__ == '__main__':
-    m = {"aa":"123456"}
-    y = {'a':'13981754228','b':'input_params'}
+    m = {'mm':[{"id":"123456","name":"name01","sex":"男"},{"id":"6549721","name":"name02","sex":"女"},{"id":"456456789","name":"name03","sex":"未知"}]}
+    y = {'b':'same_group_$..id','a':'same_group_$..name','c':'$..sex'}
     x ="{'x':$__attachment{internat_air},'y':'${b} ${@GBK}'}"
-    r = ReplaceOperte(y)
-    g = GlobalDict(y)
+    tem_d = {}
+    r = ReplaceOperte(tem_d)
+    g = GlobalDict(tem_d)
 
-    z = r.replace_global_value(y,y,m)
+    z = r.replace_global_value(y,m)
 
-    print(y)
+    print(tem_d.get('a'),tem_d.get('b'),tem_d.get('c'))
