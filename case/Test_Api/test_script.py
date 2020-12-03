@@ -53,7 +53,7 @@ class TestRunMain(unittest.TestCase):
 
         params = data['params']
         params = self.ro.replace_excel(params)
-        if params.startswith('{'):
+        if params.startswith('{') or params.startswith('['):
             params = eval(params)
 
         global_value = data['global']
