@@ -95,17 +95,17 @@ class TestRunMain(unittest.TestCase):
     #     self.delete_test_data.sql_delete_data()
 
 
-    temp_dict = temp_dict
-
-    def test_temp_dict(self):
-        '''
-        查看全局字典
-        :return:
-        '''
-        import json
-        a = json.dumps(temp_dict, sort_keys=True, indent=4, separators=(',', ':'),
-                                                 ensure_ascii=False)
-        self.log.info(a)
+    # temp_dict = temp_dict
+    #
+    # def test_temp_dict(self):
+    #     '''
+    #     查看全局字典
+    #     :return:
+    #     '''
+    #     import json
+    #     a = json.dumps(temp_dict, sort_keys=True, indent=4, separators=(',', ':'),
+    #                                              ensure_ascii=False)
+    #     self.log.info(a)
 
 
 
