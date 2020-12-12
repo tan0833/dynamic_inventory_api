@@ -21,3 +21,5 @@ $__attachment{(internat_sea,cn_express)}国内国际海空陆铁快递} ,
 8.excel中的sleep是指接口暂停时间
 
 
+9.第三方库 加速
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple playwright
