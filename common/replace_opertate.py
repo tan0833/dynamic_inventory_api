@@ -40,6 +40,24 @@ class ReplaceOperte(ReplaceKinds):
                         else:
                             self.global_dict.set_dict(key, new_value)
 
+                #全局变量排除不想要的值
+                elif '_exclusive' in value:
+                    value,exclusive_list = value.split('_exclusive')
+                    new_value = jsonpath.jsonpath(result, value)
+                    if new_value:
+                        new_value_set = set(new_value)
+                        exclusive_set = set(eval(exclusive_list))
+
+                        #将返回结果排除不要的值后的列表
+                        difference_value_list = list(new_value_set.difference(exclusive_set))
+                        new_value = random.choice(difference_value_list)
+
+                        if isinstance(new_value, int):
+                            self.global_dict.set_dict(key, str(new_value))
+                        else:
+                            self.global_dict.set_dict(key, new_value)
+
+
                 #全局字典包含$返回结果查找有的值写入全局字典
                 elif '$' in value:
                     new_value = jsonpath.jsonpath(result,value)
@@ -64,7 +82,7 @@ class ReplaceOperte(ReplaceKinds):
                     self.global_dict.set_dict(key,params)
 
                 #自定义的值输入全局字典
-                elif '$' not in value and 'input_params' not in value and 'same_group' not in value:
+                elif '$' not in value and 'input_params' not in value and 'same_group' not in value and '_exclusive' not in value:
                     self.global_dict.set_dict(key,value)
 
     def replace_excel(self,params):
@@ -175,7 +193,7 @@ class ReplaceOperte(ReplaceKinds):
 
 if __name__ == '__main__':
     m = {'mm':[{"id":"123456","name":"name01","sex":"男"},{"id":"6549721","name":"name02","sex":"女"},{"id":"456456789","name":"name03","sex":"未知"}]}
-    y = {'b':'same_group_$..id','a':'same_group_$..name','c':'$..sex'}
+    y = {'d':'$..id_exclusive["123456",True,123,None]','b':'same_group_$..id','a':'same_group_$..name','c':'$..sex',}
     x ="{'x':$__attachment{internat_air},'y':'${b} ${@GBK}'}"
     tem_d = {}
     r = ReplaceOperte(tem_d)
@@ -183,4 +201,4 @@ if __name__ == '__main__':
 
     z = r.replace_global_value(y,m)
 
-    print(tem_d.get('a'),tem_d.get('b'),tem_d.get('c'))
+    print(tem_d.get('a'),tem_d.get('b'),tem_d.get('c'),tem_d.get('d'))
