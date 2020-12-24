@@ -90,9 +90,13 @@ class TestRunMain(unittest.TestCase):
     #     删除已创建的id
     #     :return:
     #     '''
+    #
     #     self._testMethodDoc = '清除已创建的订单id'
     #     self._testMethodName = '清除脚本创建测试数据'
-    #     self.delete_test_data.sql_delete_data()
+    #     try:
+    #         self.delete_test_data.sql_delete_data()
+    #     except Exception as e:
+    #         raise e
 
 
     # temp_dict = temp_dict
