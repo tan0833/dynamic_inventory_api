@@ -26,7 +26,7 @@ class ErgodicApi():
 
         #附件接口输入参数
         method = 'POST'
-        url = basic_url + '/juslink-sccp-shipment-demand-app/shipment-basic/file-types'
+        url = basic_url + '/api/juslink-sccp-shipment-demand-app/shipment-basic/file-types'
         header = {"Content-Type":"application/json",
                     "Authorization":self.token,
                     "clientId":"client",

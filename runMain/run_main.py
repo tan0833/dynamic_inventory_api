@@ -71,20 +71,23 @@ if __name__ == '__main__':
     run = RunMain()
 #     from common.login import Login
     import jsonpath
+    from config.get_conf import Conf
 #     login = Login()
 #     token = json.loads(login.getTorken().text)['data']
 #
-    method = 'GET'
-    url ='https://mpsit.jus-link.com/api/juslink-sccp-bill-query/bill-query/download'
-    params = {"billNo":"RBL202004211784"}
+    method = 'POST'
+    url ='https://mpdev.jus-link.com/api/oss/objects'
+    params = {
+    "bucketDirs":"ShipmentDemand",
+    "fileName":"vo6PJmKV3V15"
+}
     head = {
-    "Authorization":"Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZXJtaW5hbF90eXBlIjoid2ViIiwidXNlcl9uYW1lIjoiSFAiLCJzY29wZSI6WyJmb28iLCJyZWFkIiwid3JpdGUiXSwiYXBwbGljYXRpb25fY29kZSI6InNoaXBtZW50X2RlbWFuZF9hcHAiLCJleHAiOjE2MDMzNjE5MDQsInVzZXJhY2NvdW50X2lkIjoiNDQyODM2MTM1MjM1MzY3MzIxNiIsImp0aSI6IjQ4ZDg0YjU5LTY5ODYtNGU3NC05ZGIwLTEzZGQzNmUyMTViMyIsImNsaWVudF9pZCI6InNoaXBtZW50X2RlbWFuZF9hcHAifQ.jUwlJtl7fQ5vIuT9sKn1G2zcDCFqD2-375imWafR4AheVPpBrgA_AInVS6oDRvFKDaW6VTGR3PFViovCLEbpuapaUN76bcUk5ZnhDsdXJCqIl4b-sqGzXcaXedLBSpBd7lQB4tno0GBfzXnl7b8CbK6XBMkMCiStMA8MNwkgiAV7jIvPk_bag5osE6ZdFDC3d_LB62Bt-0fAmLVNehkMvAhmweOkWvU3Ys7HbSWW62sXS8dJVzfyXQydctAhXOf5iclR59eCMdHOiuzMwMvBUbfo14CSXWutd7N0tP-xf6Vh9Ya2B3M_HkBV-a4TDGFZSFlBrhZe454Dm0-iqVreQA",
-    "Content-Type":"application/json",
+    "Authorization":"Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZXJtaW5hbF90eXBlIjoid2ViIiwidXNlcl9uYW1lIjoiSFAiLCJzY29wZSI6WyJmb28iLCJyZWFkIiwid3JpdGUiXSwiYXBwbGljYXRpb25fY29kZSI6InNoaXBtZW50X2RlbWFuZF9hcHAiLCJleHAiOjE2MTEwNjIzMDEsInVzZXJhY2NvdW50X2lkIjoiNDQzODU0NjI5MTc3MTY0NTk1MiIsImp0aSI6ImEzZmI1NzliLTk5ODYtNDY4YS04NWFkLTVhNmJhNmM3NDU4NCIsImNsaWVudF9pZCI6InNoaXBtZW50X2RlbWFuZF9hcHAifQ.AvyvZh240iuaSkWnp4XB4W5xFf90Y0EXTp-Br-nIIP27WUu3vVZz8f3WIlWIL-6oR-QBjJ8UO9K4y_HSjcGFPsQmRhHy1--oDUG2c_hjBJ7CfM-4XQNMwb6rcbGdjzeF_7J5HCVXnH92uqwNklZJTWQKEB1XbXvRQmBnvwLQOuCNBea1oqwipH4RNF04Zgnf8Be7o4FcTHJu1wYYDDEHRRU51OY_gLNL0opfAmcby6JBwuD-BNOk2gAv3cDWFsDG8cnmTLSMYPhzFsVJdmTXP7e4DYIpu8ERBg1xFKfNOfnhAXX2-Vv92npQuzXXApbcX18hIaJjn8ptn9XBHAOg_g",
     "accept-language":"en-US",
     "clientId":"client"
 }
-
-    a = run.run_main(method,url,params,head)
+    file = [('file', open(Conf().get_file_path('data','运输下单测试用例-DEV.xlsx'),'rb'))]
+    a = run.run_main(method,url,params,head,file=file)
     b = jsonpath.jsonpath(dict(a),'$..Content-Disposition')
     print(b)
 

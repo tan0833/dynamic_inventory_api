@@ -1,17 +1,15 @@
 {
     "referenceOrders": [
         {
-            "referenceOrderNo": "PO20201220",
-            "referenceOrderType": "FLT_MES"
+            "referenceOrderNo": "15238072666",
+            "referenceOrderType": "FLT_REM"
         }
     ],
     "remarks": "123456asdfasdf",
-    "id": "4595337087983546370",
-    "sourceOrderType": "PO",
     "shippingInfo": {
         "shipper": {
-            "contactPartnerId": "4595334854600474624",
-            "contactPartnerName": "Administrators Number Originators GmbH",
+            "contactPartnerId": "4597585082456129536",
+            "contactPartnerName": "Panel Bar Entrances S.P.A.",
             "contactPartnerType": "SHIPPER",
             "addressAbbreviation": "CHINA",
             "addressCode": "GUANGDONG PROVINCE",
@@ -21,26 +19,26 @@
             "provinceName": "GUANGDONG PROVINCE",
             "cityCode": "SCI105647",
             "cityName": "SHENZHEN",
-            "districtCode": "SCT104779",
-            "districtName": "MEI",
-            "streetCode": "SST217433",
-            "streetName": "ZHONGHE STREET",
+            "districtCode": "SCT103145",
+            "districtName": "POTOU",
+            "streetCode": "SST217438",
+            "streetName": "YONGXING TOWN",
             "addressDetail": "SHENZHEN",
-            "postCode": "527965",
-            "contactName": "heels",
-            "telephoneArea": "972",
-            "telephoneNumber": "527965",
-            "mobileNumber": "13843570982",
-            "mobileArea": "972",
-            "email": "3imWfTonGI@126.com",
+            "postCode": "816531",
+            "contactName": "grants",
+            "telephoneArea": "1264",
+            "telephoneNumber": "816531",
+            "mobileNumber": "15156681288",
+            "mobileArea": "1264",
+            "email": "LOXUXlPd8Y@qq.com",
             "transportLocationCode": "CNSZZ",
             "isDefault": true,
             "isInternationalPartner": true
         },
         "pickUp": true,
-        "marksAndNumbers": "帇彀",
+        "marksAndNumbers": "綝蟝",
         "shippingAddress": {
-            "contactPartnerAddressId": "4595334863190409216",
+            "contactPartnerAddressId": "4597585082456129538",
             "addressAbbreviation": "CHINA",
             "addressCode": "GUANGDONG PROVINCE",
             "countryCode": "CN",
@@ -49,25 +47,25 @@
             "provinceName": "GUANGDONG PROVINCE",
             "cityCode": "SCI105647",
             "cityName": "SHENZHEN",
-            "districtCode": "SCT104779",
-            "districtName": "MEI",
-            "streetCode": "SST217433",
-            "streetName": "ZHONGHE STREET",
+            "districtCode": "SCT103145",
+            "districtName": "POTOU",
+            "streetCode": "SST217438",
+            "streetName": "YONGXING TOWN",
             "addressDetail": "SHENZHEN",
-            "postCode": "471927",
-            "contactName": "cast",
-            "telephoneArea": "972",
-            "telephoneNumber": "471927",
-            "mobileNumber": "13929317648",
-            "mobileArea": "972",
-            "email": "4N2zGRoLC0@126.com",
+            "postCode": "969246",
+            "contactName": "males",
+            "telephoneArea": "1264",
+            "telephoneNumber": "969246",
+            "mobileNumber": "18253927305",
+            "mobileArea": "1264",
+            "email": "yY8lJYux4z@163.com",
             "transportLocationCode": "CNSZZ",
             "isDefault": false,
             "isInternationalPartner": true
         },
         "consignee": {
-            "contactPartnerId": "4595334871780343808",
-            "contactPartnerName": "Dish Notice Ignitions BHD",
+            "contactPartnerId": "4597585133995737088",
+            "contactPartnerName": "Accordance Wage Attesting B.V.N.V",
             "contactPartnerType": "CONSIGNEE",
             "addressAbbreviation": "UNITED STATES OF AMERICA",
             "addressCode": "CALIFORNIA",
@@ -77,25 +75,25 @@
             "provinceName": "CALIFORNIA",
             "cityCode": "SCI106141",
             "cityName": "LOS ANGELES",
-            "districtCode": "SCT106639",
-            "districtName": "MENTOUGOU",
-            "streetCode": "SST220738",
-            "streetName": "ANLE TOWNSHIP",
+            "districtCode": "SCT106635",
+            "districtName": "ZHAOYANG",
+            "streetCode": "SST220727",
+            "streetName": "FEILONG TOWNSHIP",
             "addressDetail": "LOS ANGELES",
-            "postCode": "830157",
-            "contactName": "license",
-            "telephoneArea": "972",
-            "telephoneNumber": "830157",
-            "mobileNumber": "15760857824",
-            "mobileArea": "972",
-            "email": "ffEk0lzzfW@qq.com",
+            "postCode": "150914",
+            "contactName": "arrays",
+            "telephoneArea": "1264",
+            "telephoneNumber": "150914",
+            "mobileNumber": "15577960697",
+            "mobileArea": "1264",
+            "email": "bpRzoOcn6O@126.com",
             "transportLocationCode": "USLAX",
             "isDefault": true,
             "isInternationalPartner": true
         },
         "takeDelivery": true,
         "receivingAddress": {
-            "contactPartnerAddressId": "4595334880370278400",
+            "contactPartnerAddressId": "4597585142585671680",
             "addressAbbreviation": "UNITED STATES OF AMERICA",
             "addressCode": "CALIFORNIA",
             "countryCode": "US",
@@ -104,25 +102,25 @@
             "provinceName": "CALIFORNIA",
             "cityCode": "SCI106141",
             "cityName": "LOS ANGELES",
-            "districtCode": "SCT106639",
-            "districtName": "MENTOUGOU",
-            "streetCode": "SST220738",
-            "streetName": "ANLE TOWNSHIP",
+            "districtCode": "SCT106635",
+            "districtName": "ZHAOYANG",
+            "streetCode": "SST220727",
+            "streetName": "FEILONG TOWNSHIP",
             "addressDetail": "LOS ANGELES",
-            "postCode": "390434",
-            "contactName": "pumps",
-            "telephoneArea": "972",
-            "telephoneNumber": "390434",
-            "mobileNumber": "13261777712",
-            "mobileArea": "972",
-            "email": "JWJhWiuL2Y@163.com",
+            "postCode": "929849",
+            "contactName": "images",
+            "telephoneArea": "1264",
+            "telephoneNumber": "929849",
+            "mobileNumber": "13119005088",
+            "mobileArea": "1264",
+            "email": "ixqsX9jCCj@qq.com",
             "transportLocationCode": "USLAX",
             "isDefault": false,
             "isInternationalPartner": true
         },
         "notifyParty": {
-            "contactPartnerId": "4595334888960212992",
-            "contactPartnerName": "Trunks Isolation Airships SDN",
+            "contactPartnerId": "4597585185535344640",
+            "contactPartnerName": "Rig Parity Termination B.V.N.V",
             "contactPartnerType": "NOTIFY_PARTY",
             "addressAbbreviation": "UNITED STATES OF AMERICA",
             "addressCode": "GUANGDONG PROVINCE",
@@ -132,25 +130,25 @@
             "provinceName": "CALIFORNIA",
             "cityCode": "SCI106141",
             "cityName": "LOS ANGELES",
-            "districtCode": "SCT104779",
-            "districtName": "MEI",
-            "streetCode": "SST217433",
-            "streetName": "ZHONGHE STREET",
+            "districtCode": "SCT103145",
+            "districtName": "POTOU",
+            "streetCode": "SST217438",
+            "streetName": "YONGXING TOWN",
             "addressDetail": "LOS ANGELES",
-            "postCode": "540531",
-            "contactName": "wingnuts",
-            "telephoneArea": "972",
-            "telephoneNumber": "540531",
-            "mobileNumber": "13245461614",
-            "mobileArea": "972",
-            "email": "4Tamhh7LAL@163.com",
+            "postCode": "257937",
+            "contactName": "voucher",
+            "telephoneArea": "1264",
+            "telephoneNumber": "257937",
+            "mobileNumber": "13782792933",
+            "mobileArea": "1264",
+            "email": "F93IPluRDr@189.com",
             "transportLocationCode": "CNSZZ",
             "isDefault": true,
             "isInternationalPartner": true
         },
         "entrustedParty": {
-            "contactPartnerId": "4595334897550147584",
-            "contactPartnerName": "Answers Disposal Nameplates S.R.L.",
+            "contactPartnerId": "4597585202715213824",
+            "contactPartnerName": "Dividers Wind Burglary AB",
             "contactPartnerType": "CONSIGNOR",
             "addressAbbreviation": "CHINA",
             "addressCode": "CALIFORNIA",
@@ -160,18 +158,18 @@
             "provinceName": "GUANGDONG PROVINCE",
             "cityCode": "SCI105647",
             "cityName": "SHENZHEN",
-            "districtCode": "SCT106639",
-            "districtName": "MENTOUGOU",
-            "streetCode": "SST220738",
-            "streetName": "ANLE TOWNSHIP",
+            "districtCode": "SCT106635",
+            "districtName": "ZHAOYANG",
+            "streetCode": "SST220727",
+            "streetName": "FEILONG TOWNSHIP",
             "addressDetail": "SHENZHEN",
-            "postCode": "5730",
-            "contactName": "stuffing",
-            "telephoneArea": "972",
-            "telephoneNumber": "5730",
-            "mobileNumber": "13123603718",
-            "mobileArea": "972",
-            "email": "h6PGxlx94I@163.com",
+            "postCode": "594338",
+            "contactName": "oscillations",
+            "telephoneArea": "1264",
+            "telephoneNumber": "594338",
+            "mobileNumber": "13082087129",
+            "mobileArea": "1264",
+            "email": "46UoBG2AW2@inc.com",
             "transportLocationCode": "USLAX",
             "isDefault": true,
             "isInternationalPartner": true
@@ -185,326 +183,61 @@
         "etd": 1657784368000,
         "eta": 1689320368000,
         "serviceModeCode": "SEL_D2D",
-        "incotermsCode": "INT_CPT",
+        "incotermsCode": "INT_CFR",
         "airTransportationNode": {
             "designatedAirport": true,
-            "dischargeAirportId": "ERF",
-            "originAirportId": "THR"
+            "dischargeAirportId": "KVL",
+            "originAirportId": "RMP"
         },
-        "billOfLadingTypeCode": "LBT_OBO"
+        "billOfLadingTypeCode": "LBT_FBL"
     },
     "cargoInfo": {
         "dangerousCargo": true,
-        "cargoTypeCode": "CAT_GNC",
+        "cargoTypeCode": "CAT_TSC",
         "grossWeight": 12.86,
         "grossWeightUnitCode": "KG",
         "pieceQty": 11,
-        "pieceQtyUnitCode": "PUT_CYL",
+        "pieceQtyUnitCode": "PUT_CRT",
         "totalPackageQty": 12,
-        "totalPackageQtyUnitCode": "PUT_CYL",
+        "totalPackageQtyUnitCode": "PUT_CRT",
         "totalVolume": 13,
         "totalVolumeUnitCode": "M3",
         "bulkCartonQty": 14,
-        "bulkCartonQtyUnitCode": "PUT_CYL",
+        "bulkCartonQtyUnitCode": "PUT_CRT",
         "cargoDescription": "1231456asdfasdfasdkfj!",
         "cargoInfoLines": [
             {
-                "companyPn": "PN20201203",
-                "descriptionGoods": "AYjblSlGaJ",
-                "hsCode": "AYjblSlGaJ",
-                "invoiceNumber": "AYjblSlGaJ",
-                "packageQuantity": 1,
-                "packageUnitCode": "PUT_COI",
-                "referenceLineNo": "1",
-                "referenceNo": "PO20201220",
-                "unitPrice": "1.000011",
-                "volume": "1.000011",
-                "width": "1.000011",
-                "amount": "1.000011",
-                "height": "1.000011",
-                "length": "1.000011",
-                "currencyCode": "THB",
-                "grossWeight": "33.000011",
-                "netWeight": "31.000011"
+                "dangerousCargo": true,
+                "companyPn": "P123456!",
+                "descriptionGoods": "123SAFD@#",
+                "hsCode": "465ASDFASDF_A",
+                "invoiceNumber": "ASDFaa",
+                "packageQuantity": 12,
+                "packageUnitCode": "PUT_CRD",
+                "referenceLineNo": "456456~@#",
+                "referenceNo": "asdfasdf#$%",
+                "unitPrice": "681775",
+                "volume": "681775",
+                "width": "681775",
+                "amount": "681775",
+                "height": "4681775",
+                "length": "681775",
+                "currencyCode": "SGD",
+                "grossWeight": "44512.1455",
+                "netWeight": "4589.55",
+                "cargoQuantity": 1000
             }
         ]
     },
     "valueAddedBusiness": {
         "cargoValue": 10,
-        "currencyCode": "THB",
+        "currencyCode": "SGD",
         "insurance": true,
         "entrustCustomsDeclaration": false,
-        "customsBroker": "{@INT}",
+        "customsBroker": "{INT}",
         "insuredValue": 11
     },
-    "attachments": [
-        {
-            "name": "FLT_AGI_2020-12-23__15_44_31.xlsx",
-            "typeCode": "FLT_AGI",
-            "url": 64084
-        },
-        {
-            "name": "FLT_AIN_2020-12-23__15_44_31.xlsx",
-            "typeCode": "FLT_AIN",
-            "url": 64085
-        },
-        {
-            "name": "FLT_ARC_2020-12-23__15_44_32.xlsx",
-            "typeCode": "FLT_ARC",
-            "url": 64086
-        },
-        {
-            "name": "FLT_ARN_2020-12-23__15_44_32.xlsx",
-            "typeCode": "FLT_ARN",
-            "url": 64087
-        },
-        {
-            "name": "FLT_BCA_2020-12-23__15_44_33.xlsx",
-            "typeCode": "FLT_BCA",
-            "url": 64088
-        },
-        {
-            "name": "FLT_BKC_2020-12-23__15_44_34.xlsx",
-            "typeCode": "FLT_BKC",
-            "url": 64089
-        },
-        {
-            "name": "FLT_BKG_2020-12-23__15_44_34.xlsx",
-            "typeCode": "FLT_BKG",
-            "url": 64090
-        },
-        {
-            "name": "FLT_BOE_2020-12-23__15_44_35.xlsx",
-            "typeCode": "FLT_BOE",
-            "url": 64091
-        },
-        {
-            "name": "FLT_BOL_2020-12-23__15_44_35.xlsx",
-            "typeCode": "FLT_BOL",
-            "url": 64092
-        },
-        {
-            "name": "FLT_CAD_2020-12-23__15_44_36.xlsx",
-            "typeCode": "FLT_CAD",
-            "url": 64093
-        },
-        {
-            "name": "FLT_CAU_2020-12-23__15_44_36.xlsx",
-            "typeCode": "FLT_CAU",
-            "url": 64094
-        },
-        {
-            "name": "FLT_CDR_2020-12-23__15_44_37.xlsx",
-            "typeCode": "FLT_CDR",
-            "url": 64095
-        },
-        {
-            "name": "FLT_CIV_2020-12-23__15_44_37.xlsx",
-            "typeCode": "FLT_CIV",
-            "url": 64096
-        },
-        {
-            "name": "FLT_COF_2020-12-23__15_44_38.xlsx",
-            "typeCode": "FLT_COF",
-            "url": 64097
-        },
-        {
-            "name": "FLT_COR_2020-12-23__15_44_38.xlsx",
-            "typeCode": "FLT_COR",
-            "url": 64098
-        },
-        {
-            "name": "FLT_COU_2020-12-23__15_44_39.xlsx",
-            "typeCode": "FLT_COU",
-            "url": 64099
-        },
-        {
-            "name": "FLT_CST_2020-12-23__15_44_39.xlsx",
-            "typeCode": "FLT_CST",
-            "url": 64100
-        },
-        {
-            "name": "FLT_CTR_2020-12-23__15_44_40.xlsx",
-            "typeCode": "FLT_CTR",
-            "url": 64101
-        },
-        {
-            "name": "FLT_CUS_2020-12-23__15_44_40.xlsx",
-            "typeCode": "FLT_CUS",
-            "url": 64102
-        },
-        {
-            "name": "FLT_DAL_2020-12-23__15_44_41.xlsx",
-            "typeCode": "FLT_DAL",
-            "url": 64103
-        },
-        {
-            "name": "FLT_DAN_2020-12-23__15_44_41.xlsx",
-            "typeCode": "FLT_DAN",
-            "url": 64104
-        },
-        {
-            "name": "FLT_DAO_2020-12-23__15_44_42.xlsx",
-            "typeCode": "FLT_DAO",
-            "url": 64105
-        },
-        {
-            "name": "FLT_DEC_2020-12-23__15_44_42.xlsx",
-            "typeCode": "FLT_DEC",
-            "url": 64106
-        },
-        {
-            "name": "FLT_DGF_2020-12-23__15_44_43.xlsx",
-            "typeCode": "FLT_DGF",
-            "url": 64107
-        },
-        {
-            "name": "FLT_DNO_2020-12-23__15_44_43.xlsx",
-            "typeCode": "FLT_DNO",
-            "url": 64108
-        },
-        {
-            "name": "FLT_DRC_2020-12-23__15_44_44.xlsx",
-            "typeCode": "FLT_DRC",
-            "url": 64109
-        },
-        {
-            "name": "FLT_ECA_2020-12-23__15_44_44.xlsx",
-            "typeCode": "FLT_ECA",
-            "url": 64110
-        },
-        {
-            "name": "FLT_EXD_2020-12-23__15_44_45.xlsx",
-            "typeCode": "FLT_EXD",
-            "url": 64111
-        },
-        {
-            "name": "FLT_FUM_2020-12-23__15_44_45.xlsx",
-            "typeCode": "FLT_FUM",
-            "url": 64112
-        },
-        {
-            "name": "FLT_FWI_2020-12-23__15_44_46.xlsx",
-            "typeCode": "FLT_FWI",
-            "url": 64113
-        },
-        {
-            "name": "FLT_GTP_2020-12-23__15_44_46.xlsx",
-            "typeCode": "FLT_GTP",
-            "url": 64114
-        },
-        {
-            "name": "FLT_HBL_2020-12-23__15_44_46.xlsx",
-            "typeCode": "FLT_HBL",
-            "url": 64115
-        },
-        {
-            "name": "FLT_ICA_2020-12-23__15_44_47.xlsx",
-            "typeCode": "FLT_ICA",
-            "url": 64116
-        },
-        {
-            "name": "FLT_ICRA_2020-12-23__15_44_48.xlsx",
-            "typeCode": "FLT_ICRA",
-            "url": 64117
-        },
-        {
-            "name": "FLT_INB_2020-12-23__15_44_48.xlsx",
-            "typeCode": "FLT_INB",
-            "url": 64118
-        },
-        {
-            "name": "FLT_IRT_2020-12-23__15_44_48.xlsx",
-            "typeCode": "FLT_IRT",
-            "url": 64119
-        },
-        {
-            "name": "FLT_ISF_2020-12-23__15_44_49.xlsx",
-            "typeCode": "FLT_ISF",
-            "url": 64120
-        },
-        {
-            "name": "FLT_IVO_2020-12-23__15_44_49.xlsx",
-            "typeCode": "FLT_IVO",
-            "url": 64121
-        },
-        {
-            "name": "FLT_LID_2020-12-23__15_44_50.xlsx",
-            "typeCode": "FLT_LID",
-            "url": 64122
-        },
-        {
-            "name": "FLT_MAN_2020-12-23__15_44_50.xlsx",
-            "typeCode": "FLT_MAN",
-            "url": 64123
-        },
-        {
-            "name": "FLT_MBL_2020-12-23__15_44_51.xlsx",
-            "typeCode": "FLT_MBL",
-            "url": 64124
-        },
-        {
-            "name": "FLT_MCD_2020-12-23__15_44_51.xlsx",
-            "typeCode": "FLT_MCD",
-            "url": 64125
-        },
-        {
-            "name": "FLT_MCF_2020-12-23__15_44_52.xlsx",
-            "typeCode": "FLT_MCF",
-            "url": 64126
-        },
-        {
-            "name": "FLT_MDC_2020-12-23__15_44_52.xlsx",
-            "typeCode": "FLT_MDC",
-            "url": 64127
-        },
-        {
-            "name": "FLT_NOT_2020-12-23__15_44_53.xlsx",
-            "typeCode": "FLT_NOT",
-            "url": 64128
-        },
-        {
-            "name": "FLT_OBL_2020-12-23__15_44_53.xlsx",
-            "typeCode": "FLT_OBL",
-            "url": 64129
-        },
-        {
-            "name": "FLT_PAL_2020-12-23__15_44_54.xlsx",
-            "typeCode": "FLT_PAL",
-            "url": 64130
-        },
-        {
-            "name": "FLT_PALT_2020-12-23__15_44_54.xlsx",
-            "typeCode": "FLT_PALT",
-            "url": 64131
-        },
-        {
-            "name": "FLT_PODF_2020-12-23__15_44_54.xlsx",
-            "typeCode": "FLT_PODF",
-            "url": 64132
-        },
-        {
-            "name": "FLT_SDN_2020-12-23__15_44_55.xlsx",
-            "typeCode": "FLT_SDN",
-            "url": 64133
-        },
-        {
-            "name": "FLT_SDS_2020-12-23__15_44_56.xlsx",
-            "typeCode": "FLT_SDS",
-            "url": 64134
-        },
-        {
-            "name": "FLT_SLI_2020-12-23__15_44_56.xlsx",
-            "typeCode": "FLT_SLI",
-            "url": 64135
-        },
-        {
-            "name": "FLT_TSC_2020-12-23__15_44_56.xlsx",
-            "typeCode": "FLT_TSC",
-            "url": 64136
-        }
-    ],
     "documentsAttachesGenerate": {
-        "letterOfAttorneyGenerate": false
+        "letterOfAttorneyGenerate": true
     }
 }

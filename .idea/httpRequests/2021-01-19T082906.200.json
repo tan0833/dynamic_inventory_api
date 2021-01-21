@@ -1,0 +1,11 @@
+{
+  "data": {
+    "verificationCode": "RPeRmb",
+    "token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZXJtaW5hbF90eXBlIjoid2ViIiwidXNlcl9uYW1lIjoiSFAwMiIsInNjb3BlIjpbImZvbyIsInJlYWQiLCJ3cml0ZSJdLCJhcHBsaWNhdGlvbl9jb2RlIjoiVmlzdWFsX3RyYW5zcG9ydF9xdWVyeSIsImV4cCI6MTYxMTA1MjE0NiwidXNlcmFjY291bnRfaWQiOiI0NDg0NTgzNDg3ODczNjM4NDAwIiwianRpIjoiMTlmY2IzZWEtZTQxMS00MmFkLWEwMWMtNDVkZTZjNzVmMmY5IiwiY2xpZW50X2lkIjoiVmlzdWFsX3RyYW5zcG9ydF9xdWVyeSJ9.kCk5fKg7kF-w-hf47ki5GzlLcEqo-bvEonydNZXMXpKoZ6JSsGyEwGzvGMnbSYuZpmauhVJrGKchUU8BDqB9KTWT9mxtb7XJCR2qvlFclrhxw4T-W1xWWWsNjouWXtbzJADSl2A2tY9-3yIMeBp0pn2rcTHgz2ioI9gmzHWXHzF2Tb_lHwC14oCrciwCFaYBXyvSbnWNMZhM3AcGBiqStmaHgJ9r1TMEoCmpz62aVxF4KqsQGf3uV7kg6oTrxRSIjsSLOM8Cw1F2XGHj78T7d9LGRUnNhxy4_CHORjvt3qJx3lh5r0G1mjOcimN0ST8BlmIVJFKDwerGxFV1rJwomw",
+    "mustChangePassWord": false
+  },
+  "success": true,
+  "errorCode": null,
+  "errorData": null,
+  "message": null
+}
