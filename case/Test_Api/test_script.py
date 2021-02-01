@@ -1,6 +1,6 @@
 '''基于unittest测试框架接口测试'''
 
-import unittest,ddt
+import unittest,ddt,json
 from common.replace_opertate import ReplaceOperte
 from common.save_api_params import SaveApiParams
 from config.Log import Log
@@ -11,6 +11,7 @@ from config.global_dict import temp_dict
 from time import sleep
 from common.get_excel_case_list import ChainExcelData
 from common.delete_test_data import DeleteTestData
+from common.extract_params import ExtractParams
 
 chain_excel_data = ChainExcelData()
 
@@ -32,7 +33,7 @@ class TestRunMain(unittest.TestCase):
         cls.save_params = SaveApiParams(temp_dict)
         cls.run_main = RunMain()
         cls.delete_test_data = DeleteTestData(temp_dict)
-
+        cls.extract_params = ExtractParams(temp_dict)
 
     # @unittest.skip
     @ddt.data(*chain_excel_data.excel_case_generator())
@@ -78,12 +79,21 @@ class TestRunMain(unittest.TestCase):
         self.save_params.save_params()
         expect = data['expect']
 
+        #断言
         if expect.startswith('['):
             expect = eval(expect)
             assert_res = self.ro.replace_expect(expect,result)
             for i in assert_res:
                 # self.log.info('断言结果：%s'%i)
                 exec(i)
+
+        #提取参数
+        extract_params = self.extract_params.get_global_dict_value(global_value)
+        if extract_params:
+            self.log.info(
+                '\n提取参数为：%s' % str(json.dumps(extract_params,sort_keys=True, indent=4, separators=(',', ':'),ensure_ascii=False))
+            )
+
 
     # def test_zdelete_order_id(self):
     #     '''

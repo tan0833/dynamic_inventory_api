@@ -12,6 +12,7 @@ class SaveApiParams:
         self.basic_url = self.conf.get_value('request_url','url')
         self.environment_name = self.conf.is_url(self.basic_url)
 
+
     def save_params(self):
         '''
         组合所有运输方式

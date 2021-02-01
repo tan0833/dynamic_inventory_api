@@ -45,14 +45,14 @@ class ErgodicApi():
             self.new_excel_file.excel_write(i,i)                                              #生成包含附件类型excel
             new_file = self.get_new_excel_file.find_new_file(self.test_file_path)           #查找最新excel用于附件上传
             oss_method = 'POST'
-            oss_url = basic_url + '/oss/objects'
+            oss_url = basic_url + '/api/oss/objects'
             oss_header = {
                     "Authorization":self.token,
                     "clientId":"client",
                     "accept-language":"en-US"
                  }
 
-            oss_data = {'fileName': '%d'%random.randint(10000000,99999999999),'bucketDirs': 'ShipmentDemand'}
+            oss_data = {'fileName': '%d'%random.randint(10000000,99999999999),"bucketDirs":"ShipmentDemand"}
             oss_file = [ ('file', open(new_file,'rb'))]
             #将最新的excel上传至文件服务返回的结果
             result1 = self.runner.run_main(method=oss_method,url=oss_url,header=oss_header,file=oss_file,data=oss_data)
@@ -68,7 +68,7 @@ class ErgodicApi():
 
 
 if __name__ == '__main__':
-    dict_aa = {'token':'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZXJtaW5hbF90eXBlIjoid2ViIiwidXNlcl9uYW1lIjoiSFAiLCJzY29wZSI6WyJmb28iLCJyZWFkIiwid3JpdGUiXSwiYXBwbGljYXRpb25fY29kZSI6InNoaXBtZW50X2RlbWFuZF9hcHAiLCJleHAiOjE2MDA2ODczNjYsInVzZXJhY2NvdW50X2lkIjoiNDQyODM2MTM1MjM1MzY3MzIxNiIsImp0aSI6IjE1OWIxMTg2LTA3OGUtNGUwYi1iYjQ4LTM2YmNlNzY3NGUxMyIsImNsaWVudF9pZCI6InNoaXBtZW50X2RlbWFuZF9hcHAifQ.J4VOTPwxgi7cqdTbC51Xd_AuXljJZ4rwZcUFtbQ39c35IGeo3dMBjabVA1sbiIq5_egjojq92F7K_2YuvW9gHeCZaJSJs1YCgg5TUBGfR4eCQKLxqMzG5-czhq4VInftXISE1uMvmBBQqK3d6gt0DzGutQPbJFUj_FAAQWFd9wMvw_gvvKBX6ja3nzaHdiNZ1K0PnOJ-04IfNMdmdZKdxpwfu452GYSXgI8Gigf9Mj1dOspX1dedR9lFY3awdRkRSqOnt9hmUC-23WwT1HKlEUEyaNOw1JDvNhU9ZqIFbv5-8bJx4huvS0eQtkH9a9knfdQcBjbbJvGObUkerNvXOA'}
+    dict_aa = {'token':'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZXJtaW5hbF90eXBlIjoid2ViIiwidXNlcl9uYW1lIjoia2hkel8wMSIsInNjb3BlIjpbImZvbyIsInJlYWQiLCJ3cml0ZSJdLCJhcHBsaWNhdGlvbl9jb2RlIjoic2hpcG1lbnRfZGVtYW5kX2FwcCIsImV4cCI6MTYxMTMxMDgxOCwidXNlcmFjY291bnRfaWQiOiI0NTU0NTAwOTUxMjQ5OTI4MTkyIiwianRpIjoiZmVlY2FjMzktZWNmNi00MjYyLTlhY2MtOTE4YWI2YTFhMDZjIiwiY2xpZW50X2lkIjoic2hpcG1lbnRfZGVtYW5kX2FwcCJ9.RccApu-HnvuW0uW44gmK6wsp8lIYSLvth70xXHl4sVF0a--sOiPfZhSA8Bv5zUvQRkJPaNp9l1HALWfHXPdnzEI-MbOyopjhyaThy2O58c26GBUjXVRt1RdJYbqS8qXZa_8ZlTIMbUyS0zEe4MbopeDRnZR91aCV5UAyIzH6hiyK7swI21WDSZ_hqpiwOdn2Yg4vPnCatkVLi3jikL_TQx7JQ8Jj6IPI9vAzjC-VR_hLQwyYDd-XL_TTmzVOwiBUKdUGAFCIbunBxJyR813D0ZZJFE2cNZxtQN3VxLVFZ-8n2YyHeMIBneRyKny2n1-8i_py796lWxREe5OQ13phVQ'}
     e = ErgodicApi(dict_aa)
     test_attachment = {
         'method':'POST',
