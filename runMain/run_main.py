@@ -22,7 +22,7 @@ class RunMain:
         else:
             header_result = header
 
-        if isinstance(data,dict):
+        if isinstance(data,dict) or isinstance(data,list):
             data_result = json.dumps(data, sort_keys=True, indent=4, separators=(',', ':'),
                                          ensure_ascii=False)
         else:
